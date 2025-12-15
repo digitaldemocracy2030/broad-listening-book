@@ -43,7 +43,7 @@ Connective Actionには、いくつかの本質的な機能不全があります
 ここからは、BennettとSegerbergの概念を踏まえた上で、筆者による整理と提案を述べます。
 
 TODO: 画像を差し替え
-![Collective ActionとConnective Actionの関係図](column/collective_connective_action_and_dd.png)
+![Collective ActionとConnective Actionの関係図](collective_connective_action_and_dd.png)
 
 この図は、筆者がCollective ActionとConnective Actionの関係を整理したものです。縦軸は「公式ルートを利用しているか、対立的か」、横軸は「組織化されているか流動的か」を示しています。ここでいう「公式ルート」とは、団体交渉、請願、パブリックコメント、選挙、議会への陳情など、法律や制度で定められた政治参加の手続きのことです。
 
