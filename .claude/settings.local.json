@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
