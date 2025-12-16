@@ -15,3 +15,9 @@
   - `チームみらいの社会実験「しゃべれるマニフェスト」から得られた知見｜NISHIO Hirokazu.pdf`
   - `nishio-主観か客観かではなく、一人の主観から大勢の主観へ.1hop.txt`
 
+## originのブランチにある原稿スナップショット
+
+origin上に「未マージの原稿が載っているブランチ」がある場合、参照しやすいように`git show`で内容を抜き出してここに保存する。
+
+- 保存先：`wip-nishio/ref/origin-branches/`
+- 取得時点のコミット：`wip-nishio/ref/origin-branches/BRANCH_COMMITS.txt`
