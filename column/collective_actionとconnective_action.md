@@ -174,7 +174,7 @@ https://participedia.net/method/vtaiwan
 
 Polisは、2012年にColin Megill、Christopher Small、Michael Bjorkegrenによって開発されたツールです。ウォール街占拠運動やアラブの春を経て、「大規模な集団の意見を収集・分析・理解する」ためのリアルタイムシステムとして設計されました。2016年にオープンソース化され、現在はThe Computational Democracy Projectという非営利団体が運営しています。
 
-https://en.wikipedia.org/wiki/Pol.is
+https://en.wikipedia.org/wiki/Polis
 
 Polisは、Change.orgとは根本的に異なる設計思想を持っています。
 
