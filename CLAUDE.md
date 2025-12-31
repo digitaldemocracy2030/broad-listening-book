@@ -28,6 +28,10 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
 - **Image naming**: `{chapter_number}_{description}.png`
 - **License**: CC BY 4.0
 
+## Style Guidelines
+
+- **ダッシュの使用を避ける**: 文章を「——」（ダッシュ）で繋げることを避けてください。代わりに、句点で文を区切る、接続詞を使う、または文構造を工夫して表現してください。
+
 ## Key Technologies Referenced
 
 The book explains these technologies used in Broad Listening systems:
