@@ -37,7 +37,7 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
 The book explains these technologies used in Broad Listening systems:
 - **Talk to the City (TTTC)**: Opinion clustering and visualization tool
 - **広聴AI (Kōchō AI)**: Japanese broad listening AI system
-- **BERT**: Text vectorization for semantic similarity
+- **Sentence-BERT**: Text vectorization for semantic similarity
 - **UMAP**: Dimensionality reduction for visualization
 - **LLM**: Text understanding, summarization, and generation
 
