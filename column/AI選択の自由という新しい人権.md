@@ -25,7 +25,7 @@ LLMの学習データの大部分は英語圏のテキストであり、そこ�
 
 また、多言語LLMの道徳的基盤を分析した別の研究[^5]では、GPT-3.5やGPT-4o、Llama、Mistralなど主要なLLMが、アラビア語・ペルシャ語・中国語・日本語などで応答する場合でも、西洋的な道徳規範に偏る傾向があることが報告されています。LLMは「自己表現的価値観」（個人の自律性、環境保護、多様性への寛容）を重視しがちで、これは学習データに西洋的な個人主義的価値観が多く含まれていることの反映です。
 
-興味深いことに、中国で開発されたLLMであっても、この傾向から逃れられていません。2024年にカーネギーメロン大学らの研究チームが発表した「Made-in China, Thinking in America」と題する論文[^6]では、中国製LLMを含む20のモデルに対して世界価値観調査（World Values Survey）の質問を行った結果、すべてのモデルが中国人よりもアメリカ人に近い回答パターンを示しました。中国国内向けに開発されたモデルでさえ、学習データに含まれる英語圏のテキストの影響を強く受けており、非西洋的な価値観がAIの中で軽視されている可能性があります。
+興味深いことに、中国で開発されたLLMであっても、この傾向から逃れられていません。2025年にカーネギーメロン大学らの研究チームが発表した「Made-in China, Thinking in America」と題する論文[^6]では、中国製LLMを含む20のモデルに対して世界価値観調査（World Values Survey）の質問を行った結果、すべてのモデルが中国人よりもアメリカ人に近い回答パターンを示しました。中国国内向けに開発されたモデルでさえ、学習データに含まれる英語圏のテキストの影響を強く受けており、非西洋的な価値観がAIの中で軽視されている可能性があります。
 
 さらに、前節で述べたLLMのリベラル傾向も無視できません。LLMが市民の意見を要約・分類する際に、保守的な意見がリベラル寄りに言い換えられたり、特定の立場が過小評価されたりする懸念があります。日本社会の政治的中央値は、LLMの学習データの大半を占める米国社会と比較して異なる位置にあると考えられます。LLMのバイアスが分析結果に反映されることで、日本の市民の意見が実際とは異なる形で表現される可能性を念頭に置く必要があります。
 
@@ -71,7 +71,7 @@ LLMの学習データの大部分は英語圏のテキストであり、そこ�
 
 幸いなことに、日本は十分な言語資源を持ち、独自のLLMを開発できる国力があります。国立国会図書館は約35万点のデジタル化資料を公開しており、国立情報学研究所（NII）と連携してLLM学習用のテキストデータ提供を進めています[^12]。明治期から現代までの膨大な日本語テキストは、日本独自のLLMを構築するための貴重な資源です。日本語で書かれた意見を、日本の文化的文脈を理解したモデルで分析できることが望ましいと言えます。現在、日本政府も国産LLMの開発支援に乗り出しており、経済産業省は2024年度から国内のLLM開発に対して大規模な補助金を交付しています。これらの投資は経済安全保障や産業競争力の強化が主眼ですが、結果として自国の言語・文化に根ざしたAI基盤を整備することにもつながります。
 
-デジタル庁も国産LLMの重要性を認識しています[^13]。同庁は政府職員向けの生成AI基盤「源内」を開発・運用しており、2024年12月には行政向けAIで利用する国産LLMの公募を開始しました。公募にあたりデジタル庁は「日本語の語彙や表現、行政文書特有の記述様式等に適合した、国内企業や国内研究機関が開発するLLMの活用が重要」と述べています。源内ではOpenAIのモデルに加え、Preferred Networks（PFN）が開発する「PLaMo翻訳」を導入する[^14]など、複数のLLMを組み合わせる設計を採用しています。
+デジタル庁も国産LLMの重要性を認識しています[^13]。同庁は政府職員向けの生成AI基盤「源内」を開発・運用しており、2025年12月には行政向けAIで利用する国産LLMの公募を開始しました。公募にあたりデジタル庁は「日本語の語彙や表現、行政文書特有の記述様式等に適合した、国内企業や国内研究機関が開発するLLMの活用が重要」と述べています。源内ではOpenAIのモデルに加え、Preferred Networks（PFN）が開発する「PLaMo翻訳」を導入する[^14]など、複数のLLMを組み合わせる設計を採用しています。
 
 ただし、国産LLMであればバイアスがないというわけではありません。どのLLMにも、学習データや開発者の価値観に由来する何らかの偏りが存在します。重要なのは、特定のLLMに依存しない設計です。公共的な意思決定に関わるAIツールにおいては、使用するLLMを容易に交換できるアーキテクチャを採用することが望まれます。複数のLLMで分析結果を比較したり、用途に応じて使い分けたりできる柔軟性こそが、中立性を担保する現実的な方法です。源内のように複数のLLMを併用できる設計は、この方向性の具体例と言えます。
 
@@ -90,12 +90,12 @@ LLMの学習データの大部分は英語圏のテキストであり、そこ�
 [^3]: Michigan Ross "New Study on Reddit Explores How Political Bias in Content Moderation Feeds Echo Chambers" (2024) https://michiganross.umich.edu/news/new-study-reddit-explores-how-political-bias-content-moderation-feeds-echo-chambers
 [^4]: PNAS Nexus "Cultural bias and cultural alignment of large language models" (2024) https://academic.oup.com/pnasnexus/article/3/9/pgae346/7756548
 [^5]: ScienceDirect "Whose morality do they speak? Unraveling cultural bias in multilingual language models" (2025) https://www.sciencedirect.com/science/article/pii/S2949719125000482
-[^6]: arXiv "Made-in-China LLMs are prone to western values" (2024) https://arxiv.org/abs/2410.18420
+[^6]: arXiv "Made-in China, Thinking in America: U.S. Values Persist in Chinese LLMs" (2025) https://arxiv.org/abs/2512.13723
 [^7]: ITmedia AI+「話題の中華LLM『DeepSeek R1』は、天安門事件を説明できるか」(2025) https://www.itmedia.co.jp/aiplus/articles/2501/23/news179.html
 [^8]: 日経ビジネス「中国、AIにも検閲拡大」(2024) https://business.nikkei.com/atcl/NBD/19/world/00661/
 [^9]: arXiv "The Invisible Megaphone: Analysis of Propaganda Bias and Anti-American Sentiment in Chinese LLMs vs. Western LLMs" (2025) https://arxiv.org/abs/2506.01814
 [^10]: ACL Anthology "Hidden Persuaders: LLMs' Political Leaning and Their Influence on Voters" (EMNLP 2024) https://aclanthology.org/2024.emnlp-main.244/
 [^11]: 日経クロステック「OpenAI o1が2025年東大文系入試を余裕で突破、理三合格レベルにも到達」(2025) https://xtech.nikkei.com/atcl/nxt/column/18/03078/012800006/
 [^12]: 国立国会図書館「国立情報学研究所における大規模言語モデル構築への協力について」(2024) https://www.ndl.go.jp/jp/news/fy2023/240130_01.html
-[^13]: ITmedia AI+「デジ庁、『国産LLM』の公募開始 行政向けAIに実装へ」(2024) https://www.itmedia.co.jp/aiplus/articles/2512/02/news066.html
-[^14]: デジタル庁「ガバメントAIプラットフォーム『源内』におけるPFNの翻訳モデルの利用開始」(2024) https://www.digital.go.jp/news/b27d1af7-c231-4ab3-ad78-fc5408d44504
+[^13]: ITmedia AI+「デジ庁、『国産LLM』の公募開始 行政向けAIに実装へ」(2025) https://www.itmedia.co.jp/aiplus/articles/2512/02/news066.html
+[^14]: デジタル庁「ガバメントAIプラットフォーム『源内』におけるPFNの翻訳モデルの利用開始」(2025) https://www.digital.go.jp/news/b27d1af7-c231-4ab3-ad78-fc5408d44504
