@@ -11,6 +11,7 @@ Markdown書籍をHTML/PDFに変換するスクリプト
 import argparse
 import re
 import webbrowser
+from datetime import datetime
 from pathlib import Path
 
 import markdown
@@ -29,22 +30,10 @@ def load_order_file(order_file: Path) -> list[str]:
     return files
 
 
-def read_markdown_files(base_dir: Path, file_list: list[str]) -> str:
-    """Markdownファイルを連結して読み込む"""
-    contents = []
-    for filename in file_list:
-        filepath = base_dir / filename
-        if not filepath.exists():
-            print(f"警告: ファイルが見つかりません: {filepath}")
-            continue
-
-        with open(filepath, "r", encoding="utf-8") as f:
-            content = f.read()
-            # ファイル間に改ページを挿入
-            contents.append(content)
-            contents.append("\n\n---\n\n")  # 区切り線
-
-    return "\n".join(contents)
+def read_markdown_file(filepath: Path) -> str:
+    """単一のMarkdownファイルを読み込む"""
+    with open(filepath, "r", encoding="utf-8") as f:
+        return f.read()
 
 
 def convert_image_paths(html: str, base_dir: Path) -> str:
@@ -94,7 +83,7 @@ def get_css(for_pdf: bool = False) -> str:
         body {{
             font-size: 10pt;
         }}
-        hr {{
+        hr.chapter-break {{
             page-break-after: always;
             visibility: hidden;
         }}
@@ -195,6 +184,12 @@ def get_css(for_pdf: bool = False) -> str:
         margin: 40px 0;
     }}
 
+    hr.chapter-break {{
+        border: none;
+        margin: 0;
+        padding: 0;
+    }}
+
     table {{
         border-collapse: collapse;
         width: 100%;
@@ -249,14 +244,25 @@ def build_html_content(base_dir: Path, order_file: Path, for_pdf: bool = False) 
     file_list = load_order_file(order_file)
     print(f"対象ファイル数: {len(file_list)}")
 
-    # Markdownを連結
-    md_content = read_markdown_files(base_dir, file_list)
+    # 各ファイルを個別にHTMLに変換してから結合（脚注を各章内に保持するため）
+    html_parts = []
+    for filename in file_list:
+        filepath = base_dir / filename
+        if not filepath.exists():
+            print(f"警告: ファイルが見つかりません: {filepath}")
+            continue
 
-    # HTMLに変換
-    html_body = markdown_to_html(md_content)
+        # 個別のMarkdownをHTMLに変換
+        md_content = read_markdown_file(filepath)
+        html_part = markdown_to_html(md_content)
 
-    # 画像パスを絶対パスに変換
-    html_body = convert_image_paths(html_body, base_dir)
+        # 画像パスを絶対パスに変換
+        html_part = convert_image_paths(html_part, base_dir)
+
+        html_parts.append(html_part)
+        html_parts.append('<hr class="chapter-break">')  # 章の区切り
+
+    html_body = "\n".join(html_parts)
 
     # プレビュー用のバナー（PDF生成時は含めない）
     preview_banner = "" if for_pdf else """
@@ -376,7 +382,7 @@ def main():
         "-o",
         type=Path,
         default=None,
-        help="出力ファイル (デフォルト: output/book.html または output/book.pdf)",
+        help="出力ファイル (デフォルト: output/broad-listening-book-YYYYMMDD.html/pdf)",
     )
     parser.add_argument(
         "--pdf",
@@ -393,11 +399,16 @@ def main():
     base_dir = Path(__file__).parent.parent
     order_file = base_dir / args.order
 
+    # ビルド日付を含むデフォルトファイル名を生成
+    build_date = datetime.now().strftime("%Y%m%d")
+    default_pdf = f"output/broad-listening-book-{build_date}.pdf"
+    default_html = f"output/broad-listening-book-{build_date}.html"
+
     if args.pdf:
-        output_file = base_dir / (args.output or Path("output/book.pdf"))
+        output_file = base_dir / (args.output or Path(default_pdf))
         build_pdf(base_dir, order_file, output_file)
     else:
-        output_file = base_dir / (args.output or Path("output/book.html"))
+        output_file = base_dir / (args.output or Path(default_html))
         build_html(base_dir, order_file, output_file, open_browser=not args.no_open)
 
 
