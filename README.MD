@@ -66,6 +66,34 @@
     - クラスタ統合
     - 名づけ、説明文作成
   
+## 校正用PDFの生成
+
+原稿を通しで確認するための校正用PDFを生成できます。
+
+### 必要なもの
+- Python 3.10以上
+- [uv](https://docs.astral.sh/uv/)（Pythonパッケージマネージャー）
+
+### 初回セットアップ
+```bash
+# Chromiumブラウザのインストール（初回のみ）
+uv run playwright install chromium
+```
+
+### PDF生成
+```bash
+# PDF生成
+uv run python scripts/build_pdf.py --pdf
+
+# HTML生成（ブラウザで確認）
+uv run python scripts/build_pdf.py
+```
+
+生成されたファイルは `output/` ディレクトリに出力されます。
+
+### 章の順序をカスタマイズ
+`book_order.txt` を編集して、章の順序やコラムの挿入位置を調整できます。
+
 ## 画像ファイルの管理
 - 画像ファイルは images ディレクトリに保存してください。
 - 画像ファイルのフォーマットは、基本的にPNGを推奨

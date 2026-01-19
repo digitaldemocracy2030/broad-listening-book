@@ -1,1 +1,9 @@
 .vscode/settings.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# PDF output
+output/
