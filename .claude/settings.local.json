@@ -3,7 +3,16 @@
     "allow": [
       "Bash(python:*)",
       "WebSearch",
-      "WebFetch"
+      "WebFetch",
+      "Bash(gh pr list:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nコラム「AI選択の自由という新しい人権」を改善\n\n- 冒頭の引き文を強化（AI選択の自由を人権として提起）\n- Pew研究の記述を修正（全LLMが左派寄り、Perplexityは相対的に中道）\n- 段落の論理的な流れを改善\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)",
+      "Bash(git -C \"c:/Users/shinta/Documents/GitHub/broad-listening-book\" log --oneline -5)",
+      "Bash(git -C \"c:/Users/shinta/Documents/GitHub/broad-listening-book\" add \"column/collective_actionとconnective_action.md\")",
+      "Bash(git -C \"c:/Users/shinta/Documents/GitHub/broad-listening-book\" commit -m \"$\\(cat <<''EOF''\nコラム「Collective ActionとConnective Action」の修正\n\n- 繰り返し表現を解消（リーダー不在の説明）\n- Change.orgユーザー数の出典を追加\n- 林飛帆に読み仮名を追加\n- vTaiwanの出典（Participedia）を追加\n- uncommon groundの用語をオードリー・タンの表現として明記\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"c:/Users/shinta/Documents/GitHub/broad-listening-book\" status)",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": []
