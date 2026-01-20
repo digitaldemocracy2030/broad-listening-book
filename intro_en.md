@@ -19,9 +19,8 @@ This book is written as part of Digital Democracy 2030. Drafts are published und
 
 ---
 
-# Preface Translation
+# Preface: The Present and Future of Broad Listening
 
-Preface: The Present and Future of Broad Listening
 Commentary: Takahiro Anno (Translated by NISHIO Hirokazu using GPT5.2)
 
 ## What Is Broad Listening
