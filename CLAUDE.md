@@ -10,15 +10,26 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
 
 ## Repository Structure
 
-- **Numbered markdown files (00-13)**: Book chapters in Japanese
+- **Numbered markdown files (00-14)**: Book chapters in Japanese
   - 00_序文.md: Preface
-  - 01-04: Part 1 - Concepts (What is Broad Listening)
-  - 05-10: Part 2 - Case Studies (elections, government, corporate use)
-  - 11-13: Part 3 - Technical explanations
+  - 01-03: Part 1 - Concepts (What is Broad Listening)
+  - 04-11: Part 2 - Case Studies
+    - 04: 日本国内におけるブロードリスニングの広がり（安野氏の取り組み、国民民主、日テレ特番、Polis、朝日新聞）
+    - 05: 東京都、シン東京2050
+    - 06: 2025年参院選（チームみらい）
+    - 07: DD2030による広聴AIの開発活動
+    - 08: 地方選挙・地方自治体での活用
+    - 09: 企業・NPOでの活用
+    - 10: 海外におけるブロードリスニング
+    - 11: 支援組織
+  - 12-14: Part 3 - Future and Technical explanations
 - **column/**: Column articles for the book
 - **images/**: Chapter images, named as `章番号_内容.png` (e.g., `01_broadlistening.png`)
 - **code/**: Python demo scripts for opinion analysis
 - **interview_questions/**: Interview question drafts
+- **scripts/**: Build scripts
+  - `build_pdf.py`: Markdown to HTML/PDF conversion script
+- **book_order.txt**: Defines chapter order for PDF generation
 
 ## Writing Conventions
 
@@ -37,9 +48,26 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
 The book explains these technologies used in Broad Listening systems:
 - **Talk to the City (TTTC)**: Opinion clustering and visualization tool
 - **広聴AI (Kōchō AI)**: Japanese broad listening AI system
-- **BERT**: Text vectorization for semantic similarity
+- **Sentence-BERT**: Text vectorization for semantic similarity
 - **UMAP**: Dimensionality reduction for visualization
 - **LLM**: Text understanding, summarization, and generation
+
+## PDF Generation
+
+校正用PDFを生成するには:
+
+```bash
+# 初回セットアップ（Chromiumブラウザのインストール）
+uv run playwright install chromium
+
+# PDF生成
+uv run python scripts/build_pdf.py --pdf
+
+# HTML生成（ブラウザで確認）
+uv run python scripts/build_pdf.py
+```
+
+生成されたファイルは `output/` ディレクトリに `broad-listening-book-YYYYMMDD.pdf` の形式で出力されます。
 
 ## Sample Code
 
