@@ -41,6 +41,7 @@
     - TTTC→広聴AIはここで話す
   - 第8章 地方選挙・地方自治体での活用（20p）
     - 八代市 小野だいすけ市長取材、15p程度？
+    - 中野区　いでい良輔 氏
     - 再生の道 尾花山候補、執筆確約済み（5p↑）
   - 第9章 企業・NPOでの活用（10p）
   - 第10章 海外におけるブロードリスニング（TTTC）の利用（10p）
@@ -48,6 +49,7 @@
   - 第11章 支援組織（5p）
     - 株式会社ブーツ
     - Code for Japan
+    - 多元現実
 
 - **第3部：未来と技術編**（50p）
   - 第12章 新しい動き
@@ -109,7 +111,7 @@ uv run python scripts/build_pdf.py
 
 ## 定例ミーティング
 - 基本的に広聴AIの定例ミーティングにて進捗確認を行います。
-- 現在は水曜日の20時開始です。チャネルなどの情報は、[デジタル民主主義2030](https://dd2030.org/)の[Slack](https://join.slack.com/t/dd2030/shared_invite/zt-3bg5nmxiv-CB9LXLpvxH_JvJil_EPa_w)をご覧ください。
+- 現在は月曜日の20時開始です。チャネルなどの情報は、[デジタル民主主義2030](https://dd2030.org/)の[Slack](https://join.slack.com/t/dd2030/shared_invite/zt-3bg5nmxiv-CB9LXLpvxH_JvJil_EPa_w)をご覧ください。
 
 ## スケジュール(仮)
 - 10,11,12月で執筆、取材
