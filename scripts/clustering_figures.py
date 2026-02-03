@@ -118,13 +118,17 @@ def fig3_complex_datasets():
     # 1つの塊（単一のガウス分布）
     single_blob = np.random.randn(n_samples, 2) * 0.5
 
+    # 3つの塊
+    three_blobs = make_blobs(n_samples=n_samples, centers=3, cluster_std=0.5, random_state=42)[0]
+
     datasets = [
         ("1つの塊", single_blob),
         ("円形", make_circles(n_samples=n_samples, factor=0.5, noise=0.05)[0]),
         ("三日月", make_moons(n_samples=n_samples, noise=0.05)[0]),
+        ("3つの塊", three_blobs),
     ]
 
-    fig, axes = plt.subplots(3, 3, figsize=(12, 12))
+    fig, axes = plt.subplots(4, 3, figsize=(12, 16))
 
     # カラー + 形状で区別（グレースケールでも判別可能に）
     colors = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6', '#F39C12', '#1ABC9C']
