@@ -823,6 +823,122 @@ def fig8_pca_2d_to_1d():
     print(f"Saved: 13_pca_2d_to_1d.png")
 
 
+def fig_word2vec_umap():
+    """word2vecベクトルのUMAP可視化（動物・地名・料理）"""
+    import gensim.downloader as api
+    import umap
+
+    print("word2vec + UMAP可視化を生成中...")
+
+    # GloVeモデルをダウンロード（初回のみ時間がかかる）
+    print("GloVeモデルを読み込み中...")
+    model = api.load("glove-wiki-gigaword-100")
+
+    # 単語リスト（英語 → 日本語ラベル）
+    animals = {
+        "dog": "犬", "cat": "猫", "lion": "ライオン", "tiger": "トラ",
+        "elephant": "ゾウ", "horse": "馬", "cow": "牛", "pig": "豚",
+        "sheep": "羊", "rabbit": "ウサギ", "bear": "クマ", "wolf": "オオカミ",
+        "fox": "キツネ", "deer": "シカ", "monkey": "サル", "dolphin": "イルカ",
+        "whale": "クジラ", "shark": "サメ", "eagle": "ワシ", "owl": "フクロウ",
+    }
+
+    places = {
+        "tokyo": "東京", "london": "ロンドン", "paris": "パリ", "beijing": "北京",
+        "seoul": "ソウル", "sydney": "シドニー", "rome": "ローマ", "berlin": "ベルリン",
+        "moscow": "モスクワ", "cairo": "カイロ", "bangkok": "バンコク", "singapore": "シンガポール",
+        "dubai": "ドバイ", "amsterdam": "アムステルダム", "stockholm": "ストックホルム",
+        "oslo": "オスロ", "vienna": "ウィーン", "madrid": "マドリード",
+        "lisbon": "リスボン", "athens": "アテネ",
+    }
+
+    foods = {
+        "pizza": "ピザ", "sushi": "寿司", "pasta": "パスタ", "curry": "カレー",
+        "burger": "ハンバーガー", "steak": "ステーキ", "salad": "サラダ", "soup": "スープ",
+        "bread": "パン", "rice": "ご飯", "noodle": "麺", "sandwich": "サンドイッチ",
+        "taco": "タコス", "ramen": "ラーメン", "dumpling": "餃子", "cake": "ケーキ",
+        "pie": "パイ", "chocolate": "チョコレート", "cheese": "チーズ", "wine": "ワイン",
+    }
+
+    # ベクトルを取得
+    words = []
+    labels_jp = []
+    categories = []
+    vectors = []
+
+    for word, label in animals.items():
+        if word in model:
+            words.append(word)
+            labels_jp.append(label)
+            categories.append("動物")
+            vectors.append(model[word])
+
+    for word, label in places.items():
+        if word in model:
+            words.append(word)
+            labels_jp.append(label)
+            categories.append("地名")
+            vectors.append(model[word])
+
+    for word, label in foods.items():
+        if word in model:
+            words.append(word)
+            labels_jp.append(label)
+            categories.append("料理")
+            vectors.append(model[word])
+
+    vectors = np.array(vectors)
+    print(f"取得した単語数: {len(vectors)}, ベクトル次元: {vectors.shape[1]}")
+
+    # UMAPで2次元に圧縮
+    print("UMAPで次元圧縮中...")
+    reducer = umap.UMAP(n_neighbors=20, min_dist=0.9, spread=3.0, random_state=42)
+    X_umap = reducer.fit_transform(vectors)
+
+    # 可視化
+    fig, ax = plt.subplots(figsize=(16, 12))
+
+    # カテゴリごとの色とマーカー
+    category_styles = {
+        "動物": {"color": "#E74C3C", "marker": "o"},
+        "地名": {"color": "#3498DB", "marker": "s"},
+        "料理": {"color": "#2ECC71", "marker": "^"},
+    }
+
+    # カテゴリごとにプロット
+    for cat, style in category_styles.items():
+        mask = [c == cat for c in categories]
+        indices = [i for i, m in enumerate(mask) if m]
+        ax.scatter(
+            X_umap[indices, 0], X_umap[indices, 1],
+            c=style["color"], marker=style["marker"],
+            s=120, alpha=0.8, edgecolors='black', linewidths=0.5,
+            label=cat
+        )
+
+    # 各点にラベルを追加
+    for i, label in enumerate(labels_jp):
+        ax.annotate(
+            label,
+            (X_umap[i, 0], X_umap[i, 1]),
+            xytext=(10, 0),
+            textcoords='offset points',
+            fontsize=18,
+            alpha=0.9
+        )
+
+    ax.set_xlabel('UMAP 1', fontsize=12)
+    ax.set_ylabel('UMAP 2', fontsize=12)
+    ax.set_title('word2vecベクトルのUMAP可視化\n（100次元 → 2次元）', fontsize=14)
+    ax.legend(loc='upper right', fontsize=12)
+    ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    plt.savefig(OUTPUT_DIR / "13_word2vec_umap.png", dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"Saved: 13_word2vec_umap.png")
+
+
 def main():
     """全ての図を生成"""
     print("クラスタリング解説用の図を生成します...")
@@ -840,6 +956,7 @@ def main():
     fig_mnist_boundary_zoom()
     fig7_pca_vs_umap()
     fig8_pca_2d_to_1d()
+    fig_word2vec_umap()
 
     print()
     print("完了しました！")
