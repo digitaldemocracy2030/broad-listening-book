@@ -16,6 +16,8 @@ dependencies = [
     "numba>=0.59",
     "lightgbm>=4.0",
     "gensim>=4.3",
+    "openai>=2.16.0",
+    "python-dotenv>=1.2.1",
 ]
 
 [project.scripts]
