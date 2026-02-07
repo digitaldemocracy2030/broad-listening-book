@@ -43,7 +43,7 @@ response = client.embeddings.create(
 embeddings = np.array([item.embedding for item in response.data])
 
 # 3. 次元圧縮 & クラスタリング
-coords_2d = umap.UMAP(n_components=2, random_state=42).fit_transform(embeddings)
+coords_2d = umap.UMAP(n_components=2, metric='cosine', random_state=42).fit_transform(embeddings)
 df["cluster"] = KMeans(n_clusters=4, random_state=42).fit_predict(coords_2d)
 df["x"], df["y"] = coords_2d[:, 0], coords_2d[:, 1]
 
@@ -92,5 +92,6 @@ for cluster_id in range(4):
 ax.legend(fontsize=12)
 ax.set_title("意見の可視化（ミニ広聴AI）", fontsize=14)
 plt.tight_layout()
-plt.savefig("mini_kouchou_ai.png", dpi=150)
+plt.savefig("images/14_mini_kouchou_ai.png", dpi=150)
+print("図を保存しました: images/14_mini_kouchou_ai.png")
 plt.show()
