@@ -825,40 +825,52 @@ def fig8_pca_2d_to_1d():
 
 def fig_word2vec_umap():
     """word2vecベクトルのUMAP可視化（動物・地名・料理）"""
-    import gensim.downloader as api
+    from gensim.models import KeyedVectors
+    from huggingface_hub import hf_hub_download
     import umap
 
     print("word2vec + UMAP可視化を生成中...")
 
-    # GloVeモデルをダウンロード（初回のみ時間がかかる）
-    print("GloVeモデルを読み込み中...")
-    model = api.load("glove-wiki-gigaword-100")
+    # 日本語Wikipedia学習済みWord2Vecモデルを読み込み
+    print("日本語Word2Vecモデルを読み込み中...")
+    model = KeyedVectors.load_word2vec_format(
+        hf_hub_download(repo_id="Word2vec/wikipedia2vec_jawiki_20180420_300d",
+                        filename="jawiki_20180420_300d.txt")
+    )
 
-    # 単語リスト（英語 → 日本語ラベル）
-    animals = {
-        "dog": "犬", "cat": "猫", "lion": "ライオン", "tiger": "トラ",
-        "elephant": "ゾウ", "horse": "馬", "cow": "牛", "pig": "豚",
-        "sheep": "羊", "rabbit": "ウサギ", "bear": "クマ", "wolf": "オオカミ",
-        "fox": "キツネ", "deer": "シカ", "monkey": "サル", "dolphin": "イルカ",
-        "whale": "クジラ", "shark": "サメ", "eagle": "ワシ", "owl": "フクロウ",
-    }
+    # 単語リスト（日本語）
+    animals = [
+        "犬", "猫", "ライオン", "トラ",
+        "ゾウ", "馬", "牛", "豚",
+        "羊", "ウサギ", "クマ", "オオカミ",
+        "キツネ", "シカ", "サル", "イルカ",
+        "クジラ", "サメ", "ワシ", "フクロウ",
+    ]
 
-    places = {
-        "tokyo": "東京", "london": "ロンドン", "paris": "パリ", "beijing": "北京",
-        "seoul": "ソウル", "sydney": "シドニー", "rome": "ローマ", "berlin": "ベルリン",
-        "moscow": "モスクワ", "cairo": "カイロ", "bangkok": "バンコク", "singapore": "シンガポール",
-        "dubai": "ドバイ", "amsterdam": "アムステルダム", "stockholm": "ストックホルム",
-        "oslo": "オスロ", "vienna": "ウィーン", "madrid": "マドリード",
-        "lisbon": "リスボン", "athens": "アテネ",
-    }
+    places = [
+        "東京", "ロンドン", "パリ", "北京",
+        "ソウル", "シドニー", "ローマ", "ベルリン",
+        "モスクワ", "カイロ", "バンコク", "シンガポール",
+        "ドバイ", "アムステルダム", "ストックホルム",
+        "オスロ", "ウィーン", "マドリード",
+        "リスボン", "アテネ",
+    ]
 
-    foods = {
-        "pizza": "ピザ", "sushi": "寿司", "pasta": "パスタ", "curry": "カレー",
-        "burger": "ハンバーガー", "steak": "ステーキ", "salad": "サラダ", "soup": "スープ",
-        "bread": "パン", "rice": "ご飯", "noodle": "麺", "sandwich": "サンドイッチ",
-        "taco": "タコス", "ramen": "ラーメン", "dumpling": "餃子", "cake": "ケーキ",
-        "pie": "パイ", "chocolate": "チョコレート", "cheese": "チーズ", "wine": "ワイン",
-    }
+    foods = [
+        "ピザ", "寿司", "パスタ", "カレー",
+        "ハンバーガー", "ステーキ", "サラダ", "スープ",
+        "パン", "ご飯", "麺", "サンドイッチ",
+        "タコス", "ラーメン", "餃子", "ケーキ",
+        "パイ", "チョコレート", "チーズ", "ワイン",
+    ]
+
+    sports = [
+        "サッカー", "野球", "テニス", "水泳",
+        "バスケットボール", "バレーボール", "卓球", "柔道",
+        "スキー", "ゴルフ", "ボクシング", "マラソン",
+        "ラグビー", "バドミントン", "体操", "レスリング",
+        "フェンシング", "アーチェリー", "カヌー", "スケート",
+    ]
 
     # ベクトルを取得
     words = []
@@ -866,33 +878,22 @@ def fig_word2vec_umap():
     categories = []
     vectors = []
 
-    for word, label in animals.items():
-        if word in model:
-            words.append(word)
-            labels_jp.append(label)
-            categories.append("動物")
-            vectors.append(model[word])
-
-    for word, label in places.items():
-        if word in model:
-            words.append(word)
-            labels_jp.append(label)
-            categories.append("地名")
-            vectors.append(model[word])
-
-    for word, label in foods.items():
-        if word in model:
-            words.append(word)
-            labels_jp.append(label)
-            categories.append("料理")
-            vectors.append(model[word])
+    for cat_name, word_list in [("動物", animals), ("地名", places), ("料理", foods), ("スポーツ", sports)]:
+        for word in word_list:
+            if word in model:
+                words.append(word)
+                labels_jp.append(word)
+                categories.append(cat_name)
+                vectors.append(model[word])
+            else:
+                print(f"  語彙になし: {word}")
 
     vectors = np.array(vectors)
     print(f"取得した単語数: {len(vectors)}, ベクトル次元: {vectors.shape[1]}")
 
     # UMAPで2次元に圧縮
     print("UMAPで次元圧縮中...")
-    reducer = umap.UMAP(n_neighbors=20, min_dist=0.9, spread=3.0, random_state=42)
+    reducer = umap.UMAP(n_neighbors=25, min_dist=0.9, spread=3.0, random_state=42)
     X_umap = reducer.fit_transform(vectors)
 
     # 可視化
@@ -903,6 +904,7 @@ def fig_word2vec_umap():
         "動物": {"color": "#E74C3C", "marker": "o"},
         "地名": {"color": "#3498DB", "marker": "s"},
         "料理": {"color": "#2ECC71", "marker": "^"},
+        "スポーツ": {"color": "#9B59B6", "marker": "D"},
     }
 
     # カテゴリごとにプロット
@@ -929,7 +931,7 @@ def fig_word2vec_umap():
 
     ax.set_xlabel('UMAP 1', fontsize=12)
     ax.set_ylabel('UMAP 2', fontsize=12)
-    ax.set_title('word2vecベクトルのUMAP可視化\n（100次元 → 2次元）', fontsize=14)
+    ax.set_title('Word2VecベクトルのUMAP可視化\n（300次元 → 2次元）', fontsize=14)
     ax.legend(loc='upper right', fontsize=12)
     ax.grid(True, alpha=0.3)
 
