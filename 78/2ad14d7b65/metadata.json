@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "782ad14d7b65",
+  "strategy": "manual-commit",
+  "branch": "chapter-11-plural-reality",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "11_03_多元現実.md",
+    "column/AI時代のファシリテーション.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/78/2ad14d7b65/0/metadata.json",
+      "transcript": "/78/2ad14d7b65/0/full.jsonl",
+      "context": "/78/2ad14d7b65/0/context.md",
+      "content_hash": "/78/2ad14d7b65/0/content_hash.txt",
+      "prompt": "/78/2ad14d7b65/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 43,
+    "cache_creation_tokens": 60630,
+    "cache_read_tokens": 1892857,
+    "output_tokens": 6669,
+    "api_call_count": 33
+  }
+}

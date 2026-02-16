@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "782ad14d7b65",
+  "session_id": "60e54544-7bf4-4a68-8444-45bac9411047",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-16T11:10:54.827669Z",
+  "branch": "chapter-11-plural-reality",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "11_03_多元現実.md",
+    "column/AI時代のファシリテーション.md"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "0562cefd-310e-4019-9ff9-73a6ff2f5425",
+  "token_usage": {
+    "input_tokens": 43,
+    "cache_creation_tokens": 60630,
+    "cache_read_tokens": 1892857,
+    "output_tokens": 6669,
+    "api_call_count": 33
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-16T11:10:54.26969Z",
+    "agent_lines": 328,
+    "human_added": 895,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1223,
+    "agent_percentage": 26.819296811120196
+  }
+}
