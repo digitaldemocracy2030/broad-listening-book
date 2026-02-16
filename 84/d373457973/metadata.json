@@ -3,9 +3,11 @@
   "checkpoint_id": "84d373457973",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
-    "11_03_多元現実.md"
+    "11_03_多元現実.md",
+    "column/1万件の声を集めて気づいたこと.md",
+    "column/AI時代のファシリテーション.md"
   ],
   "sessions": [
     {
@@ -14,13 +16,20 @@
       "context": "/84/d373457973/0/context.md",
       "content_hash": "/84/d373457973/0/content_hash.txt",
       "prompt": "/84/d373457973/0/prompt.txt"
+    },
+    {
+      "metadata": "/84/d373457973/1/metadata.json",
+      "transcript": "/84/d373457973/1/full.jsonl",
+      "context": "/84/d373457973/1/context.md",
+      "content_hash": "/84/d373457973/1/content_hash.txt",
+      "prompt": "/84/d373457973/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 227,
-    "cache_creation_tokens": 78208,
-    "cache_read_tokens": 917854,
-    "output_tokens": 3317,
-    "api_call_count": 18
+    "input_tokens": 254,
+    "cache_creation_tokens": 122051,
+    "cache_read_tokens": 2489770,
+    "output_tokens": 11060,
+    "api_call_count": 35
   }
 }
