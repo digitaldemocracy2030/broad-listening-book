@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "5430ac9fc85f",
+  "session_id": "60e54544-7bf4-4a68-8444-45bac9411047",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-16T12:08:19.71407Z",
+  "branch": "column-aoyama-self-understanding",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "column/1万件の声を集めて気づいたこと.md",
+    "images/column_ai_anno_results.png",
+    "images/column_baisoku_input.png",
+    "images/column_baisoku_report.png",
+    "images/column_idobata_concept.png"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "005aeb8b-da2e-43db-a969-5d758d7c85d6",
+  "checkpoint_transcript_start": 377,
+  "transcript_lines_at_start": 377,
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 20193,
+    "cache_read_tokens": 1575117,
+    "output_tokens": 6230,
+    "api_call_count": 12
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-16T12:08:19.163589Z",
+    "agent_lines": 12,
+    "human_added": 147,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 159,
+    "agent_percentage": 7.547169811320755
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "5430ac9fc85f",
+  "strategy": "manual-commit",
+  "branch": "column-aoyama-self-understanding",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "column/1万件の声を集めて気づいたこと.md",
+    "images/column_ai_anno_results.png",
+    "images/column_baisoku_input.png",
+    "images/column_baisoku_report.png",
+    "images/column_idobata_concept.png"
+  ],
+  "sessions": [
+    {
+      "metadata": "/54/30ac9fc85f/0/metadata.json",
+      "transcript": "/54/30ac9fc85f/0/full.jsonl",
+      "context": "/54/30ac9fc85f/0/context.md",
+      "content_hash": "/54/30ac9fc85f/0/content_hash.txt",
+      "prompt": "/54/30ac9fc85f/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 20193,
+    "cache_read_tokens": 1575117,
+    "output_tokens": 6230,
+    "api_call_count": 12
+  }
+}
