@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "84d373457973",
+  "session_id": "d5722e6f-2e13-49b8-a55e-8791fb4a346c",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-16T11:34:43.282614Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "11_03_多元現実.md"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "938de3c4-60a4-4702-a1a1-4051282fd749",
+  "token_usage": {
+    "input_tokens": 227,
+    "cache_creation_tokens": 78208,
+    "cache_read_tokens": 917854,
+    "output_tokens": 3317,
+    "api_call_count": 18
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-16T11:34:43.005958Z",
+    "agent_lines": 0,
+    "human_added": 4605,
+    "human_modified": 1,
+    "human_removed": 0,
+    "total_committed": 4605,
+    "agent_percentage": 0
+  }
+}
