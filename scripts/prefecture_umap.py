@@ -263,7 +263,7 @@ def run_umap(df, n_neighbors=10, min_dist=0.05, random_state=42):
     return X_umap, df.columns.tolist()
 
 
-def plot_umap_result(X_umap, prefectures, title="都道府県のUMAP可視化", filename="13_prefecture_umap.png"):
+def plot_umap_result(X_umap, prefectures, title="都道府県のUMAP可視化", filename="12_prefecture_umap.png"):
     """UMAP結果を可視化"""
     fig, ax = plt.subplots(figsize=(12, 10))
 
@@ -396,9 +396,9 @@ def plot_comparison(X_umap, prefectures):
 
     plt.suptitle('地理的位置と統計的類似性の比較', fontsize=16)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_prefecture_umap_comparison.png", dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / "12_prefecture_umap_comparison.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"Saved: 13_prefecture_umap_comparison.png")
+    print(f"Saved: 12_prefecture_umap_comparison.png")
 
 
 def main():

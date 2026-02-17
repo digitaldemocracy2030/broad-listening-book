@@ -92,6 +92,6 @@ for cluster_id in range(4):
 ax.legend(fontsize=12)
 ax.set_title("意見の可視化（ミニ広聴AI）", fontsize=14)
 plt.tight_layout()
-plt.savefig("images/14_mini_kouchou_ai.png", dpi=150)
-print("図を保存しました: images/14_mini_kouchou_ai.png")
+plt.savefig("images/13_mini_kouchou_ai.png", dpi=150)
+print("図を保存しました: images/13_mini_kouchou_ai.png")
 plt.show()
