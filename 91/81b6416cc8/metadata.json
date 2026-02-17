@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "9181b6416cc8",
+  "strategy": "manual-commit",
+  "branch": "chapter-10-bowling-green",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "10_04_ボーリンググリーン.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/91/81b6416cc8/0/metadata.json",
+      "transcript": "/91/81b6416cc8/0/full.jsonl",
+      "context": "/91/81b6416cc8/0/context.md",
+      "content_hash": "/91/81b6416cc8/0/content_hash.txt",
+      "prompt": "/91/81b6416cc8/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 3589,
+    "cache_creation_tokens": 60537,
+    "cache_read_tokens": 1623817,
+    "output_tokens": 10269,
+    "api_call_count": 26
+  }
+}
