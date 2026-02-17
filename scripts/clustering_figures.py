@@ -61,9 +61,9 @@ def fig1_two_gaussians():
     ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_clustering_two_gaussians.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_clustering_two_gaussians.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_clustering_two_gaussians.png")
+    print(f"Saved: 12_clustering_two_gaussians.png")
 
 
 def fig2_two_gaussians_clustered():
@@ -100,9 +100,9 @@ def fig2_two_gaussians_clustered():
     ax.legend()
 
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_clustering_two_gaussians_clustered.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_clustering_two_gaussians_clustered.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_clustering_two_gaussians_clustered.png")
+    print(f"Saved: 12_clustering_two_gaussians_clustered.png")
 
 
 def fig3_complex_datasets():
@@ -187,9 +187,9 @@ def fig3_complex_datasets():
 
     plt.suptitle('データ構造とアルゴリズムによるクラスタリング結果の違い', fontsize=16, y=1.02)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_clustering_algorithms_comparison.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_clustering_algorithms_comparison.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_clustering_algorithms_comparison.png")
+    print(f"Saved: 12_clustering_algorithms_comparison.png")
 
 
 def fig4_kmeans_steps():
@@ -278,9 +278,9 @@ def fig4_kmeans_steps():
 
     plt.suptitle('K-meansアルゴリズムの動作', fontsize=16)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_kmeans_steps.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_kmeans_steps.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_kmeans_steps.png")
+    print(f"Saved: 12_kmeans_steps.png")
 
 
 def fig5_hierarchical_dendrogram():
@@ -334,9 +334,9 @@ def fig5_hierarchical_dendrogram():
 
     plt.suptitle('階層的クラスタリング', fontsize=16)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_hierarchical_dendrogram.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_hierarchical_dendrogram.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_hierarchical_dendrogram.png")
+    print(f"Saved: 12_hierarchical_dendrogram.png")
 
 
 def fig6_ward_steps():
@@ -402,9 +402,9 @@ def fig6_ward_steps():
 
     plt.suptitle('Ward法（階層的クラスタリング）の動作', fontsize=16)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_ward_steps.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_ward_steps.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_ward_steps.png")
+    print(f"Saved: 12_ward_steps.png")
 
 
 def fig_mnist_samples():
@@ -437,9 +437,9 @@ def fig_mnist_samples():
 
     plt.suptitle('MNIST手書き数字データセット（28×28ピクセル = 784次元）', fontsize=14)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_mnist_samples.png", dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / "12_mnist_samples.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"Saved: 13_mnist_samples.png")
+    print(f"Saved: 12_mnist_samples.png")
 
 
 def fig_mnist_ambiguous():
@@ -550,9 +550,9 @@ def fig_mnist_ambiguous():
     plt.suptitle('AIが誤分類した手書き数字の例', fontsize=14, y=0.98)
     plt.tight_layout(rect=[0, 0, 1, 0.95])
     plt.subplots_adjust(hspace=0.35)
-    plt.savefig(OUTPUT_DIR / "13_mnist_ambiguous.png", dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / "12_mnist_ambiguous.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"Saved: 13_mnist_ambiguous.png")
+    print(f"Saved: 12_mnist_ambiguous.png")
 
 
 def fig_mnist_boundary_zoom():
@@ -644,9 +644,9 @@ def fig_mnist_boundary_zoom():
     ax.legend(title='ラベル（枠の色）', loc='upper right', fontsize=11)
 
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_mnist_boundary_zoom.png", dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / "12_mnist_boundary_zoom.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"Saved: 13_mnist_boundary_zoom.png")
+    print(f"Saved: 12_mnist_boundary_zoom.png")
 
 
 def fig7_pca_vs_umap():
@@ -725,9 +725,9 @@ def fig7_pca_vs_umap():
 
     plt.suptitle('次元圧縮手法の比較：MNIST手書き数字（784次元→2次元）', fontsize=16)
     plt.tight_layout(rect=[0, 0.05, 1, 0.95])
-    plt.savefig(OUTPUT_DIR / "13_pca_vs_umap.png", dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / "12_pca_vs_umap.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"Saved: 13_pca_vs_umap.png")
+    print(f"Saved: 12_pca_vs_umap.png")
 
 
 def fig8_pca_2d_to_1d():
@@ -818,9 +818,9 @@ def fig8_pca_2d_to_1d():
 
     plt.suptitle('PCAによる次元削減（2次元 → 1次元）', fontsize=16)
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_pca_2d_to_1d.png", dpi=150)
+    plt.savefig(OUTPUT_DIR / "12_pca_2d_to_1d.png", dpi=150)
     plt.close()
-    print(f"Saved: 13_pca_2d_to_1d.png")
+    print(f"Saved: 12_pca_2d_to_1d.png")
 
 
 def fig_word2vec_umap():
@@ -936,9 +936,9 @@ def fig_word2vec_umap():
     ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(OUTPUT_DIR / "13_word2vec_umap.png", dpi=150, bbox_inches='tight')
+    plt.savefig(OUTPUT_DIR / "12_word2vec_umap.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"Saved: 13_word2vec_umap.png")
+    print(f"Saved: 12_word2vec_umap.png")
 
 
 def main():

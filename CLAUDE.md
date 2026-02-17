@@ -10,7 +10,7 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
 
 ## Repository Structure
 
-- **Numbered markdown files (00-14)**: Book chapters in Japanese
+- **Numbered markdown files (00-13)**: Book chapters in Japanese
   - 00_序文.md: Preface
   - 01-03: Part 1 - Concepts (What is Broad Listening)
   - 04-11: Part 2 - Case Studies
@@ -22,7 +22,7 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
     - 09: 企業・NPOでの活用
     - 10: 海外におけるブロードリスニング
     - 11: 支援組織
-  - 12-14: Part 3 - Future and Technical explanations
+  - 12-13: Part 3 - Technical explanations
 - **column/**: Column articles for the book
 - **images/**: Chapter images, named as `章番号_内容.png` (e.g., `01_broadlistening.png`)
 - **code/**: Python demo scripts for opinion analysis
