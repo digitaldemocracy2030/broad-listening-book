@@ -50,7 +50,7 @@
 11_支援組織.md
 11_01_株式会社ブーツ.md
 11_02_Code for Japan.md
-11_03_多元現実.md
+11_04_Democracy X.md
 
 # 第3部：技術編
 
