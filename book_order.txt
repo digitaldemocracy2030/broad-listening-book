@@ -44,7 +44,12 @@
 
 # 第10章 海外におけるブロードリスニング（TTTC）の利用
 10_海外におけるブロードリスニングの流れ.md
-10_02_イスラエルパレスチナRemesh事例.md
+10_01_Polisの誕生.md
+10_02_台湾.md
+# 10_03_BG2050.md（takaのコラムを再編集、未作成）
+10_04_イスラエルパレスチナRemesh事例.md
+# 10_05_ （未定）
+10_06_Connective_Action制度接続.md
 
 # 第11章 支援組織
 11_支援組織.md
@@ -63,6 +68,6 @@
 # コラム（章間に挿入する場合は適宜移動してください）
 column/安全な共感.md
 column/AI選択の自由という新しい人権.md
-column/collective_actionとconnective_action.md
+# column/collective_actionとconnective_action.md → 10_06_Connective_Action制度接続.md に移動済み
 column/ブロードリスニングとしてみたときのパブリックコメントの問題点.md
 column/レビューで試す広聴AI.md
