@@ -1,5 +1,7 @@
 MEMO： Collective actionとConnective Actionのコラムから切り出されたものです。要加筆TODO：スクショPolisのスクショ、Polisの仕組みの説明、模式図の追加
 
+前節では台湾でPolisが活用されてきた流れを見ました。では、このPolisはどのように誕生したのでしょうか。
+
 ## Polisの誕生 アラブの春が問いかけたもの
 
 2010年から2011年にかけて、世界はかつてない規模のデジタル政治運動を目撃しました。チュニジアのジャスミン革命から始まったアラブの春は中東・北アフリカ全域に広がり、ニューヨークではウォール街占拠運動（Occupy Wall Street）が起き、スペインではインディグナドス（怒れる者たち）が広場を占拠しました。これらの運動に共通していたのは、SNSが情報拡散と参加呼びかけの触媒となり、既存の政党や労働組合に依らない形で膨大な人々が集まった点です。
@@ -54,6 +56,8 @@ Polisは単体での進化にとどまらず、他のツールとの連携も進
 CompDemが発表した**Polis 2.0**は、こうした連携の知見を踏まえ、LLMの登場を前提にPolisの設計を根本から更新しています。EVōC（埋め込みベクトル指向クラスタリング）はコメントのテキストをベクトル化して意味的に類似したものをまとめ、トピック階層を自動生成します。これはTTTCに近いアプローチをPolisに内包したものです。LLMがリアルタイムで熟議全体の要約・レポートを生成し、AI支援のモデレーションと多言語翻訳も備えています。数百万人規模の同時参加に耐えられるアーキテクチャとインフラにも刷新されています[^5]。
 
 ---
+
+Polisの誕生は、SNS時代の大規模な運動が「盛り上がるだけで終わる」という構造的限界への応答でした。次節では、この問題を政治学の枠組みで捉えるために、Collective ActionとConnective Actionの概念を導入します。
 
 [^1]: Liz Barry「vTaiwan: Public Participation Methods on the Cyberpunk Frontier of Democracy」Civicist, 2016年 https://civichall.org/civicist/vtaiwan-democracy-frontier/
 [^2]: GeekWire「Startup Spotlight: Pol.is uses machine learning, data visualization to help large groups spur conversation」2014年 https://www.geekwire.com/2014/startup-spotlight-polis/
