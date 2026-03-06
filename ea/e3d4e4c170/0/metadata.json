@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "eae3d4e4c170",
+  "session_id": "1330402d-8398-41b0-8fdc-c4040115f37b",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-06T03:49:27.986277Z",
+  "branch": "merge-cybozu-content-09-11",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "09_03_サイボウズ.md",
+    "11_03_多元現実.md"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "36b67a7a-0982-4cc9-a853-a29b9bdd8cf3",
+  "token_usage": {
+    "input_tokens": 107,
+    "cache_creation_tokens": 94948,
+    "cache_read_tokens": 2308580,
+    "output_tokens": 16428,
+    "api_call_count": 61
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-06T03:49:27.964584Z",
+    "agent_lines": 15,
+    "human_added": 87,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 102,
+    "agent_percentage": 14.705882352941178
+  }
+}

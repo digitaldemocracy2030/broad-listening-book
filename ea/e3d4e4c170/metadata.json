@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "eae3d4e4c170",
+  "strategy": "manual-commit",
+  "branch": "merge-cybozu-content-09-11",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "09_03_サイボウズ.md",
+    "11_03_多元現実.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ea/e3d4e4c170/0/metadata.json",
+      "transcript": "/ea/e3d4e4c170/0/full.jsonl",
+      "context": "/ea/e3d4e4c170/0/context.md",
+      "content_hash": "/ea/e3d4e4c170/0/content_hash.txt",
+      "prompt": "/ea/e3d4e4c170/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 107,
+    "cache_creation_tokens": 94948,
+    "cache_read_tokens": 2308580,
+    "output_tokens": 16428,
+    "api_call_count": 61
+  }
+}
