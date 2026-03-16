@@ -18,36 +18,45 @@ import markdown
 
 
 def load_order_file(order_file: Path) -> list[str]:
-    """順序定義ファイルを読み込む"""
+    """順序定義ファイルを読み込む（ファイル名のフラットリストを返す）"""
     files = []
     with open(order_file, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            # 空行とコメント行をスキップ
-            if not line or line.startswith("#"):
+            # 空行、コメント行、セクションヘッダをスキップ
+            if not line or line.startswith("#") or re.match(r"^\[.+\]$", line):
                 continue
             files.append(line)
     return files
 
 
-def group_files_by_chapter(file_list: list[str]) -> dict[str, list[str]]:
-    """ファイルリストを章ごとにグループ化する
+def load_chapter_groups(order_file: Path) -> dict[str, list[str]]:
+    """順序定義ファイルから章グループを読み込む
 
-    ファイル名の先頭の数字（例: 04_01_xxx.md → "04"）で章を判定し、
-    column/ 以下のファイルは "column" としてまとめる。
+    [セクション名] で章の区切りとPDFファイル名を定義する。
+    セクション名がそのまま出力PDFのファイル名になる（.pdfは自動付与）。
     """
     chapters: dict[str, list[str]] = {}
     chapter_order: list[str] = []
-    for f in file_list:
-        if f.startswith("column/"):
-            key = "column"
-        else:
-            match = re.match(r"^(\d+)", f)
-            key = match.group(1) if match else "other"
-        if key not in chapters:
-            chapters[key] = []
-            chapter_order.append(key)
-        chapters[key].append(f)
+    current_section: str | None = None
+
+    with open(order_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # セクションヘッダ: [section_name]
+            section_match = re.match(r"^\[(.+)\]$", line)
+            if section_match:
+                current_section = section_match.group(1)
+                if current_section not in chapters:
+                    chapters[current_section] = []
+                    chapter_order.append(current_section)
+                continue
+            # ファイル行
+            if current_section is not None:
+                chapters[current_section].append(line)
+
     return {k: chapters[k] for k in chapter_order}
 
 
@@ -403,8 +412,7 @@ def build_chapter_pdfs(
     """章ごとのPDFを生成（Playwright使用）"""
     from playwright.sync_api import sync_playwright
 
-    file_list = load_order_file(order_file)
-    chapters = group_files_by_chapter(file_list)
+    chapters = load_chapter_groups(order_file)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"章数: {len(chapters)}")
@@ -413,15 +421,9 @@ def build_chapter_pdfs(
     with sync_playwright() as p:
         browser = p.chromium.launch()
 
-        for key, files in chapters.items():
-            # PDFファイル名: 章の最初のファイル名を使用
-            if key == "column":
-                pdf_name = "column.pdf"
-            else:
-                pdf_name = f"{Path(files[0]).stem}.pdf"
-
-            output_file = output_dir / pdf_name
-            print(f"章PDF生成中: {pdf_name}（{len(files)}ファイル）")
+        for section_name, files in chapters.items():
+            output_file = output_dir / f"{section_name}.pdf"
+            print(f"章PDF生成中: {section_name}.pdf（{len(files)}ファイル）")
 
             html_content = build_html_content_from_files(base_dir, files, for_pdf=True)
 
