@@ -129,7 +129,7 @@ def get_css(for_pdf: bool = False) -> str:
     }}
 
     body {{
-        font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+        font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", sans-serif;
         font-size: 7pt;
         line-height: 1.8;
         text-align: justify;
