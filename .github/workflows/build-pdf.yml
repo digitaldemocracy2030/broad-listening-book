@@ -39,7 +39,15 @@ jobs:
         run: |
           DATE=$(date +%Y%m%d)
           TAG="build-${DATE}-${GITHUB_SHA::7}"
+          NOTES="$(cat <<EOF
+          Automatically generated from commit ${GITHUB_SHA::7}
+
+          ## 文字数一覧
+
+          $(cat output/char_counts.md)
+          EOF
+          )"
           gh release create "$TAG" \
             output/*.pdf output/chapters/*.pdf \
             --title "PDF Build $DATE" \
-            --notes "Automatically generated from commit ${GITHUB_SHA::7}"
+            --notes "$NOTES"

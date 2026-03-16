@@ -241,8 +241,21 @@ def get_css(for_pdf: bool = False) -> str:
     .footnote {{
         font-size: 6pt;
         border-top: 1px solid #ccc;
-        margin-top: 40px;
-        padding-top: 20px;
+        margin-top: 10px;
+        padding-top: 5px;
+    }}
+
+    .footnote hr {{
+        display: none;
+    }}
+
+    .footnote ol {{
+        margin: 0;
+        padding-left: 1.5em;
+    }}
+
+    .footnote li p {{
+        margin: 0.2em 0;
     }}
 
     .footnote-ref {{
@@ -455,6 +468,52 @@ def build_chapter_pdfs(
     return pdf_files
 
 
+def print_char_count_table(base_dir: Path, order_file: Path) -> None:
+    """各ファイルのUTF-8文字数をコンソール表示し、Markdown形式でファイル出力"""
+    file_list = load_order_file(order_file)
+
+    col_file = 55
+    col_chars = 10
+    width = col_file + col_chars
+    sep = "-" * width
+
+    # コンソール出力
+    print(f"\n{'=' * width}")
+    print(f"{'ファイル':<{col_file}}{'文字数':>{col_chars}}")
+    print(sep)
+
+    counts: list[tuple[str, int]] = []
+    grand_total = 0
+    for filename in file_list:
+        filepath = base_dir / filename
+        if filepath.exists():
+            text = filepath.read_text(encoding="utf-8")
+            char_count = len(text)
+        else:
+            char_count = 0
+        grand_total += char_count
+        counts.append((filename, char_count))
+        print(f"{filename:<{col_file}}{char_count:>{col_chars},}")
+
+    print(sep)
+    print(f"{'合計':<{col_file}}{grand_total:>{col_chars},}")
+    print(f"{'=' * width}")
+
+    # Markdown形式でファイル出力
+    md_lines = [
+        "| ファイル | 文字数 |",
+        "|:---|---:|",
+    ]
+    for filename, char_count in counts:
+        md_lines.append(f"| {filename} | {char_count:,} |")
+    md_lines.append(f"| **合計** | **{grand_total:,}** |")
+
+    md_path = base_dir / "output" / "char_counts.md"
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    md_path.write_text("\n".join(md_lines), encoding="utf-8")
+    print(f"\n文字数表: {md_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Markdown書籍をHTML/PDFに変換")
     parser.add_argument(
@@ -505,6 +564,9 @@ def main():
     elif not args.per_chapter:
         output_file = base_dir / (args.output or Path(default_html))
         build_html(base_dir, order_file, output_file, open_browser=not args.no_open)
+
+    # ビルド後に文字数一覧を表示
+    print_char_count_table(base_dir, order_file)
 
 
 if __name__ == "__main__":
