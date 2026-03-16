@@ -1,0 +1,45 @@
+name: Build PDF and Release
+
+on:
+  push:
+    branches: [main, feature/auto-pdf]
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Japanese fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Install Playwright Chromium
+        run: uv run playwright install --with-deps chromium
+
+      - name: Build chapter PDFs and combined PDF
+        run: uv run python scripts/build_pdf.py --per-chapter --pdf
+
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DATE=$(date +%Y%m%d)
+          TAG="build-${DATE}-${GITHUB_SHA::7}"
+          gh release create "$TAG" \
+            output/*.pdf output/chapters/*.pdf \
+            --title "PDF Build $DATE" \
+            --notes "Automatically generated from commit ${GITHUB_SHA::7}"
