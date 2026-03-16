@@ -231,6 +231,7 @@ def get_css(for_pdf: bool = False) -> str:
         border: 1px solid #ccc;
         padding: 8px 12px;
         text-align: left;
+        overflow-wrap: anywhere;
     }}
 
     th {{
