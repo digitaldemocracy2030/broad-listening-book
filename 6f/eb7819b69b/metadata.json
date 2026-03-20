@@ -1,0 +1,28 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "6feb7819b69b",
+  "strategy": "manual-commit",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "01_ブロードリスニングとは何か？.md",
+    "04_03-2_Polisで世論の地図を作る.md",
+    "08_04_群馬県太田市の自分ごと化会議.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/6f/eb7819b69b/0/metadata.json",
+      "transcript": "/6f/eb7819b69b/0/full.jsonl",
+      "context": "/6f/eb7819b69b/0/context.md",
+      "content_hash": "/6f/eb7819b69b/0/content_hash.txt",
+      "prompt": "/6f/eb7819b69b/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 14,
+    "cache_creation_tokens": 101726,
+    "cache_read_tokens": 1003880,
+    "output_tokens": 5300,
+    "api_call_count": 10
+  }
+}
