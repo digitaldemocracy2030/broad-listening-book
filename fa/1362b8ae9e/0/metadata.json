@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "fa1362b8ae9e",
+  "session_id": "85c88295-0414-48b1-a6ea-73f6976baeb1",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-20T04:16:48.510241Z",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "08_04_群馬県太田市の自分ごと化会議.md"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "aad4d193-32f1-48f7-bb4d-8491bee6dc53",
+  "checkpoint_transcript_start": 520,
+  "transcript_lines_at_start": 520,
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 6457,
+    "cache_read_tokens": 1303854,
+    "output_tokens": 2867,
+    "api_call_count": 8
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-20T04:16:48.434114Z",
+    "agent_lines": 4,
+    "human_added": 87,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 91,
+    "agent_percentage": 4.395604395604396
+  }
+}
