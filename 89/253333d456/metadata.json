@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "89253333d456",
+  "strategy": "manual-commit",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "01_ブロードリスニングとは何か？.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/89/253333d456/0/metadata.json",
+      "transcript": "/89/253333d456/0/full.jsonl",
+      "context": "/89/253333d456/0/context.md",
+      "content_hash": "/89/253333d456/0/content_hash.txt",
+      "prompt": "/89/253333d456/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 174,
+    "cache_creation_tokens": 121695,
+    "cache_read_tokens": 2451692,
+    "output_tokens": 7571,
+    "api_call_count": 22
+  }
+}
