@@ -3,9 +3,10 @@
   "checkpoint_id": "9c4b3dfeb1f8",
   "strategy": "manual-commit",
   "branch": "tkgshn/review-20260320",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
-    "08_04_群馬県太田市の自分ごと化会議.md"
+    "08_04_群馬県太田市の自分ごと化会議.md",
+    "11_03_多元現実.md"
   ],
   "sessions": [
     {
@@ -14,13 +15,20 @@
       "context": "/9c/4b3dfeb1f8/0/context.md",
       "content_hash": "/9c/4b3dfeb1f8/0/content_hash.txt",
       "prompt": "/9c/4b3dfeb1f8/0/prompt.txt"
+    },
+    {
+      "metadata": "/9c/4b3dfeb1f8/1/metadata.json",
+      "transcript": "/9c/4b3dfeb1f8/1/full.jsonl",
+      "context": "/9c/4b3dfeb1f8/1/context.md",
+      "content_hash": "/9c/4b3dfeb1f8/1/content_hash.txt",
+      "prompt": "/9c/4b3dfeb1f8/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 12,
-    "cache_creation_tokens": 123524,
-    "cache_read_tokens": 815407,
-    "output_tokens": 17289,
-    "api_call_count": 8
+    "input_tokens": 30,
+    "cache_creation_tokens": 246144,
+    "cache_read_tokens": 2300391,
+    "output_tokens": 23651,
+    "api_call_count": 22
   }
 }
