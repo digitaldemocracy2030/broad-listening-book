@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "5084721c6305",
+  "session_id": "85c88295-0414-48b1-a6ea-73f6976baeb1",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-20T04:08:21.950878Z",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "01_ブロードリスニングとは何か？.md",
+    "04_03-2_Polisで世論の地図を作る.md",
+    "08_04_群馬県太田市の自分ごと化会議.md"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "49d394fa-5eae-4893-8eea-d517726fd597",
+  "checkpoint_transcript_start": 364,
+  "transcript_lines_at_start": 364,
+  "token_usage": {
+    "input_tokens": 14,
+    "cache_creation_tokens": 13287,
+    "cache_read_tokens": 1320033,
+    "output_tokens": 4819,
+    "api_call_count": 10
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-20T04:08:21.903184Z",
+    "agent_lines": 0,
+    "human_added": 90,
+    "human_modified": 3,
+    "human_removed": 0,
+    "total_committed": 90,
+    "agent_percentage": 0
+  }
+}
