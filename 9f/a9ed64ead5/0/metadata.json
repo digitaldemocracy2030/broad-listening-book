@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "9fa9ed64ead5",
+  "session_id": "85c88295-0414-48b1-a6ea-73f6976baeb1",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-20T03:54:22.597127Z",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "04_03-2_Polisで世論の地図を作る.md"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "02456c86-81cc-4ec3-8ac2-f4fc79bae698",
+  "token_usage": {
+    "input_tokens": 207,
+    "cache_creation_tokens": 219443,
+    "cache_read_tokens": 4287595,
+    "output_tokens": 11476,
+    "api_call_count": 39
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-20T03:54:22.579668Z",
+    "agent_lines": 2,
+    "human_added": 87,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 89,
+    "agent_percentage": 2.247191011235955
+  }
+}

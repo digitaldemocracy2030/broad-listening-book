@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "9fa9ed64ead5",
+  "strategy": "manual-commit",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "04_03-2_Polisで世論の地図を作る.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/9f/a9ed64ead5/0/metadata.json",
+      "transcript": "/9f/a9ed64ead5/0/full.jsonl",
+      "context": "/9f/a9ed64ead5/0/context.md",
+      "content_hash": "/9f/a9ed64ead5/0/content_hash.txt",
+      "prompt": "/9f/a9ed64ead5/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 207,
+    "cache_creation_tokens": 219443,
+    "cache_read_tokens": 4287595,
+    "output_tokens": 11476,
+    "api_call_count": 39
+  }
+}
