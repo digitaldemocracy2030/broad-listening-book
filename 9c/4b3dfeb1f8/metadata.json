@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "9c4b3dfeb1f8",
+  "strategy": "manual-commit",
+  "branch": "tkgshn/review-20260320",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "08_04_群馬県太田市の自分ごと化会議.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/9c/4b3dfeb1f8/0/metadata.json",
+      "transcript": "/9c/4b3dfeb1f8/0/full.jsonl",
+      "context": "/9c/4b3dfeb1f8/0/context.md",
+      "content_hash": "/9c/4b3dfeb1f8/0/content_hash.txt",
+      "prompt": "/9c/4b3dfeb1f8/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 12,
+    "cache_creation_tokens": 123524,
+    "cache_read_tokens": 815407,
+    "output_tokens": 17289,
+    "api_call_count": 8
+  }
+}
