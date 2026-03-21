@@ -87,7 +87,7 @@
 # 第13章 広聴AIの技術スタック解説
 13_広聴AIの技術スタック解説.md
 
-[ch_80_columns]
+[ch80_columns]
 # コラム（章間に挿入する場合は適宜移動してください）
 column/安全な共感.md
 column/AI選択の自由という新しい人権.md
@@ -98,6 +98,6 @@ column/対話の3類型とAI媒介コミュニケーション.md
 # 本文にマージ済みだが念のため残存
 column/collective_actionとconnective_action.md
 
-[ch_99_appendix]
+[ch99_appendix]
 # 付録
 99_付録_公開事例一覧.md
