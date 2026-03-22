@@ -238,6 +238,20 @@ def get_css(for_pdf: bool = False) -> str:
         background-color: #f0f0f0;
     }}
 
+    ul, ol {{
+        margin: 0.5em 0;
+        padding-left: 2em;
+    }}
+
+    li {{
+        margin: 0.2em 0;
+    }}
+
+    li > p {{
+        margin: 0;
+        text-indent: 0;
+    }}
+
     /* 脚注 */
     .footnote {{
         font-size: 6pt;
