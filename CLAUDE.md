@@ -21,7 +21,7 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
     - 08: 地方自治体での活用
     - 09: 企業・NPOでの活用
     - 10: 海外におけるブロードリスニング
-    - 11: ブロードリスニングを支えるエコシステム（DD2030、支援組織、富士通）
+    - 11: ブロードリスニングを支えるエコシステム（DD2030、支援組織、litela、富士通）
   - 12-13: Part 3 - Technical explanations
 - **column/**: Column articles for the book
 - **images/**: Chapter images, named as `章番号_内容.png` (e.g., `01_broadlistening.png`)
