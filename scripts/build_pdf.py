@@ -18,16 +18,46 @@ import markdown
 
 
 def load_order_file(order_file: Path) -> list[str]:
-    """順序定義ファイルを読み込む"""
+    """順序定義ファイルを読み込む（ファイル名のフラットリストを返す）"""
     files = []
     with open(order_file, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            # 空行とコメント行をスキップ
-            if not line or line.startswith("#"):
+            # 空行、コメント行、セクションヘッダをスキップ
+            if not line or line.startswith("#") or re.match(r"^\[.+\]$", line):
                 continue
             files.append(line)
     return files
+
+
+def load_chapter_groups(order_file: Path) -> dict[str, list[str]]:
+    """順序定義ファイルから章グループを読み込む
+
+    [セクション名] で章の区切りとPDFファイル名を定義する。
+    セクション名がそのまま出力PDFのファイル名になる（.pdfは自動付与）。
+    """
+    chapters: dict[str, list[str]] = {}
+    chapter_order: list[str] = []
+    current_section: str | None = None
+
+    with open(order_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # セクションヘッダ: [section_name]
+            section_match = re.match(r"^\[(.+)\]$", line)
+            if section_match:
+                current_section = section_match.group(1)
+                if current_section not in chapters:
+                    chapters[current_section] = []
+                    chapter_order.append(current_section)
+                continue
+            # ファイル行
+            if current_section is not None:
+                chapters[current_section].append(line)
+
+    return {k: chapters[k] for k in chapter_order}
 
 
 def read_markdown_file(filepath: Path) -> str:
@@ -81,7 +111,7 @@ def get_css(for_pdf: bool = False) -> str:
 
     @media print {{
         body {{
-            font-size: 10pt;
+            font-size: 7pt;
         }}
         hr.chapter-break {{
             page-break-after: always;
@@ -99,8 +129,8 @@ def get_css(for_pdf: bool = False) -> str:
     }}
 
     body {{
-        font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-        font-size: 11pt;
+        font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", sans-serif;
+        font-size: 7pt;
         line-height: 1.8;
         text-align: justify;
         max-width: 800px;
@@ -109,7 +139,7 @@ def get_css(for_pdf: bool = False) -> str:
     }}
 
     h1 {{
-        font-size: 18pt;
+        font-size: 12pt;
         margin-top: 40px;
         margin-bottom: 20px;
         border-bottom: 2px solid #333;
@@ -117,7 +147,7 @@ def get_css(for_pdf: bool = False) -> str:
     }}
 
     h2 {{
-        font-size: 14pt;
+        font-size: 9pt;
         margin-top: 30px;
         margin-bottom: 15px;
         border-left: 4px solid #666;
@@ -125,13 +155,13 @@ def get_css(for_pdf: bool = False) -> str:
     }}
 
     h3 {{
-        font-size: 12pt;
+        font-size: 8pt;
         margin-top: 20px;
         margin-bottom: 10px;
     }}
 
     p {{
-        margin: 0 0 1em 0;
+        margin: 0 0 0.5em 0;
         text-indent: 1em;
     }}
 
@@ -153,12 +183,12 @@ def get_css(for_pdf: bool = False) -> str:
         padding: 10px 20px;
         border-left: 3px solid #999;
         background-color: #f5f5f5;
-        font-size: 10pt;
+        font-size: 7pt;
     }}
 
     code {{
         font-family: "Consolas", "Monaco", "Courier New", monospace;
-        font-size: 9pt;
+        font-size: 6pt;
         background-color: #f0f0f0;
         padding: 0.2em 0.4em;
         border-radius: 3px;
@@ -168,7 +198,7 @@ def get_css(for_pdf: bool = False) -> str:
         background-color: #f5f5f5;
         padding: 15px;
         overflow-x: auto;
-        font-size: 9pt;
+        font-size: 6pt;
         line-height: 1.4;
         border-radius: 5px;
     }}
@@ -194,34 +224,62 @@ def get_css(for_pdf: bool = False) -> str:
         border-collapse: collapse;
         width: 100%;
         margin: 20px 0;
-        font-size: 10pt;
+        font-size: 7pt;
     }}
 
     th, td {{
         border: 1px solid #ccc;
         padding: 8px 12px;
         text-align: left;
+        overflow-wrap: anywhere;
     }}
 
     th {{
         background-color: #f0f0f0;
     }}
 
+    ul, ol {{
+        margin: 0.5em 0;
+        padding-left: 2em;
+    }}
+
+    li {{
+        margin: 0.2em 0;
+    }}
+
+    li > p {{
+        margin: 0;
+        text-indent: 0;
+    }}
+
     /* 脚注 */
     .footnote {{
-        font-size: 9pt;
+        font-size: 6pt;
         border-top: 1px solid #ccc;
-        margin-top: 40px;
-        padding-top: 20px;
+        margin-top: 10px;
+        padding-top: 5px;
+    }}
+
+    .footnote hr {{
+        display: none;
+    }}
+
+    .footnote ol {{
+        margin: 0;
+        padding-left: 1.5em;
+    }}
+
+    .footnote li p {{
+        margin: 0.2em 0;
     }}
 
     .footnote-ref {{
-        font-size: 8pt;
+        font-size: 5pt;
         vertical-align: super;
     }}
 
     sup {{
-        font-size: 8pt;
+        font-size: 5pt;
     }}
 
     /* 図版キャプション風（画像の次の行） */
@@ -229,7 +287,7 @@ def get_css(for_pdf: bool = False) -> str:
     p > img:only-child + em {{
         display: block;
         text-align: center;
-        font-size: 9pt;
+        font-size: 6pt;
         color: #666;
         margin-top: -10px;
     }}
@@ -238,12 +296,10 @@ def get_css(for_pdf: bool = False) -> str:
     """
 
 
-def build_html_content(base_dir: Path, order_file: Path, for_pdf: bool = False) -> str:
-    """HTMLコンテンツを生成"""
-    # ファイル順序を読み込み
-    file_list = load_order_file(order_file)
-    print(f"対象ファイル数: {len(file_list)}")
-
+def build_html_content_from_files(
+    base_dir: Path, file_list: list[str], for_pdf: bool = False
+) -> str:
+    """ファイルリストからHTMLコンテンツを生成"""
     # 各ファイルを個別にHTMLに変換してから結合（脚注を各章内に保持するため）
     html_parts = []
     for filename in file_list:
@@ -289,6 +345,13 @@ def build_html_content(base_dir: Path, order_file: Path, for_pdf: bool = False) 
 </html>
 """
     return html_content
+
+
+def build_html_content(base_dir: Path, order_file: Path, for_pdf: bool = False) -> str:
+    """HTMLコンテンツを生成"""
+    file_list = load_order_file(order_file)
+    print(f"対象ファイル数: {len(file_list)}")
+    return build_html_content_from_files(base_dir, file_list, for_pdf)
 
 
 def build_html(
@@ -369,6 +432,103 @@ def build_pdf(
     print(f"完了: {output_file}")
 
 
+def build_chapter_pdfs(
+    base_dir: Path,
+    order_file: Path,
+    output_dir: Path,
+) -> list[Path]:
+    """章ごとのPDFを生成（Playwright使用）"""
+    from playwright.sync_api import sync_playwright
+
+    chapters = load_chapter_groups(order_file)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"章数: {len(chapters)}")
+    pdf_files: list[Path] = []
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+
+        for section_name, files in chapters.items():
+            output_file = output_dir / f"{section_name}.pdf"
+            print(f"章PDF生成中: {section_name}.pdf（{len(files)}ファイル）")
+
+            html_content = build_html_content_from_files(base_dir, files, for_pdf=True)
+
+            temp_html = output_file.with_suffix(".html")
+            with open(temp_html, "w", encoding="utf-8") as f:
+                f.write(html_content)
+
+            page = browser.new_page()
+            page.goto(temp_html.as_uri(), wait_until="networkidle")
+            page.pdf(
+                path=str(output_file),
+                format="A5",
+                margin={
+                    "top": "20mm",
+                    "right": "15mm",
+                    "bottom": "25mm",
+                    "left": "15mm",
+                },
+                print_background=True,
+            )
+            page.close()
+            temp_html.unlink()
+
+            pdf_files.append(output_file)
+
+        browser.close()
+
+    print(f"章PDF生成完了: {len(pdf_files)}ファイル → {output_dir}")
+    return pdf_files
+
+
+def print_char_count_table(base_dir: Path, order_file: Path) -> None:
+    """各ファイルのUTF-8文字数をコンソール表示し、Markdown形式でファイル出力"""
+    file_list = load_order_file(order_file)
+
+    col_file = 55
+    col_chars = 10
+    width = col_file + col_chars
+    sep = "-" * width
+
+    # コンソール出力
+    print(f"\n{'=' * width}")
+    print(f"{'ファイル':<{col_file}}{'文字数':>{col_chars}}")
+    print(sep)
+
+    counts: list[tuple[str, int]] = []
+    grand_total = 0
+    for filename in file_list:
+        filepath = base_dir / filename
+        if filepath.exists():
+            text = filepath.read_text(encoding="utf-8")
+            char_count = len(text)
+        else:
+            char_count = 0
+        grand_total += char_count
+        counts.append((filename, char_count))
+        print(f"{filename:<{col_file}}{char_count:>{col_chars},}")
+
+    print(sep)
+    print(f"{'合計':<{col_file}}{grand_total:>{col_chars},}")
+    print(f"{'=' * width}")
+
+    # Markdown形式でファイル出力
+    md_lines = [
+        "| ファイル | 文字数 |",
+        "|:---|---:|",
+    ]
+    for filename, char_count in counts:
+        md_lines.append(f"| {filename} | {char_count:,} |")
+    md_lines.append(f"| **合計** | **{grand_total:,}** |")
+
+    md_path = base_dir / "output" / "char_counts.md"
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    md_path.write_text("\n".join(md_lines), encoding="utf-8")
+    print(f"\n文字数表: {md_path}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Markdown書籍をHTML/PDFに変換")
     parser.add_argument(
@@ -394,6 +554,11 @@ def main():
         action="store_true",
         help="HTML生成後にブラウザで開かない",
     )
+    parser.add_argument(
+        "--per-chapter",
+        action="store_true",
+        help="章ごとのPDFを生成（output/chapters/ に出力）",
+    )
     args = parser.parse_args()
 
     base_dir = Path(__file__).parent.parent
@@ -404,12 +569,19 @@ def main():
     default_pdf = f"output/broad-listening-book-{build_date}.pdf"
     default_html = f"output/broad-listening-book-{build_date}.html"
 
+    if args.per_chapter:
+        chapter_output_dir = base_dir / "output" / "chapters"
+        build_chapter_pdfs(base_dir, order_file, chapter_output_dir)
+
     if args.pdf:
         output_file = base_dir / (args.output or Path(default_pdf))
         build_pdf(base_dir, order_file, output_file)
-    else:
+    elif not args.per_chapter:
         output_file = base_dir / (args.output or Path(default_html))
         build_html(base_dir, order_file, output_file, open_browser=not args.no_open)
+
+    # ビルド後に文字数一覧を表示
+    print_char_count_table(base_dir, order_file)
 
 
 if __name__ == "__main__":
