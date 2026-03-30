@@ -101,7 +101,7 @@ column/レビューで試す広聴AI.md
 column/1万件の声を集めて気づいたこと.md
 column/対話の3類型とAI媒介コミュニケーション.md
 
-＃ 本文にマージ済みなので、除外
+# 本文にマージ済みなので、除外
 # column/collective_actionとconnective_action.md
 
 [ch99_appendix]
