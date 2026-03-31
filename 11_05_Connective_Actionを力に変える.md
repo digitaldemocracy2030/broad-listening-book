@@ -46,7 +46,7 @@ SNSを通じたConnective Action（つながり運動）には、三つの本質
 
 以下の図は、Collective Action（団体活動）とConnective Action（つながり活動）の関係を整理したものです。縦軸は「交渉的（制度接続度が高い）」から「対立的（制度接続度が低い）」、横軸は「Collective Action（団体運動）」から「Connective Action（つながり運動）」を示しています。
 
-![Collective ActionとConnective Actionの関係図](images/10_06_collective_connective_action.png)
+![Collective ActionとConnective Actionの関係図](images/11_05_collective_connective_action.png)
 
 - **左上**（Collective Action＋交渉的）：政治政党や労働組合、業界団体がここに位置します。議会活動、団体交渉、請願といった公式の政治的手続きを通じて主張を実現します。
 

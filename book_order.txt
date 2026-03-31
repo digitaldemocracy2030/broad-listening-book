@@ -20,6 +20,7 @@ column/ワードクラウドは分析ではない.md
 
 [ch03_digital_democracy_and_public_voice]
 03_デジタル民主主義とブロードリスニング、新しい民意の届け方.md
+column/安全な共感.md
 
 [ch04_broadlistening_spread_in_japan]
 # 第2部：ブロードリスニングの事例紹介
@@ -62,26 +63,28 @@ column/ワードクラウドは分析ではない.md
 09_企業・NPOでの活用.md
 09_01_アルティウスリンク_取材記事.md
 09_02_サイボウズ.md
+column/レビューで試す広聴AI.md
 
-[ch10_broadlistening_overseas]
-# 第10章 海外におけるブロードリスニング（TTTC）の利用
-10_海外におけるブロードリスニングの流れ.md
-10_01_台湾.md
-10_02_Polisの誕生.md
-10_03_ボーリンググリーン.md
-10_04_イスラエルパレスチナRemesh事例.md
-10_05_Connective_Actionを力に変える.md
+[ch10_broadlistening_business]
+# 第10章 ビジネスになったブロードリスニング
+10_ビジネスになったブロードリスニング.md
+10_00_DD2030による広聴AIの開発活動.md
+10_01_株式会社ブーツ.md
+10_02_Code for Japan.md
+10_03_多元現実.md
+10_04_Democracy X.md
+10_05_litela_田中魁.md
+column/1万件の声を集めて気づいたこと.md
+column/パブリックコメントと向き合う大企業AI_富士通の取り組み.md
 
-[ch11_ecosystem]
-# 第11章 ブロードリスニングを支えるエコシステム
-11_エコシステム.md
-11_00_DD2030による広聴AIの開発活動.md
-11_01_株式会社ブーツ.md
-11_02_Code for Japan.md
-11_03_多元現実.md
-11_04_Democracy X.md
-11_05_litela_田中魁.md
-11_06_富士通.md
+[ch11_broadlistening_overseas]
+# 第11章 海外におけるブロードリスニング
+11_海外におけるブロードリスニングの流れ.md
+11_01_台湾.md
+11_02_Polisの誕生.md
+11_03_ボーリンググリーン.md
+11_04_イスラエルパレスチナRemesh事例.md
+11_05_Connective_Actionを力に変える.md
 
 [ch12_broadlistening_technology]
 # 第3部：技術編
@@ -92,17 +95,15 @@ column/ワードクラウドは分析ではない.md
 # 第13章 広聴AIの技術スタック解説
 13_広聴AIの技術スタック解説.md
 
-[ch80_columns]
-# コラム（章間に挿入する場合は適宜移動してください）
-column/安全な共感.md
-column/AI選択の自由という新しい人権.md
-column/ブロードリスニングとしてみたときのパブリックコメントの問題点.md
-column/レビューで試す広聴AI.md
-column/1万件の声を集めて気づいたこと.md
-column/対話の3類型とAI媒介コミュニケーション.md
-
-# 本文にマージ済みなので、除外
+# コラムは本文の中に再配置されました。
+# [ch80_columns]
+# column/AI選択の自由という新しい人権.md
 # column/collective_actionとconnective_action.md
+# column/ブロードリスニングとしてみたときのパブリックコメントの問題点.md
+
+# 面白くならないので除外
+# column/対話の3類型とAI媒介コミュニケーション.md
+
 
 [ch99_appendix]
 # 付録

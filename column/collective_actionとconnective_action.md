@@ -42,7 +42,7 @@ Connective Actionには、三つの本質的な機能不全があります。
 
 ここからは、BennettとSegerbergの概念を踏まえた上で、筆者による整理と提案を述べます。
 
-![Collective ActionとConnective Actionの関係図](../images/10_06_collective_connective_action.png)
+![Collective ActionとConnective Actionの関係図](../images/11_05_collective_connective_action.png)
 
 この図は、Collective ActionとConnective Actionの関係を整理したものです。縦軸は「交渉的（制度接続度が高い）」から「対立的（制度接続度が低い）」、横軸は「Collective Action（団体運動）」から「Connective Action（つながり運動）」を示しています。
 
