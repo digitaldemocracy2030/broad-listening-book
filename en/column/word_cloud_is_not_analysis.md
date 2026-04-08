@@ -6,7 +6,7 @@ English translation by Luke Closs
 
 When local governments and companies report the results of open-ended survey responses, a "word cloud" often makes an appearance. A colorful graphic is included, and the report says, "We analyzed the voices of citizens." But can a word cloud really be called "analysis"?
 
-![Example of a word cloud](02_political_wordcloud.png)
+![Example of a word cloud](../../column/02_political_wordcloud.png)
 
 The figure above is a word cloud created from a fictional open-ended survey. Words such as "policy," "citizens," "necessary," "problem," and "countermeasures" appear in it. It looks polished, and it may somehow give the impression that "analysis" has been done.
 
@@ -14,7 +14,7 @@ But what can we actually learn from this word cloud? Do citizens support this po
 
 What a word cloud does is extremely simple. It breaks text into words, counts how often each word appears, and displays more frequent words in larger font sizes. That is all. So while it can show "what topics are present," it cannot show "what opinions are being expressed."
 
-![Comparison of a word cloud and a word frequency list: Ryunosuke Akutagawa's "Rashomon"](02_rashomon_wordcloud.png)
+![Comparison of a word cloud and a word frequency list: Ryunosuke Akutagawa's "Rashomon"](../../column/02_rashomon_wordcloud.png)
 
 The figure above makes this even clearer. It shows a morphological analysis of Ryunosuke Akutagawa's "Rashomon," extracting nouns, verbs, and adjectives, and placing a word cloud (left) next to a word frequency list (right) ([Aozora Bunko](https://www.aozora.gr.jp/cards/000879/files/127_15260.html)).
 

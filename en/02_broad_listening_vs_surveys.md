@@ -12,9 +12,9 @@ This chapter focuses on **broad listening as a tool**—that is, the use of AI t
 
 The defining feature of broad listening is that it makes it possible to analyze and investigate open questions.
 
-Traditional surveys typically ask something like, "What do you think about XX?" and require respondents to choose from a limited set of options such as "strongly agree," "agree," "don't know," "disagree," and "strongly disagree." This type of question is called a closed question.
+Traditional surveys typically ask something like, "What do you think about X?" and require respondents to choose from a limited set of options such as "strongly agree," "agree," "don't know," "disagree," and "strongly disagree." This type of question is called a closed question.
 
-Broad listening, by contrast, can handle not only the closed questions described above, but also free-response prompts such as "Please share your views on XX." These free responses effectively allow answers from an unlimited range of possibilities. This type of question is called an open question.
+Broad listening, by contrast, can handle not only the closed questions described above, but also free-response prompts such as "Please share your views on X." These free responses effectively allow answers from an unlimited range of possibilities. This type of question is called an open question.
 
 Open and closed questions each have their own strengths and weaknesses. The table below summarizes the differences.
 
@@ -24,8 +24,8 @@ Open and closed questions each have their own strengths and weaknesses. The tabl
 | Agenda setting | Raised freely by respondents | Set in advance by the survey designer |
 | Burden on respondents | High | Low |
 | Burden on analysts | High | Low |
-| Reproducibility of public opinion | Low | High |
-| Type of analysis | Qualitative analysis (what exists) | Quantitative analysis (what exists and how much of it there is) |
+| Ability to reproduce public opinion | Low | High |
+| Type of analysis | Qualitative analysis (what views are expressed) | Quantitative analysis (what views are expressed and how prevalent they are) |
 
 Because closed questions place a low burden on respondents, they make it easier to collect large numbers of responses, and they can also be analyzed efficiently. Since respondents only need to choose from a list of options, they can answer in a matter of seconds, making drop-off less likely. On the analysis side, responses are obtained as numerical data, so tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of public opinion.
 
@@ -36,12 +36,11 @@ Open questions, on the other hand, pose a major challenge because they place an 
 That said, open questions also have major advantages. Because respondents are not constrained by predefined options and can express themselves in their own words, perspectives and issues that the survey designer had not anticipated can emerge. In other words, open questions are not well suited to producing quantitative results such as "how many people think this way," but they are highly effective for producing qualitative results such as "what kinds of opinions exist."
 
 
-## Free-Text Responses Open Up Agenda-Setting Power to the Public
+## Power to the Public: Free-Text Responses Open up Agenda Setting
 
 The significance of being able to handle open questions goes beyond the depth of the responses alone. Audrey Tang, who served as Taiwan's Digital Minister, gave the following answer to the question, "How does the collective intelligence of the internet affect politics?"
 
-> "If we open the agenda-setting power up to the crowd, we can reflect back to people what they agree or disagree on. Public servants no longer have exclusive ownership of the agenda."
-> (If agenda-setting power is opened up to the public, we can show citizens what they agree and disagree on. The era in which government alone determines the agenda is over.)
+> "If agenda-setting power is opened up to the public, we can show citizens what they agree and disagree on. The era in which government alone determines the agenda is over."
 https://web.archive.org/web/20201011031722/https://www.vodafone-institut.de/aiandi/democracy-needs-to-evolve-into-a-real-time-system/
 
 "Opening up agenda-setting power to the public"—this is the essential significance of broad listening.
@@ -71,23 +70,23 @@ So what does "representative" mean? Representativeness is the property that allo
 
 The basic method for ensuring representativeness is **random sampling**. People are selected without bias, like drawing lots, from sources such as the resident registry or lists of phone numbers. This prevents the sample from being skewed toward people with particular attributes or opinions and makes it possible to obtain a sample that resembles society as a whole in reduced form.
 
-With data sampled without bias through random sampling, it becomes possible to reproduce the overall distribution in forms such as "XX% support, YY% oppose." This is what it means to measure public opinion. The purpose of quantitative analysis using closed questions is precisely to understand this public opinion. That is why traditional opinion polls, market research, and surveys have been designed primarily around closed questions.
+With data sampled without bias through random sampling, it becomes possible to reproduce the overall distribution in forms such as "X% support, Y% oppose." This is what it means to measure public opinion. The purpose of quantitative analysis using closed questions is precisely to understand this public opinion. That is why traditional opinion polls, market research, and surveys have been designed primarily around closed questions.
 
 ### The Problem of the Noisy Minority
 
-The defining feature of broad listening is that it can analyze natural-language responses to open questions at scale. Once natural language became usable as input, it became possible to collect data from a wide variety of existing communication channels and handle them in an integrated way. Input sources for broad listening include posts on X (formerly Twitter) and Facebook, YouTube comments, LINE, email, transcribed phone calls, website submissions, responses to surveys conducted by political parties, and input to AI-based listening systems. Because opinions can be collected from channels people already use in everyday life, it has become possible to capture naturally expressed voices without requiring the special act of "answering a survey."
+The defining feature of broad listening is that it can analyze natural-language responses to open questions at scale. Once natural language became usable as input, it became possible to collect data from a wide variety of existing communication channels and handle them in an integrated way. Input sources for broad listening include posts on X (formerly Twitter), Facebook, and Bluesky, YouTube comments, LINE, email, transcribed phone calls, website submissions, responses to surveys conducted by political parties, and input to AI-based listening systems. Because opinions can be collected from channels people already use in everyday life, it has become possible to capture naturally expressed voices without requiring the special act of "answering a survey."
 
 However, these information channels have one important characteristic: they tend to attract the voices of people who have something clear they want to say. Writing out an opinion in free text takes time and effort. People who overcome that hurdle and post their views tend to be those with strong interest in the topic or clearly formed opinions. Conversely, people with no particular opinion have little motivation to post, so their views are not captured.
 
 And in reality, most people do not have clearly formed opinions on any given topic. For example, if someone asked me, as a Tokyo resident, "What do you think about the Isahaya Bay land reclamation project (a long-running administrative and legal dispute involving ecosystem conservation and agricultural development)?", I could only answer, "I don't really know." This kind of "silent majority" does not appear in broad listening.
 
-By contrast, in a closed-question survey, if randomly sampled respondents are asked to choose among "support," "oppose," and "don't know," then the issue can be understood quantitatively in terms such as "XX% support, YY% oppose, and ZZ% don't know." "Don't know" is itself perfectly valid data. And because such data are obtained through random sampling, they have the representativeness needed to reproduce the distribution of views across society as a whole, making them something we can properly call public opinion.
+By contrast, in a closed-question survey, if randomly sampled respondents are asked to choose among "support," "oppose," and "don't know," then the issue can be understood quantitatively in terms such as "X% support, Y% oppose, and Z% don't know." "Don't know" is itself perfectly valid data. And because such data are obtained through random sampling, they have the representativeness needed to reproduce the distribution of views across society as a whole, making them something we can properly call public opinion.
 
 In broad listening focused on natural language, only the views of people who have opinions are collected, so the existence of this "majority without an opinion" disappears from view. In other words, the voices gathered through broad listening tend to be skewed toward the **noisy minority**—a small group with loud voices. This is not so much a flaw as an inevitable consequence of broad listening being a form of qualitative analysis.
 
 According to a 2019 Pew Research Center study, 73% of political tweets on Twitter (now X) were produced by just 6% of users[^1]. The "public opinion" we see on social media is shaped by a very small number of highly active posters.
 
-![The noisy minority and the actual distribution of people](images/02_noisy_minority.png)
+![The noisy minority and the actual distribution of people](images/02_noisy_minority_en.png)
 
 The figure above illustrates this phenomenon schematically. The horizontal axis represents the strength of opinion (the degree of positivity or negativity). The vertical axis of the red curve shows the distribution of the **actual number of people**, with the vast majority occupying a neutral position. By contrast, the vertical axis of the light blue curve shows the **volume of opinions**, where people with more extreme views post more frequently. What broad listening captures is the shape of the light blue curve, which differs greatly from the actual distribution of people.
 
@@ -111,9 +110,9 @@ Because free-response surveys have a higher barrier to participation than ordina
 
 In the 2024 Tokyo governor election, Takahiro Anno collected many opinions because he, as a high-profile AI engineer, conducted broad listening. In the Tokyo Metropolitan Government case introduced in Chapter 5, around 27,000 opinions were collected, but that too was the result of large-scale public outreach by the Tokyo Metropolitan Government, active calls for citizen participation, and the collection of opinions from social media.
 
-Broad listening is only a tool for **efficiently analyzing and visualizing opinions that have already been collected**. It is not a tool for **collecting** opinions. If broad listening is to be implemented, it is necessary to think through how responses will actually be gathered as well—including outreach methods, incentive design for participation, and coordination with existing mechanisms for civic participation.
+Broad listening is only a tool for **efficiently analyzing and visualizing opinions that have already been collected**. It is not a tool for **collecting** opinions. If broad listening is to be implemented, it is necessary to think through how responses will actually be gathered as well—including outreach methods, ways to encourage participation, and coordination with existing mechanisms for civic participation.
 
-That said, there are ways to gather opinions without running your own survey. One option is to collect and analyze conversations that are already taking place online, such as on X (formerly Twitter), Facebook, message boards, and comment sections on news sites. By moving away from the idea of "collecting opinions through a survey" and instead adopting the perspective of "discovering opinions that already exist," even organizations with limited outreach capacity or organizational resources can secure material for analysis.
+That said, there are ways to gather opinions without running your own survey. One option is to collect and analyze conversations that are already taking place online, such as on X (formerly Twitter), Facebook, Bluesky, message boards, and comment sections on news sites. By moving away from the idea of "collecting opinions through a survey" and instead adopting the perspective of "discovering opinions that already exist," even organizations with limited outreach capacity or organizational resources can secure material for analysis.
 
 However, collecting from social media comes with selection bias. For example, if you search for "childcare support," you may miss people discussing the same underlying issue using terms such as "daycare," "parental leave," or "solo parenting." But if the purpose of broad listening is to gain insight, this kind of bias is not necessarily fatal. As long as the bias is recognized, it can be mitigated by combining multiple keywords and diverse channels.
 
@@ -124,7 +123,7 @@ So how were open questions analyzed before this? Word clouds were widely used as
 
 What changed this situation was the large language model (LLM) discussed in Chapter 1.
 
-Anyone who has used ChatGPT has probably experienced its capabilities firsthand. For example, try entering the following prompt into ChatGPT: "Express the theme of this statement in a single word: 'We're both working, and still can't get our child into daycare!'" It will respond like this:
+Anyone who has used ChatGPT has probably experienced its capabilities firsthand. For example, try entering the following prompt into ChatGPT: "Express the theme of this statement in a single word: 'We're both working, and still can't get our child into daycare!'" It will respond something like this:
 
 > **"Daycare waiting lists"**
 
@@ -142,11 +141,11 @@ In this way, the arrival of LLMs transformed open questions from something that 
 
 ## The Trade-off Between Scale and Cost
 
-In addition to the trade-off between scale and depth, **cost** is another important axis. In Japan, the national census is conducted only once every five years. A full-population survey with complete representativeness requires a budget on the order of 70 billion yen. Even at that cost, the questionnaire is limited to just 19 items and does not include questions asking for opinions. Ordinary opinion polls reduce costs through sampling, but once open questions are included, someone must read and classify each free-text response one by one, causing costs to rise sharply.
+In addition to the trade-off between scale and depth, **cost** is another important axis. In Japan, the national census is conducted only once every five years. A full-population survey with complete representativeness requires a budget on the order of 70 billion yen (roughly US$470 million in 2025 terms). Even at that cost, the questionnaire is limited to just 19 items and does not include questions asking for opinions. Ordinary opinion polls reduce costs through sampling, but once open questions are included, someone must read and classify each free-text response one by one, causing costs to rise sharply.
 
 In other words, traditional research methods have been constrained by a three-way trade-off among **scale, depth, and cost**. If you want scale and representativeness, the cost becomes enormous. If you want to keep costs down, you have to sacrifice either scale or depth. Survey design centered on closed questions has effectively chosen to "sacrifice depth in order to reduce cost."
 
-The arrival of LLMs changed this three-way structure. As Chapter 13 will estimate in detail, the cost of analyzing 10,000 free-text responses with Public Listening AI is about 500 yen. Work that previously would have required dozens of person-days can now be completed for about the price of a coin-operated snack. Compared with the 70 billion yen cost of the census or the millions of yen required for ordinary opinion polling, the difference is not just a matter of scale—it is on an entirely different order of magnitude. Once the cost of analyzing open questions effectively approaches zero, there is no longer any need to "sacrifice depth in order to reduce cost."
+The arrival of LLMs changed this three-way structure. As Chapter 13 will estimate in detail, the cost of analyzing 10,000 free-text responses with Public Listening AI is about 500 yen (roughly US$3 in 2025 terms). Work that previously would have required dozens of person-days can now be completed for about the price of a coin-operated snack. Compared with the 70 billion yen (roughly US$470 million in 2025 terms) cost of the census or the millions of yen (roughly tens of thousands of US dollars in 2025 terms) required for ordinary opinion polling, the difference is not just a matter of scale—it is on an entirely different order of magnitude. Once the cost of analyzing open questions effectively approaches zero, there is no longer any need to "sacrifice depth in order to reduce cost."
 
 ## "Polis": Broad Listening Before LLMs
 
@@ -154,7 +153,7 @@ Even before the arrival of LLMs, there were systems capable of aggregating opini
 
 MEMO: Insert a screenshot of Polis around here
 
-When you open the Polis interface, the first thing you see is a single opinion posted by another participant. For example, suppose the statement shown is, "Ride-sharing services like UberX should be legalized." Participants respond by choosing one of three options: "agree," "disagree," or "pass." Once they answer, the next opinion appears, and they respond again with the same three choices. This process repeats.
+When you open the Polis interface, the first thing you see is a single opinion posted by another participant. For example, suppose the statement shown is, "Ride-sharing services like Uber should be legalized." Participants respond by choosing one of three options: "agree," "disagree," or "pass." Once they answer, the next opinion appears, and they respond again with the same three choices. This process repeats.
 
 At the same time, participants can also post their own opinions freely. They can raise new issues such as, "The taxi industry's vested interests should not be protected," or "Services with unclear safety standards should not be allowed." These submitted opinions are then shown on other participants' screens, where they receive the same agree/disagree/pass votes.
 
@@ -164,7 +163,7 @@ More specifically, participants with similar voting tendencies are grouped toget
 
 One distinctive feature of Polis is that as participants continue voting, the icon representing them moves around on the scatter plot. This provides a real-time visualization of what opinion group they belong to and makes it visibly clear that "there are people who think differently from me." As a result, even people who are usually exposed only to like-minded views within social media filter bubbles can directly sense that society contains a diversity of opinions.
 
-In Taiwan, Polis was used in 2015 in discussions over UberX regulation, where it revealed that two opposing groups—the taxi industry and ride-share supporters—could actually agree on one point: mandatory insurance coverage. Policy then began to take shape starting from that point of agreement.
+In Taiwan, Polis was used in 2015 in discussions over Uber regulation, where it revealed that two opposing groups—the taxi industry and ride-share supporters—could actually agree on one point: mandatory insurance coverage. Policy then began to take shape starting from that point of agreement.
 
 Within the technological constraints of the time, Polis cleverly preserved the advantages of open questions—allowing citizens to raise issues freely—while reducing the burden of analysis by converting responses into numerical voting data. With the arrival of LLMs, it became possible to analyze free-text responses directly without such workarounds, but the design philosophy of Polis was still an important step in the history of broad listening.
 
