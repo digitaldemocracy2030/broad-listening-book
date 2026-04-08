@@ -1,8 +1,8 @@
-## Cybozu’s Approach — Connecting Hard-to-See Voices to the Next Discussion
+## Cybozu’s Approach — Connecting Hard-to-Hear Voices to the Next Discussion
 
 When people hold a meeting, it can feel as though everyone has talked things through together. In reality, however, the opinions that stand out tend to be those of people who are good at speaking, while unspoken anxieties and half-formed uncertainties are less likely to be shared. And yet it is precisely in those voices that we often find the clues to blind spots that are currently being overlooked.
 
-Broad listening makes it possible to gather those hard-to-see voices as widely as possible and reduce what gets missed. The important thing is not to force a black-and-white conclusion right away. It is to make visible where there is common ground, where there are differences, and what issues still remain unresolved.
+Broad listening makes it possible to gather those hard-to-hear voices as widely as possible and reduce what gets missed. The important thing is not to force a black-and-white conclusion right away. It is to make visible where there is common ground, where there are differences, and what issues still remain unresolved.
 
 Cybozu’s example shows clearly how this way of thinking can be used inside a company. It suggests that broad listening is not only for politics, but can also be useful in familiar settings such as organizations and media.
 
@@ -16,7 +16,7 @@ This initiative was later published as a web article and a YouTube video.[^idoba
 ![A workshop held at Cybozu’s Tokyo office. In-person participants are seated at tables, while online participants are connected by video call on a monitor to the right. The workshop agenda is projected on the screen at the front, and a facilitator is leading the session with a microphone. About 50 people took part in this hybrid-format event.](images/10_03_cybozu_workshop.jpg)
 
 The tool used here was the “Idobata System,” which was also explained in the TODO chapter.
-This is a deliberation support tool developed within the Digital Democracy 2030 community. At the time, Team Mirai (referred to as “Team Future” in this book) had set up the online environment and was using it for things like online talks with supporters. For this workshop, a dedicated environment was built for Cybozu. This entire effort was carried out by commissioning Shutaro Aoyama, who had been involved in developing the Idobata System, to organize the workshop, working in coordination with Cybozu’s engineers.
+This is a deliberation support tool developed within the Digital Democracy 2030 community. At the time, Team Mirai (meaning “Team Future”) had set up the online environment and was using it for things like online talks with supporters. For this workshop, a dedicated environment was built for Cybozu. This entire effort was carried out by commissioning Shutaro Aoyama, who had been involved in developing the Idobata System, to organize the workshop, working in coordination with Cybozu’s engineers.
 
 The theme of the workshop was “Promoting AI Use Within the Company.” About 50 employees gathered in a hybrid format, both in person and online, and discussed how to think about this topic across differences in department, job type, and position. Participants came from a wide range of roles, including information systems, customer-facing teams, sales, development, and HR.
 
@@ -28,7 +28,7 @@ This workshop did not begin with AI. First, participants were divided into group
 
 The purpose was to lower the psychological barrier to writing things down by using a familiar method rather than asking people to enter their thoughts directly into an unfamiliar system. Of course, what counts as a “familiar method” will differ from one workshop participant to another. Miro and Zoom could be treated as familiar methods here because this was a corporate workshop, where participants’ IT literacy could be assumed. That would not necessarily be the case in a workshop run by a local government and open freely to the general public.
 
-In this session, participants spent five minutes writing and ten minutes sharing. Comments included things like, “Shouldn’t we put more effort into internal training?” and “Shouldn’t we share more success stories and practical tips?” Even with this method, being required to spend five minutes focused on thinking does create an opportunity to put thoughts into words. At the same time, the pressure of having to explain those thoughts to the rest of the team after five minutes can be difficult, especially for people who are not comfortable verbalizing their ideas.
+In this session, participants spent five minutes writing and ten minutes sharing. Comments included things like, “Should we put more effort into internal training?” and “Should we share more success stories and practical tips?” Even with this method, being required to spend five minutes focused on thinking does create an opportunity to put thoughts into words. At the same time, the pressure of having to explain those thoughts to the rest of the team after five minutes can be difficult, especially for people who are not comfortable verbalizing their ideas.
 
 Experiencing these “limits firsthand” helped participants understand the advantages of AI support.
 
@@ -52,11 +52,11 @@ In the Idobata System, AI reads the chat logs from all 50 participants, analyzes
 
 When points of agreement are visible, it becomes possible to allocate time more effectively: “We already share this point, so let’s spend our time on the issues where views diverge.” The value of broad listening lies not only in gathering many voices, but also in making it possible to design where to spend the cost of discussion afterward.
 
-What the Idobata System does is collect raw material through one-on-one dialogue between AI and each participant, and then convert that material into a form that can be shared. It does not share each individual’s chat content as-is. Instead, the AI summarizes it and organizes it into commonalities and differences. Put another way, it is a mechanism for drawing a map of the whole while still protecting each person’s honest feelings.
+What the Idobata System does is collect raw material through one-on-one dialogue between AI and each participant, and then convert that material into a form that can be shared. It does not share each individual’s chat content as-is. Instead, the AI summarizes it and organizes it into commonalities and differences. Put another way, it is a mechanism for building a picture of the whole while still protecting each person’s honest feelings.
 
 ### Surfacing Issues, Not Conclusions
 
-What matters here is that issues come first, not conclusions. When people rush to conclusions, moving forward often means sacrificing someone’s sense of understanding or acceptance. But if the issues are visible, the group can first share a map of “what exactly people disagree about.”
+What matters here is that issues come first, not conclusions. When people rush to conclusions, moving forward often means sacrificing someone’s sense of understanding or acceptance. But if the issues are visible, the group can first share a picture of what exactly people disagree about.
 
 For example, on the workshop theme of “promoting AI use within the company,” an internal Cybozu survey conducted in June 2025 found that 80% of the 1,118 respondents said they “use AI in daily life.” At the same time, many individuals still felt vague anxiety, such as “I’m not using it effectively at all” or “It feels like other companies are making much better use of it.”
 
@@ -121,9 +121,9 @@ As of March 13, 2026, this first video had been viewed more than 180,000 times a
 ![alt text](images/09_03_shirokuro_kaigi_youtube_comments.png)
 
 On the large-scale public infrastructure of YouTube, the speakers first share the issues and background knowledge, and viewers then write comments.
-This is different from the kind of discussion on social media where people simply throw out whatever comes to mind. In the sense that participants form opinions after receiving a certain amount of information, it can be seen as one transformed version of deliberation moved onto video media.
+This is different from the kind of discussion on social media where people simply throw out whatever comes to mind. Because participants form their views after receiving some background information, this can be seen as a form of deliberation adapted to video media.
 
-## From Hard-to-See Voices to an Organization’s Next Step
+## From Hard-to-Hear Voices to an Organization’s Next Step
 
 What Cybozu’s efforts show is not that AI replaces human beings. Rather, it can take voices that have often been overlooked and shape them into something that can feed into the next discussion.
 
@@ -131,6 +131,6 @@ People often treat “a place to express opinions” and “a place to make deci
 
 First, they make it possible for each person to put what they are feeling into words in a safe way. Then they gather many people’s views and make commonalities and differences visible. In doing so, organizations become able to build the next discussion not around “the opinions of the people who argue most forcefully,” but around “how members are actually feeling.” This is also a way for members of an organization to understand themselves more accurately.
 
-And this way of thinking can be extended to internal workshops, video media, and dialogue with local governments as well. Do not rush to black-and-white answers; first look at the distribution. Before rushing to conclusions, share a map of the issues. This attitude is needed not to avoid conflict, but to create better conflict and spark better discussion.
+And this way of thinking can be extended to internal workshops, video media, and dialogue with local governments as well. Do not rush to black-and-white answers; first look at the distribution. Before rushing to conclusions, share a visualization of the issues. This attitude is needed not to avoid conflict, but to create better conflict and spark better discussion.
 
-Broad listening is a technology for leveling the ground before deliberation begins. Turning hard-to-see voices into visible issues: Cybozu’s practice shows that this is no longer just an ideal, but is already becoming a practical method that can be used on the ground.
+Broad listening is a technology for leveling the ground before deliberation begins. Turning hard-to-hear voices into visible issues: Cybozu’s practice shows that this is no longer just an ideal, but is already becoming a practical method that can be used on the ground.

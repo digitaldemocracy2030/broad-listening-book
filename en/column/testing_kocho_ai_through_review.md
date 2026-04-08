@@ -1,6 +1,6 @@
-# Testing Broad Listening AI with Steam Reviews and Google Maps Reviews
+# Trying Broad Listening AI with Steam and Google Maps Reviews
 
-—A small experiment to get past the “we don’t have any data yet” problem
+A small test for the “no data yet” problem
 
 Broad listening is an approach for organizing large volumes of free-text responses into “clusters by issue” so you can see the overall picture at a glance. Using systems like Talk to the City or Broad Listening AI, you can move beyond just the emotional temperature—“people are divided” or “this is blowing up”—and instead describe, in calmer and more concrete terms, what people are actually talking about.
 
@@ -11,7 +11,7 @@ For this interview, we spoke with **Mr. Tanenobu (X: @mtane0412)**, an early use
 
 ---
 
-## First, find places where opinions gather around a shared topic
+## Start with shared topics
 
 **Nishio:**
 Steam reviews and Google Maps reviews—using those as data sources is a really interesting idea.
@@ -27,7 +27,7 @@ This story about the “starting point” is really good. For readers who are in
 
 ---
 
-## Steam reviews: a place where intensity—and pain—remain intact
+## Steam reviews: passion and pain
 
 **Tanenobu:**
 Steam makes it easy to collect reviews. I first tried it with **Pogostuck**, a very difficult game that I personally like.
@@ -48,7 +48,7 @@ As for preprocessing, I only do enough to make the data analyzable. I try not to
 
 ---
 
-## Breaking down a “Steam review meltdown” into its actual components: the *Monster Hunter Wilds* example
+## Breaking down a Steam review backlash
 
 **Tanenobu:**
 I also tried this with **Monster Hunter Wilds**[^mhwilds], which became a hot topic because its Steam reviews had turned into a complete mess. I thought it was actually a very good use case for Broad Listening AI.
@@ -67,7 +67,7 @@ Once you can see “what the problems actually are” and “where dissatisfacti
 
 ---
 
-## Google Maps reviews: from the outside, “wakame” suddenly comes into focus
+## Google Maps reviews: finding “wakame”
 
 **Tanenobu:**
 For Google Maps, I used a hot spring inn in a region where businesses take Google Maps review management quite seriously.
@@ -93,7 +93,7 @@ But what I found interesting is that for outsiders, those same things can emerge
 
 ---
 
-## Turning abusive comments into something people can bear to read: the value of having AI in the middle
+## Making harsh reviews readable
 
 **Nishio:**
 In the Steam example,
@@ -111,7 +111,7 @@ Reviews should really be a source of hints for improvement and rediscovery of st
 
 ---
 
-## Being able to reproduce “Yes, we already knew that” is what makes the next step possible
+## Making tacit knowledge shareable
 
 **Tanenobu:**
 With both game reviews and tourist-destination reviews, the output mostly reflected things that were already familiar if you knew the subject well.
