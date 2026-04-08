@@ -104,6 +104,24 @@ uv run python scripts/build_pdf.py
 ### 章の順序をカスタマイズ
 `book_order.txt` を編集して、章の順序やコラムの挿入位置を調整できます。
 
+## 英訳CLI（初期版）
+
+英訳用のCLIを追加しています。まずは `book_order.txt` のセクション単位で翻訳できます。
+
+```bash
+# セクション一覧
+python3 scripts/english.py list-sections
+
+# 最初のセクション（ch00_preface）を英訳
+python3 scripts/english.py translate-section --first --model gpt-5.4
+
+# 特定セクションを英訳
+python3 scripts/english.py translate-section --section ch01_broadlistening_overview --model gpt-5.4
+```
+
+- 出力先はデフォルトで `en/` です（`--en-root` で変更可能）
+- OpenAI APIキー（`OPENAI_API_KEY`）が必要です
+
 ## 画像ファイルの管理
 - 画像ファイルは images ディレクトリに保存してください。
 - 画像ファイルのフォーマットは、基本的にPNGを推奨

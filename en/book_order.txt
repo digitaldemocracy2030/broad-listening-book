@@ -1,0 +1,111 @@
+# 書籍の構成順序
+# 空行とコメント行（#で始まる行）は無視されます
+# [セクション名] で章PDFの区切りとファイル名を指定します（.pdfは自動付与）
+# コラムは章の後に挿入する場合、その位置に記載してください
+
+[ch00_preface]
+# 安野の序文
+00_preface.md
+# オードリーの推薦文
+00_endorsement_from_audrey_tang.md
+
+[ch01_broadlistening_overview]
+# 第1部：ブロードリスニングとは何か？
+01_what_is_broad_listening.md
+
+[ch02_broadlistening_vs_survey]
+02_broad_listening_vs_surveys.md
+# 2章から切り離した内容を、2章のコラムに入れる
+column/word_cloud_is_not_analysis.md
+
+[ch03_digital_democracy_and_public_voice]
+03_digital_democracy_and_new_public_voice.md
+column/safe_empathy.md
+
+[ch04_broadlistening_spread_in_japan]
+# 第2部：ブロードリスニングの事例紹介
+# 第4章 日本国内におけるブロードリスニングの広がり
+04_spread_of_broad_listening_in_japan.md
+04_01_takahiro_anno_initiatives.md
+04_02_dpfp_parliamentary_questions.md
+04_03_sumino_ntv_election_special.md
+04_04_mapping_public_opinion_with_polis.md
+04_05_asahi_special_feature.md
+
+[ch05_tokyo_shin_tokyo_2050]
+# 第5章 東京都、シン東京2050
+05_tokyo_shin_tokyo_2050_policy_shift.md
+
+[ch06_national_elections]
+# 第6章 国政選挙でのブロードリスニングの利用
+06_broad_listening_in_national_elections.md
+06_01_team_mirai.md
+06_02_team_mirai_2026_house_of_representatives_election.md
+06_03_nippon_ishin_no_kai.md
+06_04_democratic_party_for_the_people.md
+06_05_komeito.md
+
+[ch07_local_elections]
+# 第7章 地方選挙での活用
+07_use_in_local_elections.md
+# 一時非公開
+# 07_01_熊本県八代市の市長選挙での活用.md
+07_02_ryosuke_idei_case.md
+07_03_saisei_no_michi_kazuya_obanayama.md
+
+[ch08_municipalities]
+# 第8章 地方自治体での活用
+08_use_in_local_governments.md
+08_01_ota_city_jibungotoka_meeting.md
+08_02_hiroshima_case.md
+
+[ch09_enterprise_and_npo]
+# 第9章 企業・NPOでの活用
+09_use_in_companies_and_npos.md
+09_01_altius_link_interview.md
+09_02_cybozu.md
+column/testing_kocho_ai_through_review.md
+
+[ch10_broadlistening_business]
+# 第10章 ビジネスになったブロードリスニング
+10_broad_listening_as_a_business.md
+10_00_dd2030_kocho_ai_development.md
+10_01_boots_inc.md
+10_02_code_for_japan.md
+10_03_plural_reality.md
+10_04_democracy_x.md
+10_05_litela_kai_tanaka.md
+column/lessons_from_collecting_10000_voices.md
+column/fujitsu_enterprise_ai_for_public_comments.md
+
+[ch11_broadlistening_overseas]
+# 第11章 海外におけるブロードリスニング
+11_global_broad_listening_trends.md
+11_01_taiwan.md
+11_02_birth_of_polis.md
+11_03_bowling_green.md
+11_04_israel_palestine_remesh_case.md
+11_05_harnessing_connective_action.md
+
+[ch12_broadlistening_technology]
+# 第3部：技術編
+# 第12章 ブロードリスニング要素技術解説
+12_broad_listening_component_technologies.md
+
+[ch13_kocho_ai_tech_stack]
+# 第13章 広聴AIの技術スタック解説
+13_kocho_ai_tech_stack.md
+
+# コラムは本文の中に再配置されました。
+# [ch80_columns]
+# column/AI選択の自由という新しい人権.md
+# column/collective_actionとconnective_action.md
+# column/ブロードリスニングとしてみたときのパブリックコメントの問題点.md
+
+# 面白くならないので除外
+# column/対話の3類型とAI媒介コミュニケーション.md
+
+
+[ch99_appendix]
+# 付録
+99_appendix_public_cases.md
