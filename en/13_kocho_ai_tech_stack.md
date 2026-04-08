@@ -172,7 +172,7 @@ The key point here is the use of technical terms such as “KJ method” and “
 
 The KJ method is an idea-generation and organization technique devised by the cultural anthropologist Jiro Kawakita. It groups scattered pieces of information and organizes them by assigning each group a “nameplate” (label). Because LLMs have been trained on Japanese academic literature, simply using this terminology helps them generate labels at an appropriate level of abstraction.
 
-The effect of using technical terms is significant. For example, if you tried to explain the rules of the word game shiritori without using the word “shiritori,” it would take several hundred characters. But if you just say “shiritori,” any Japanese speaker immediately understands. The same applies to LLMs: technical terms allow intentions to be conveyed accurately with short instructions. This is one reason people with domain expertise are often better able to use LLMs effectively.
+The effect of using technical terms is significant. For example, if you tried to explain the rules of Scrabble without using the word “Scrabble,” it would take several hundred characters. But if you simply say “Scrabble,” many English speakers immediately understand the basic idea. The same applies to LLMs: technical terms allow intentions to be conveyed accurately with short instructions. This is one reason people with domain expertise are often better able to use LLMs effectively.
 
 ---
 
@@ -436,7 +436,7 @@ One reason this architecture emerged is that early LLMs had context windows limi
 
 Since then, LLM context windows have expanded rapidly. Today’s major models include the GPT-4 family (128,000 tokens), the Claude family (200,000 tokens), and the Gemini family (up to over 1 million tokens), making it possible to process thousands to tens of thousands of opinions together. Taking advantage of this evolution, a Long Context architecture—one that simply has the LLM read everything directly, without using embeddings or UMAP—has become a practical option. TTTC Turbo performs clustering by passing many opinions directly to the LLM, while Google Jigsaw’s Sensemaker combines LLM-based topic classification with voting-data-based support/opposition judgment.
 
-Each type has its own characteristics. The scatter-plot type automatically generates an “opinion map” using a UMAP scatter plot, allowing intuitive understanding that “close = similar,” but because clustering is performed after reducing the data to two dimensions, clustering accuracy is relatively poor.
+Each type has its own characteristics. The scatter-plot type automatically generates an opinion scatterplot using UMAP, allowing intuitive understanding that “close = similar,” but because clustering is performed after reducing the data to two dimensions, clustering accuracy is relatively poor.
 
 By contrast, the Long Context type can naturally separate support and opposition within the same topic through the LLM’s contextual understanding, can more easily distinguish textual nuance, and offers higher clustering accuracy, but it is difficult to produce an attractive scatter plot.
 
