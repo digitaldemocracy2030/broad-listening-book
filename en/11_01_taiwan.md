@@ -1,4 +1,4 @@
-# 10_02 The Development of Deliberative Democracy in Taiwan
+# The Evolution of Deliberative Democracy in Taiwan
 
 In Taiwan, experiments in which citizens deliberate on public policy have been taking place for more than 20 years.
 This chapter traces how deliberative mechanisms in Taiwan have been refined and carried forward, beginning with a small-scale deliberation experiment in 2002, moving through vTaiwan in the 2010s, which combined online and offline participation, and arriving at mini-publics in 2024 that incorporated random selection.
@@ -29,21 +29,21 @@ Any discussion of vTaiwan must include Taiwan’s civic tech community, g0v (“
 g0v is a citizen-led open-source community launched in 2012 by volunteers including engineers, designers, and journalists.
 
 Today it is a huge community with more than 14,000 participants on Slack, but it began in 2012 when a team of four engineers built a site at a hackathon to visualize the government budget.
-The team won prize money of NT$50,000 (about ¥250,000), and decided to use it to hold hackathons repeatedly in order to bring in more people with similar interests.
+The team won prize money of NT$50,000 (roughly US$1,600), and decided to use it to hold hackathons repeatedly in order to bring in more people with similar interests.
 To host the budget-visualization site, one member, Chia-liang Kao (clkao), registered the domain `g0v.tw`. It differs by just one character from the Taiwanese government’s official domain, `gov.tw`, and many different sites were later created under it.
 
 When government websites are hard to use, we tend to lament, “Why doesn’t anyone fix this?” But g0v’s philosophy is the opposite.
-If you have an idea for something better, you do not need to ask permission in advance in order to improve it; citizens can simply rebuild it themselves.
-This is close to the well-known saying by Grace Hopper, who developed the COBOL programming language: “It is easier to apologize than to get permission.”[^hopper] That spirit also appears in g0v’s motto: “Instead of lamenting that no one is doing it, first admit that you yourself are one of those ‘no one’s.’ No one is all-powerful.” Because no one is all-powerful, no one can create the ideal world from the outset. Each person contributes what they can, little by little, and through that accumulation the world gradually improves. That is the basic idea.
+If you have an idea for something better, you do not need to ask permission in advance in order to improve it; citizens can simply rebuild it themselves. This reflects a principle often attributed to Grace Hopper: if something seems like a good idea, go ahead and do it; it is often easier to apologize than to ask for permission.[^hopper]
+That spirit also appears in g0v’s motto: rather than lamenting that “no one is doing it,” first recognize that you yourself are part of that “no one.” Since no one is all-powerful, no one can create the ideal world from the outset. Each person contributes what they can, little by little, and through that accumulation the world gradually improves.
 
-[^hopper]: If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission.
+[^hopper]: This line is widely attributed to Grace Hopper, though exact sourcing and wording vary.
 
-### Moves on the government side: Regulatory adjustment for virtual world development
+### Government Moves: Adapting Regulation to the Virtual World
 
 At the same time, the government was not standing still.
-In November 2013, Jaclyn Tsai, then a minister without portfolio in Taiwan, began promoting “Regulatory Adjustment for Virtual World Development,” an initiative to adapt laws and regulations to the development of the virtual world. Starting that same year, related “consultation meetings” on policy dialogue were also held. At that stage, however, they were not yet participatory meetings involving citizens.
+In November 2013, Jaclyn Tsai, then a minister without portfolio in Taiwan, began promoting “Updating Regulations for the Digital World,” an initiative to update laws and regulations for the internet era. Starting that same year, related “consultation meetings” on policy dialogue were also held. At that stage, however, they were not yet participatory meetings involving citizens.
 
-### The turning point in 2014: the Sunflower Student Movement
+### 2014 Turning Point: The Sunflower Student Movement
 
 Shortly before the birth of vTaiwan, the Sunflower Student Movement in Taiwan in 2014 dramatically changed the relationship between citizens and digital technology.
 
@@ -52,9 +52,9 @@ The Legislative Yuan was occupied for 23 days, while thousands to tens of thousa
 
 At this point, something distinctive to the digital age occurred: the events were livestreamed in real time over the internet.
 At first, some established media outlets described the students as “rioters,” but the livestream meant that the actions of both police and students were constantly being watched by large numbers of citizens, which helped deter violence. Transparency became the foundation for constructive discussion.
-The livestream used Ustream, then a major streaming service, as well as Japan’s Niconico Live.[niconico]
+The livestream used Ustream, then a major streaming service, as well as Japan’s Niconico Live.[^niconico]
 
-[niconico]: On Japan’s Niconico Live, the broadcast continued for about 22 days, drawing 8.81 million total viewers and 3.91 million comments.
+[^niconico]: On Japan’s Niconico Live, the broadcast continued for about 22 days, drawing 8.81 million total viewers and 3.91 million comments.
 
 ### Two-way discussion via the internet
 Unlike a one-way television broadcast, the internet is interactive, so the students inside the Legislative Yuan were not isolated. They were able to hold video conferences with 20 groups across Taiwan. Nor was this limited to Taiwan. In the second week of the occupation, the students held an “Ask Me Anything” session on Reddit.[^AMA] There were 749 comments exchanged there.
@@ -65,37 +65,37 @@ g0v made a major contribution to this two-way communication over the internet. B
 
 The author believes this event became part of the foundation for the later design of large-scale online citizen participation in vTaiwan.
 
-### Another precursor: the conflict between UberX and the existing taxi industry
+### Another Precursor: The UberX-Taxi Conflict
 
 In the same year as the Sunflower Student Movement, another important development took place.
 
-Around July 8, 2014, hundreds of taxis gathered to protest in front of the Ministry of Transportation and Communications. At the time, ride-hailing apps such as Uber had made it possible for unlicensed private cars to attract passengers through apps and effectively operate as taxis, and the existing taxi industry demanded strict enforcement.
+Around July 8, 2014, hundreds of taxis gathered to protest in front of the Ministry of Transportation and Communications. At the time, ride-hailing apps such as Uber's UberX service had made it possible for unlicensed private cars to attract passengers through apps and effectively operate as taxis, and the existing taxi industry demanded strict enforcement.
 
 This conflict was not merely a dispute between industries. It symbolized a structural problem: legal institutions were failing to keep pace with digital technological change. The following year, this issue would become the first major case discussed through citizen participation on vTaiwan.
 
 ### Jaclyn Tsai and the g0v hackathon
 
-Jaclyn Tsai, who had been promoting Regulatory Adjustment for Virtual World Development, participated in the 11th g0v hackathon on December 20, 2014.[^hackath11n]
+Jaclyn Tsai, who had been promoting Updating Regulations for the Digital World, participated in the 11th g0v hackathon on December 20, 2014.[^hackath11n]
 
 [^hackath11n]: This hackathon was a Saturday event running from 09:00 to 18:00. With 126 registrations for a capacity of 127, one can get a sense of its scale.
 
 The question she brought to the event was: “How can Taiwanese startups avoid having to place their headquarters in the Cayman Islands?”
-Some readers may find this abrupt. The issue was that Taiwanese startups tended to register in the Cayman Islands, and the government wanted to understand why and what could be done to encourage domestic registration. As the digital world developed, the place where a company was registered and the location of its workers had become more loosely connected, making legal adjustment necessary. This was part of the broader Regulatory Adjustment for Virtual World Development initiative.
+At first glance, this may seem like an odd question. The issue was that Taiwanese startups tended to register in the Cayman Islands, and the government wanted to understand why and what could be done to encourage domestic registration. As the digital world developed, the place where a company was registered and the location of its workers had become more loosely connected, making legal adjustment necessary. This was part of the broader Updating Regulations for the Digital World initiative.
 
 After discussion at the hackathon, the conclusion was that rather than trying to answer how to persuade startups to stay in Taiwan, the question itself should be opened up for public discussion. The issue involved company law, taxation, capital markets, regulation, and other complex factors. Instead of having only the people gathered at the hackathon discuss one concrete problem and produce an answer, what was needed was a process for building national-level consensus.
 
-This led to the launch of a project to create a digital participation platform through which ordinary citizens could join the discussion. That was the beginning of vTaiwan. People often misunderstand this point, but Audrey Tang, who would later become digital minister, was at that time simply a participant in the private civic community g0v.
+This led to the launch of a project to create a digital participation platform through which ordinary citizens could join the discussion. That was the beginning of vTaiwan. At the time, Audrey Tang was simply a private citizen participating in g0v’s civic tech community; she would later become digital minister in the Taiwanese government.
 
 [^hackpad20141220]: Minutes from that hackathon: https://g0v.hackpad.tw/ep/pad/static/oWRxOF4ilfx
 
 ### The design of vTaiwan
 
 Discussion of UberX intensified from June 26, 2015.
-On June 24, 2015, the Executive Yuan announced “Regulatory Adjustment for Virtual World Development 2.0,” formally adding the “sharing economy” to its scope and stating that it would gather views through vTaiwan and online consultation meetings. In discussions with g0v, however, it was decided that rather than debating the abstract theme of the “sharing economy,” the process should focus on specific concrete issues.
+On June 24, 2015, the Executive Yuan, Taiwan’s cabinet, announced “Updating Regulations for the Digital World 2.0,” formally adding the “sharing economy” to its scope and stating that it would gather views through vTaiwan and online consultation meetings. In discussions with g0v, however, it was decided that rather than debating the abstract theme of the “sharing economy,” the process should focus on specific concrete issues.
 
-vTaiwan used Polis, which also appears elsewhere in this book in TODO: Chapters A and B. But instead of immediately asking whether people supported or opposed a policy proposal, it was designed to elicit views in the order of “facts → values.” The first ten questions were as follows.[^footnote1]
+vTaiwan used Polis, which appears elsewhere in this book as well. But instead of immediately asking whether people supported or opposed a policy proposal, it was designed to elicit views in the order of “facts → values.” The first ten questions were as follows.[^footnote1]
 
- #### Facts (experience)
+#### Facts (experience)
 
 - Q1: I have used Uber to request a ride.
 - Q2: I am a taxi driver.
@@ -131,7 +131,7 @@ In the end, 1,326 users cast enough votes to be included in the analysis, and th
 
 ### Connecting to offline meetings
 
-On August 27, a public discussion among stakeholders was held. First, Audrey Tang explained the views gathered through Polis, especially areas of broad agreement. Then the Ministry of Transportation and Communications (government), Uber, and the taxi company Taiwan Taxi each presented their positions.
+On August 27, a public discussion among stakeholders was held. First, Audrey Tang explained the views gathered through Polis, especially areas of broad agreement. Then the government’s Ministry of Transportation and Communications, Uber, and the taxi company Taiwan Taxi each presented their positions.
 
 The online views were neither “fully pro-Uber” nor “completely anti-Uber.” Rather, there was strong support for conditional acceptance and demands for institutional arrangements, such as “new regulation is needed” and “safety must come first.” The ministry argued that the issue was not whether the technology was innovative, but that it was illegal under current law. Uber argued that consumers supported the experience made possible by technological innovation. The taxi company argued, “We too can improve using similar technology. The issue is not innovation, but unfair differences in the rules,” and signaled that cooperation would be possible if Uber became legal.
 
@@ -139,14 +139,14 @@ Gradually, the focus shifted to questions such as whether Uber would bear legal 
 
 [^hackpad20150827]: Minutes from 8/27: https://g0v.hackpad.tw/2015-08-27-uberX--y4uRD0dNFMq
 
-### It led to legal reform
+### From Deliberation to Legal Reform
 
 Ultimately, Taiwan’s Regulations for the Management of Automobile Transportation Businesses were amended on October 25, 2016.
 The amendment codified a framework for diversified taxi services (taxi services booked online) and established requirements for business plans and fare display.
 
 This can be seen as a case in which the discussion moved beyond either “Uber is legal” or “crack down on illegal Uber” and instead productively addressed the question, “How can illegal Uber be made legal?”—and then connected that discussion to institutional reform.
 
-### What happened to vTaiwan afterward
+### What Happened After vTaiwan?
 
 The vTaiwan process created at that time continued to be used repeatedly afterward.
 Specifically, between 2015 and 2018, 26 issues were discussed, and around 80% led to legal or institutional changes. At present, there have been 34 issues in total. This activity increased public understanding of online deliberation and helped cultivate a community capable of deliberation.
@@ -170,9 +170,9 @@ As of 2026, vTaiwan has come to occupy a position more like a “laboratory for 
 That said, the author does not believe this slowdown should be seen as a failure.
 Practices developed through vTaiwan—such as visualizing opinion clusters with Polis and combining online and offline deliberative processes—have continued to be used in various forms. For example, in the Taiwanese government’s Alignment Assembly, discussed in the next section, they were further developed in combination with Talk to the City and the Stanford Online Deliberation Platform.
 
-Moreover, because people in Taiwan preserved meeting records in 2015 and continued publishing them online, we in Japan in 2026 are able to inherit that knowledge. Thanks to the internet and advances in AI-based machine translation, projects in different countries are no longer isolated national efforts; they are increasingly becoming interconnected, networked projects that can learn from one another. This book, too, will likely be machine-translated and referenced around the world.
+Moreover, because people in Taiwan preserved meeting records in 2015 and continued publishing them online, we in Japan in 2026 are able to draw on that knowledge. Thanks to the internet and advances in AI-based machine translation, projects in different countries are no longer isolated national efforts; they are increasingly becoming interconnected, networked projects that can learn from one another. This book, too, will likely be machine-translated and referenced around the world.
 
-## Alignment Assembly
+## The Alignment Assembly
 
 In 2023, a new example of a citizen participation process emerged—one that inherited from vTaiwan while also adopting a somewhat different design philosophy. This was the Alignment Assembly. It was an initiative advanced by the Ministry of Digital Affairs (MODA), aimed at ensuring that when society considers desirable directions for new technologies such as AI, not only experts and companies but citizens as well take part.
 
@@ -211,7 +211,7 @@ Taiwan’s experience can be understood as a history not of creating one deliber
 Each stage had its limitations. Small-scale deliberation lacked representativeness; online deliberation suffered from participant bias; and even mini-publics cannot completely avoid bias among those who choose to apply.
 But what is interesting about Taiwan is that it did not demand perfection from the outset. Instead, it repeatedly carried out experiments that were feasible at each moment and used them as material for the next round of institutional design.
 
-In 2026, the authors, with an introduction from Audrey Tang, traveled around Taiwan speaking with people involved in digital democracy initiatives. One remark by Isabel Hou, now deputy minister at MODA, left a strong impression on the author.
+In 2026, the authors of this book, with an introduction from Audrey Tang, traveled around Taiwan speaking with people involved in digital democracy initiatives. One remark by Isabel Hou, now deputy minister at MODA, left a strong impression on the author.
 
 > We want to adopt this kind of (deliberative) form of communication in order to cultivate community. We believe cultivating community is even more important than simply trying to obtain advice.
 

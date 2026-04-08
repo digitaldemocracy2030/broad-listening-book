@@ -1,6 +1,6 @@
-# Chapter 10: The Global Evolution of Broad Listening
+# Chapter 11: The Global Evolution of Broad Listening
 
-## Broad Listening as an Outgrowth of Deliberative Culture
+## The Deliberative Culture Behind Broad Listening
 
 Broad listening first drew widespread attention in Japan during the 2024 Tokyo governor election. When Takahiro Anno used AI to make large volumes of public opinion visible, the term “broad listening” spread rapidly. However, the image many people took away at the time was what Chapter 1 described as “broad listening in the narrow sense”: a technology functioning as a “component” that uses AI to structure and visualize large numbers of opinions.
 
@@ -12,7 +12,7 @@ From the 2010s onward, the emergence of digital tools such as Polis, Decidim, an
 
 In other words, overseas, deliberative practice came first, and broad listening was then introduced on top of it as a component for further improving and extending deliberation. The cycle of augmented deliberation explained in Chapter 3—“collection → structuring → deliberation → decision-making → explanation → renewed collection”—was accepted as a natural development of an existing deliberative culture.
 
-On the other hand, it is not as though Japan had no experiments in deliberation. In 2005, the Tokyo Junior Chamber, using the *Planungszelle* model mentioned above, held the first citizen deliberation forum in Chiyoda City, and the practice later spread to other parts of the country. However, while there have been cases in which recommendations were reflected in individual measures, this did not develop into an institutional mechanism for incorporating the results of citizen deliberation forums into policymaking. As noted in Chapter 3, the *jigyō shiwake* process carried out under the Democratic Party of Japan government from 2009 to 2012 involved experts and politicians publicly debating the validity of budget items, and it led directly to policy decisions such as budget cuts and program abolitions. Formally, it was one form of deliberation, but it was not citizen-participatory deliberation, and it ended with the change in government.
+On the other hand, it is not as though Japan had no experiments in deliberation. In 2005, the Tokyo Junior Chamber, using the *Planungszelle* model mentioned above, held the first citizen deliberation forum in Chiyoda City, and the practice later spread to other parts of the country. However, while there have been cases in which recommendations were reflected in individual measures, this did not develop into an institutional mechanism for incorporating the results of citizen deliberation forums into policymaking. As noted in Chapter 3, the *jigyō shiwake* process carried out under the Democratic Party of Japan government from 2009 to 2012 involved experts and politicians publicly debating the validity of budget items, and it led directly to policy decisions such as budget cuts and program terminations. Formally, it was one form of deliberation, but it was not citizen-participatory deliberation, and it ended with the change in government.
 
 In short, in Japan, citizen-participatory deliberation and policy decision-making both existed, but there was little experience of linking them together into a single continuous cycle. As a result, when the concept of broad listening was introduced as a convenient AI tool for analyzing opinions, its original context—strengthening the cycle of deliberation—became harder to see.
 

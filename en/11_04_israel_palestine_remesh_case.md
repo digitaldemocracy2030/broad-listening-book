@@ -1,6 +1,4 @@
-# 10_02
-
-## Taking on the Israel–Palestine Conflict
+# The Remesh Case in Israel and Palestine
 
 ## An Attempt to Connect Two Sides Thought to Be Beyond Dialogue
 
@@ -89,13 +87,15 @@ Although the paper does not discuss this explicitly, statement generation by an 
 In the Joint Phase, the following results were reported[^1]:
 
 **Five statements addressed to world leaders** (with at least 90% agreement in each group):
-1. **“An immediate ceasefire and the release of all hostages”** — ranked first by all participants
-2. “The creation of an international fund for a long-term solution”
-3. “The establishment of a global coalition for Gaza reconstruction”
-4. “The participation of civil society and NGOs in peacebuilding discussions”
-5. “Recognition of trauma on both sides”
+
+1. **An immediate ceasefire and release of all hostages** — ranked first by all participants
+2. The creation of an international fund to lay the groundwork for a comprehensive long-term solution
+3. The establishment of a global coalition to support Gaza’s reconstruction
+4. The inclusion of civil society and NGOs in all peacebuilding and diplomatic discussions
+5. The recognition of trauma on both sides
 
 **Five statements addressed to local communities** (with at least 84% agreement in each group):  
+
 The paper does not provide the exact wording, but reports that five statements received nearly equal support.
 
 In addition, during the Uninational Phase, all three groups were found to share six **common values**: **peace, equality, human life, independence, security, and prosperity**.
@@ -124,7 +124,7 @@ That said, the agreement reached remained limited to abstract principles such as
 
 This challenge is not unique to Israel–Palestine. All three cases examined in this chapter confront the same structural barrier. In Taiwan’s vTaiwan, simply visualizing opinions through Polis did not by itself produce policy decisions; regulatory direction was determined only after stakeholders gathered for in-person public deliberation. In Bowling Green, more than 80% agreed on “expanding family-friendly activities,” but progress still depended on pillar groups working through the specifics by hand: what to build, where to build it, and who would pay for it.
 
-This is not a flaw in the technology. It is a fundamental feature of human consensus-building. The higher the level of abstraction, the easier agreement becomes; the more concrete the issue, the more interests collide. AI is good at drawing a “map of agreement.” But deciding where to go on that map, and actually taking the first steps, remains human work.
+This is not a flaw in the technology. It is a fundamental feature of human consensus-building. The higher the level of abstraction, the easier agreement becomes; the more concrete the issue, the more interests collide. AI is good at making the space of agreement visible. But deciding where to go from there, and actually taking the first steps, remains human work.
 
 In Taiwan and Bowling Green, this gap between “agreement” and “implementation” was consciously built into the design. Taiwan’s collaborative meetings, Bowling Green’s pillar groups, and “We The People” district-based dialogues all provided institutional processes in which humans would take AI’s output and turn it into something concrete.
 

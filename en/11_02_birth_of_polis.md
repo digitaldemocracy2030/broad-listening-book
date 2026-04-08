@@ -1,8 +1,10 @@
 MEMO: Extracted from the column on collective action and connective action. Needs expansion TODO: screenshots, a screenshot of Polis, an explanation of how Polis works, and the addition of a schematic diagram
 
+# The Birth of Polis
+
 In the previous section, we looked at how Polis came to be used in Taiwan. So how was Polis itself born?
 
-## The Birth of Polis: What the Arab Spring Raised
+## Lessons from the Arab Spring
 
 From 2010 to 2011, the world witnessed digital political movements on an unprecedented scale. The Arab Spring, which began with Tunisia’s Jasmine Revolution, spread across the Middle East and North Africa; in New York, Occupy Wall Street emerged; and in Spain, the Indignados (“the outraged”) occupied public squares. What these movements shared was that social media acted as a catalyst for spreading information and calling for participation, enabling vast numbers of people to gather without relying on existing political parties or labor unions.
 
@@ -14,7 +16,7 @@ Colin Megill, who studied international relations, had long been interested in t
 
 Megill has described the motivation for its development as “addressing the communication challenges in the large-scale distributed movements seen in Occupy Wall Street and the Arab Spring”[^3]. What they aimed to build was a real-time system for “collecting, analyzing, and understanding the opinions of large groups.” In 2016, at the request of the Taiwanese government, Polis was open-sourced, and it is now operated by a nonprofit organization called The Computational Democracy Project (CompDem)[^4].
 
-### How Polis Works: A System for Discovering Points of Agreement
+## How Polis Works: Discovering Points of Agreement
 
 Polis is built on a design philosophy fundamentally different from that of conventional online petitions such as Change.org. The goal of Change.org is to “gather supporters by the numbers.” Success is measured by maximizing signatures, and the structure tends to reward messages that intensify conflict.
 
@@ -30,7 +32,7 @@ Polis also identifies opinions that are supported by both sides of a conflict an
 
 Each time participants vote, they can see their position on the scatterplot update in real time. On ordinary social media, it is easy not to notice that one is inside a “filter bubble,” where algorithms mostly show similar opinions. In Polis, by contrast, the existence of groups with views different from one’s own is made visually explicit. At a glance, participants can recognize that people with a wide range of opinions really do exist.
 
-### The Spread of Polis
+## How Polis Spread
 
 Since its public release in 2012, Polis has been adopted by governments, local authorities, and international organizations around the world, with more than 10 million participants globally in total[^5]. Representative examples are shown below[^6].
 
@@ -47,11 +49,11 @@ Since its public release in 2012, Polis has been adopted by governments, local a
 | Aufstehen | Germany | 2018 | Building a political base | 33,547 |
 | Airbnb regulation consultations | Greece | 2023 | Solutions to Airbnb-related issues | 944 |
 
-### The Technical Evolution of Polis
+## How Polis Evolved Technically
 
 From a technical perspective, the 2012 version of Polis was a statistical processing system centered on PCA (principal component analysis) and K-means clustering. It represented participants’ voting data as a matrix and generated a scatterplot of voting tendencies by compressing the data into two dimensions with PCA. K-means automatically detected groups on the scatterplot and statistically identified bridging opinions supported across multiple groups. In an era before LLMs existed, this was an innovative approach: visualizing the structure of opinion not through the meaning of comments, but through mathematical analysis of voting patterns alone. PCA and K-means are explained in detail in Chapter 12.
 
-Polis has not evolved only as a standalone tool; it has also increasingly been integrated with other tools. In Taiwan’s vTaiwan, the process of combining Polis voting data with TTTC’s analysis of free-text responses has been attempted multiple times (see the previous section for details), and an ecosystem is beginning to take shape in which opinions can be understood from both voting data and open-ended responses.
+Polis has evolved both as a standalone tool and as part of an increasingly integrated ecosystem of other tools. In Taiwan’s vTaiwan, the process of combining Polis voting data with Talk to the City’s (TTTC’s) analysis of free-text responses has been attempted multiple times (see the previous section for details), and an ecosystem is beginning to take shape in which opinions can be understood from both voting data and open-ended responses.
 
 **Polis 2.0**, announced by CompDem in 2024, fundamentally updates the design of Polis on the assumption that LLMs now exist, building on lessons from this kind of integration. EVōC (embedding vector-oriented clustering) vectorizes comment text and groups semantically similar comments together, automatically generating a hierarchy of topics. In effect, this brings an approach similar to TTTC inside Polis itself. LLMs generate real-time summaries and reports of the deliberation as a whole, and the system also includes AI-assisted moderation and multilingual translation. Its architecture and infrastructure have also been redesigned to support simultaneous participation on the scale of millions[^5].
 
