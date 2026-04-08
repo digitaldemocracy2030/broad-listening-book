@@ -8,15 +8,15 @@ English translation by Luke Closs
 
 ### Broad Listening by a Governing Party Facing Declining Youth Support
 
-Komeito faced a structural challenge: the aging of its support base. As the membership of its main support organization, Soka Gakkai, grew older, the natural decline in elderly supporters continued, while support among younger generations failed to grow. In House of Representatives elections, its proportional representation vote had fallen from just under 9 million at its peak to below 6 million by 2024[^komei_vote]. Winning support from younger voters had become an urgent priority for expanding the party’s strength.
+Komeito, the junior partner in Japan’s ruling coalition, faced a structural challenge: the aging of its support base. As the membership of Soka Gakkai, its main lay Buddhist support organization, grew older, the natural decline in elderly supporters continued, while support among younger generations failed to grow. In House of Representatives elections, its proportional representation vote had fallen from just under 9 million at its peak to below 6 million by 2024[^komei_vote]. Winning support from younger voters had become an urgent priority for expanding the party’s strength.
 
 Against this backdrop, on March 17, 2025, Komeito launched the policy development survey “We Connect.” The project aimed to reflect the “unfiltered voices” of young people and working-age generations in the party’s priority policies for the House of Councillors election (voting and counting on July 20). The survey period lasted about three months, from March 17 to June 26. Hereafter, this section abbreviates it as “We Connect.”
 
-At the time, Komeito was part of the ruling coalition with the Liberal Democratic Party. This distinguishes it from the other cases in this chapter—Team Mirai (referred to as "Team Future" in this book), Ishin, and the Democratic Party for the People—all of which were opposition parties. Komeito pursued broad listening from a position where it could actually implement policy.
+At the time, Komeito was part of the ruling coalition with the Liberal Democratic Party. This distinguishes it from the other cases in this chapter—Team Mirai (meaning “Team Future”), Ishin, and the Democratic Party for the People—all of which were opposition parties. Komeito pursued broad listening from a position where it could actually implement policy.
 
 This section is based not on direct interviews with Komeito, but on publicly available information such as the project website, the party’s official YouTube channel, and published materials.
 
-### The Double-Diamond Process from Opinion Aggregation to Policy Decisions in We Connect
+### From Opinions to Policy: We Connect’s Double-Diamond Process
 
 The policy development process for We Connect was explicitly published on the project website. Its distinguishing feature was that it was designed not as a one-time survey collection, but as a two-round cycle.
 
@@ -60,6 +60,8 @@ Reflecting this context, the word cloud of collected responses prominently featu
 
 ![Word cloud of responses submitted to We Connect](images/06_05_WeConnect_wordcloud.png)[^komei3]
 
+*Note: The Japanese character 米, meaning “rice,” appears prominently in this word cloud.*
+
 In the results for selected policy issues (multiple answers allowed), “measures against rising prices and economic stimulus” was overwhelmingly the top choice at about 65,000 responses, followed by “social security such as pensions, healthcare, and nursing care” (about 50,000) and “education, child-rearing support, and measures against the declining birthrate” (about 25,000).
 
 What is notable, however, is that “political reform, including the issue of money in politics,” ranked relatively low. Since its founding, Komeito has promoted “clean politics” as a core part of its identity, and in the 2024 revision of the Political Funds Control Act it led efforts to strengthen so-called joint liability provisions and lower the disclosure threshold for party ticket purchasers[^komei_reform].
@@ -102,7 +104,7 @@ After the survey period ended, Komeito published on the We Connect website an ex
 | Education | Scholarship tax relief (income deductions for repayment amounts, relaxed income limits for reduced repayment programs, expanded proxy repayment systems) |
 | Child-rearing | Free school lunches, free high school tuition, support for university tuition, free pregnancy and childbirth care, universal childcare access, support for school refusal, promotion of 35-student classes, creation of a housing allowance, promotion of parental leave uptake, expansion of after-school childcare measures |
 | Work styles | Raising the minimum wage to a national average of ¥1,500 in the 2020s, equal pay for equal work (abolishing the “regular/non-regular” distinction), reskilling support, review of the ¥1.06 million and ¥1.3 million income thresholds, employment support for older adults |
-| Childcare workers and care workers | Raising pay to the all-industry average (¥386,000 per month) |
+| Childcare workers and care workers | Raising pay to the average level across all industries (¥386,000 per month) |
 
 AI was also used to communicate these priority policies. An overview of the policies was created and published using the AI presentation tool “Gamma”[^komei_gamma]. Policy proposals do not speak for themselves once drafted; they must be communicated through a variety of information channels. For that reason, it is important to convert policy proposals into forms suited to each channel. Gamma appears to have been useful in turning policy proposals into clear visual materials.
 
@@ -116,9 +118,9 @@ One of We Connect’s major distinguishing features was that it incorporated AI 
 
 Compared with the other cases in this chapter, Komeito’s We Connect had a somewhat different character in several respects.
 
-First, scale. Compared with Team Future (8,559 responses) and the Democratic Party for the People (60,000), the combined total of about 127,000 responses across the first and second surveys was the largest in this chapter. However, this scale likely owed much to Komeito’s nationwide network of local lawmakers distributing QR codes through grassroots efforts. Its collection structure differed from that of Ishin, which gathered opinions from an unspecified mass of social media users (300,000 responses collected).
+First, scale. Compared with Team Mirai (8,559 responses) and the Democratic Party for the People (60,000), the combined total of about 127,000 responses across the first and second surveys was the largest in this chapter. However, this scale likely owed much to Komeito’s nationwide network of local lawmakers distributing QR codes through grassroots efforts. Its collection structure differed from that of Ishin, which gathered opinions from an unspecified mass of social media users (300,000 responses collected).
 
-Second, collection method. Ishin used social media scraping, Team Future used pull requests via AI interviews, and the Democratic Party for the People used multiple online and offline channels. Komeito, by contrast, chose the simple tool of Google Forms. Its distinctive feature was not technical complexity, but the way it combined existing organizational strength with existing tools to achieve large-scale opinion collection.
+Second, collection method. Ishin used social media scraping, Team Mirai used pull requests via AI interviews, and the Democratic Party for the People used multiple online and offline channels. Komeito, by contrast, chose the simple tool of Google Forms. Its distinctive feature was not technical complexity, but the way it combined existing organizational strength with existing tools to achieve large-scale opinion collection.
 
 Komeito has long presented “the ability to listen to small voices” as one of its strengths. We Connect can be seen as an attempt to update that traditional stance into a contemporary form using digital tools.
 

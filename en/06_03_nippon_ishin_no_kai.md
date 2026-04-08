@@ -6,9 +6,9 @@ English translation by Luke Closs
 
 ## Nippon Ishin no Kai Uses Broad Listening for Policy Development
 
-This section is not based on direct interviews with Nippon Ishin no Kai, but is instead compiled from publicly available information, including the party’s official website, official YouTube channels, published materials, and news coverage.
+This section is not based on direct interviews with Nippon Ishin no Kai (Japan Innovation Party, usually shortened here to “Ishin”), but is instead compiled from publicly available information, including the party’s official website, official YouTube channels, published materials, and news coverage.
 
-### On the Day DD2030 Was Announced, the Party Leader Immediately Declared Participation
+### Within Hours of the DD2030 Announcement, the Party Leader Said Ishin Would Take Part
 
 On January 16, 2025, Takahiro Anno announced the launch of the Digital Democracy 2030 (DD2030) project. The declaration was that broad listening technology would be provided as open source, creating a framework that political parties and local governments could use. On that same day, Hirofumi Yoshimura, leader of Nippon Ishin no Kai and governor of Osaka Prefecture, posted the following on X:
 
@@ -26,7 +26,7 @@ Yoshimura positioned social insurance premium reform as the “center pin.” Fo
 
 ### Collecting 300,000 Opinions on the Social Insurance Theme
 
-On March 1, 2025, the launch of the “Policy AI Utilization Project” was formally announced[^ishin_project]. Opinions were collected through three channels: posts on X using the hashtag `#社会保険料のこれから`, a dedicated Google Form, and comments on Nippon Ishin no Kai’s official YouTube channel. From February through June 2025, the number of submissions gathered through these three channels reached about 300,000.
+On March 1, 2025, the launch of the “Policy AI Utilization Project” was formally announced[^ishin_project]. Opinions were collected through three channels: posts on X using the hashtag `#社会保険料のこれから` (`#TheFutureOfSocialInsurancePremiums`), a dedicated Google Form, and comments on Nippon Ishin no Kai’s official YouTube channel. From February through June 2025, about 300,000 posts were collected across these three channels.
 
 On July 3, 2025, with the House of Councillors election just ahead on July 20, Yoshimura, Deputy Chair of the Policy Research Council Akira Fujita, and Mr. Oki, who was involved in developing broad listening for DD2030, released another discussion video[^ishin4]. Yasukazu Nishio has documented this case in detail[^nishio]. The title was: “\[AI Analysis\] What the Public Really Thinks, as Seen from 30,000 Posts About ‘Social Insurance Premiums’?” The roughly 300,000 posts were divided into periods of about two weeks each, and around 30,000 posts from each period were selected for analysis. Because the party had continued collecting large volumes of opinions over an extended period, it became clear that Ishin had established a system for tracking changes in public opinion over time.
 
@@ -36,7 +36,7 @@ In the video, an attempt was made to visualize shifts in public opinion by compa
 
 ![Scatterplot of opinions on social insurance premiums from June 3 to June 16, 2025. The largest cluster shifted to “dissatisfaction with social insurance burdens and demands for reform,” accounting for about 47% of the total.](images/06_03_ishin_scatter_june.png)
 
-Deputy Policy Research Council Chair Fujita focused on this result. The “economic self-defense strategies” cluster reflected resigned voices saying that it would be better to manage one’s own assets rather than rely on social security. But Fujita saw a policy option in this. Even if social insurance premium reform could not be achieved, another policy path would still be available: shifting to a tax system that makes asset management easier. Broad listening had pointed to a policy direction they had not originally anticipated.
+Deputy Policy Research Council Chair Fujita focused on this result. The “economic self-defense strategies” cluster reflected resigned voices saying that it would be better to manage one’s own assets rather than rely on social security. But Fujita saw a policy option in this. Even if social insurance premium reform could not be achieved, another policy path would still be available: shifting to a tax system that makes asset management easier. **Broad listening had pointed to a policy direction they had not originally anticipated.**
 
 ### Broad Listening Captured Fluid Public Opinion in Real Time
 
@@ -46,13 +46,13 @@ In the June scatterplot, a new cluster appeared that had not been present in May
 
 Once this three-party agreement was reported, support, opposition, and concern regarding OTC-like drugs spread rapidly across social media. The broad listening system built by Ishin quickly captured this movement in public opinion triggered by a political event and visualized it as a new cluster: “concerns about excluding OTC-like drugs from insurance coverage.”
 
-### Into the House of Councillors Election Platform, and the Election Result
+### Reflected in the House of Councillors Platform, Then Tested in the Election
 
 On June 30, 2025, Nippon Ishin no Kai announced its platform for the House of Councillors election. At its center was a numerical target: “reduce annual social insurance premiums by 60,000 yen per person”[^ishin6a][^ishin6b]. In an interview with *Nikkei*, Secretary-General Tsukasa Abe said, “We use AI to pick up voices from social media”[^ishin7], indicating that the collection and analysis of opinions on the social insurance theme had formed the foundation of the party’s election platform.
 
 In the July 20, 2025 vote count, Nippon Ishin no Kai won 7 seats. That was an increase of 1 from the 6 seats it had been defending, but its proportional representation vote share fell sharply to 7.39% (about 4.37 million votes), down from 14.8% in the 2022 House of Councillors election. Yoshimura assessed the result by saying, “We barely held on in Kansai. Nationally, it was a tough result”[^ishin8].
 
-The party’s post-election review[^ishin_soukatsu] included a detailed analysis of its social media strategy. There were some success stories: short drama videos featuring Yoshimura “spread organically” and were also covered by established media such as television. In the run-up to the House of Councillors election, the party used the hashtag `#社会保険料を下げる改革` to promote its policy message, separate from `#社会保険料のこれから`, which had been used to solicit opinions, and it even trended on X. But it did not become a nationwide movement. The review pointed to the echo chamber effect: “similar posts kept being shown,” meaning the policy message remained within Ishin’s existing support base and did not lead to the acquisition of new supporters.
+The party’s post-election review[^ishin_soukatsu] included a detailed analysis of its social media strategy. There were some success stories: short drama videos featuring Yoshimura “spread organically” and were also covered by established media such as television. In the run-up to the House of Councillors election, the party used the hashtag `#社会保険料を下げる改革` (`#ReformToLowerSocialInsurancePremiums`) to promote its policy message, separate from `#社会保険料のこれから` (`#TheFutureOfSocialInsurancePremiums`), which had been used to solicit opinions, and it even trended on X. But it did not become a nationwide movement. The review pointed to the echo chamber effect: “similar posts kept being shown,” meaning the policy message remained within Ishin’s existing support base and did not lead to the acquisition of new supporters.
 
 If, despite using YouTube and hashtags to broadly solicit the public’s views, the party ended up collecting only the voices of its existing supporters because of social media echo chambers, then one could say that the very premise of broad listening—“listening broadly”—ran up against the structural limits of social media itself.
 
@@ -63,12 +63,12 @@ Even after the House of Councillors election ended, Ishin’s broad listening di
 | Period | Collection method | Purpose |
 |---|---|---|
 | February 2025 (prototype) | Search X posts using the keyword “social insurance” | Prototype: extracted 5,000 opinions from about 3,000 posts |
-| From March 2025 | `#社会保険料のこれから` + Google Form + YouTube comments | Phase 1: full-scale solicitation of opinions on the social insurance theme (about 300,000 submissions) |
-| July 2025 | `#社会保険料を下げる改革` | Policy promotion for the House of Councillors election |
-| From October 2025 | `#維新ブロリス` + Google Form + YouTube comments | Phase 2: shifted to a standing party brand not tied to a single theme |
-| From January 2026 | `#維新ブロリス` + Google Form + YouTube comments + optional keyword searches | Phase 3: publicly stated that collection would include keyword searches in addition to hashtags |
+| From March 2025 | `#社会保険料のこれから` (`#TheFutureOfSocialInsurancePremiums`) + Google Form + YouTube comments | Phase 1: full-scale solicitation of opinions on the social insurance theme (about 300,000 submissions) |
+| July 2025 | `#社会保険料を下げる改革` (`#ReformToLowerSocialInsurancePremiums`) | Policy promotion for the House of Councillors election |
+| From October 2025 | `#維新ブロリス` (`#IshinBroadListening`) + Google Form + YouTube comments | Phase 2: shifted to a standing party brand not tied to a single theme |
+| From January 2026 | `#維新ブロリス` (`#IshinBroadListening`) + Google Form + YouTube comments + optional keyword searches | Phase 3: publicly stated that collection would include keyword searches in addition to hashtags |
 
-On October 8, 2025, as the theme for Phase 2, the party began collecting opinions under the hashtag `#維新ブロリス` on the issue of declining participation rates in neighborhood associations, residents’ associations, and volunteer fire corps. The shift from theme-specific hashtags to a standing party brand showed that broad listening was evolving from a one-off exercise for a particular policy issue into a mechanism for continuously gathering the public’s views. Alex Saito, who had become chair of the Policy Research Council, and Akira Fujita, director of public relations, were the driving forces behind this effort.
+On October 8, 2025, as the theme for Phase 2, the party began collecting opinions under the hashtag `#維新ブロリス` (`#IshinBroadListening`) on the issue of declining participation rates in neighborhood associations, residents’ associations, and volunteer fire corps. The shift from theme-specific hashtags to a standing party brand showed that broad listening was evolving from a one-off exercise for a particular policy issue into a mechanism for continuously gathering the public’s views. Alex Saito, who had become chair of the Policy Research Council, and Akira Fujita, director of public relations, were the driving forces behind this effort.
 
 Then, on January 26, 2026, as Phase 3, Ishin began soliciting opinions on its entire House of Representatives election platform—a collection of 498 individual policy items[^ishin9a]. “This is not the end of Ishin’s platform,” Fujita said. There was no longer even any need for people to attach a hashtag. He explained that “AI will pick up the discussions people are naturally having on social media,” signaling an intention to draw policy hints from voters’ everyday conversations as well.
 

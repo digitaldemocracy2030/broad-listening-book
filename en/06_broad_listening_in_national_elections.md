@@ -1,11 +1,11 @@
 # Chapter 6: The Use of Broad Listening in National Elections
 
-One year after Takahiro Anno’s Tokyo governor election campaign, multiple political parties adopted broad listening in the 2025 House of Councillors election.
+A year after Takahiro Anno’s run in the Tokyo governor’s race, multiple political parties adopted broad listening in the 2025 House of Councillors election.
 
 During the campaign period, Anno posted the following on X (formerly Twitter)[^anno-x-bl]:
 
 > Broad listening in 2024:
-> A mysterious concept promoted by an obscure fringe candidate in the Tokyo governor election
+> A mysterious concept promoted by an obscure fringe candidate in the Tokyo governor’s race
 >
 > Broad listening in 2025:
 > Adopted by various political parties and effectively becoming a standard strategy
