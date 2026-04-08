@@ -10,7 +10,7 @@ This article introduces the current state and future outlook of broad listening 
 
 ## About Boots Inc.
 
-Boots Inc. (Representative: Keisuke Ariga) is a management consulting firm that supports private companies, local governments, and other organizations in transforming their businesses and updating operational processes through DX promotion support, including the use of AI.
+Boots Inc. (Representative: Keisuke Ariga) is a management consulting firm that supports private companies, local governments, and other organizations in modernizing their operations and business processes, including through the use of AI.
 
 In recent years, digital technologies such as AI have attracted significant attention. At the same time, not every company or organization is fully benefiting from them in practice. One reason, in our view, is that many organizations remain focused only on how to use individual tools, without establishing a full problem-solving cycle that begins with identifying issues in frontline operations and continues through solution design, implementation, verification, and improvement. Grounded in a practical understanding of technology, our company provides services with a firm commitment to driving change in organizational workflows, always starting from business and operational challenges themselves.
 
@@ -25,7 +25,7 @@ In addition, we also support the development of internal capabilities for analys
 
 ## Broad Listening Support Cases (Publicly Available Examples)
 
-We have supported many organizations, especially local governments, that have consulted us about introducing broad listening. Publicly available examples can be found on the websites of the respective local governments listed below.
+We have advised and supported many organizations, especially local governments, on adopting broad listening. Publicly available examples can be found on the websites of the respective local governments listed below.
 
 All of the following cases were carried out in 2025, and all used *Kocho AI*, developed under *Digital Democracy 2030*, as the broad listening tool. These were pilot initiatives intended to efficiently analyze free-response comments collected by local governments from residents and put them to meaningful use.
 
@@ -56,7 +56,7 @@ Broad listening was conducted using 396 responses to the free-response question 
 - Utazu Town press release: “Conducted an Advanced Trial of ‘Broad Listening,’ Which Uses AI to Reflect the Opinions of Many Residents in Policymaking”
   https://www.town.utazu.lg.jp/page/4114.html
 
-Building on these achievements and experiences with local governments, we are also supporting broad listening initiatives for not only other local governments but also private companies and various organizations. We hope that technologies originating in politics and public administration, such as broad listening, will be adapted for private-sector use and applied broadly for public benefit (examples and future prospects in private companies and organizations are discussed later).
+Building on the experience we have gained from these local government projects, we now support broad listening initiatives not only for other local governments but also for private companies and a wide range of organizations. We hope that technologies originating in politics and public administration, such as broad listening, will be adapted for private-sector use and applied broadly for public benefit (examples and future prospects in private companies and organizations are discussed later).
 
 ## Insights from Support Cases in Local Governments
 
@@ -99,7 +99,7 @@ A certain level of digital literacy is required on the user side among staff, in
 
 It has also been pointed out that, depending on the content of the analysis and the characteristics of the target data, the current analytical process used by *Kocho AI* may not always be the optimal one. This has led to expectations for the expansion of technical methods related to broad listening (see below).
 
-In this way, while some challenges remain, practical pilots and implementations have given frontline users a tangible sense of what broad listening can do, and many ideas have emerged regarding the expansion of use cases (for example, various planning processes, large-scale surveys, routine inquiry analysis, and more). Further expansion of broad listening use cases and deeper adoption in public administration are therefore widely anticipated.
+In this way, while some challenges remain, practical pilots and implementations have given frontline users a tangible sense of what broad listening can do, and have also opened up ideas for broader applications (for example, various planning processes, large-scale surveys, routine inquiry analysis, and more). Further expansion of broad listening use cases and deeper adoption in public administration are therefore widely anticipated.
 
 ## Future Prospects for Broad Listening
 
@@ -123,7 +123,7 @@ In *Kocho AI*, the approach used is to convert input text into numerical data th
 
 For example, analysis design tailored to the objective is essential for understanding the structure of policy issues, organizing opinions by stakeholder group, or extracting expert views. Rather than relying on a single tool, what is needed is an environment in which multiple analytical methods can be combined and selected according to the need.
 
-What matters in broad listening is not a simple “greater or smaller number,” as in majority rule, but rather extracting voices that offer insight and learning, and organizing the structure among opinions in order to generate useful findings. To make that possible, further expansion of the technical methods surrounding broad listening is highly desirable.
+What matters in broad listening is not a simple question of numbers, as in majority rule. It is about surfacing voices that contain useful insight and learning, and clarifying the structure of relationships among opinions. To make that possible, the technical methods around broad listening will need to keep expanding.
 
 ### [Application] Broader Adoption, Use, and Value Creation
 

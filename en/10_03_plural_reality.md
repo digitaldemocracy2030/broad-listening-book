@@ -15,16 +15,16 @@ This article introduces Plural Reality, an initiative that emerged through activ
 [Plural Reality LLC](https://www.plural-reality.com/) (Representative: Shunsuke Takagi; Founder: Shutaro Aoyama) is a consulting and software development company established to bring knowledge about broad listening, from Japan and abroad, into society.
 
 
-Founder Shutaro Aoyama has worked on putting digital democracy into practice through activities such as “[Digital Democracy 2030](../11_00_DD2030による広聴AIの開発活動)” (DD2030) and “[Team Mirai (referred to as 'Team Future' in this book)](../06_01_チームみらい)” (see Chapter 6). Online dialogue tools he developed in that process, including “Idobata,” drew attention as attempts to listen deeply to many people’s voices at the same time. Representative Shunsuke Takagi has also participated in digital democracy communities in Japan and abroad as a visiting researcher in the Digital Democracy Division of the SmartNews Media Research Institute and as the founder of Plurality Tokyo.
+Founder Shutaro Aoyama has worked on putting digital democracy into practice through activities such as “[Digital Democracy 2030](../11_00_DD2030による広聴AIの開発活動)” (DD2030) and “[Team Mirai (meaning “Team Future”)](../06_01_チームみらい)” (see Chapter 6). Online dialogue tools he developed in that process, including “Idobata,” drew attention as attempts to listen deeply to many people’s voices at the same time. Representative Shunsuke Takagi has also participated in digital democracy communities in Japan and abroad as a visiting researcher in the Digital Democracy Division of the SmartNews Media Research Institute and as the founder of Plurality Tokyo.
 
 Through these activities, we came to feel keenly that while academic and community discussions were active, there was still a major gap between those discussions and making them usable in real-world settings. Communities such as “Digital Democracy 2030,” which also serves as the foundation for this book, play a major role. At the same time, there also needs to be an organization that can turn ideas into concrete services and help them take root in practice. Plural Reality was founded to combine the ideals of digital democracy with insights gained from the practice of consensus-building, and to make them truly usable in society.
 
 
 We believe that staying close to clients’ real-world needs and responding carefully, one step at a time, including the painstaking work, is exactly what is needed to make digital democracy take root in Japan.
 
-### Seeing Consensus-Building as the World’s Final Problem
+### Seeing Consensus-Building as Humanity’s Enduring Problem
 
-Plural Reality believes that the world’s final problem is consensus-building. Humanity began by beating one another with wooden clubs, and may yet bring about its own end by using nuclear weapons over territorial disputes. All of these are problems caused by failures of consensus-building.
+Plural Reality believes that humanity’s enduring problem is consensus-building. Humanity began by beating one another with wooden clubs, and may yet bring about its own end by using nuclear weapons over territorial disputes. All of these are problems caused by failures of consensus-building.
 
 No matter how far technology advances, the human challenge of “aligning perceptions (consensus-building)” and the “decision-making” that depends on it will remain. Plural Reality believes that by rebuilding current institutions on the basis of LLMs (large language models), AI technology capable of processing and generating human language, it is possible to expand the range of outcomes in consensus-building and decision-making so that all stakeholders can benefit more.
 
@@ -53,7 +53,7 @@ Traditional surveys and one-on-one interviews have long sat at opposite ends of 
 
 ![The “dilemma of aggregating opinions” faced by government. A diagram showing the tradeoff between surveys (quantity) and in-person workshops/public hearings (quality). The conventional limitation was that if you prioritized “quantity,” “quality” declined, and if you prioritized “quality,” you could not achieve “quantity.”](images/10_03_tradeoff_dilemma.png)
 
-[Baisoku Kaigi](https://baisoku-kaigi.plural-reality.com/gov), an AI-supported “fast-track meeting” tool provided by Plural Reality, overcomes this tradeoff by redesigning surveys, interviews, and alignment of understanding around AI.
+[Baisoku Kaigi](https://baisoku-kaigi.plural-reality.com/gov) (“accelerated meeting”), an AI-supported “fast-track meeting” tool provided by Plural Reality, overcomes this tradeoff by redesigning surveys, interviews, and alignment of understanding around AI.
 
 Baisoku Kaigi was designed to enable augmented deliberation, based on founder Aoyama’s experience developing online dialogue tools such as “Idobata.” Augmented deliberation is an effort to expand human deliberative processes with the help of AI so that more people can participate in deeper dialogue.
 
@@ -87,9 +87,9 @@ Decision-makers can make judgments based on this report, and if there are gaps i
 
 ## Case Studies
 
-### Collaboration with Koso Nippon: Solving Challenges in Randomly Selected Citizen Assemblies
+### Collaboration with Koso Nippon: Improving Randomly Selected Citizen Assemblies
 
-One of Plural Reality’s partner organizations is “Koso Nippon”[^kosonippon]. Its randomly selected resident assemblies[^minipublics], conducted under the name Jibungotokaigi, a citizen meeting designed to make public issues feel personally relevant, have been held for more than 30 years, across 156 municipalities nationwide and more than 355 times, with total participation exceeding 12,000 residents.
+One of Plural Reality’s partner organizations is Koso Nippon, an independent policy think tank.[^kosonippon] Its randomly selected resident assemblies[^minipublics] are conducted under the name Jibungotokaigi, a format designed to make public issues feel personally relevant. These assemblies have been held for more than 30 years, in 156 municipalities nationwide and more than 355 times in total, with participation exceeding 12,000 residents.
 
 
 Plural Reality does not contract directly with municipalities; instead, tools such as Baisoku Kaigi are used in municipal settings through Koso Nippon. By providing technical support for the resident assemblies organized by Koso Nippon, Plural Reality also contributes to improving Koso Nippon’s own operational efficiency.
@@ -100,7 +100,7 @@ The introduction of Baisoku Kaigi to the “Jibungotokaigi” in Ota City, Gunma
 
 #### Yosano Town, Kyoto Prefecture: Supporting a Resident Assembly for Comprehensive Plan Formulation
 
-In Yosano Town, Kyoto Prefecture, the “Yosano Future Conference” was held in fiscal 2025. This conference was a forum for residents to help create the framework of the Third Yosano Town Comprehensive Plan, which will follow the Second Yosano Town Comprehensive Plan ending in fiscal 2026. As population decline and aging continue, the goal was not for the government alone to envision the town’s future, but to share accurate information with residents and, through dialogue, imagine what the town should look like 10 years from now.
+In Yosano Town, Kyoto Prefecture, the “Yosano Future Conference” was held during fiscal year 2025. This conference was a forum for residents to help create the framework of the Third Yosano Town Comprehensive Plan, which will follow the Second Yosano Town Comprehensive Plan ending in fiscal year 2026. As population decline and aging continue, the goal was not for the government alone to envision the town’s future, but to share accurate information with residents and, through dialogue, imagine what the town should look like 10 years from now.
 
 Invitations were sent to 5,000 randomly selected residents aged 16 and older living in the town, and participants were chosen from among those who applied. The conference was held over four sessions (September to December 2025), with discussions divided into three themes: “creating jobs,” “building everyday life,” and “developing people.” Koso Nippon supported the overall facilitation and operations, while Plural Reality provided AI-based technical support.
 
@@ -114,7 +114,7 @@ In addition, opinions gathered during the meetings were analyzed and visualized 
 
 #### Higashiosaka City, Osaka Prefecture: Supporting a Regional Revitalization Roundtable
 
-In Higashiosaka City, Osaka Prefecture, the “Higashiosaka Regional Revitalization Roundtable” was held over four sessions in fiscal 2024 (October 2024 to January 2025). This initiative was carried out within the “Jibungotokaigi” framework organized by Koso Nippon and was designed to gather residents’ views on regional revitalization.
+In Higashiosaka City, Osaka Prefecture, the “Higashiosaka Regional Revitalization Roundtable” was held over four sessions during fiscal year 2024 (October 2024 to January 2025). This initiative was carried out within the “Jibungotokaigi” framework organized by Koso Nippon and was designed to gather residents’ views on regional revitalization.
 
 ![The venue for Higashiosaka City’s “Higashiosaka Regional Revitalization Roundtable” (Jibungotokaigi). Participants are using smartphones to respond to Baisoku Kaigi. At the front, a facilitator holds a microphone, and a screen displays a QR code and information about Baisoku Kaigi. A banner reads, “Jibungotokaigi: Does this concern me? Yes, it does!” expressing that this is a place where residents engage proactively with local issues.](images/10_03_higashiosaka_meeting.jpg)
 
@@ -122,7 +122,7 @@ In Higashiosaka City, Osaka Prefecture, the “Higashiosaka Regional Revitalizat
 
 In Higashiosaka City, support was provided using a combination of multiple AI tools, including Baisoku Kaigi, the public listening AI, Idobata (an online dialogue tool), and NotebookLM. In particular, the public listening AI reduced the burden on facilitators in situations where multiple group discussions were proceeding simultaneously by transcribing meeting audio and having AI extract and cluster the main topics.
 
-In addition, Idobata was used as a space for ongoing opinion gathering after the meetings. On the online platform opened as the “Higashiosaka Jibungotokaigi AI Discussion Space,” people could submit views on the theme “building a city where children and young people can realize their dreams,” including citizens who had not been able to participate in the meetings.
+In addition, Idobata was used as a space for ongoing opinion gathering after the meetings. On an online platform called the “Higashiosaka Jibungotokaigi AI Discussion Space,” people could submit views on the theme “building a city where children and young people can realize their dreams,” including citizens who had not been able to participate in the meetings.
 
 ![The top page of Higashiosaka City’s “Jibungotokaigi AI Discussion Space.” Alongside the message “Your voice can set policy in motion,” popular key issues are displayed. Idobata serves as an online platform where citizens can continue to share opinions beyond the in-person meeting setting.](images/10_03_higashiosaka_idobata_top.png)
 
@@ -171,7 +171,7 @@ Plural Reality is working to implement knowledge about broad listening from Japa
 
 Through AI support centered on Baisoku Kaigi and Idobata, it has succeeded in overcoming the challenge of asymmetry in participants’ background knowledge and in building a foundation for discussion. This has made it possible to overcome the conventional tradeoff between preserving the representativeness that comes from random selection and ensuring depth of discussion.
 
-Going forward, Plural Reality will continue expanding the possibilities of new LLM-based approaches to what it sees as humanity’s final problem: consensus-building.
+Going forward, Plural Reality will continue expanding the possibilities of new LLM-based approaches to what it sees as humanity’s enduring problem: consensus-building.
 
 [^kosonippon]: Koso Nippon, a general incorporated association. An independent policy think tank established in 1997, it is known for devising and implementing jigyo shiwake, Japan’s administrative budget-screening process. Since 2014, it has rolled out randomly selected resident-participation meetings called “Jibungotokaigi” in municipalities across Japan. https://www.kosonippon.org/
 

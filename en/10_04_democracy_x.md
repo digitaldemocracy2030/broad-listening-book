@@ -15,7 +15,7 @@ This chapter introduces the work of Democracy X in advancing the implementation 
 Democracy X’s activities fall into three main areas:
 
 1. **Broad listening support**: Using the public listening AI developed by DD2030 to collect, analyze, and visualize citizens’ voices in elections and local governments
-2. **Election DX support**: Going beyond broad listening to support the digital infrastructure needed for elections, including social media operations, digital communications, and website development
+2. **Election technology support**: Going beyond broad listening to support the digital infrastructure needed for elections, including social media operations, digital communications, and website development
 3. **Policy development support**: Supporting data-driven policymaking through AI-assisted electoral platform drafting and policy analysis
 
 Open-source tools such as those developed by DD2030 are powerful, but tools alone do not reach local communities. What is needed is someone who can build connections with candidates and local governments, introduce digital technology in ways that fit local contexts, and provide hands-on support for implementation and operation. Democracy X plays that “last mile” role. Its scope extends beyond elections and government administration to include consulting on consensus-building in the private sector as well.
@@ -24,7 +24,7 @@ Open-source tools such as those developed by DD2030 are powerful, but tools alon
 
 Democracy X consists of the following members:
 
-- **Tomoki Takate** (Founder): An AI engineer. He was involved with Team Mirai (referred to as "Team Future" in this book) in developing tools such as an AI fact-checker. Interested in implementing digital democracy at the local level, he launched Democracy X.
+- **Tomoki Takate** (Founder): An AI engineer. He was involved with Team Mirai in developing tools such as an AI fact-checker. Interested in implementing digital democracy at the local level, he launched Democracy X.
 - **Yutaro Kuchiki**: An AI researcher. He is responsible for improving the analysis process of the public listening AI and providing technical support.
 - **Fumikazu Kiyota**: While serving as CTO of a startup in the consumer sector, he is also secretary-general of Kumamoto VOICE, a local political organization in Kumamoto. Drawing on his connections to both technology and local politics, he supports Democracy X’s activities.
 
@@ -47,4 +47,4 @@ Democracy X also provided support in the Nagasaki governor election held on Febr
 
 Democracy X is a practitioner bringing digital democracy technologies, including broad listening, to the front lines of local politics.
 
-Its scope goes beyond broad listening alone. It also envisions expansion into election DX, policy development support, and even consulting on consensus-building in the private sector. Communities like DD2030 develop the tools, while practitioners like Democracy X deliver them in ways that fit local contexts. This model of collaboration points to an important path for expanding digital democracy to local governments and elections across Japan.
+Its scope goes beyond broad listening alone. It also envisions expansion into election technology support, policy development support, and even consulting on consensus-building in the private sector. Communities like DD2030 develop the tools, while practitioners like Democracy X deliver them in ways that fit local contexts. This model of collaboration points to an important path for expanding digital democracy to local governments and elections across Japan.

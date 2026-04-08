@@ -12,7 +12,7 @@ In the 2024 Tokyo governor election, the volunteer group “Team Anno,” which 
 
 What DD2030 has consistently emphasized is political neutrality. Rather than backing any particular politician or political party, it takes the position of building the infrastructure that underpins democracy, and in that capacity supports multiple political parties and municipalities regardless of whether they are in government or opposition. Under the goal of “updating democracy through information technology by 2030 and making it normal for every individual’s voice to reach politics and government,” DD2030 announced three development projects at its founding: Public Listening AI, the deliberation platform “Idobata,” and the political funding transparency tool “Polimoney.” Through these, it has been advancing work that supports digital democracy.
 
-Later, in May 2025, Anno founded Team Mirai (referred to as "Team Future" in this book) and ran in the 2025 House of Councillors election. To preserve DD2030’s political neutrality, he stepped down from its board. However, development activities as a community have continued, and even after Anno’s departure, work to improve and promote each project, including Public Listening AI, has carried on.
+Later, in May 2025, Anno founded Team Mirai (meaning “Team Future”) and ran in the 2025 House of Councillors election. To preserve DD2030’s political neutrality, he stepped down from its board. However, development activities as a community have continued, and even after Anno’s departure, work to improve and promote each project, including Public Listening AI, has carried on.
 
 This book, incidentally, has been written by volunteers as part of DD2030’s activities.
 
@@ -67,17 +67,17 @@ A feature was also implemented to extract only high-density clusters. Low-densit
 
 TTTC Scatter and Public Listening AI use different clustering algorithms.
 
-TTTC Scatter uses spectral clustering. Spectral clustering is a method that constructs a neighborhood graph among data points and performs clustering based on that graph structure. In this algorithm, points connected on the graph are classified into the same cluster, so points that are far apart on a two-dimensional plane may still be included in the same cluster. As a result, clusters can appear scattered like detached islands on the plot, which can make interpretation difficult for users.
+TTTC Scatter uses spectral clustering. Spectral clustering is a method that builds a neighborhood graph over the data points and performs clustering based on that graph structure. In this algorithm, points connected in that graph are assigned to the same cluster, so points that are far apart in the two-dimensional plot may still be included in the same cluster. As a result, clusters can appear scattered like detached islands on the plot, which can make interpretation difficult for users.
 
-Public Listening AI, by contrast, uses K-means. K-means is a method that performs clustering based on Euclidean distance between data points, so spatially close points are grouped into the same cluster. This makes clusters appear more compact on the scatter plot and easier to interpret visually.
+Public Listening AI, by contrast, uses K-means. K-means is a method that clusters points based on Euclidean distance, so spatially close points are grouped into the same cluster. This makes clusters appear more compact on the scatter plot and easier to interpret visually.
 
-That said, K-means also has drawbacks. Because K-means assumes spherical clusters, it may fail to properly capture groups that are semantically related but have complex shapes in embedding space. Clusters that spectral clustering could have detected may end up split apart by K-means. Public Listening AI prioritizes visual clarity and is designed to accept this trade-off.
+That said, K-means also has drawbacks. Because K-means assumes spherical clusters, it may fail to properly capture groups that are semantically related but have complex shapes in embedding space. Clusters that spectral clustering could have detected may end up split apart by K-means. Public Listening AI prioritizes visual clarity and accepts that trade-off by design.
 
 ### The Significance of Public Listening AI
 
-With Public Listening AI, broad listening can now be carried out without programming skills or specialized expertise. Analysis can be run simply by uploading a CSV, and results can be published simply by sharing a URL. Although environment setup still requires engineering skills, the barriers to running and sharing analyses have been greatly reduced.
+With Public Listening AI, broad listening can now be carried out without programming skills or specialized knowledge. You can run an analysis simply by uploading a CSV, and publish the results simply by sharing a URL. Although environment setup still requires engineering skills, the barriers to running and sharing analyses have been greatly reduced.
 
-Its open-source nature is also well suited to government use, where transparency in the analysis process is essential. Because the code makes it possible to verify at a technical level how opinions are being classified and summarized, it becomes easier to meet accountability requirements for the analysis results. The detailed implementation is explained in Chapters 12 and 13, but since it is an open-source product, we encourage you to read through the source code with AI at your side.
+Its open-source nature is also well suited to government use, where transparency in the analysis process is essential. Because the code makes it possible to verify at the code level how opinions are classified and summarized, it becomes easier to meet accountability requirements for the analysis results. The detailed implementation is explained in Chapters 12 and 13, but since this is an open-source product, we encourage you to read through the source code with AI by your side.
 
 ## The Turning Point of May 2025
 
@@ -85,19 +85,19 @@ May 2025 became a turning point for the development of Public Listening AI—a m
 
 ### The Community’s Dispersion
 
-On May 7, 2025, Anno, who had launched DD2030, stepped down from DD2030’s board. The next day, May 8, he formally founded Team Mirai (referred to as "Team Future" in this book) and began full-scale political activity for the 2025 House of Councillors election. He made the decision to step down in order to preserve DD2030’s political neutrality, but it had a major impact on the organization’s operating structure.
+On May 7, 2025, Anno, who had launched DD2030, stepped down from DD2030’s board. The next day, May 8, he formally founded Team Mirai and began full-scale political activity for the 2025 House of Councillors election. He made the decision to step down in order to preserve DD2030’s political neutrality, but it had a major impact on the organization’s operating structure.
 
-Because DD2030 had been organized on the foundation of Team Anno, when Anno launched Team Future, many of the engineers and designers who had originally been active in Team Anno naturally shifted their activities to the Team Future community. In addition, one of Public Listening AI’s core developers decided to run as a candidate from Team Future, and development resources declined sharply.
+Because DD2030 had been organized on the foundation of Team Anno, when Anno launched Team Mirai, many of the engineers and designers who had originally been active in Team Anno naturally shifted their activities to the Team Mirai community. In addition, one of Public Listening AI’s core developers decided to run as a candidate from Team Mirai, and development resources declined sharply.
 
-Some people moved to Team Future, some remained with DD2030, and some moved back and forth between both communities. Public Listening AI had been released as an open-source project, so this turnover among developers can even be seen as part of the nature of the community. Precisely because the project had a structure in which anyone could contribute code without depending on any particular individual, development did not stop completely and was able to continue.
+Some people moved to Team Mirai, some remained with DD2030, and some moved back and forth between both communities. Public Listening AI had been released as an open-source project, so this turnover among developers can even be seen as part of the nature of the community. Precisely because the project had a structure in which anyone could contribute code without depending on any particular individual, development did not stop completely and was able to continue.
 
-### The Birth of the Team Future Version
+### The Birth of the Team Mirai Version
 
-To meet its own requirements for the 2025 House of Councillors election, Team Future forked the Public Listening AI repository and proceeded with independent development. By forking it, Team Future’s engineers could add and release features based solely on their own judgment, without waiting for approval from the DD2030 side. In the time-constrained environment of an election, this agility was a major advantage.
+To meet its own requirements for the 2025 House of Councillors election, Team Mirai forked the Public Listening AI repository and proceeded with independent development. By forking it, Team Mirai’s engineers could add and release features based solely on their own judgment, without waiting for approval from the DD2030 side. In the time-constrained environment of an election, this agility was a major advantage.
 
-Team Future used “Idobata Policy,” a version of the deliberation platform “Idobata” developed by DD2030 and specialized for policy proposals, to broadly solicit citizens’ suggestions for changes to its party platform. The large volume of proposals collected was managed as GitHub PRs, and when visualizing them in Public Listening AI’s scatter plot, Team Future implemented a “source link feature” that allowed users to jump from each data point directly to the original GitHub PR with a single click. This was an important improvement from the standpoint of transparency, because it allowed citizens themselves to verify which opinions had been classified into which clusters.
+Team Mirai used “Idobata Policy,” a version of the deliberation platform “Idobata” developed by DD2030 and specialized for policy proposals, to broadly solicit citizens’ suggestions for changes to its party platform. The large volume of proposals collected was managed as GitHub PRs, and when visualizing them in Public Listening AI’s scatter plot, Team Mirai implemented a “source link feature” that allowed users to jump from each data point directly to the original GitHub PR with a single click. This was an important improvement from the standpoint of transparency, because it allowed citizens themselves to verify which opinions had been classified into which clusters.
 
-The features first developed in this fork were later merged back into DD2030’s mainline. Freely developing the features they needed, and then contributing them back to the mainline if they proved broadly useful—the relationship between Team Future and DD2030 embodied the healthy cycle of branching and integration envisioned by open source.
+The features first developed in this fork were later merged back into DD2030’s mainline. Freely developing the features they needed, and then contributing them back to the mainline if they proved broadly useful—the relationship between Team Mirai and DD2030 embodied the healthy cycle of branching and integration envisioned by open source.
 
 ### The Rise of AI Programming Tools
 
@@ -111,7 +111,7 @@ A concrete example is Public Listening AI’s “attribute filter feature.” Th
 
 Then, in September 2025, it became possible to assign a GitHub issue to AI and have code written automatically. Development has accelerated further as we entered an era in which AI programming can be completed without even opening an editor.
 
-### The Reality of the Slowdown Period: Minimal Operations to Keep the Development Flame Alive
+### Keeping Development Alive During the Slowdown
 
 In OSS development, when work continues with only a small number of people, there are times when the back-and-forth of review and decision-making thins out and progress becomes difficult. In Public Listening AI as well, that phase surfaced after the community dispersed.
 
@@ -123,7 +123,7 @@ But even as the community dispersed, a small number of members deliberately rema
 
 Specifically, they made a point of continuing regular development meetings whenever possible, even when there was no clear agenda, and of preserving a place where participants could share the current situation or simply chat, even on days with few attendees—a place where people could know “what is happening right now.” It would have been possible to decide not to hold meetings when there was no progress to report, but in this phase it was necessary to maintain the entry point itself in order to keep the flame alive. In fact, some people came to understand the situation through this venue and, though few in number, newly joined the development effort.
 
-### Connecting with the Field as a Form of Outreach
+### Outreach Through On-the-Ground Engagement
 
 On the outreach side, DD2030 did not simply “wait” for municipalities it had made contact with, but proactively reached out to them. In addition to gathering feedback during trial runs, it emphasized hearing about issues that do not directly appear in the product itself—such as data preparation, internal coordination within government offices, accountability, and the workflow of public listening—in order to understand the context on the ground.
 
@@ -148,7 +148,7 @@ Also as part of outreach activities, technical presentation slides on Public Lis
 
 Public Listening AI began as a fork of TTTC Scatter and, despite community dispersion and resource depletion, grew into a product with 807 merged PRs in about one year from its first commit in February 2025. Several of the case studies introduced in this book used Public Listening AI, which is evidence that it functioned as a tool practical enough for real-world use.
 
-Public Listening AI is published as open source, and anyone can contribute to its codebase. Just as Team Future forked it to develop election-oriented features and those features were later contributed back to the mainline, people who need improvements can make them and share the results with the community. It is precisely because this structure exists that development has been able to continue without depending on any particular individual or organization.
+Public Listening AI is published as open source, and anyone can contribute to its codebase. Just as Team Mirai forked it to develop election-oriented features and those features were later contributed back to the mainline, people who need improvements can make them and share the results with the community. It is precisely because this structure exists that development has been able to continue without depending on any particular individual or organization.
 
 The challenges ahead are clear. As outreach activities have shown, simply providing the tool is not enough for it to take root in practice. It will be necessary to accumulate operational knowledge in areas such as how to design opinion collection, how to share analysis results within government offices, and how to connect them to decision-making, thereby lowering the barriers to adoption. There is also a need for mechanisms that reduce the burden of hosting and maintenance so that municipalities and political parties can operate it sustainably on their own.
 

@@ -53,7 +53,7 @@ The second is **illustrated summaries**. After the group discussions end, the co
 
 ## Field Demonstrations: Tawaramoto and Tomioka
 
-Alongside development, Recora has been brought into multiple residents’ meetings and refined through feedback from the field. Here, I will introduce two especially sustained demonstration cases: Tawaramoto in Nara Prefecture and Tomioka in Gunma Prefecture.
+Alongside development, Recora has been brought into multiple residents’ meetings and refined through feedback from the field. Here, I will introduce two especially substantial field trials: one in Tawaramoto, Nara Prefecture, and one in Tomioka, Gunma Prefecture.
 
 ### Tawaramoto Residents’ Council: Building Through Three Sessions
 

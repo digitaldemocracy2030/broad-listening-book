@@ -2,9 +2,10 @@
 
 ## 120,000 Characters in 10 Minutes: Fujitsu’s Demonstration
 
-Fujitsu issued a press release titled, “Using the large language model ‘Takane’ for public comment operations, Fujitsu conducts a proof-of-concept on workflow efficiency with central government ministries and agencies”[^1]. In short, the company worked jointly with central government ministries and agencies on a demonstration project to improve the efficiency of public comment processing.
+Fujitsu recently issued a press release announcing a proof-of-concept with central government ministries and agencies to make public comment work more efficient using its large language model, Takane[^1]. In short, the company worked with government offices to test whether AI could streamline the processing of public comments.
 
 ![Overview of the proof-of-concept](images/11_06_富士通_実証実験フロー.png)
+*Annotation: This diagram summarizes Fujitsu’s proposed workflow for handling public comments with AI, showing how submitted opinions move through automated classification, summarization, provision mapping, and trend analysis before being organized into outputs for government staff.*
 *Figure: Image of the proof-of-concept (Source: Fujitsu press release)*
 
 In public comment operations, highly contentious regulations can attract thousands of submissions. Staff must read each one, determine which provision of the regulation it relates to, classify it as supportive or opposed, and summarize it. Grouping similar opinions together, considering how to respond, and publishing the results can take more than a month. What is supposed to be “an important mechanism through which citizens can directly express their views” has, in practice, become a war of attrition for frontline staff.
