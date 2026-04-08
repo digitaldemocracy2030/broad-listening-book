@@ -40,6 +40,8 @@ But the results were completely unexpected. “I realized that Nakano Sunplaza d
 
 ![Clustering results from AI-powered public listening on the Nakano Station area redevelopment. The 2,417 responses are spread across multiple thematic clusters, making visible the existence of diverse voices rather than a simple split between support and opposition.](images/07_02_いでい_広聴AI意見クラスタ.png)[^idei_clustering]
 
+*Note: The Japanese cluster labels refer to themes such as combining local culture and commerce, creating family-friendly commercial space, balancing greening with disaster preparedness, pursuing lower-rise development suited to Nakano’s character, protecting local distinctiveness in redevelopment, prioritizing residents’ interests, making use of existing assets, carrying forward the spirit of Nakano Sunplaza as a cultural and entertainment hub, and preserving and sustainably reusing Sunplaza for local revitalization.*
+
 
 The results of the AI-powered public listening did not polarize into simple support and opposition; instead, opinions were widely dispersed. Idei had included the question “Do you have a specific vision in mind?” in the survey because he wanted to draw out diverse views, but even so, he had not expected so many different voices to emerge.
 
@@ -75,7 +77,7 @@ He also stressed the importance of creating spaces where residents can think thr
 
 Many voters told him, “I was grateful that you created a place where I could express thoughts and feelings I had been carrying personally.”
 
-In addition to Nakano Sunplaza, he continued conducting surveys on the theme of “What is needed to keep living in Tokyo in the future?” Although population decline is often discussed, the population of Tokyo’s 23 wards is expected to keep growing until around 2040, while the number of older residents will also increase. While researching what should be prepared for the future in graduate school, Idei also conducted a survey asking, “Where do you find a sense of well-being in your life right now?”
+In addition to Nakano Sunplaza, he continued conducting surveys on the theme of “What is needed to keep living in Tokyo in the future?” Although population decline is often discussed, the population of Tokyo’s 23 wards is expected to keep growing until around 2040, while the number of older residents will also increase. In graduate school, Idei was also researching how Tokyo should prepare for the future, and as part of that work he conducted a survey asking, “Where do you find a sense of well-being in your life right now?”
 
 He also linked his work with the Nakano Skateboard Association to gather views on creating spaces for children. In a context where there are many restrictions—“Don’t do this, don’t do that”—he collected opinions on where and how children can spend their time.
 
@@ -85,7 +87,7 @@ This survey gathered 2,417 responses. The original goal had been 10,000, and Ide
 
 The Nakano electoral district had three seats. Idei received 17,289 votes, placing fourth and losing. The gap between him and the third-place winner was just 2,418 votes.
 
-In hindsight, the strategy of focusing on a single issue had a structural weakness. As Idei himself acknowledged, “There actually weren’t that many stakeholders deeply invested in Nakano Sunplaza,” meaning that those with strong interest in the issue were a minority relative to the electorate as a whole. He also reflected that “perhaps we could have gathered those voices more broadly.” In other examples of AI-powered public listening, some have taken a broader approach—starting with a question like “What do you expect from me?” and first surfacing the issues voters truly care about before building policy from there. By narrowing the theme, Idei was able to gather deep and meaningful voices. But it may also be said that, from the outset, he gave up the chance to discover the issues that mattered to a majority of voters.
+In hindsight, the strategy of focusing on a single issue had a structural weakness. As Idei himself acknowledged, “There actually weren’t that many stakeholders deeply invested in Nakano Sunplaza,” meaning that those with strong interest in the issue were a minority relative to the electorate as a whole. He also reflected that “perhaps we could have gathered those voices more broadly.” In other examples of AI-powered public listening, some have taken a broader approach—starting with a question like “What do you expect from me?” and first surfacing the issues voters truly care about before building policy from there. By narrowing the theme, Idei was able to gather deep and meaningful voices. But in doing so, he may also have given up from the outset the chance to discover the issues that mattered to most voters.
 
 ### Toward Future Use
 
