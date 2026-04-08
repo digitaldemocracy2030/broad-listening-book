@@ -1,16 +1,18 @@
 # Takahiro Anno’s Initiatives in the 2024 Tokyo Governor Election
 
+Author: Hirokazu Nishio
+
 In the July 2024 Tokyo governor election, candidate Takahiro Anno’s campaign adopted “digital democracy” as a central theme and fully introduced broad listening technology into its election activities. The author, Hirokazu Nishio, participated in this effort as one of Anno’s technical supporters. This section reports on the initiative in practice and the insights gained from it.
 
 ## Encountering Talk to the City
 
 This initiative began about two months before the governor election.
 
-The author and Mr. Anno had known each other for some time through their roles as mentors for Mitou Junior, a program run by the Mitou Foundation[^mitou-jr]. In the Mitou Junior community, the concept of Plurality—advanced by Audrey Tang, Taiwan’s Digital Minister, and others—had been a topic of discussion since 2023, partly because Rikuto Niimi, one of the organizers of “Plurality Tokyo” held in April 2023, was also a Mitou Junior alumnus. The author was leading the Japanese translation project for a book on Plurality by Audrey Tang and others, and on May 13, 2024, Mr. Anno contacted him saying he wanted to hear more about Plurality in detail.
+The author and Mr. Anno had known each other for some time through their roles as mentors for Mitou Junior, a Japanese program for mentoring young tech talent run by the Mitou Foundation[^mitou-jr]. In the Mitou Junior community, the concept of Plurality—advanced by Audrey Tang, Taiwan’s Digital Minister, and others—had been a topic of discussion since 2023, partly because Rikuto Niimi, one of the organizers of “Plurality Tokyo” held in April 2023, was also a Mitou Junior alumnus. The author was leading the Japanese translation project for a book on Plurality by Audrey Tang and others, and on May 13, 2024, Mr. Anno contacted him saying he wanted to hear more about Plurality in detail.
 
 The author introduced Mr. Anno to Haruyuki Seki of Code for Japan, one of the organizers of Plurality Tokyo. On May 23, a meeting was held between Mr. Seki, Mr. Anno, and Nishio, and during that meeting Mr. Seki introduced a tool called “Talk to the City” (TTTC). TTTC is an open-source tool developed by the AI Objectives Institute that uses AI to cluster large-scale text data and visualize the distribution of opinions[^aoi-tttc].
 
-On May 30, the author immediately tried TTTC. At Mr. Anno’s suggestion, the test dataset consisted of roughly 20,000 public comments related to AI. The next day, May 31, Mr. Seki gave a keynote lecture titled “Updating Society and Democracy Through Civic Tech” in the organized session “AI and Democracy” at the 2024 Annual Conference of the Japanese Society for Artificial Intelligence, where he presented the analysis results[^hal-sk-jsai].
+On May 30, the author tried TTTC. At Mr. Anno’s suggestion, the test dataset consisted of roughly 20,000 public comments related to AI. The next day, May 31, Mr. Seki gave a keynote lecture titled “Updating Society and Democracy Through Civic Tech” in the organized session “AI and Democracy” at the 2024 Annual Conference of the Japanese Society for Artificial Intelligence, where he presented the analysis results[^hal-sk-jsai].
 
 [^hal-sk-jsai]: Haruyuki Seki, “Updating Society and Democracy Through Civic Tech,” keynote lecture in OS-8 “AI and Democracy,” 2024 Annual Conference of the Japanese Society for Artificial Intelligence, May 31, 2024. https://speakerdeck.com/halsk/sibitukutetukuniyoru-she-hui-tomin-zhu-zhu-yi-noatupudeto (analysis results appear on slide 23; the analysis report is available at https://github.com/nishio/tttc_aipubcom_japan)
 
@@ -21,11 +23,11 @@ At that time, the author also provided, under a CC0 license, a hand-drawn diagra
 ![](images/04_01_broadlistening_concept.png)
 Conceptual diagram of broad listening (CC0)
 
-In this way, even before the official start of the governor election campaign, TTTC was actually run and its potential was confirmed. Based on that experience, Mr. Anno decided to conduct broad listening using Talk to the City during the election period. In addition to the author, the analysis team included M, an SNS analysis researcher who had been Mr. Anno’s contemporary in the same university lab and club[^m-note].
+In this way, even before the official start of the governor election campaign, TTTC was actually run and its potential was confirmed. Based on that experience, Mr. Anno decided to conduct broad listening using Talk to the City during the election period. In addition to the author, the analysis team included a social media analysis researcher referred to here as M, who had been Mr. Anno’s contemporary in the same university lab and club[^m-note].
 
-Because this preparation period existed, it became possible during the campaign to operate at a pace of producing more than 30 reports.
+This preparation period made it possible to produce more than 30 reports during the campaign.
 
-[^m-note]: M, “The Tokyo Governor Election from the Perspective of an SNS Researcher: Here’s What’s Amazing About TTTC,” note, July 2024. https://note.com/m_datasci/n/n3a5f4b9cdee5
+[^m-note]: M, “The Tokyo Governor Election from the Perspective of a Social Media Researcher: Here’s What’s Amazing About TTTC,” note, July 2024. https://note.com/m_datasci/n/n3a5f4b9cdee5
 
 ## Why Broad Listening in an Election?
 
@@ -43,19 +45,19 @@ The Anno campaign collected voters’ voices through multiple channels.
 
 **Questions for AI Anno**: The campaign offered “AI Anno,” a system that answered people’s questions via YouTube Live. Questions submitted to AI Anno also became a useful source of information for understanding what people were interested in. Technically, these were collected through the YouTube comments API.
 
-**AI voice phone**: By combining IP telephony with highly real-time speech-to-text, the campaign connected telephone calls to the AI Anno question-and-answer system. This was designed as a way for people less comfortable with electronic text input to interact through the more familiar medium of voice. Like the questions submitted to AI Anno on YouTube, this also became a useful information source.
+**AI voice phone**: By combining IP telephony with real-time speech-to-text, the campaign connected telephone calls to the AI Anno question-and-answer system. This was designed as a way for people less comfortable with electronic text input to interact through the more familiar medium of voice. Like the questions submitted to AI Anno on YouTube, this also became a useful information source.
 
 **My Number Voting**: POCKETSIGN released “My Number Voting,” an experimental electronic voting app that allowed users to express support or opposition to policies after verifying their identity with a My Number card under My Number, Japan’s national ID system[^mainatohyo]. Mr. Anno introduced it on his official website and also received the voting data. This later became input data for the Polis analysis discussed below.
 
 [^mainatohyo]: https://prtimes.jp/main/html/rd/p/000000036.000110743.html
 
-**GitHub**: People were also able to submit proposals regarding the electoral platform on GitHub[^github-manifesto]. The process of improving the platform itself became observable on GitHub, and anyone could obtain the latest version of the platform. This was true not only for humans, but also for AI Anno.
+**GitHub**: People were also able to submit proposals regarding the candidate's policy platform on GitHub[^github-manifesto]. The process of improving the candidate's policy platform itself became observable on GitHub, and anyone could obtain the latest version of it. This was true not only for humans, but also for AI Anno.
 
 The visualizations created with Talk to the City from data collected through `#TOKYOAI` and the anonymous suggestion box became widely recognized because of the strong visual impact of the scatterplots, which in turn helped raise awareness of broad listening. At the same time, however, this also led some people to think that broad listening was nothing more than this scatterplot-style representation.
 
 Mr. Anno’s vision was a much larger system. In the governor election platform, it was described as a “cycle of listening, refining, and communicating.” He believed it was important to run this cycle quickly. Visualization was only one component of that cycle. GitHub and AI Anno were components mainly responsible for other parts of the system, but as operations progressed it became clear that they too could be made targets of Talk to the City visualization. In particular, AI Anno and Talk to the City were initially seen as unrelated components, but once question data began to accumulate, it became clear that this too was simply another form of information gathering.
 
-![alt text](images/04_01_kiku-migaku-tsutaeru.png)
+![alt text](images/04_01_kiku-migaku-tsutaeru_en.png)
 The cycle of “listening, refining, and communicating” (quoted from Mr. Anno’s electoral platform)
 
 ## Visualizing Opinions with Talk to the City
@@ -70,7 +72,7 @@ TTTC’s processing can be broadly divided into three stages:
 
 In the end, the distribution of opinions is visualized as a two-dimensional scatterplot, producing a report that allows users to survey what kinds of opinion groups exist.
 
-More than 30 reports were produced during the election period. For example, 951 opinions from the anonymous suggestion box were visualized.
+More than 30 reports were produced during the election period. These included a visualization of 951 opinions from the anonymous suggestion box.
 
 ## Reflecting Analysis Results in the Platform
 
@@ -82,7 +84,7 @@ To help readers form as concrete an image as possible, I will introduce some sca
 
 Below is a visualization of 951 opinions extracted from submissions to the anonymous suggestion box. Each point corresponds to one opinion.
 
-![](images/04_01_anonymous_opinion_scatter.png)
+![](images/04_01_anonymous_opinion_scatter_en.png)
 Scatterplot of submissions to the anonymous suggestion box
 
 In practice, analysts do not usually look at images like this. More often, they open a full-screen map like the one below and observe the distribution on a large display. In this figure, opinion groups are color-coded, and the group titles appear on hover. However, this may be difficult to see on the printed page. If you open the author’s blog post[^shotokutaishi] on a PC, you can view a large full-color image.
@@ -94,23 +96,23 @@ Full-screen map
 
 Let us look more closely at one opinion group. Each point corresponds to an opinion, and the AI groups similar opinions together. The AI also generates an explanation of what kinds of opinions are contained in that group. In the figure below, the AI explains that this group contains voices calling for the abolition of income limits in the context of child-care support.
 
-![](images/04_01_cluster_detail.png)
+![](images/04_01_cluster_detail_en.png)
 Detailed analysis
 
 Each point can be traced all the way back to the original post. In other words, the system allows step-by-step elaboration: first gaining a rough understanding, and then examining the details.
 
-![](images/04_01_comment_detail.png)
+![](images/04_01_comment_detail_en.png)
 An example showing a specific comment. It conveys both one household’s situation under income limits and the urgency of their appeal.
 
 Because similar opinions are visualized as gathering near one another, looking at the points around a given point makes it possible to find related opinions. Rather than reading only one person’s description of a single opinion, one can read it together with descriptions by others saying similar things. This makes it possible to observe an issue from multiple directions and gain a more multifaceted understanding. This is a major strength of visualizing opinions in a scatterplot, but it is also something that cannot really be experienced by merely looking at static images without using the interactive system.
 
-By examining the area around this point, related opinions were discovered not just from this one post but from multiple posts. This suggested that the issue was important to many people. The policy team then examined the detailed circumstances and budgetary feasibility, concluded that a change should be made, and Anno made the decision to update the platform. This is one concrete example of a platform update driven by broad listening.
+By examining the area around this point, related opinions were discovered not just from this one post but from multiple posts. This suggested that the issue was important to many people. The policy team then examined the detailed circumstances and budgetary feasibility, concluded that a change should be made, and Anno made the decision to update the platform. This is one concrete example of a policy platform update driven by broad listening.
 
-The revision history of this platform is published on GitHub[^github]. It makes transparent when, why, and how changes were made. In addition, explanations of updates were periodically turned into articles by AI[^note]. The details are explained in Ito’s article, “We’ve Started Operating a System That Uses AI to Automatically Turn Takahiro Anno’s Policy Updates into Articles!”[^note2]. The approach made it easier for people to understand and keep up with how policies were updated in response to public opinion, thereby advancing policy improvement as a two-way process.
+The revision history of this election policy platform is published on GitHub[^github]. It makes transparent when, why, and how changes were made. In addition, explanations of updates were periodically turned into articles by AI[^note]. The details are explained in Ito’s article, “We’ve Started Operating a System That Uses AI to Automatically Turn Takahiro Anno’s Policy Updates into Articles!”[^note2]. The approach made it easier for people to understand and keep up with how policies were updated in response to public opinion, thereby advancing policy improvement as a two-way process.
 
 [^github]: https://github.com/takahiroanno2024/election2024/pull/221
 
-[^note]: [2024 Tokyo Governor Election] Summary of Updates to Takahiro Anno’s Governor Election Platform (6/22–6/29) | Takahiro Anno Staff @ Team Mirai (referred to as "Team Future" in this book) [Official] https://note.com/annotakahiro24/n/n2e69a38b41f3
+[^note]: [2024 Tokyo Governor Election] Summary of Updates to Takahiro Anno’s Governor Election Platform (6/22–6/29) | Takahiro Anno Staff @ Team Mirai [Official] https://note.com/annotakahiro24/n/n2e69a38b41f3
 
 [^note2]: https://note.com/jujunjun110/n/n2f855e5a6cd8?magazine_key=m3060242bb916
 
@@ -122,13 +124,13 @@ My Number Voting was not operated by the Anno campaign; it was an electronic vot
 
 [^directvote]: https://takahiroanno.com/directvote
 
-When people hear that social media posts are being used as policy input, concerns often arise: “What if one person posts multiple times?” “What if someone creates multiple accounts and pretends to be multiple people?” “What if foreign operatives impersonate citizens?” Japan already has a technology capable of addressing these concerns: the My Number system.
+When people hear that social media posts are being used as policy input, concerns often arise: “What if one person posts multiple times?” “What if someone creates multiple accounts and pretends to be multiple people?” “What if foreign operatives impersonate citizens?” Japan already has a technology capable of addressing these concerns: the My Number system, Japan’s national ID system.
 
 In materials submitted by Mr. Anno to the second meeting of the Digital Administrative and Fiscal Reform Strategy Team (March 25, 2025), under the Cabinet Secretariat’s Digital Administrative and Fiscal Reform Council, he proposed combining Talk to the City with smartphone-based My Number functionality to enable one-person-one-vote participation, and also suggested that My Number card authentication could be used as a countermeasure against cognitive warfare on deliberative platforms.
 
 On June 24, 2024, through cooperation between the Digital Agency and Apple, My Number card functionality became available on the iPhone. This made it possible to use the electronic certificates on the My Number card through integration with Apple’s systems, eliminating the need to physically scan the card when logging into services such as Mynaportal, Japan’s online government services portal. The author uses it as well, and it is extremely convenient.
 
-Against this backdrop of steady progress in the My Number system, My Number Voting was released on June 21, 2024[^mynavote]. It allowed people to express direct support or opposition not to politicians but to policies. In this experiment, users answered questions such as, “Should redevelopment proceed in Meiji Jingu Gaien by rebuilding Jingu Stadium and Chichibunomiya Rugby Stadium and constructing new high-rise buildings?” and “Given the current concentration of population in Tokyo, should this population distribution continue to be maintained in the future?” The experiment demonstrated that it was possible both to restrict participation to one vote per person and to obtain analysis results limited to Tokyo residents.
+Against this backdrop of steady progress in the My Number system, My Number Voting was released on June 21, 2024[^mynavote]. It allowed people to express direct support or opposition not to politicians but to policies. In this experiment, users answered questions such as, “Should redevelopment proceed in Meiji Jingu Gaien, the outer garden of Meiji Shrine, by rebuilding Jingu Stadium and Chichibunomiya Rugby Stadium and constructing new high-rise buildings?” and “Given the current concentration of population in Tokyo, should this population distribution continue to be maintained in the future?” The experiment demonstrated that it was possible both to restrict participation to one vote per person and to obtain analysis results limited to Tokyo residents.
 
 [^minavote]: https://prtimes.jp/main/html/rd/p/000000037.000110743.html
 
@@ -183,7 +185,7 @@ Candidate Takahiro Anno received 154,638 votes (2.3% of the vote)[^tochiji-resul
 
 The practice of broad listening in this election became a pioneering example demonstrating the potential of digital democracy in Japanese elections. Although challenges remain, it was meaningful that the process of “listening to voters’ voices and building policy” was actually put into motion within the short time frame of an election campaign.
 
-This result—more than 2% of the vote—also helped encourage Mr. Anno to launch the political party Team Mirai (referred to as "Team Future" in this book) in 2025[^team-mirai]. The ideals of “digital democracy” and the methods of broad listening cultivated during the governor election have continued to occupy a central place in his subsequent political activities.
+This result—more than 2% of the vote—also helped encourage Mr. Anno to launch the political party Team Mirai (meaning “Team Future”) in 2025[^team-mirai]. The ideals of “digital democracy” and the methods of broad listening cultivated during the governor election have continued to occupy a central place in his subsequent political activities.
 
 Broad listening, moreover, is not a technology limited to elections. It can be applied in many settings, including analyzing customer feedback in private companies, gathering residents’ opinions in local governments, and facilitating dialogue with supporters in NPOs. This point will be discussed in more detail in the latter half of this book.
 

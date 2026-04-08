@@ -1,6 +1,6 @@
 # Chapter 4 The Spread of Broad Listening in Japan
 
-(Yasukazu Nishio)
+Author: Yasukazu Nishio
 
 English translation by Luke Closs
 
@@ -16,9 +16,9 @@ In Anno’s Tokyo governor race, a “technological demonstration” of exactly 
 
 In the October 2024 House of Representatives election, Nippon TV introduced broad listening into its election coverage. By using AI to analyze and visualize voices on X related to the election and broadcasting the results in a terrestrial TV election special, it likely became the world’s first example of broad listening being used in television news coverage. During the same lower house election period, the “Public Opinion Map” was released as part of the election information site JAPAN CHOICE. By embedding Polis and allowing voters to cast votes themselves, it attempted to visualize the multidimensional distribution of opinions, becoming the largest application of Polis in Japan.
 
-In March 2025, House of Councillors member Takae Ito of the Democratic Party for the People presented a “Map of Issues” created by TTTC as reference material in the Budget Committee, pointing out that the challenges facing the “employment ice age” generation cannot be fully captured by policies focused narrowly on employment. It was the first time in Japan’s Parliament that the results of broad listening were used as the basis for questioning the government.
+In March 2025, House of Councillors member Takae Ito of the Democratic Party for the People presented a “Map of Issues” created by TTTC as reference material in the Budget Committee, pointing out that the challenges facing people who came of age during Japan's long hiring slump of the late 1990s and early 2000s cannot be fully captured by policies focused narrowly on employment. It was the first time in Japan’s Parliament that the results of broad listening were used as the basis for questioning the government.
 
-Furthermore, from May 2025 onward, the Asahi Shimbun Media Research and Development Center began using Talk to the City’s SNS analysis in its reporting, expanding broad listening into data journalism on a variety of topics, including the House of Councillors election and the World Expo.
+Furthermore, from May 2025 onward, the Asahi Shimbun Media Research and Development Center began using Talk to the City’s social media analysis in its reporting, expanding broad listening into data journalism on a variety of topics, including the House of Councillors election and the World Expo.
 
 [^anno-kaiken]: Takahiro Anno, “An Engineer and Writer Holds a Press Conference to Announce His Candidacy in the Tokyo Governor Election: Full Transcript,” note, June 2024. https://note.com/takahiroanno/n/nead5c2e2454b
 [^audrey-manifesto]: Audrey Tang, "A Manifesto," Institute for Ethics in AI. https://6pack.care/manifesto/ - "We didn't just protest; we pivoted to demonstration ('demo')"

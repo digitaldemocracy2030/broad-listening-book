@@ -8,9 +8,9 @@ English translation by Luke Closs
 
 In the October 2024 House of Representatives election, Nippon TV carried out election coverage using broad listening. This was likely the **world’s first example of broad listening being used in television news reporting**.
 
-During the election period, a YouTube program titled *Who Should We Vote For? A Meeting to Create the 2024 House of Representatives Election Through Everyone’s Voices* was streamed in six episodes. The format involved collecting opinions about each political party from X (formerly Twitter), analyzing them with TTTC, and then inviting lawmakers from each party to discuss the findings. The reports visualized which topics were attracting attention on X, and Yasuno also participated as a commentator.
+During the election period, a YouTube program titled *Who Should We Vote For? A Meeting to Create the 2024 House of Representatives Election Through Everyone’s Voices* was streamed in six episodes. The format involved collecting opinions about each political party from X (formerly Twitter), analyzing them with TTTC, and then inviting lawmakers from each party to discuss the findings. The reports visualized which topics were attracting attention on X, and Takahiro Anno also participated as a commentator.
 
-Then, on October 27, election day, a terrestrial TV election special titled *zero Election 2024: How Japan Will Change* was broadcast. Posts on X related to the House of Representatives election were collected for about 25 minutes starting from 8:00 p.m., when voting closed, and analyzed with TTTC to produce a report. During the program, Yasuno explained the scatter plot and delivered voters’ reactions immediately after the polls closed in a near-real-time format.
+Then, on October 27, election day, a terrestrial TV election special titled *zero Election 2024: How Japan Will Change* was broadcast. Posts on X related to the House of Representatives election were collected for about 25 minutes starting from 8:00 p.m., when voting closed, and analyzed with TTTC to produce a report. During the program, Anno explained the scatter plot and delivered voters’ reactions immediately after the polls closed in a near-real-time format.
 
 Each report that was produced was not only used on the program, but was also made publicly available online.
 
@@ -69,7 +69,7 @@ In the previous version of TTTC, there was no way to save specific comments foun
 
 To solve this issue, a favorites feature was implemented. By bookmarking comments of interest, they could be called up with a single click during the program, and people viewing the published reports could also revisit comments they found noteworthy.
 
-![Detailed cluster view. You can see the cluster analysis results, representative comments, and the favorites feature](images/ntv_cluster_example.png)
+![Detailed cluster view. You can see the cluster analysis results, representative comments, and the favorites feature](images/04_03_ntv_cluster_example_en.png)
 
 **UI improvements for smartphones and tablets**
 
@@ -83,9 +83,7 @@ TTTC has a feature that displays comments representing each cluster. Previously,
 
 To address this problem, the system was improved to use an LLM to extract comments with a high degree of relevance to the cluster title. This made it possible to convey the content of each cluster more accurately.
 
-That said, this is fundamentally also a problem that should be addressed by improving the clustering itself. Preventing loosely related opinions from being grouped into the same cluster in the first place would be a more fundamental solution. In the Public Listening AI developed later, improvements to the algorithm were attempted in order to address this issue. Details are explained in Chapter XX.
-
-TODO: Revise this description once the chapter covering Public Listening AI has been finalized.
+That said, this is fundamentally also a problem that should be addressed by improving the clustering itself. Preventing loosely related opinions from being grouped into the same cluster in the first place would be a more fundamental solution. In the Public Listening AI developed later, improvements to the algorithm were attempted in order to address this issue. Details are explained in Chapter 13.
 
 ### 4.3.5 Challenges and Limitations
 

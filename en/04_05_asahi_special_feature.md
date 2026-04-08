@@ -4,7 +4,7 @@
 
 ## The Cutting Edge of Data Journalism at The Asahi Shimbun
 
-The Asahi Shimbun's Media Research & Development Center (commonly known as M-Lab)[^mken] began with a May 2025 article analyzing social media posts about cutting the consumption tax using Talk to the City[^consumption_tax], and has since applied broad listening to reporting on a range of topics, including the House of Councillors election and the Expo. We interviewed Shoichi Otsu of M-Lab and Keisuke Yamazaki of the Data Journalism Team in the Digital Investigative Reporting Department about the background to these efforts and where they may lead next. (Interview conducted in January 2026)
+The Asahi Shimbun, one of Japan's major national newspapers, through its Media Research & Development Center (commonly known as M-Lab)[^mken], began with a May 2025 article analyzing social media posts about cutting the consumption tax using Talk to the City[^consumption_tax], and has since applied broad listening to reporting on a range of topics, including the House of Councillors election and the Expo. We interviewed Shoichi Otsu of M-Lab and Keisuke Yamazaki of the Data Journalism Team in the Digital Investigative Reporting Department about the background to these efforts and where they may lead next. (Interview conducted in January 2026)
 
 ### What Is the Media Research & Development Center?
 
@@ -40,15 +40,15 @@ In that context, someone asked whether The Asahi Shimbun could use a similar met
 
 **Nakayama** Was there anything newly revealed in the analysis results, or anything you found particularly interesting?
 
-**Otsu** What stayed with me most was that when we tried broad listening before the 2025 House of Councillors election, exclusionary views appeared to have increased compared with the 2024 House of Representatives election—at least within the range of social media posts we collected. That cluster had a lot of volume, or at least it stood out.[^sangiin1]
+**Otsu** What stayed with me most was that when we tried broad listening before the 2025 House of Councillors election, anti-foreigner views appeared to have increased compared with the 2024 House of Representatives election—at least within the range of social media posts we collected. That cluster had a lot of volume, or at least it stood out.[^sangiin1]
 
-![Distribution of opinions exchanged on social media about the House of Councillors election. The "foreign nationals policy" cluster sits adjacent to "expectations for political parties and leadership," "the performance of politics and politicians," and "population decline," suggesting a link between political distrust and exclusionary views.](images/04_04_参院選SNS意見分布.png)
+![Distribution of opinions exchanged on social media about the House of Councillors election. The "foreign nationals policy" cluster sits adjacent to "expectations for political parties and leadership," "the performance of politics and politicians," and "population decline," suggesting a link between political distrust and anti-foreigner views.](images/04_04_参院選SNS意見分布.png)
 
-We had assumed that "on the internet, exclusionary opinions are always more likely to attract noise and attention." But once the election campaign actually began, exclusionism and issues involving foreign nationals really did become major points of focus. It made me feel that what broad listening had shown was something that then unfolded in reality. I found that very interesting.
+We had assumed that "on the internet, anti-foreigner opinions are always more likely to attract noise and attention." But once the election campaign actually began, anti-foreigner sentiment and issues involving foreign nationals really did become major points of focus. It made me feel that what broad listening had shown was something that then unfolded in reality. I found that very interesting.
 
 **Yamazaki** The scatter plot—the final output of broad listening—is really one of its strengths. AI aggregates the many different opinions on social media and sorts them by theme. Looking at the plot, you can also get a sense of the distance between themes—how close or far apart one theme is from another.
 
-When we analyzed the entire election period, the most common theme was something like "restoring trust in politicians," but nearby there was also a theme like "foreign nationals policy."[^sangiin2] From the results, you could read an image in which distrust of established parties was giving rise to exclusionary views. I think that helped make the benefits of using Talk to the City visible.
+When we analyzed the entire election period, the most common theme was something like "restoring trust in politicians," but nearby there was also a theme like "foreign nationals policy."[^sangiin2] From the results, you could read an image in which distrust of established parties was giving rise to anti-foreigner views. I think that helped make the benefits of using Talk to the City visible.
 
 ![Distribution of opinions posted on social media just before voting day in the House of Councillors election (July 1–10, 2025; about 30,000 posts analyzed with Talk to the City)](images/04_04_参院選投票日直前SNS意見分布.png)
 
