@@ -1,10 +1,10 @@
 ## Column: The Loss and Recovery of “Safe Empathy,” and Broad Listening as a Form of Empathy
 
-“Safe empathy” has disappeared from society.
+Society has lost spaces where empathy feels safe.
 
 Empathy is a fundamental human need. Discovering that “someone else thinks the same way I do” gives us a deep sense of reassurance. But in modern society, the very act of seeking empathy has come to carry risks. The moment we go looking for people on social media who understand us and try to connect with them, the door to the echo chamber swings open.
 
-In this chapter, we have looked at how political leaders and public administration can use broad listening. It fills gaps in legitimacy, updates the map of public issues, and connects those issues to policy. But broad listening also has a distinct value for the citizens being listened to. It offers a way to restore this lost “safe empathy.”
+In Chapter 3, we looked at how political leaders and public administration can use broad listening. It fills gaps in legitimacy, updates the public issue space, and connects those issues to policy. But broad listening also has a distinct value for the citizens being listened to. It offers a way to restore this lost “safe empathy.”
 
 An echo chamber is a closed space where only people with the same opinions or values gather, and their voices bounce off one another and become amplified. The term is a metaphor borrowed from acoustics: just as your own voice reflects off the walls and returns to you again and again, in an echo chamber you hear the same kinds of opinions repeated over and over.
 
@@ -36,15 +36,15 @@ In Chapter 3, I introduced social media as a data source for broad listening. Bu
 - **The position of an observer**: you gain a bird’s-eye view rather than the perspective of a participant
 - **The absence of attack**: there is a safe distance where no one can argue back at you
 
-This feeling is possible precisely because of the scatterplot as a form of representation. Imagine if the same data were presented instead as a list: “Childcare support: 120 responses; elderly welfare: 70; environmental issues: 45...” A string of numbers does not show the distance between opinions, or where you yourself stand among them. In a scatterplot, you can visually grasp at a glance where the cluster closest to your own views is located, and how far away opposing views are. I believe this sense that “I exist within society” arises precisely because of this spatial arrangement.
+This feeling is possible precisely because of the scatterplot as a form of representation. Imagine if the same data were presented instead as a list: “Childcare support: 120 responses; elderly welfare: 70; environmental issues: 45...” A string of numbers does not show the distance between opinions, or where you yourself stand among them. In a scatterplot, you can visually grasp at a glance where the cluster closest to your own views is located, and how far away opposing views are. This sense that “I exist within society” arises precisely because of this spatial arrangement.
 
 A scatterplot presents complexity without flattening it. It does not reduce everything to a simple story of good and evil. And yet that complexity is presented not as an incomprehensible threat, but as a structure that can be surveyed from above. This is another path toward easing anxiety without relying on conspiracy theories.
 
 As discussed in Chapter 2, broad listening has a “noisy minority” problem. The size of a cluster reflects the number of posted opinions, not the level of support across society as a whole. Even so, it still allows people to understand, in relative terms, how many others share their view and how much opposing opinion exists. It can break the illusion that “only my opinion is correct, and dissenters are just a tiny fringe.”
 
-In Taiwan’s vTaiwan process, which used Polis, this kind of “safe observation” functioned as a precondition for deliberation. One of Polis’s key design principles is that users cannot reply directly to one another. On social media, clashes in the comments—people trying to defeat one another in argument—are routine. Polis intentionally removed that structure. Because participants did not have to worry about being attacked, they could calmly look at views different from their own. As a result, there were cases in which people discovered that those they had thought of as “the enemy” had reasons of their own, and this opened a path toward consensus-building (I discuss this in more detail in Chapter 11).
+In Taiwan’s vTaiwan process, which used Polis, this kind of “safe observation” functioned as a precondition for deliberation. One of Polis’s key design principles is that users cannot reply directly to one another. On social media, clashes in the comments—people trying to defeat one another in argument—are routine. Polis intentionally removed that structure. Because participants did not have to worry about being attacked, they could calmly look at views different from their own. As a result, there were cases in which people discovered that those they had thought of as “the enemy” had reasons of their own, and this opened a path toward consensus-building, as discussed in more detail in Chapter 11.
 
-This is where safe observation connects with the expanded deliberation discussed in Chapter 3. First, people use the scatterplot to take in society as a whole and accept the existence of different opinions. Only after that psychological preparation is possible can they sit at the same table with people who hold different views. Safe observation is also the entrance to deliberation.
+This is where safe observation connects with the expanded deliberation discussed in Chapter 3. First, people use the scatterplot to take in society as a whole and accept the existence of different opinions. Only after that psychological preparation is possible can they sit at the same table with people who hold different views. Safe observation is an entry point to deliberation.
 
 ### Broad Listening for Citizens
 

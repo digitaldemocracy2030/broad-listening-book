@@ -10,11 +10,11 @@ Chapter 1 introduced three forms of broad listening: broad listening as a tool, 
 
 This chapter turns to the remaining two forms—**broad listening as support for augmented deliberation** and **politician-/government-led broad listening**—and explains why they are needed and how they should be used, that is, how they fit into democratic processes and how they can be operated in practice.
 
-**Broad listening is not a tool for “measuring public opinion” (the ratio of support and opposition). It is infrastructure for updating society’s “issue map” and supporting the legitimacy of democratic deliberation and decision-making.**
+**Broad listening is not a tool for “measuring public opinion” (the ratio of support and opposition). It is infrastructure for updating society’s understanding of the issue space and supporting the legitimacy of democratic deliberation and decision-making.**
 
-By “issue map,” we mean a structured, visualized picture of what issues, lines of conflict, minority views, and blind spots exist around a given policy question. It is not a quantitative measurement of public opinion in the sense of “what percentage of people think what,” but rather a qualitative overview of “the different ways people are thinking about the issue.”
+By “issue space,” we mean a structured, visualized picture of what issues, lines of conflict, minority views, and blind spots exist around a given policy question. It is not a quantitative measurement of public opinion in the sense of “what percentage of people think what,” but rather a qualitative overview of “the different ways people are thinking about the issue.”
 
-In fact, in March 2025, there was a case in which House of Councillors member Takae Ito of the Democratic Party for the People used an issue map visualized through TTTC as the basis for questioning in the Japanese Parliament, pointing out blind spots in government policy (see Chapter 4).
+In fact, in March 2025, there was a case in which House of Councillors member Takae Ito of the Democratic Party for the People used a TTTC visualization of the issue space as the basis for questioning in the Japanese Parliament, pointing out blind spots in government policy (see Chapter 4).
 
 Broad listening exists to keep the loop of “issue identification → deliberation → accountability” turning in response to new issues and sudden changes that arise between elections.
 
@@ -30,7 +30,7 @@ To clarify this argument, this chapter explains the following three points:
 
 In representative democracy, citizens choose representatives through elections, and those representatives make policy decisions. In Japan, members of the House of Representatives serve four-year terms, while members of the House of Councillors serve six-year terms.
 
-There is a reason for this system. It is not realistic for all citizens to decide every policy issue themselves. So during elections, candidates present campaign pledges, and citizens choose representatives based on those pledges. Once elected, representatives carry them out during their term, and citizens evaluate the results in the next election. This is the basic design logic of representative democracy.
+There is a reason for this system. It is not realistic for all citizens to decide every policy issue themselves. So during elections, candidates present their electoral platforms, and citizens choose representatives based on those platforms. Once elected, representatives carry them out during their term, and citizens evaluate the results in the next election. This is the basic design logic of representative democracy.
 
 This system worked in an era when social change was gradual. But the pace of change in modern society has accelerated. Shorter cycles of technological innovation, the immediate impact of international developments through globalization, the dramatic increase in the speed of information diffusion through social media, and the frequent occurrence of hard-to-predict events such as pandemics and climate change have all made it common for issues that were not salient at election time to emerge as major policy challenges during a representative’s term.
 
@@ -38,9 +38,9 @@ This system worked in an era when social change was gradual. But the pace of cha
 
 These changes confront politicians with what we may call a “legitimacy gap.”
 
-Politicians run for office on campaign pledges and are elected with voter support. Votes cast in response to those pledges are the source of legitimacy in representative democracy. But during their term, politicians are forced to make decisions on issues that were not election issues at the time—such as pandemic response or regulation of generative AI. On these new issues, they have not received an explicit mandate from voters. Yet they must still respond. That is where the “legitimacy gap” arises.
+Politicians run for office on their electoral platforms and are elected with voter support. Votes cast in response to those platforms are the source of legitimacy in representative democracy. But during their term, politicians are forced to make decisions on issues that were not election issues at the time, such as pandemic response or regulation of generative AI. On these new issues, they have not received an explicit mandate from voters. Yet they must still respond. That is where the “legitimacy gap” arises.
 
-In an era of gradual social change, this gap was relatively small. There were fewer new issues arising during a term, and many could be addressed as extensions of existing pledges. Today, however, because of the four factors mentioned above, legitimacy gaps arise more frequently and on a larger scale.
+In an era of gradual social change, this gap was relatively small. There were fewer new issues arising during a term, and many could be addressed as extensions of existing platform commitments. Today, however, because of the four factors mentioned above, legitimacy gaps arise more frequently and on a larger scale.
 
 To fill this gap, we need a mechanism for continuously grasping “what issues are out there” even between elections. A one-time expression of will through voting is not enough; when new issues emerge, we also need ways to understand what perspectives and concerns citizens have about them.
 
@@ -48,7 +48,7 @@ Audrey Tang has described voting in elections through the metaphor of informatio
 
 > “It’s not just a 5-bit transmission every four years—that is, voting. There is also participatory budgeting, online petitions, referendums, presidential hackathons, regulatory sandboxes, and office hours. There are many ways to increase upload bandwidth. Democracy in everyday life means not only downloading from the government, but also uploading to the government.”[^3]
 
-[^3]: Audrey Tang, Interview with NHK World, 2020-12-24 https://sayit.archive.tw/2020-12-24-interview-with-nhk-world
+[^3]: Audrey Tang, Interview with NHK World, December 24, 2020 https://sayit.archive.tw/2020-12-24-interview-with-nhk-world
 
 Five bits is the amount of information involved in choosing one option out of 32. In other words, if voters cast one vote each among roughly 30 candidates, the government receives only about 5 bits of information per person. If there are fewer candidates, the information content is even lower. To fill the legitimacy gap, we need richer and more frequent forms of citizen participation to complement this “low-bandwidth, high-latency” communication channel.
 
@@ -62,7 +62,7 @@ Japan has entered a period of population decline. With falling birth rates, the 
 
 This is competition among municipalities. Just as politicians are judged in elections every few years, local governments are evaluated every day through residents’ decisions to move. Residents always have the option of “voting with their feet” by relocating to a better municipality. They may move to a neighboring city with stronger child-care support, choose a town with better commuting access and living conditions, or bring elderly parents to a municipality with better long-term care services. These decisions accumulate day by day, month by month.
 
-If elections are the “source of legitimacy” for politicians, then voting with one’s feet is a “condition of survival” for local government. When residents decline, tax revenue falls, services shrink, and more residents leave. Many municipalities have fallen into this negative spiral.
+If elections are the “source of legitimacy” for politicians, then voting with one’s feet is a “condition of survival” for local government. When population declines, tax revenue falls, services shrink, and more residents leave. Many municipalities have fallen into this negative spiral.
 
 To compete successfully, governments must decide what to prioritize and what to cut within limited budgets. If child-care support is expanded, what should be reduced? If public facilities are consolidated or closed, how can public understanding be secured? Such trade-off-laden decisions require understanding what residents value and what they are willing to accept.
 
@@ -86,7 +86,7 @@ The legal basis for public comment in Japan is Article 38 of the Administrative 
 
 In other words, public comment is used as a final check on regulations that are already largely complete. And most of the people submitting comments are either companies directly affected by the regulation or a very small number of unusually civic-minded individuals. As a result, most public comment processes receive fewer than ten submissions.
 
-![Number of public comments](column/opinion_histogram_filtered.png)
+![Number of public comments](column/opinion_histogram_filtered_en.png)
 
 Most public comment processes receive fewer than ten submissions, making it hard to say that they are truly “collecting views broadly.” One reason so few comments are submitted is that the process asks for opinions on documents written in bureaucratic language. As a result, only corporate legal departments accustomed to reading administrative documents, or a small number of people capable of deciphering them, are able to respond. In addition, because these drafts are issued just before implementation, they are written in highly practical, technical terms that only specialists can really understand.
 
@@ -129,17 +129,17 @@ Organizing the above, we get the following characteristics:
 
 | Method | Representativeness | Real-time capability | Large-scale data | Free text | Structuring |
 |------|--------|---------------|----------|----------|--------|
-| Opinion polls (multiple choice) | ◎ | × | △ | × | ◎ |
-| Opinion polls (free text) | ◎ | × | △ | ◎ | △ |
-| Public comment | × | △ | × | ◎ | × |
-| Petitions / formal requests | × | △ | × | 〇 | × |
-| Online opinion collection within organizations | △ | ◎ | 〇 | ◎ | × |
-| Social media | × | ◎ | ◎ | ◎ | × |
-| **Broad listening** | × | 〇 | ◎ | ◎ | 〇 |
+| Opinion polls (multiple choice) | High | None | Low | None | High |
+| Opinion polls (free text) | High | None | Low | High | Low |
+| Public comment | None | Low | None | High | None |
+| Petitions / formal requests | None | Low | None | Medium | None |
+| Online opinion collection within organizations | Low | High | Medium | High | None |
+| Social media | None | High | High | High | None |
+| **Broad listening** | None | Medium | High | High | Medium |
 
-As the table shows, methods that can gather large amounts of free text (organizational channels and social media) lack the ability to structure it, while opinion polls (multiple choice), which can produce structured results, do not capture free text. Broad listening is the technology that fills this gap. It is not simply another “data collection method” alongside conventional tools, but rather an **analytical method** that uses AI to structure and visualize collected data, automatically classifying and summarizing thousands to tens of thousands of free-text responses to provide an issue map.
+As the table shows, methods that can gather large amounts of free text (organizational channels and social media) lack the ability to structure it, while opinion polls (multiple choice), which can produce structured results, do not capture free text. Broad listening is the technology that fills this gap. It is not simply another “data collection method” alongside conventional tools, but rather an **analytical method** that uses AI to structure and visualize collected data, automatically classifying and summarizing thousands to tens of thousands of free-text responses in order to map the issue space.
 
-That said, the accuracy of this structuring is not perfect (hence the 〇 in the table). AI-based clustering and summarization still require human interpretation, and they do not produce definitive numerical outputs like multiple-choice opinion polls. Their real value lies in the exploratory stage, when the key question is “what are the issues in the first place?”—surfacing unexpected issues and overlooked minority views. If the goal is simply to measure support or opposition on already known issues, then multiple-choice opinion polls are sufficient. Broad listening comes into its own when the task is to discover the issues themselves—in other words, to identify what should even be presented as options. Because broad listening is not representative (see Chapter 2), it should be used for **issue discovery**, while **measuring public opinion** should, where necessary, be done through opinion polls. This division of roles is essential.
+That said, the accuracy of this structuring is not perfect, which is why it is rated only Medium in the table. AI-based clustering and summarization still require human interpretation, and they do not produce definitive numerical outputs like multiple-choice opinion polls. Their real value lies in the exploratory stage, when the key question is “what are the issues in the first place?”—surfacing unexpected issues and overlooked minority views. If the goal is simply to measure support or opposition on already known issues, then multiple-choice opinion polls are sufficient. Broad listening comes into its own when the task is to discover the issues themselves—in other words, to identify what should even be presented as options. Because broad listening is not representative (see Chapter 2), it should be used for **issue discovery**, while **measuring public opinion** should, where necessary, be done through opinion polls. This division of roles is essential.
 
 ## How to Connect It to Democratic Processes (Operational Flow)
 
@@ -167,7 +167,7 @@ The basic cycle for connecting broad listening to democratic processes is as fol
 5. Collect again (repeat the cycle)
 ```
 
-Decision-makers actively listen to citizens, use AI to structure and analyze what they hear, respond through policy or planning, and then seek further input. It is not “listen once and stop,” but a cycle in which opinion collection and analysis are repeated, gradually refining the granularity of the issue map. This corresponds to the form introduced in Chapter 1 as **politician-/government-led broad listening**.
+Decision-makers actively listen to citizens, use AI to structure and analyze what they hear, respond through policy or planning, and then seek further input. It is not “listen once and stop,” but a cycle in which opinion collection and analysis are repeated, gradually refining the picture of the issue space. This corresponds to the form introduced in Chapter 1 as **politician-/government-led broad listening**.
 
 For politicians, representative examples include Takahiro Anno’s Tokyo governor election initiative and the Democratic Party for the People’s Kokumin AI Project (see Chapter 4). For government administration, the Tokyo Metropolitan Government’s “Shin Tokyo 2050” (“New Tokyo 2050”) project collected about 27,000 opinions from residents and used them in formulating a long-term strategy (see Chapter 5). Because this approach can be practiced even by a single politician or a small administrative team, and because implementation costs are relatively low, it has become the main pathway for the spread of broad listening in Japan.
 
@@ -175,25 +175,25 @@ For politicians, representative examples include Takahiro Anno’s Tokyo governo
 
 **1. Collecting opinions**: It is important to combine multiple channels, such as online forms, social media, chatbots, email, transcribed phone calls, and letters. Different channels bring in different kinds of voices, so combining them can reduce sampling bias. Everyday “impressions” accumulated on platforms like YouTube and Google Maps can also be used as input. However, it is essential to ensure **traceability**—the ability to trace which opinion was classified into which cluster.
 
-**2. Structuring and visualization**: Issue maps are created through clustering, summarization, and scatterplots. An issue map is both the starting point for policy design and a bridge to **EBPM (Evidence-Based Policy Making)**, making it possible to combine opinion polls and statistical data in policy judgment. However, AI-based structuring is not necessarily neutral. The appearance of the issue map changes depending on how questions are designed, how clustering is done, and what perspective is adopted in summarization. That is precisely why it is essential to ensure traceability back to the original data and make the structuring process open to verification.
+**2. Structuring and visualization**: The issue space is mapped through clustering, summarization, and scatterplots. The issue space is both the starting point for policy design and a bridge to **EBPM (Evidence-Based Policy Making)**, making it possible to combine opinion polls and statistical data in policy judgment. However, AI-based structuring is not necessarily neutral. The way the issue space appears changes depending on how questions are designed, how clustering is done, and what perspective is adopted in summarization. That is precisely why it is essential to ensure traceability back to the original data and make the structuring process open to verification.
 
-**3. Policy formulation / planning**: Politicians and government officials interpret the issue map and respond through policy. Decision-making authority remains governed by the rules of representative democracy. In relation to the “legitimacy gap” discussed at the beginning of this chapter, broad listening can supplement legitimacy in a way distinct from elections.
+**3. Policy formulation / planning**: Politicians and government officials interpret the issue space and respond through policy. Decision-making authority remains governed by the rules of representative democracy. In relation to the “legitimacy gap” discussed at the beginning of this chapter, broad listening can supplement legitimacy in a way distinct from elections.
 
 **4. Explanation and feedback**: Citizens are told “what kinds of opinions were heard, and why this decision was reached.” Reasons should also be given for issues that were not adopted, and reactions to that explanation should feed into the next round of collection.
 
-**5. Collect again**: The issue map is updated regularly to confirm policy effects and detect new issues early. Repeating this cycle makes continuous improvement in EBPM possible.
+**5. Collect again**: The issue space is updated regularly to confirm policy effects and detect new issues early. Repeating this cycle makes continuous improvement in EBPM possible.
 
 ### An Advanced Form: Broad Listening as Support for Augmented Deliberation
 
-From the standpoint of deliberative democratic theory, citizen deliberation is the main current of democratic decision-making, and in that sense it is the true “basic” form. But from the standpoint of implementation, creating a space for citizen deliberation requires significant costs in recruitment, selection, scheduling, and facilitation. For that reason, this book begins with the more practical basic cycle and introduces the version that adds citizen deliberation as an “advanced form.”
+From the standpoint of deliberative democratic theory, citizen deliberation lies at the heart of democratic decision-making, and in that sense it is the true “basic” form. But from the standpoint of implementation, creating a space for citizen deliberation requires significant costs in recruitment, selection, scheduling, and facilitation. For that reason, this book begins with the more practical basic cycle and introduces the version that adds citizen deliberation as an “advanced form.”
 
 The form introduced in Chapter 1 as **broad listening as support for augmented deliberation** adds two steps between step 2 (structuring and visualization) and step 3 (policy formulation): **recruitment and selection of citizen participants** and **deliberation**.
 
 As discussed in Chapter 2, broad listening itself is not representative, so the question of how to select deliberation participants is crucial. If one uses the method of mini-publics—small deliberative bodies made up of randomly selected citizens—then deliberation can be conducted by a citizen group that represents society as a whole. In Taiwan, for example, there was a case in which invitations were sent by SMS to 200,000 people, and 447 representative citizens were selected through stratified sampling that balanced age, gender, and region, after which online deliberation was conducted (see Chapter 10).
 
-Based on the issue map, discussion is then held in settings such as assemblies, advisory councils, and citizen forums, while AI-based opinion aggregation proceeds in parallel during the deliberation itself, updating the issue map in real time. If this is combined with **Deliberative Polling**, which measures opinions before and after deliberation, it becomes possible to show considered public opinion and strengthen the legitimacy of policy decisions.
+Based on the issue space, discussion is then held in settings such as assemblies, advisory councils, and citizen forums, while AI-based opinion aggregation proceeds in parallel during the deliberation itself, updating the issue space in real time. If this is combined with **Deliberative Polling**, which measures opinions before and after deliberation, it becomes possible to show considered public opinion and strengthen the legitimacy of policy decisions.
 
-Compared with the basic cycle, this approach is more costly to implement. But by incorporating citizen deliberation, it enables evidence-based discussion that combines qualitative data (issue maps) with quantitative data (opinion polls and statistics)—an **expansion of quality**—and, through explanation and feedback, supplements the legitimacy of policy decisions in a way distinct from elections—an **expansion of legitimacy**.
+Compared with the basic cycle, this approach is more costly to implement. But by incorporating citizen deliberation, it enables evidence-based discussion that combines qualitative data (issue spaces) with quantitative data (opinion polls and statistics)—an **expansion of quality**—and, through explanation and feedback, supplements the legitimacy of policy decisions in a way distinct from elections—an **expansion of legitimacy**.
 
 ### Use in Government Administration: Integrating It into the Planning Cycle
 
@@ -216,7 +216,7 @@ In addition, if records of daily **front-desk and phone interactions** are analy
 
 One common misunderstanding is that “broad listening = direct democracy,” but broad listening does not presuppose any particular political system. In direct democracy, it can be used to organize issues before a referendum; in representative democracy, it can be used as input for legislators’ or administrators’ policy design. Taken to an extreme, even an authoritarian regime could use it to understand public dissatisfaction and demands. Broad listening is simply a tool for structuring and visualizing citizens’ voices; how its results are connected to decision-making processes is a separate question.
 
-Another view is that “AI should determine the optimal policy, and humans should simply follow it,” but that is not what broad listening aims at. In **broad listening as a tool**, AI is an **analytical tool**, and human beings interpret the results. In **support for augmented deliberation**, AI provides the foundation for deliberation, but does not replace discussion or decision-making. In **politician-/government-led** forms as well, the issue map is only a reference for policy judgment; decision-making authority remains with elected politicians and assemblies.
+Another view is that “AI should determine the optimal policy, and humans should simply follow it,” but that is not what broad listening aims at. In **broad listening as a tool**, AI is an **analytical tool**, and human beings interpret the results. In **support for augmented deliberation**, AI provides the foundation for deliberation, but does not replace discussion or decision-making. In **politician-/government-led** forms as well, the issue space is only a reference for policy judgment; decision-making authority remains with elected politicians and assemblies.
 
 The value of democracy lies not only in efficiency, but in the process by which citizens themselves determine the shape of their society. The essence of digital democracy is not AI replacing democracy, but AI strengthening democratic processes.
 
@@ -224,9 +224,9 @@ The value of democracy lies not only in efficiency, but in the process by which 
 
 This chapter has explained the place of broad listening within the context of digital democracy.
 
-Broad listening is not a “tool for measuring public opinion,” but infrastructure for updating society’s “issue map” and supporting the legitimacy of deliberation and decision-making. In a world where accelerating social change frequently creates legitimacy gaps that election cycles alone cannot address, broad listening has the potential to fill a gap that conventional tools cannot.
+Broad listening is not a “tool for measuring public opinion,” but infrastructure for updating society’s understanding of the issue space and supporting the legitimacy of deliberation and decision-making. In a world where accelerating social change frequently creates legitimacy gaps that election cycles alone cannot address, broad listening has the potential to fill a gap that conventional tools cannot.
 
-Public comment functions as “a final check on regulations that are already largely complete,” but it does not fulfill its original role of “listening broadly.” If broad listening takes on that role of broad listening and works in a complementary way with public comment, the democratic process as a whole can be strengthened.
+Public comment functions as “a final check on regulations that are already largely complete,” but it does not fulfill its original role of “listening broadly.” In this way, broad listening and public comment are not in opposition. They are complementary, serving different phases of the democratic process.
 
 Its basic operational cycle is “collect opinions → structure them → formulate policy → explain → collect again,” and as seen in the examples of Takahiro Anno and the Democratic Party for the People, it can be practiced even by a single politician or a small team. In the augmented deliberation model, which adds a step of citizen deliberation to this cycle, representativeness can be secured by combining it with randomly selected mini-publics, further strengthening the legitimacy of policy decisions (for the Taiwan case, see Chapter 10).
 
