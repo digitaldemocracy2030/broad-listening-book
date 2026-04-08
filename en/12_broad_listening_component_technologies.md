@@ -2,7 +2,7 @@
 
 ## 12.1 Learning Objectives for This Chapter
 
-In this chapter, we explain the foundational technologies that support broad listening AI in a way that can be understood even without specialized knowledge of data science.
+In this chapter, we explain the foundational technologies that support Broad Listening AI in a way that can be understood even without specialized knowledge of data science.
 
 By the end of this chapter, you will understand the following:
 
@@ -10,15 +10,15 @@ By the end of this chapter, you will understand the following:
 - The history of the development of technologies that convert text into numbers (vectors)
 - Why large language models (LLMs) can behave in ways that resemble “intelligence”
 - Technologies for organizing and visualizing large amounts of data
-- How these technologies are combined in broad listening AI
+- How these technologies are combined in Broad Listening AI
 
-For each technology, we will explain it from the perspective of “what goes in, what comes out, and what it can be used for.”
+For each technology, we explain its inputs, outputs, and uses.
 
 ---
 
 ## 12.2 The Big Picture of the Technology
 
-The technologies used in broad listening AI are rooted in philosophical questions such as: What does it mean for things to be “the same”? What does it mean for things to be “similar”?
+The technologies used in Broad Listening AI are rooted in philosophical questions such as: What does it mean for things to be “the same”? What does it mean for things to be “similar”?
 
 Humans can intuitively understand that “cat” and “kitty” refer to the same thing. We also understand that while “dog” and “cat” are different, they are similar in that both are “pets.” But for a computer, these are nothing more than completely different strings of characters. How can we make a computer understand this “identity of meaning” and “similarity”? Many techniques in computer science were born from attempts to answer this question.
 
@@ -31,11 +31,11 @@ The left side of the figure represents the approach that **“things used in sim
 
 The right side of the figure represents the approach that **“things that are close in distance are similar.”** Data is represented numerically as vectors, and similarity between data points is judged by measuring distance. Cosine similarity quantifies closeness, Ward’s method and K-means group nearby items together, and UMAP projects high-dimensional data down into two dimensions that humans can view.
 
-Slightly off to the side is the approach that **“values that are correlated are similar.”** PCA (principal component analysis) compresses dimensions by finding the directions in which the data spreads the most—that is, the directions with the strongest correlation.
+Slightly off to the side is the approach that **“values that vary together are related.”** PCA (principal component analysis) compresses dimensions by finding the directions in which the data varies the most.
 
-Broad listening AI is realized by combining these approaches. First, the input text is cleaned and formatted using an LLM from the left-side family of technologies, and Sentence-BERT converts the words into vectors. Next, right-side technologies (cosine similarity, clustering, and UMAP) measure distances, group similar items together, and visualize them. Then the process returns to the left side again, where an LLM assigns labels. This is the basic mechanism of broad listening AI.
+Broad Listening AI is realized by combining these approaches. First, the input text is cleaned and formatted using an LLM from the left-side family of technologies, and Sentence-BERT converts the words into vectors. Next, right-side technologies (cosine similarity, clustering, and UMAP) measure distances, group similar items together, and visualize them. Then the process returns to the left side again, where an LLM assigns labels. This is the basic mechanism of Broad Listening AI.
 
-UMAP appeared in 2018, Sentence-BERT in 2019, and the practical deployment of LLMs began in 2023 and after. It was only a few years ago that all of the technologies needed to build broad listening AI finally came together. In other words, broad listening AI is a new method that has only just become technically possible.
+UMAP appeared in 2018, Sentence-BERT in 2019, and the practical deployment of LLMs began in 2023 and after. It was only a few years ago that all of the technologies needed to build Broad Listening AI finally came together. In other words, Broad Listening AI is a new method that has only just become technically possible.
 
 ---
 
@@ -66,14 +66,14 @@ What matters here is that vectorization transforms a language problem into a mat
 
 ### 12.3.3 The Limits of Word2Vec and the Arrival of BERT (2018)
 
-Word2Vec was a groundbreaking technology, but it had one major limitation. Because the same word always maps to the same vector, it cannot properly handle polysemous words whose meanings change depending on context.
+Word2Vec was a groundbreaking technology, but it had one major limitation. Because the same word always maps to the same vector, it cannot properly handle words with multiple meanings that change depending on context.
 
 For example, the English word “bank” changes meaning depending on context.
 
 - Sentence 1: "He sat by the bank of the river." (riverbank)
 - Sentence 2: "She deposited money in the bank." (financial institution)
 
-Japanese also has many polysemous words. For example, *amai* can mean sweetness in “This cake is sweet,” leniency in “The screening is too lenient,” or over-optimism in “That forecast is too optimistic.” Likewise, *atama* can refer to a body part in “My head hurts,” a leader in “the head of the organization,” or intelligence in “She is smart.” *Kin* can mean money, gold as a metal, or Friday, depending on context.
+Japanese also has many such words. For example, *amai* can mean sweetness in “This cake is sweet,” leniency in “The screening is too lenient,” or over-optimism in “That forecast is too optimistic.” Likewise, *atama* can refer to a body part in “My head hurts,” a leader in “the head of the organization,” or intelligence in “She is smart.” *Kin* can mean money, gold as a metal, or Friday, depending on context.
 
 But with Word2Vec, all of these different meanings of “bank,” *amai*, *atama*, and *kin* collapse into a single vector as long as the word form is the same. If even such simple words are treated without regard to context, there are clear limits to practical natural language processing.
 
@@ -119,7 +119,7 @@ As an aside, this combination of “context vectors” and “cosine similarity�
 
 **[Column] What Is an Embedding?**
 
-The English word *embedding* means “to embed,” and in Japanese it is sometimes translated as “embedding” or “embedded representation.” But what exactly is being embedded into what?
+The word *embedding* literally means “to embed.” But what exactly is being embedded into what?
 
 In short, it means **forcibly bringing things from the world of language into the world of vectors**.
 
@@ -133,7 +133,7 @@ This transformation makes language computable. Addition, subtraction, distance m
 
 There is some variation in terminology for this concept. Depending on the literature or the engineer, you may see expressions such as “embedding,” “embedding vector,” “context vector,” “context embedding vector,” and so on. These all refer, in essence, to the same thing. In this book, we use these terms according to context, but please do not let that cause confusion.
 
-Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors. In broad listening AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
+Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors. In Broad Listening AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
 
 ---
 
@@ -167,7 +167,7 @@ BERT excels at “understanding” text, but it is not good at “generating” 
 
 GPT’s processing is based on a surprisingly simple principle:
 
-> **Based on the input text, calculate the probability of the “next word.”**
+> **Based on the input text, calculate the probability of the “next word” (token).**
 
 For example, given the sentence "He sat by the bank of the ???":
 
@@ -180,7 +180,7 @@ For example, given the sentence "He sat by the bank of the ???":
 | lake | 6% |
 | ... | ... |
 
-The model selects the next word based on these probabilities, appends the selected word, and then predicts the next word again. By repeating this process, it generates a sentence.
+The model selects the next token based on these probabilities, appends the selected token, and then predicts the next token again. By repeating this process, it generates a sentence.
 
 Why does merely “predicting the next word” produce abilities that seem worthy of being called “intelligence”? Because to correctly predict the next word, the model must in some sense “understand” the content of the sentence. To predict “Tokyo” after “The capital of Japan is,” it needs geographic knowledge. To continue “According to the Pythagorean theorem,” it needs mathematical knowledge. In the process of learning “next-word prediction” from vast amounts of text, LLMs acquired not only patterns of language but also enormous amounts of knowledge about the world.
 
@@ -232,7 +232,7 @@ But with few-shot learning, tasks could be solved simply by writing prompts. Tra
 
 This new approach—solving tasks by carefully designing prompts—came to be known as **prompt engineering**. What examples should be shown? In what order? What wording should be used in the instructions? Such choices can dramatically change the quality of the output, even with the same model.
 
-Broad listening AI also uses few-shot learning when extracting opinions. By including input-output examples in the prompt, it communicates the expected output format and level of granularity to the LLM (see Chapter 13 for details).
+Broad Listening AI also uses few-shot learning when extracting opinions. By including input-output examples in the prompt, it communicates the expected output format and level of granularity to the LLM (see Chapter 13 for details).
 
 ### 12.4.4 From GPT to ChatGPT: The Birth of Conversational AI
 
@@ -242,7 +242,7 @@ Think back to the earlier French translation example. Only engineers who loved t
 
 Then, in November 2022, OpenAI released ChatGPT. Ask a question in ordinary language, and you get an answer back in ordinary language. That difference was decisive.
 
-The technical breakthrough that made ChatGPT possible was Instruction Tuning. GPT-3 had been trained to “predict the next word,” but ChatGPT was additionally trained to “generate responses in human dialogue.”
+The technical breakthrough that made ChatGPT possible was the combination of instruction tuning and reinforcement learning from human feedback (RLHF). GPT-3 had been trained to “predict the next word,” but ChatGPT was additionally trained to “generate responses in human dialogue.”
 
 This made natural conversation possible while taking context into account. Even without showing few-shot examples, users could simply say “Please do X,” and the model could carry out the task.
 
@@ -286,7 +286,7 @@ As an aside, the hallucination problem has been improving in the latest models. 
 
 As a result, they have become more likely to say things like “I don’t know” or “I can’t answer based on this information alone.” Earlier models tended to “say something no matter what,” but models with stronger reasoning ability are increasingly recognizing their own limits and expressing uncertainty.
 
-https://openai.com/ja-JP/index/why-language-models-hallucinate/
+https://openai.com/index/why-language-models-hallucinate
 
 That said, hallucinations have not disappeared completely. When using LLMs, it remains important to verify factual information against primary sources.
 
@@ -302,13 +302,13 @@ One major factor behind this bias is thought to be RLHF (reinforcement learning 
 
 In addition, much of the training data for LLMs consists of English-language text, which reflects Western values. Even when opinions are written in Japanese, there is a risk that during summarization or classification they may be rephrased in a more liberal direction, or that conservative opinions may be undervalued.
 
-A practical way to address this issue in broad listening is to avoid dependence on any single LLM. It is important for neutrality to build in the flexibility to compare results across multiple LLMs or use different models for different purposes. This is why broad listening AI adopts an architecture that allows the LLM in use to be switched easily.
+A practical way to address this issue in broad listening is to avoid dependence on any single LLM. It is important for neutrality to build in the flexibility to compare results across multiple LLMs or use different models for different purposes. This is why Broad Listening AI adopts an architecture that allows the LLM in use to be switched easily.
 
 ### 12.4.7 RAG: Strengthening LLMs with External Knowledge
 
-Broad listening AI does not use RAG, but it is an important technology for understanding LLM-based systems, so we introduce it here.
-
 One response to the hallucination problem is RAG (Retrieval-Augmented Generation).
+
+Broad Listening AI does not use RAG, but it is an important technology for understanding LLM-based systems, so we introduce it here.
 
 The mechanism of RAG is simple. It searches a database or the web for information relevant to the user’s question, then passes that information to the LLM to generate an answer. This allows the LLM to answer based on retrieved information, even if it does not already “know” it itself.
 
@@ -332,9 +332,9 @@ Structured Output solved this problem. By simply “defining the output data str
 
 Previously, even by combining complex processing such as regular expressions and morphological analysis, it was difficult to make a system recognize that “We want more parks” and “I’d like to see more parks” mean the same thing. With Structured Output, LLMs can now be treated as “functions that take natural language as input and return structured data in a predefined format.” There is no longer any need to write the processing logic by hand.
 
-As of 2025, Structured Output is supported by all major LLM providers, including OpenAI, Anthropic (Claude), and Google (Gemini).
+As of 2026, Structured Output is supported by all major LLM providers, including OpenAI, Anthropic (Claude), and Google (Gemini).
 
-Broad listening AI also uses Structured Output when extracting opinions and assigning labels. Converting thousands of free-text responses into structured data such as category, sentiment, and summary would not have been possible without Structured Output.
+Broad Listening AI also uses Structured Output when extracting opinions and assigning labels. Converting thousands of free-text responses into structured data such as category, sentiment, and summary would not have been possible without Structured Output.
 
 ### 12.4.9 Reasoning Models: Improving Accuracy Through Multi-Step Inference
 
@@ -351,7 +351,7 @@ As shown in the figure, a Reasoning Model first generates reasoning from the pro
 
 ## 12.5 Organizing and Visualizing Data: Clustering and Dimensionality Reduction
 
-As we saw in Section 12.3, embeddings convert text into vectors with hundreds of dimensions. Once text becomes numerical data, we can apply clustering to “group nearby points together” and dimensionality reduction to “compress hundreds of dimensions into two and display them as a scatter plot.” In this section, we explain these technologies, which broad listening AI uses to organize and visualize opinions.
+As we saw in Section 12.3, embeddings convert text into vectors with hundreds of dimensions. Once text becomes numerical data, we can apply clustering to “group nearby points together” and dimensionality reduction to “compress hundreds of dimensions into two and display them as a scatter plot.” In this section, we explain these technologies, which Broad Listening AI uses to organize and visualize opinions.
 
 ### 12.5.1 What Is Clustering?
 
@@ -373,7 +373,7 @@ Clustering is the technology that enables a computer to perform this kind of gro
 
 ### 12.5.2 Data Shape and Algorithm Selection
 
-Broad listening AI uses two clustering algorithms: K-means and Ward’s method. Why these two? TTTC Scatter, the project from which broad listening AI was forked, used a different algorithm (spectral clustering), but it produced an “island” problem in which opinions far apart on the scatter plot were classified into the same cluster (see Chapter 13 for details). With K-means, the result matches the intuition that “opinions that are close together belong to the same group.”
+Broad Listening AI uses two clustering algorithms: K-means and Ward’s method. Why these two? TTTC Scatter, the project from which Broad Listening AI was forked, used a different algorithm (spectral clustering), but it produced an “island” problem in which opinions far apart on the scatter plot were classified into the same cluster (see Chapter 13 for details). With K-means, the result matches the intuition that “opinions that are close together belong to the same group.”
 
 There are many clustering algorithms, and each is suited to different data shapes. Figure 12-7 shows the results of applying three algorithms (K-means, Ward’s method, and DBSCAN) to four types of data structure.
 
@@ -391,7 +391,7 @@ Several important points become clear from this figure.
 
 The most important rows are “one cluster” and “three clusters.” If instructed to “split into two,” K-means and Ward’s method will forcibly divide even a single cluster, and if there are three clusters, they may merge them into two. DBSCAN, by contrast, defines clusters as “high-density regions,” so it can recognize the natural structure of the data. However, depending on its parameter settings (the density threshold), points at the edges may be classified as outliers (noise).
 
-In other words, **there is no universally best algorithm**. You need to choose an algorithm that matches the shape of the data. Because the opinion data handled by broad listening AI tends to form “blob-like” distributions in vector space, K-means and Ward’s method are well suited.
+In other words, **there is no universally best algorithm**. You need to choose an algorithm that matches the shape of the data. Because the opinion data handled by Broad Listening AI tends to form “blob-like” distributions in vector space, K-means and Ward’s method are well suited.
 
 ### 12.5.3 The K-means Algorithm
 
@@ -408,7 +408,7 @@ Let us look at how the algorithm works in Figure 12-8.
 4. **Step 3**: The center points are moved to the centroid of each group
 5. **Step 4-7**: Repeat “assignment → center movement.” Stop when the center points no longer move
 
-The key features of K-means are that it is simple and fast. However, you must decide in advance how many groups to divide the data into. Another important feature is that it can **forcibly split a single cluster into multiple parts**. In the “one cluster” example mentioned earlier, when K-means was asked to divide the data with “K=2,” the cluster was forcibly cut in two. At first glance this may seem like a disadvantage, but as we will see later, broad listening AI takes advantage of this property by first dividing the data finely and then integrating it hierarchically.
+The key features of K-means are that it is simple and fast. However, you must decide in advance how many groups to divide the data into. Another important feature is that it can **forcibly split a single cluster into multiple parts**. In the “one cluster” example mentioned earlier, when K-means was asked to divide the data with “K=2,” the cluster was forcibly cut in two. At first glance this may seem like a disadvantage, but as we will see later, Broad Listening AI takes advantage of this property by first dividing the data finely and then integrating it hierarchically.
 
 ### 12.5.4 Hierarchical Clustering (Ward’s Method)
 
@@ -438,7 +438,7 @@ In other words, once clustering has been performed, you can later adjust it by s
 
 ### 12.5.5 What Is Dimensionality Reduction?
 
-In broad listening AI, 1,536-dimensional vectors are compressed into two dimensions for visualization. Humans can intuitively understand up to three dimensions, so it is impossible to directly view high-dimensional data as it is. By reducing it to two dimensions, it can finally be visualized as a scatter plot.
+In Broad Listening AI, 1,536-dimensional vectors are compressed into two dimensions for visualization. Humans can intuitively understand up to three dimensions, so it is impossible to directly view high-dimensional data as it is. By reducing it to two dimensions, it can finally be visualized as a scatter plot.
 
 Let us think about this “mapping from high dimensions to low dimensions” using familiar examples (Figure 12-10).
 
@@ -456,13 +456,13 @@ A classical dimensionality reduction method is PCA (principal component analysis
 ![Dimensionality reduction with PCA](images/12_pca_2d_to_1d.png)
 *Figure 12-12: Dimensionality reduction with PCA (2D → 1D)*
 
-In the context of broad listening, Polis uses PCA to compress participants’ voting patterns into two dimensions and generate a “map of public opinion.”
+In the context of broad listening, Polis uses PCA to compress participants’ voting patterns into two dimensions and generate a visualization of public opinion.
 
 ### 12.5.6 Dimensionality Reduction with UMAP
 
 PCA is well suited to capturing linear correlations, but it has limits when dealing with data that has complex structure. PCA finds “the direction in which the overall variance of the data is greatest,” but that is not necessarily ideal for the goal of “placing similar things close together.”
 
-UMAP (Uniform Manifold Approximation and Projection), introduced in 2018, prioritizes preserving relationships between nearby points. Points that are close in high-dimensional space are placed close together even after being compressed into two dimensions. This makes it possible to create intuitive visualizations in which “similar opinions are placed near one another.” In broad listening AI scatter plots, opinions on the same topic appear grouped together thanks to UMAP.
+UMAP (Uniform Manifold Approximation and Projection), introduced in 2018, prioritizes preserving relationships between nearby points. Points that are close in high-dimensional space are placed close together even after being compressed into two dimensions. This makes it possible to create intuitive visualizations in which “similar opinions are placed near one another.” In Broad Listening AI scatter plots, opinions on the same topic appear grouped together thanks to UMAP.
 
 Let us explain the UMAP algorithm metaphorically. From each data point, attach **rubber bands** to several nearby points in high-dimensional space. Nearby points are connected by an attractive force. At the same time, **repelling magnets** create a repulsive force between randomly chosen distant points. The balance between attraction and repulsion naturally arranges similar things close together and dissimilar things farther apart. Strictly speaking, this is not a physical simulation, but it is a useful intuitive image.
 
@@ -499,7 +499,7 @@ Figure 12-15 zooms in on the boundary region where 4s and 9s are mixed. The actu
 
 The lower part contains many 4s (red boxes), while the upper part contains many 9s (blue boxes). In the middle region, the two are mixed together. Looking at the images, we can see that a 4 with a closed top resembles a 9, while a 9 with an open lower part resembles a 4. UMAP places such “could-be-either” samples appropriately near the boundary.
 
-The important point is that **for ambiguous data like this, the correct answer is itself ambiguous**. The same is true in broad listening AI: opinions that span multiple topics or are open to multiple interpretations are placed near cluster boundaries.
+The important point is that **for ambiguous data like this, the correct answer is itself ambiguous**. The same is true in Broad Listening AI: opinions that span multiple topics or are open to multiple interpretations are placed near cluster boundaries.
 
 However, care is needed when interpreting UMAP results. Because UMAP prioritizes “placing nearby things close together,” **points that are close can be interpreted as similar, but the distance between far-apart points has no particular meaning**. For example, in Figure 12-13, the cluster for “1” is far from the cluster for “0,” but that does not mean that “1 and 0 are more different than 4 and 9.”
 
@@ -516,8 +516,8 @@ Figure 12-16 shows 80 words—animal names, place names, food names, and sports 
 
 Animals (red circles), place names (blue squares), foods (green triangles), and sports (purple diamonds) each form clear clusters. One particularly interesting detail is that within the animal cluster, livestock such as cows, pigs, sheep, and horses gather on the side closer to the food cluster, while wild animals such as elephants, tigers, and owls are placed farther away. Because livestock frequently appears in food-related contexts such as “eat beef” or “grill pork,” their vectors become closer under the distributional hypothesis.
 
-Broad listening AI uses the same basic approach. Each opinion is converted into a high-dimensional embedding vector, then compressed into two dimensions with UMAP, producing a scatter plot in which semantically similar opinions are placed near one another.
+Broad Listening AI uses the same basic approach. Each opinion is converted into a high-dimensional embedding vector, then compressed into two dimensions with UMAP, producing a scatter plot in which semantically similar opinions are placed near one another.
 
 ---
 
-In this chapter, we have explained the core technologies that support broad listening AI. In the next chapter, we will look in detail at how these technologies are combined within broad listening AI and function together as a single pipeline, down to the implementation level.
+In this chapter, we have explained the core technologies that support Broad Listening AI. In the next chapter, we will look in detail at how these technologies are combined within Broad Listening AI and function together as a single pipeline, down to the implementation level.
