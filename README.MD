@@ -108,6 +108,11 @@ uv run python scripts/build_pdf.py
 
 英訳用のCLIを追加しています。まずは `book_order.txt` のセクション単位で翻訳できます。
 
+運用方針（英訳）:
+- まずLLMで初期英訳を作成する
+- その後、英語ネイティブ話者による人手レビューを実施する
+- 最終版の英語原稿は人手レビュー後の内容を正とする
+
 ```bash
 # セクション一覧
 python3 scripts/english.py list-sections

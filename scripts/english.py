@@ -101,6 +101,7 @@ Terminology localization preferences (for a Western audience):
   "Watercooler (Idobata)", then continue with "Watercooler".
 - For 会議 / kaigi, prefer "meeting" unless context clearly requires
   a different common English term (e.g., workshop, session, conference).
+- For しゃべれるマニフェスト, prefer "interactive policy platform".
 - Use official English party/organization names where available.
   Example: 日本維新の会 should be translated as
   "Japan Innovation Party (Nippon Ishin no Kai)" on first mention,
