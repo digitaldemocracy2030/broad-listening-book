@@ -1,0 +1,486 @@
+{
+  "entries": {
+    "00_endorsement_from_Audrey.md": {
+      "model": "gpt-5.4",
+      "section": "ch00_preface",
+      "source_hash": "00cf152a91cfa4f62e9034b98da017c0b2e42022247132d47bda5a55469d202a",
+      "source_path": "00_endorsement_from_Audrey.md",
+      "status": "translated",
+      "target_hash": "33bb39f353885048870a49da63cc335f0065c1fc635d9764d851cf45e3a95ed0",
+      "target_path": "00_endorsement_from_audrey_tang.md",
+      "updated_at": "2026-04-01T17:41:36.134987+00:00"
+    },
+    "00_序文.md": {
+      "model": "gpt-5.4",
+      "section": "ch00_preface",
+      "source_hash": "e54ad24cb09465f3ed69e2db373faa1ebf315ffb0f34212316d47b7b86328e2b",
+      "source_path": "00_序文.md",
+      "status": "translated",
+      "target_hash": "13e5744b68c5f35ff32e36f701269ffe26dc79b8580aaacb729ff64016353107",
+      "target_path": "00_preface.md",
+      "updated_at": "2026-04-01T17:41:33.381204+00:00"
+    },
+    "01_ブロードリスニングとは何か？.md": {
+      "model": "gpt-5.4",
+      "section": "ch01_broadlistening_overview",
+      "source_hash": "1239a9f79604ca11d240346792a68828f1259617f01b824e6ed1cdccda3d097a",
+      "source_path": "01_ブロードリスニングとは何か？.md",
+      "status": "translated",
+      "target_hash": "661219b2f4194b714caa4c4bbb5b1a74e9580c92a5c6589218a29a69fca9659a",
+      "target_path": "01_what_is_broad_listening.md",
+      "updated_at": "2026-04-01T17:59:15.391290+00:00"
+    },
+    "02_ブロードリスニングとアンケートの違い、定量分析から定性分析へ.md": {
+      "model": "gpt-5.4",
+      "section": "ch02_broadlistening_vs_survey",
+      "source_hash": "ff680e557f1fe67d03d83615480267764c6788357bab11f6aab994dd3b11ab7b",
+      "source_path": "02_ブロードリスニングとアンケートの違い、定量分析から定性分析へ.md",
+      "status": "translated",
+      "target_hash": "0f075daeca76da30a1b59fbe37ce135a69ff6970fe552b52c271c2c26c938dae",
+      "target_path": "02_broad_listening_vs_surveys.md",
+      "updated_at": "2026-04-01T18:09:37.891324+00:00"
+    },
+    "03_デジタル民主主義とブロードリスニング、新しい民意の届け方.md": {
+      "model": "gpt-5.4",
+      "section": "ch03_digital_democracy_and_public_voice",
+      "source_hash": "0f1922139d69784fd987216ccd050ad42b5707876a100a5c04f4aaff637d422c",
+      "source_path": "03_デジタル民主主義とブロードリスニング、新しい民意の届け方.md",
+      "status": "translated",
+      "target_hash": "58a5ad395f5bdf2cb79d6b24df43f9492770803c0e13a40c1cbfce4be5faa5e8",
+      "target_path": "03_digital_democracy_and_new_public_voice.md",
+      "updated_at": "2026-04-01T18:11:15.584141+00:00"
+    },
+    "04_01_安野貴博の取り組み.md": {
+      "model": "gpt-5.4",
+      "section": "ch04_broadlistening_spread_in_japan",
+      "source_hash": "e0da57c0ccfd57bdbfa42755290aad2af2be119844fb54cad408d251690f4fcc",
+      "source_path": "04_01_安野貴博の取り組み.md",
+      "status": "translated",
+      "target_hash": "393977db89a29e28ecd8c94f8f8c27bc8ef6a629f371e1997ac9843e90908eab",
+      "target_path": "04_01_takahiro_anno_initiatives.md",
+      "updated_at": "2026-04-01T18:13:10.721798+00:00"
+    },
+    "04_02_国民民主の国会質問.md": {
+      "model": "gpt-5.4",
+      "section": "ch04_broadlistening_spread_in_japan",
+      "source_hash": "9550fa6a86c1d50056dc821d9e3db4fd6777c2b0d02d02610757ab8af7303653",
+      "source_path": "04_02_国民民主の国会質問.md",
+      "status": "translated",
+      "target_hash": "c56d8fd8fda6cb09d5714ace8112092b5ba371ee5ba5e9852686b6631ab23f75",
+      "target_path": "04_02_dpfp_parliamentary_questions.md",
+      "updated_at": "2026-04-01T18:14:15.760531+00:00"
+    },
+    "04_03_sumino_日テレ選挙特番.md": {
+      "model": "gpt-5.4",
+      "section": "ch04_broadlistening_spread_in_japan",
+      "source_hash": "7a1eeacbc7d45fa07068ece699d4297f6a6fd30fa26e7f04b148051eb35eb837",
+      "source_path": "04_03_sumino_日テレ選挙特番.md",
+      "status": "translated",
+      "target_hash": "16d06cd63915be73e61d3903bdce8ec55560d54308083228dacbaaade305b1ac",
+      "target_path": "04_03_sumino_ntv_election_special.md",
+      "updated_at": "2026-04-01T18:14:47.272681+00:00"
+    },
+    "04_04_Polisで世論の地図を作る.md": {
+      "model": "gpt-5.4",
+      "section": "ch04_broadlistening_spread_in_japan",
+      "source_hash": "62151f90d6bef79f622bd8385faab2d9abef1fc0d4a140b3bda39a199f634d7d",
+      "source_path": "04_04_Polisで世論の地図を作る.md",
+      "status": "translated",
+      "target_hash": "fcd642b83f4e04024fcfb72ae8aa2695ede5b543d3a780c6c0f0f4ba72d0dd3b",
+      "target_path": "04_04_mapping_public_opinion_with_polis.md",
+      "updated_at": "2026-04-01T18:15:30.027305+00:00"
+    },
+    "04_05_朝日新聞の特設記事.md": {
+      "model": "gpt-5.4",
+      "section": "ch04_broadlistening_spread_in_japan",
+      "source_hash": "cebcf845640a133a4446356d21c399a2a23b979cb3db28a89cadbc81da35b361",
+      "source_path": "04_05_朝日新聞の特設記事.md",
+      "status": "translated",
+      "target_hash": "277ba137de1e55c67f3c4af88b2102be3e1c6b58d6124a43dd5674cb43798c8f",
+      "target_path": "04_05_asahi_special_feature.md",
+      "updated_at": "2026-04-01T18:16:22.333487+00:00"
+    },
+    "04_日本国内におけるブロードリスニングの広がり.md": {
+      "model": "gpt-5.4",
+      "section": "ch04_broadlistening_spread_in_japan",
+      "source_hash": "bc725d6cc246e20cd8c9ba2d9a91913964494ea30dad3808c76b14e8064fde21",
+      "source_path": "04_日本国内におけるブロードリスニングの広がり.md",
+      "status": "translated",
+      "target_hash": "7fe7dd34443a826acdece3e0a2117180a6aeb9ec32355decc663ee3344eb1b48",
+      "target_path": "04_spread_of_broad_listening_in_japan.md",
+      "updated_at": "2026-04-01T18:11:54.217316+00:00"
+    },
+    "05_東京都、シン東京2050、ブロードリスニングによる政策転換.md": {
+      "model": "gpt-5.4",
+      "section": "ch05_tokyo_shin_tokyo_2050",
+      "source_hash": "668b4e2f16bba2206c4c93af8b16df603698e0a800d06c1f2b1c8dcbd65b79e6",
+      "source_path": "05_東京都、シン東京2050、ブロードリスニングによる政策転換.md",
+      "status": "translated",
+      "target_hash": "8f7533c129b725200850a8eeb86c4dfd404fa39e82e14194fbe4b96b4392e944",
+      "target_path": "05_tokyo_shin_tokyo_2050_policy_shift.md",
+      "updated_at": "2026-04-01T18:17:37.889327+00:00"
+    },
+    "06_01_チームみらい.md": {
+      "model": "gpt-5.4",
+      "section": "ch06_national_elections",
+      "source_hash": "3a948c9bfa54be30b06595a2bd4034e0a05fca95c99e33575d09f018587440a5",
+      "source_path": "06_01_チームみらい.md",
+      "status": "translated",
+      "target_hash": "db964b3d121ede366d3167611a315cafbda532011fe148002dea7be91899a169",
+      "target_path": "06_01_team_mirai.md",
+      "updated_at": "2026-04-01T18:28:27.728866+00:00"
+    },
+    "06_02_チームみらい2026年衆院選.md": {
+      "model": "gpt-5.4",
+      "section": "ch06_national_elections",
+      "source_hash": "06715c38cc2a5519143294c16f01125362822ee8e982cb2a971cfddd4d19d988",
+      "source_path": "06_02_チームみらい2026年衆院選.md",
+      "status": "translated",
+      "target_hash": "8cc949b0e59cac3128c9da9c09c1ff818c01b91fc9816667eadb4625ff680db9",
+      "target_path": "06_02_team_mirai_2026_house_of_representatives_election.md",
+      "updated_at": "2026-04-01T18:28:53.391793+00:00"
+    },
+    "06_03_日本維新の会.md": {
+      "model": "gpt-5.4",
+      "section": "ch06_national_elections",
+      "source_hash": "75608dbca13f584aba271cdcf6dada76e1ff68d9f36c19bddd2340463c7789d1",
+      "source_path": "06_03_日本維新の会.md",
+      "status": "translated",
+      "target_hash": "1eca4be369dd56bb43b04c938def27d261118d311650ad0ef03f7ea8e7e7811d",
+      "target_path": "06_03_nippon_ishin_no_kai.md",
+      "updated_at": "2026-04-01T18:29:59.571549+00:00"
+    },
+    "06_04_国民民主党.md": {
+      "model": "gpt-5.4",
+      "section": "ch06_national_elections",
+      "source_hash": "af901bc4d6f3e9918d1eb089e7e16004e40c7862ef1fb69604e2d430469a9837",
+      "source_path": "06_04_国民民主党.md",
+      "status": "translated",
+      "target_hash": "6cb473b8b00814bd1800ccdf6e1b3fdab6359be5c780b39f78e15fbd97199d73",
+      "target_path": "06_04_democratic_party_for_the_people.md",
+      "updated_at": "2026-04-01T18:31:07.047331+00:00"
+    },
+    "06_05_公明党.md": {
+      "model": "gpt-5.4",
+      "section": "ch06_national_elections",
+      "source_hash": "200d19463a1c1f59f28b46d278c8d3bdfb01ab6938ddb988476648c8391739f3",
+      "source_path": "06_05_公明党.md",
+      "status": "translated",
+      "target_hash": "e162f0810e8adbbd9bd40690277b1170bbb2415c2c813d88f62a69893819f08b",
+      "target_path": "06_05_komeito.md",
+      "updated_at": "2026-04-01T18:32:12.418397+00:00"
+    },
+    "06_国政選挙でのブロードリスニングの利用.md": {
+      "model": "gpt-5.4",
+      "section": "ch06_national_elections",
+      "source_hash": "19fda6031c8c4fff5b4d7d08ccac35b935f8b5e89a2e8467b870fc89ed88f430",
+      "source_path": "06_国政選挙でのブロードリスニングの利用.md",
+      "status": "translated",
+      "target_hash": "fb6ba157d72ae5f52a7c1a067efdfa633202434210c759ac17de92e335000279",
+      "target_path": "06_broad_listening_in_national_elections.md",
+      "updated_at": "2026-04-01T18:27:24.022523+00:00"
+    },
+    "07_02_いでい良輔氏のケース.md": {
+      "model": "gpt-5.4",
+      "section": "ch07_local_elections",
+      "source_hash": "b86ec37c4abdf66479b9fd34312f96ea1479a7855ed351b8a870ffd741f62be8",
+      "source_path": "07_02_いでい良輔氏のケース.md",
+      "status": "translated",
+      "target_hash": "18ce79500f125553da692604b13a4ebf31ff36718aab63dd7bc544e1319ac134",
+      "target_path": "07_02_ryosuke_idei_case.md",
+      "updated_at": "2026-04-01T18:33:20.771347+00:00"
+    },
+    "07_03_再生の道_尾花山和哉.md": {
+      "model": "gpt-5.4",
+      "section": "ch07_local_elections",
+      "source_hash": "0adbb9692acac804cb6f142627719f52a42a26cffa77cab9e021f9d143688aba",
+      "source_path": "07_03_再生の道_尾花山和哉.md",
+      "status": "translated",
+      "target_hash": "e073c0049d39b22b3594110197a1f09d1572d8f8d9f63b511a62511208c3b85e",
+      "target_path": "07_03_saisei_no_michi_kazuya_obanayama.md",
+      "updated_at": "2026-04-01T18:34:37.089605+00:00"
+    },
+    "07_地方選挙での活用.md": {
+      "model": "gpt-5.4",
+      "section": "ch07_local_elections",
+      "source_hash": "03adc339f3b466519a6df973d0757a199c36a0a80761b19d416c4dc68238ea22",
+      "source_path": "07_地方選挙での活用.md",
+      "status": "translated",
+      "target_hash": "abbec2ebfdd8731782337b63832513904d6b3f98bc4fe747cf62b21f57c3ae7c",
+      "target_path": "07_use_in_local_elections.md",
+      "updated_at": "2026-04-01T18:32:23.593200+00:00"
+    },
+    "08_01_群馬県太田市の自分ごと化会議.md": {
+      "model": "gpt-5.4",
+      "section": "ch08_municipalities",
+      "source_hash": "46789519db56219b0e36ff07ef6991f04d2e749582d3078e25b35d7e3b0912f1",
+      "source_path": "08_01_群馬県太田市の自分ごと化会議.md",
+      "status": "translated",
+      "target_hash": "49962a24ca4167cbf0d902d7d7ac5ee46af2331e3fb62d81abbe188c0d9e2171",
+      "target_path": "08_01_ota_city_jibungotoka_meeting.md",
+      "updated_at": "2026-04-01T18:35:53.837242+00:00"
+    },
+    "08_02_広島県の事例.md": {
+      "model": "gpt-5.4",
+      "section": "ch08_municipalities",
+      "source_hash": "d5882a4f6b07dc55de340b483d0bb3b2d303904d0fbd643f1871a4668687f4d3",
+      "source_path": "08_02_広島県の事例.md",
+      "status": "translated",
+      "target_hash": "44dfc204d42c3f77d51575593e88758875ffea463b17ff3d8262549135b741a0",
+      "target_path": "08_02_hiroshima_case.md",
+      "updated_at": "2026-04-01T18:36:37.758903+00:00"
+    },
+    "08_地方自治体での活用.md": {
+      "model": "gpt-5.4",
+      "section": "ch08_municipalities",
+      "source_hash": "8057c75be85515e68fcb59348adf53f25e1b17ea592976f3942a411616e7c931",
+      "source_path": "08_地方自治体での活用.md",
+      "status": "translated",
+      "target_hash": "3eab45f60d2370d97051f3aacb1a90980a35f7276dee7e226f7f5017785e340a",
+      "target_path": "08_use_in_local_governments.md",
+      "updated_at": "2026-04-01T18:34:46.981346+00:00"
+    },
+    "09_01_アルティウスリンク_取材記事.md": {
+      "model": "gpt-5.4",
+      "section": "ch09_enterprise_and_npo",
+      "source_hash": "141c4d4ae524404cc87805a41882f947d34471e20f10b2753341ce26ea312e97",
+      "source_path": "09_01_アルティウスリンク_取材記事.md",
+      "status": "translated",
+      "target_hash": "583c8b6a426f92c43a8a988491874200498a4879126d69c9833692d0fc150b4f",
+      "target_path": "09_01_altius_link_interview.md",
+      "updated_at": "2026-04-01T18:37:48.844860+00:00"
+    },
+    "09_02_サイボウズ.md": {
+      "model": "gpt-5.4",
+      "section": "ch09_enterprise_and_npo",
+      "source_hash": "02bbd405f122caeda335bb04445640500bb2276161fe21a75475b8a17cc78a32",
+      "source_path": "09_02_サイボウズ.md",
+      "status": "translated",
+      "target_hash": "f09e717b9b04746b271c4ae4acf29e4e55c1f8af5a4369e37bc2699526d3dd2c",
+      "target_path": "09_02_cybozu.md",
+      "updated_at": "2026-04-01T18:38:43.312784+00:00"
+    },
+    "09_企業・NPOでの活用.md": {
+      "model": "gpt-5.4",
+      "section": "ch09_enterprise_and_npo",
+      "source_hash": "1a6d630d1e583b7abac6830c7c596d85607617873d535c6a81257f4afcc0d3fb",
+      "source_path": "09_企業・NPOでの活用.md",
+      "status": "translated",
+      "target_hash": "e5171cadd2da977f5f3d868aad26bd1015d2cbce7a8930fbdf36024704c2691d",
+      "target_path": "09_use_in_companies_and_npos.md",
+      "updated_at": "2026-04-01T18:36:46.753704+00:00"
+    },
+    "10_00_DD2030による広聴AIの開発活動.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "7349a40ea673e83f8205699d40075088a035185726db84c58012d9f87c9a2f34",
+      "source_path": "10_00_DD2030による広聴AIの開発活動.md",
+      "status": "translated",
+      "target_hash": "5004fcd70c0b81187ca3665025692d831d5b0d4162085e687124d93d92eec53b",
+      "target_path": "10_00_dd2030_kocho_ai_development.md",
+      "updated_at": "2026-04-01T18:40:25.654009+00:00"
+    },
+    "10_01_株式会社ブーツ.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "0de979e0c630b0dc11d0f2b2ab4fe4383960546952809d09d6193204661d4f10",
+      "source_path": "10_01_株式会社ブーツ.md",
+      "status": "translated",
+      "target_hash": "a2db132794f95546ae59b3907a7e88552b63f5454333f202564b6f0c3fe77dea",
+      "target_path": "10_01_boots_inc.md",
+      "updated_at": "2026-04-01T18:41:18.253408+00:00"
+    },
+    "10_02_Code for Japan.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "afeff4147912e57b143c96094eed5ab884b8b0322bc3324374185d7d0b3e2a1e",
+      "source_path": "10_02_Code for Japan.md",
+      "status": "translated",
+      "target_hash": "3cd07379f16bdf3a2578cdbc4fd1e0e26308923f3fe4c0b742aaebca474c008e",
+      "target_path": "10_02_code_for_japan.md",
+      "updated_at": "2026-04-01T18:41:19.066382+00:00"
+    },
+    "10_03_多元現実.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "ef6d1afd470e186b7977603903cef72f25153b194a4336534a88682969eed313",
+      "source_path": "10_03_多元現実.md",
+      "status": "translated",
+      "target_hash": "4ce5b68ffd86a60050e40c3bcc453299c32728e6cb67d33a467d6f767d8cb013",
+      "target_path": "10_03_plural_reality.md",
+      "updated_at": "2026-04-01T18:42:27.796899+00:00"
+    },
+    "10_04_Democracy X.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "2850c2ec05ee357d4b7ee0cb0290f7f4bbaa1584141a504a024c0d5fbfa5c1d5",
+      "source_path": "10_04_Democracy X.md",
+      "status": "translated",
+      "target_hash": "fe77e83bcc89bfd7c206585a2a57bc8c61cfd16fb2f664d46993e7952b5d2727",
+      "target_path": "10_04_democracy_x.md",
+      "updated_at": "2026-04-01T18:42:43.577667+00:00"
+    },
+    "10_05_litela_田中魁.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "362a81e4133af89fa970f7c6fa471a01515e250ae94585fde8f8c7a17968668d",
+      "source_path": "10_05_litela_田中魁.md",
+      "status": "translated",
+      "target_hash": "6e9b78b4b455aac2dd0fba67502e8fc2b895346061b23744ca766f3908a8b566",
+      "target_path": "10_05_litela_kai_tanaka.md",
+      "updated_at": "2026-04-01T18:43:15.962093+00:00"
+    },
+    "10_ビジネスになったブロードリスニング.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "2d57288c6d0c277fb02d2b5a53cf0abcba0819e54a12d688a43f6075b9cccede",
+      "source_path": "10_ビジネスになったブロードリスニング.md",
+      "status": "translated",
+      "target_hash": "e56a3397e19daf77c6433e74748630fd9952471770ea0e84c6039a2adeed70b4",
+      "target_path": "10_broad_listening_as_a_business.md",
+      "updated_at": "2026-04-01T18:39:31.306150+00:00"
+    },
+    "11_01_台湾.md": {
+      "model": "gpt-5.4",
+      "section": "ch11_broadlistening_overseas",
+      "source_hash": "5b27188ed35284b073438dd758d1adf63421d0bb37a783027ce5e024bede6df8",
+      "source_path": "11_01_台湾.md",
+      "status": "translated",
+      "target_hash": "9da75719d0a86317fa30bcce1aa7250eca7e608806bc2281cd089c6b00c8dcf5",
+      "target_path": "11_01_taiwan.md",
+      "updated_at": "2026-04-01T18:45:53.582032+00:00"
+    },
+    "11_02_Polisの誕生.md": {
+      "model": "gpt-5.4",
+      "section": "ch11_broadlistening_overseas",
+      "source_hash": "f011eb6ca08bd22118c709e5b32008972bbd0f75c062e9b04bf1939be14efe4c",
+      "source_path": "11_02_Polisの誕生.md",
+      "status": "translated",
+      "target_hash": "0d425f3790b20fed467a8ef1ba7c70dd663946fe7b29d8b191c4d7a6a40d0faf",
+      "target_path": "11_02_birth_of_polis.md",
+      "updated_at": "2026-04-01T18:46:22.649407+00:00"
+    },
+    "11_03_ボーリンググリーン.md": {
+      "model": "gpt-5.4",
+      "section": "ch11_broadlistening_overseas",
+      "source_hash": "e93d3c5f94cc494019fb3cfa57d2ec6ad5b4e8aa935d000fa491395ff5586939",
+      "source_path": "11_03_ボーリンググリーン.md",
+      "status": "translated",
+      "target_hash": "d1fece547e4875c109c76483b95f75287faf4c3498666368d8180d812dc80670",
+      "target_path": "11_03_bowling_green.md",
+      "updated_at": "2026-04-01T18:47:01.677372+00:00"
+    },
+    "11_04_イスラエルパレスチナRemesh事例.md": {
+      "model": "gpt-5.4",
+      "section": "ch11_broadlistening_overseas",
+      "source_hash": "cd4de52248e9acf4e1f97d63ad94b96a90f2265a01326f8b0a1d1b8edfe061ac",
+      "source_path": "11_04_イスラエルパレスチナRemesh事例.md",
+      "status": "translated",
+      "target_hash": "bf11ce79f92101f47a598c0cdca0a35d1781b0dde1d8bfafd75dd84d08caa780",
+      "target_path": "11_04_israel_palestine_remesh_case.md",
+      "updated_at": "2026-04-01T18:47:56.279933+00:00"
+    },
+    "11_05_Connective_Actionを力に変える.md": {
+      "model": "gpt-5.4",
+      "section": "ch11_broadlistening_overseas",
+      "source_hash": "3a9aba1ce74bee818c19d3e06e628fce8103d223e39d0a5021a6fa53ca0b7188",
+      "source_path": "11_05_Connective_Actionを力に変える.md",
+      "status": "translated",
+      "target_hash": "55ae49b0df9bf92745b06a6d8bf1647c3fd4db4af8f9563106b4c82233379727",
+      "target_path": "11_05_harnessing_connective_action.md",
+      "updated_at": "2026-04-01T18:49:01.544774+00:00"
+    },
+    "11_海外におけるブロードリスニングの流れ.md": {
+      "model": "gpt-5.4",
+      "section": "ch11_broadlistening_overseas",
+      "source_hash": "fb63df0056dbe01ee2121b2bf2ae18ac86f3d5ae51e59e1116b2324c6a899415",
+      "source_path": "11_海外におけるブロードリスニングの流れ.md",
+      "status": "translated",
+      "target_hash": "f4882277bb52e202a40e877dcfe435e8cc9ed899e7a9d0d9496ad457262b70c0",
+      "target_path": "11_global_broad_listening_trends.md",
+      "updated_at": "2026-04-01T18:44:34.123112+00:00"
+    },
+    "12_ブロードリスニング要素技術解説.md": {
+      "model": "gpt-5.4",
+      "section": "ch12_broadlistening_technology",
+      "source_hash": "42580b6675a7dbb83a97c1c57b99c30dc41c39709ac17d9d2b28e34b1f2ac9df",
+      "source_path": "12_ブロードリスニング要素技術解説.md",
+      "status": "translated",
+      "target_hash": "758b0e89641114c75c530f0f491164d93b4989a46284df776ff6987450556d89",
+      "target_path": "12_broad_listening_component_technologies.md",
+      "updated_at": "2026-04-01T18:51:27.211002+00:00"
+    },
+    "13_広聴AIの技術スタック解説.md": {
+      "model": "gpt-5.4",
+      "section": "ch13_kocho_ai_tech_stack",
+      "source_hash": "88fbd3f91028d7c6af18442961118362454b071eb13d0fc7b418fca8bb188ce6",
+      "source_path": "13_広聴AIの技術スタック解説.md",
+      "status": "translated",
+      "target_hash": "db25aadbbca366e42d5b083672e39214298bbbec9791c9ed2a34c2e1367cb73f",
+      "target_path": "13_kocho_ai_tech_stack.md",
+      "updated_at": "2026-04-01T18:53:09.584284+00:00"
+    },
+    "99_付録_公開事例一覧.md": {
+      "model": "gpt-5.4",
+      "section": "ch99_appendix",
+      "source_hash": "0821332c4590fa871a87a9106fb1e1558e24ed3d76ff7bf73d0edfba4d404aa5",
+      "source_path": "99_付録_公開事例一覧.md",
+      "status": "translated",
+      "target_hash": "561805d5da84a0611d45c85b26a8454cf2b5e7e797d75cc84fc853e72a154e49",
+      "target_path": "99_appendix_public_cases.md",
+      "updated_at": "2026-04-01T18:53:50.472404+00:00"
+    },
+    "column/1万件の声を集めて気づいたこと.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "866b5aab4523085476c9f01f53e0783fd9f7ee9e20951d45f1dc3ff665c2ed80",
+      "source_path": "column/1万件の声を集めて気づいたこと.md",
+      "status": "translated",
+      "target_hash": "25fa01f2482b09285d53562742009375707181e1909b3dfacb929dceebb97556",
+      "target_path": "column/lessons_from_collecting_10000_voices.md",
+      "updated_at": "2026-04-01T18:43:49.163588+00:00"
+    },
+    "column/パブリックコメントと向き合う大企業AI_富士通の取り組み.md": {
+      "model": "gpt-5.4",
+      "section": "ch10_broadlistening_business",
+      "source_hash": "40a8d078769dfda93a3625330024ece00b5fb0b6cba934a0cb25bfe82b0720f0",
+      "source_path": "column/パブリックコメントと向き合う大企業AI_富士通の取り組み.md",
+      "status": "translated",
+      "target_hash": "1ed9ba7b0e06b1c75a915af4b21b9a8578c291bf17a229d1be621377fb274ef0",
+      "target_path": "column/fujitsu_enterprise_ai_for_public_comments.md",
+      "updated_at": "2026-04-01T18:44:16.830136+00:00"
+    },
+    "column/レビューで試す広聴AI.md": {
+      "model": "gpt-5.4",
+      "section": "ch09_enterprise_and_npo",
+      "source_hash": "de926aeac63e4e49beaeaa720f3fce542e7e952221755d3b63b68cc13e295ba0",
+      "source_path": "column/レビューで試す広聴AI.md",
+      "status": "translated",
+      "target_hash": "e7edf33425f1808120af5003967688a19b2c04e5484584d5c245877863205cdc",
+      "target_path": "column/testing_kocho_ai_through_review.md",
+      "updated_at": "2026-04-01T18:39:21.411169+00:00"
+    },
+    "column/ワードクラウドは分析ではない.md": {
+      "model": "gpt-5.4",
+      "section": "ch02_broadlistening_vs_survey",
+      "source_hash": "37957fbaf8a5e1bed8abdc5f6cc2012f0131ad869f1eb674d54aea89d2b66e88",
+      "source_path": "column/ワードクラウドは分析ではない.md",
+      "status": "translated",
+      "target_hash": "6675a5d1375dd837254c8028707e4e0e1eeec3acf07843564c0f196e92a7f80e",
+      "target_path": "column/word_cloud_is_not_analysis.md",
+      "updated_at": "2026-04-01T18:09:47.887019+00:00"
+    },
+    "column/安全な共感.md": {
+      "model": "gpt-5.4",
+      "section": "ch03_digital_democracy_and_public_voice",
+      "source_hash": "a151a956aaf4eaee053fbf2f97af99b65035715ba9c2cbd6412d89faf7b7f361",
+      "source_path": "column/安全な共感.md",
+      "status": "translated",
+      "target_hash": "4ad10837176f88b60bc0a41e9ba5769ee0f9ea08faf7a9af674a2530fef438f3",
+      "target_path": "column/safe_empathy.md",
+      "updated_at": "2026-04-01T18:11:39.694576+00:00"
+    }
+  },
+  "last_section": "ch99_appendix",
+  "updated_at": "2026-04-01T18:53:50.472430+00:00"
+}
