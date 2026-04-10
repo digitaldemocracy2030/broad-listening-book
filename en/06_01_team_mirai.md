@@ -53,23 +53,23 @@ In the Tokyo governor election, 104 change proposals had been collected. In just
 
 In the end, 8,559 proposals related to policy alone were submitted. There were more than 9,600 change proposals in total, and the figure of 8,559 counts only those related to policy after excluding proposals about changes to the system itself.
 
-## Visualization and Observation with Public Listening AI
+## Visualization and Observation with 広聴AI (Kouchou AI - meaning Public Relations AI)
 
-Although it was not publicly announced, by May 22 the team had internally reached a point where they could visualize and observe submissions using “Public Listening AI,” a broad listening tool developed by the Digital Democracy 2030 Project[^dd2030].
+Although it was not publicly announced, by May 22 the team had internally reached a point where they could visualize and observe submissions using “Kouchou AI,” a broad listening tool developed by the Digital Democracy 2030 Project[^dd2030].
 
-[^dd2030]: The Digital Democracy 2030 Project and Public Listening AI will be explained again in detail in Chapter 11.
+[^dd2030]: The Digital Democracy 2030 Project and Kouchou AI will be explained again in detail in Chapter 11.
 
-Public Listening AI is a Japan-developed system that improves on Talk to the City, which had been used during the Tokyo governor election. Based on experience from projects such as broad listening for the 2024 House of Representatives election in collaboration with Nippon TV, and broad listening conducted with the Tokyo Metropolitan Government for the formulation of a long-term strategy toward “Tokyo in the 2050s,” new features were added that were felt to be necessary for better broad listening.
+Kouchou AI is a Japan-developed system that improves on Talk to the City, which had been used during the Tokyo governor election. Based on experience from projects such as broad listening for the 2024 House of Representatives election in collaboration with Nippon TV, and broad listening conducted with the Tokyo Metropolitan Government for the formulation of a long-term strategy toward “Tokyo in the 2050s,” new features were added that were felt to be necessary for better broad listening.
 
-When Talk to the City was used during the Tokyo governor election, the analysis program ran on the analyst’s local computer. As a result, one challenge was how to share the generated reports with policy staff and social media staff. With Public Listening AI, analysis is performed on a server, and as soon as report generation is complete, a shareable URL is issued. Staff members can view the report simply by opening that URL.
+When Talk to the City was used during the Tokyo governor election, the analysis program ran on the analyst’s local computer. As a result, one challenge was how to share the generated reports with policy staff and social media staff. With Kouchou AI, analysis is performed on a server, and as soon as report generation is complete, a shareable URL is issued. Staff members can view the report simply by opening that URL.
 
 This time, dozens of reports were created internally, but most were never made public. Although generating reports had become easier, staff still needed to review each one before publication to confirm that its contents were suitable for release. For Team Mirai, which fielded ten candidates with a small staff and was contesting its first national election, pre-publication review of reports was not something they could prioritize highly.
 
-At this point, recall the distinction introduced in Chapter 1 between “broad listening as a tool” and “broad listening as a cycle of augmented deliberation.” Ideally, the “cycle of augmented deliberation” should be realized. At the same time, broad listening technology can also function on its own as a tool that helps people better understand public opinion—in other words, like a pair of glasses. Team Mirai’s use of Public Listening AI in the House of Councillors election mainly delivered this latter benefit.
+At this point, recall the distinction introduced in Chapter 1 between “broad listening as a tool” and “broad listening as a cycle of augmented deliberation.” Ideally, the “cycle of augmented deliberation” should be realized. At the same time, broad listening technology can also function on its own as a tool that helps people better understand public opinion—in other words, like a pair of glasses. Team Mirai’s use of Kouchou AI in the House of Councillors election mainly delivered this latter benefit.
 
 ## Changing the Way Issues Are Categorized: The Value Broad Listening Brings
 
-Looking at the actual voices gathered through the platform led to a discussion, and ultimately a decision, that it would be clearer to group opinions that had originally been scattered across multiple sections into a new section called “Welfare.” This kind of “change in categorization” is one of the effects produced by broad listening tools such as Public Listening AI and Talk to the City. A similar restructuring of the policy framework was also carried out in the Tokyo Metropolitan Government case discussed in Chapter 5.
+Looking at the actual voices gathered through the platform led to a discussion, and ultimately a decision, that it would be clearer to group opinions that had originally been scattered across multiple sections into a new section called “Welfare.” This kind of “change in categorization” is one of the effects produced by broad listening tools such as Kouchou AI and Talk to the City. A similar restructuring of the policy framework was also carried out in the Tokyo Metropolitan Government case discussed in Chapter 5.
 
 In Team Mirai’s activities, the addition of a new category meant it became necessary to analyze existing change proposals and determine whether they should be reassigned to the welfare category. To do this, all roughly 2,000 change proposals that existed at the time were categorized using GPT-4o. The reclassification cost $0.021 per item, for a total cost of $9.34[^welfare-label].
 
@@ -121,7 +121,7 @@ In Team Mirai’s “interactive policy platform,” the AI interviewer listens 
 The interactive policy platform sends change proposals to GitHub in the form of pull requests, and then it simply ends there. Users had little visibility into what happened afterward. For example, all change proposals were in fact being divided up and read by more than ten staff members, but there was no feedback indicating that someone had “started reading” a given proposal.  
 As a result, comments expressing “it doesn’t feel like my opinion was really received” appeared here and there. Ideally, users should be able to see a list of the proposals they submitted and the processing status of each one. It would also be good to let users who wish to do so register an email address or similar contact information so that push notifications can be sent. In his book *Applied Imagination*, brainstorming advocate Alex Osborn recommends that “when ideas are adopted, the meeting participants should be informed and encouraged,” and that “a brief note of thanks from those who benefit from the suggestion should be distributed to everyone.”
 
-In visualizations such as those produced by Public Listening AI, one can drill down into summarized opinions to confirm “where they came from.” By contrast, many existing systems have not provided users with any way to confirm “where their opinion went.” One of the major lessons from this case was the realization that traceability is needed not only for “where it came from,” but also for “where it went.”
+In visualizations such as those produced by Kouchou AI, one can drill down into summarized opinions to confirm “where they came from.” By contrast, many existing systems have not provided users with any way to confirm “where their opinion went.” One of the major lessons from this case was the realization that traceability is needed not only for “where it came from,” but also for “where it went.”
 
 ![Figure: Diagram contrasting where opinions came from with where they went in the policy process.](images/06_01_opinion_flow_en.png)
 Bidirectional traceability is needed for both “where it came from” and “where it went”
@@ -145,7 +145,7 @@ During the summer of 2025, several principles were articulated that are useful f
 3. **The need for bidirectional traceability**: both “where it came from” and “where it went” are necessary
 4. **The importance of designing the space itself**: spaces for discussion need usage guidance and moderation
 
-Broad listening as a component (such as visualization through Public Listening AI) appears in many places throughout this cycle, but those components alone are not the main actors. What matters is that the entire broad listening cycle—opinion gathering → structuring → deliberation → decision-making → feedback—was attempted as a single social experiment.
+Broad listening as a component (such as visualization through Kouchou AI) appears in many places throughout this cycle, but those components alone are not the main actors. What matters is that the entire broad listening cycle—opinion gathering → structuring → deliberation → decision-making → feedback—was attempted as a single social experiment.
 
 In the Tokyo governor's race, Mr. Anno demonstrated what had only recently become technically possible, and that had a major impact on society a year later. Team Mirai's demonstration in this House of Councillors election will likely have an even greater impact in the future.
 

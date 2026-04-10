@@ -135,7 +135,7 @@ Traditionally, programs could handle strings of characters, but they could not u
 
 What this means is that instead of a human manually asking ChatGPT one question at a time, a program can now repeat the process automatically thousands or tens of thousands of times. The burden on analysts has dropped dramatically. It is also possible to compare multiple opinions to find commonalities, classify opinions by category, and quantify the strength of sentiment. The technical details are explained in Chapter 12, and implementation methods in Chapter 13.
 
-The Public Listening AI discussed throughout this book, as well as its prototype Talk to the City, combine these LLM capabilities across multiple steps. First, themes and issues are extracted from each of thousands of free-text responses. Next, similar opinions are grouped together through clustering. Finally, summaries are generated for each group. By automating this sequence of processes in software, work equivalent to reading and organizing each response one by one can be completed in a short time.
+The 広聴AI (Kouchou AI - meaning Public Relations AI) discussed throughout this book, as well as its prototype Talk to the City, combine these LLM capabilities across multiple steps. First, themes and issues are extracted from each of thousands of free-text responses. Next, similar opinions are grouped together through clustering. Finally, summaries are generated for each group. By automating this sequence of processes in software, work equivalent to reading and organizing each response one by one can be completed in a short time.
 
 In this way, the arrival of LLMs transformed open questions from something that was "easy to collect but hard to analyze" into something that, "once collected, can also be analyzed." This opened a technological path to overcoming the "trade-off between scale and depth" described in Chapter 1.
 
@@ -145,7 +145,7 @@ In addition to the trade-off between scale and depth, **cost** is another import
 
 In other words, traditional research methods have been constrained by a three-way trade-off among **scale, depth, and cost**. If you want scale and representativeness, the cost becomes enormous. If you want to keep costs down, you have to sacrifice either scale or depth. Survey design centered on closed questions has effectively chosen to "sacrifice depth in order to reduce cost."
 
-The arrival of LLMs changed this three-way structure. As Chapter 13 will estimate in detail, the cost of analyzing 10,000 free-text responses with Public Listening AI is about 500 yen (roughly US$3 in 2025 terms). Work that previously would have required dozens of person-days can now be completed for about the price of a coin-operated snack. Compared with the 70 billion yen (roughly US$470 million in 2025 terms) cost of the census or the millions of yen (roughly tens of thousands of US dollars in 2025 terms) required for ordinary opinion polling, the difference is not just a matter of scale—it is on an entirely different order of magnitude. Once the cost of analyzing open questions effectively approaches zero, there is no longer any need to "sacrifice depth in order to reduce cost."
+The arrival of LLMs changed this three-way structure. As Chapter 13 will estimate in detail, the cost of analyzing 10,000 free-text responses with Kouchou AI is about 500 yen (roughly US$3 in 2025 terms). Work that previously would have required dozens of person-days can now be completed for about the price of a coin-operated snack. Compared with the 70 billion yen (roughly US$470 million in 2025 terms) cost of the census or the millions of yen (roughly tens of thousands of US dollars in 2025 terms) required for ordinary opinion polling, the difference is not just a matter of scale—it is on an entirely different order of magnitude. Once the cost of analyzing open questions effectively approaches zero, there is no longer any need to "sacrifice depth in order to reduce cost."
 
 ## "Polis": Broad Listening Before LLMs
 
@@ -173,7 +173,7 @@ Within the technological constraints of the time, Polis cleverly preserved the a
 The results of broad listening are often presented with a "science-like" appearance. Opinions are automatically clustered, visualized on a scatter plot, and each cluster is labeled with a count. This visual style can create a kind of mysterious persuasive power.
 
 TODO: Example of a clustering scatter plot  
-TODO: Examples of tools other than Public Listening AI, such as Polis?
+TODO: Examples of tools other than Kouchou AI, such as Polis?
 
 When people look at a scatter plot, they unconsciously assume that the vertical and horizontal axes must have some meaning. In an ordinary graph, the axes do have clear meanings—for example, time on the horizontal axis and sales on the vertical axis. But in a broad-listening scatter plot, the positions are nothing more than the result of compressing high-dimensional opinion vectors into two dimensions so that humans can view them more easily. Interpretations such as "opinions in the upper right are good" or "opinions in the lower left are bad" are completely mistaken. The only thing the positions indicate is the **relative similarity between opinions**; the vertical and horizontal axes themselves have no meaning at all.
 

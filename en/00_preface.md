@@ -47,7 +47,7 @@ The experiment in the governor election later led to implementation within gover
 
 Channels for gathering input expanded beyond online forms, X, and YouTube comments to include postal mail, email, and in-person interviews at places such as Ueno Zoo and science museums. In the end, more than 10,000 voices were collected and integrated and analyzed through a TTTC-based system.
 
-GovTech Tokyo built the infrastructure for data collection, integration, and visualization in-house, while we advised on AI analysis prompt design, parameter tuning, and how to interpret the results. As the project progressed, new feature requests emerged—such as deeper drill-downs and reclustering—which later led to the development of “Public Listening AI.”
+GovTech Tokyo built the infrastructure for data collection, integration, and visualization in-house, while we advised on AI analysis prompt design, parameter tuning, and how to interpret the results. As the project progressed, new feature requests emerged—such as deeper drill-downs and reclustering—which later led to the development of “広聴AI (Kouchou AI - meaning Public Relations AI).”
 
 ### 3. The House of Councillors Election and the “Chat-enabled Policy”
 
@@ -148,6 +148,6 @@ At the same time, of course, government institutions and the civic tech communit
 
 ## Conclusion: Cultivating a New System Together
 
-As we have seen, Broad Listening is still a very immature technology and practice. Talk to the City, AI Anno, GitHub platforms, Idobata Policy, AI Interviewer, Public Listening AI... Not a single one of the projects mentioned here is something we can proudly declare “complete.”
+As we have seen, Broad Listening is still a very immature technology and practice. Talk to the City, AI Anno, GitHub platforms, Idobata Policy, AI Interviewer, Kouchou AI... Not a single one of the projects mentioned here is something we can proudly declare “complete.”
 
 Even so, by following the trial and error traced in this book, I believe readers will be able to sense the potential of these technologies and concepts. Their development depends not only on engineers, but on the cooperation of each and every citizen. I hope this book will serve as an opportunity for readers to think about the future of democracy.

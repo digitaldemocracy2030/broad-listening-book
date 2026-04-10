@@ -1,6 +1,6 @@
-# Using Public Listening AI for VOC Analysis in Contact Centers
+# Using 広聴AI (Kouchou AI - meaning Public Relations AI) for VOC Analysis in Contact Centers
 
-Broad listening is about strengthening our ability to listen. So where do people listen to large numbers of voices as part of their job? One example is the contact center (call center), which handles customer inquiries every day. How did contact centers change after adopting Public Listening AI, a broad listening tool? This time, we conducted an online interview about that effort.
+Broad listening is about strengthening our ability to listen. So where do people listen to large numbers of voices as part of their job? One example is the contact center (call center), which handles customer inquiries every day. How did contact centers change after adopting Kouchou AI, a broad listening tool? This time, we conducted an online interview about that effort.
 
 ## Initiatives at Altius Link, Inc.
 
@@ -20,7 +20,7 @@ Altius Link is a joint venture between KDDI and Mitsui & Co. that provides BPO s
 
 **Honma:** A desk is typically staffed by operators who answer calls, with supervisors (SVs) above them. SVs support operators and handle escalations. Above them are managers who oversee multiple SVs.
 
-**Honma:** Operators are basically focused on handling calls, while process improvement is the responsibility of SVs and above. The use of Public Listening AI is also handled by SVs and above.
+**Honma:** Operators are basically focused on handling calls, while process improvement is the responsibility of SVs and above. The use of Kouchou AI is also handled by SVs and above.
 
 ## Challenges in the Contact Center Industry: What Is VOC?
 
@@ -42,15 +42,15 @@ Altius Link is a joint venture between KDDI and Mitsui & Co. that provides BPO s
 
 **Sawaguchi:** Traditionally, operators manually entered customer feedback into CRM systems and the like. But once people get used to it, it tends to become perfunctory—"Oh, this again," or "There’s no point in escalating this." Ideally, technology should collect it efficiently so that companies can focus on decision-making and resource allocation.
 
-## How They Learned About Public Listening AI
+## How They Learned About Kouchou AI
 
 **Honma:** It started when I saw Mr. Anno speak at an exhibition in February 2025. In a talk after the Tokyo governor election, he introduced an initiative using Talk to the City to gather the voices of Tokyo residents and reflect them in an electoral platform. I thought that could be applied directly to the challenge contact centers face in collecting VOC.
 
-**Honma:** At the time, Talk to the City had not yet been localized into Japanese, so we gave up for the moment. Later, Tanaka told me that Mr. Anno’s team had released Public Listening AI, and that prompted us to try again.
+**Honma:** At the time, Talk to the City had not yet been localized into Japanese, so we gave up for the moment. Later, Tanaka told me that Mr. Anno’s team had released Kouchou AI, and that prompted us to try again.
 
-## The Data Input Pipeline for Public Listening AI
+## The Data Input Pipeline for Kouchou AI
 
-**Tanaka:** Since we use Public Listening AI for the purpose of visualizing VOC, we’ve tailored the preprocessing accordingly.
+**Tanaka:** Since we use Kouchou AI for the purpose of visualizing VOC, we’ve tailored the preprocessing accordingly.
 
 <!--TODO: Turn the workflow into an illustration -->
 
@@ -60,35 +60,35 @@ Altius Link is a joint venture between KDDI and Mitsui & Co. that provides BPO s
 
 **Tanaka:** We then have Claude output the negatively classified call transcripts as structured data using Structured Output. It extracts opinions that appear to be either contact reasons or VOC, along with five or six metadata fields such as "what the opinion is about" and "what kind of evaluation it expresses." In the prompt, we include the definitions of contact reasons and VOC used at the desk managed by Mr. Sawaguchi.
 
-![Structured data prepared for input into Public Listening AI. Columns organize VOC/contact-reason classifications and metadata extracted by an LLM from call transcripts.](images/09_広聴AI_入力用構造化データ.png)
+![Structured data prepared for input into Kouchou AI. Columns organize VOC/contact-reason classifications and metadata extracted by an LLM from call transcripts.](images/09_広聴AI_入力用構造化データ.png)
 
-**Tanaka:** There are two reasons we collect this information. One is that it can be entered into Public Listening AI as cross attributes. The other is that by feeding the structured data into a BI tool, we can visualize it from other perspectives as well.
+**Tanaka:** There are two reasons we collect this information. One is that it can be entered into Kouchou AI as cross attributes. The other is that by feeding the structured data into a BI tool, we can visualize it from other perspectives as well.
 
-**Tanaka:** We do the preprocessing every day, and feed data into Public Listening AI once every two weeks, analyzing about 2,000 VOC candidates each time.
+**Tanaka:** We do the preprocessing every day, and feed data into Kouchou AI once every two weeks, analyzing about 2,000 VOC candidates each time.
 
 **Tanaka:** Personal information is masked on the speech-to-text system side. We’ve had other desks ask us about trying something similar, but some react by saying, "It’s outrageous to send anything containing personal information into an LLM." If masking isn’t in place, the effort often stalls.
 
 ## Trial and Error in Improving Preprocessing
 
-**Sawaguchi:** At first, we tried feeding the logs in as-is, but contact reasons and VOC got mixed together. We thought maybe we could fix it by refining the prompts inside Public Listening AI, but the more we did that, the more it started to feel like intentional manipulation. That didn’t seem right.
+**Sawaguchi:** At first, we tried feeding the logs in as-is, but contact reasons and VOC got mixed together. We thought maybe we could fix it by refining the prompts inside Kouchou AI, but the more we did that, the more it started to feel like intentional manipulation. That didn’t seem right.
 
 **Sawaguchi:** In the early days, when we just handed over PDF reports, the reaction was, "We already know that," or "We want something more concrete." That became the trigger for improving the preprocessing.
 
-**Sawaguchi:** We decided to treat Public Listening AI strictly as a tool for visualization and discovery, keep the prompts simple, and improve the preprocessing so that VOC and contact reasons were separated beforehand. By narrowing the input down to things that really seemed VOC-like, and then further focusing only on negative items, we became able to capture not just "I can’t log in," but also the part where "the customer is having this kind of trouble because they can’t log in."
+**Sawaguchi:** We decided to treat Kouchou AI strictly as a tool for visualization and discovery, keep the prompts simple, and improve the preprocessing so that VOC and contact reasons were separated beforehand. By narrowing the input down to things that really seemed VOC-like, and then further focusing only on negative items, we became able to capture not just "I can’t log in," but also the part where "the customer is having this kind of trouble because they can’t log in."
 
-## The Value of Public Listening AI Lies in Being Able to "Touch" It
+## The Value of Kouchou AI Lies in Being Able to "Touch" It
 
-**Sawaguchi:** To be honest, I didn’t see that much value in it at first. The reason was that the strength of Public Listening AI is that you can interact with the reports dynamically, but at the beginning I was only seeing what Mr. Tanaka had created through screen sharing or screenshots.
+**Sawaguchi:** To be honest, I didn’t see that much value in it at first. The reason was that the strength of Kouchou AI is that you can interact with the reports dynamically, but at the beginning I was only seeing what Mr. Tanaka had created through screen sharing or screenshots.
 
 **Sawaguchi:** Later, once I was able to generate and manipulate reports myself, I understood its value. I felt there was real value in the act itself—looking at things hierarchically, adjusting the density settings, and going to inspect clusters with especially dense customer feedback (VOC). If you don’t have an environment where you can actually interact with it, it’s hard to appreciate what makes it good.
 
-![A VOC scatter plot generated by Public Listening AI. Clusters are color-coded, making it possible to grasp the overall landscape of customer feedback at a glance.](images/09_広聴AI_散布図.png)
+![A VOC scatter plot generated by Kouchou AI. Clusters are color-coded, making it possible to grasp the overall landscape of customer feedback at a glance.](images/09_広聴AI_散布図.png)
 
-**Tanaka:** At first, we were delivering screenshots in PDF form. But I don’t have domain knowledge, so I couldn’t tell which points were worth digging into. After discussing it with my supervisor, we arranged for Mr. Sawaguchi to use it directly. By chance, we had built it on an AWS server, so as long as the network connection was available, he could access it too. It really drove home for me that the best results come when someone with domain knowledge is the one actually using Public Listening AI.
+**Tanaka:** At first, we were delivering screenshots in PDF form. But I don’t have domain knowledge, so I couldn’t tell which points were worth digging into. After discussing it with my supervisor, we arranged for Mr. Sawaguchi to use it directly. By chance, we had built it on an AWS server, so as long as the network connection was available, he could access it too. It really drove home for me that the best results come when someone with domain knowledge is the one actually using Kouchou AI.
 
-**Sawaguchi:** I think there are two approaches to VOC analysis: one is analysis aimed at deriving suggestions and insights from the results, and the other is more like fixed-point observation—seeing whether activities changed and improved based on the insights obtained. When it comes to gaining insights, I found Public Listening AI’s exploratory, feeling-your-way approach extremely effective.
+**Sawaguchi:** I think there are two approaches to VOC analysis: one is analysis aimed at deriving suggestions and insights from the results, and the other is more like fixed-point observation—seeing whether activities changed and improved based on the insights obtained. When it comes to gaining insights, I found Kouchou AI’s exploratory, feeling-your-way approach extremely effective.
 
-**Honma:** That said, there are challenges with fixed-point observation. Because Public Listening AI’s clustering can change each time, there’s no guarantee that the same cluster will appear again in the next run. There is demand for tracking changes over time, but that’s difficult with Public Listening AI alone. So for fixed-point observation, we also use Power BI and track changes using the categories created during preprocessing.
+**Honma:** That said, there are challenges with fixed-point observation. Because Kouchou AI’s clustering can change each time, there’s no guarantee that the same cluster will appear again in the next run. There is demand for tracking changes over time, but that’s difficult with Kouchou AI alone. So for fixed-point observation, we also use Power BI and track changes using the categories created during preprocessing.
 
 ## A Case of Deeper Analysis: The Real Need Behind "I Can’t Log In"
 
@@ -96,29 +96,29 @@ Altius Link is a joint venture between KDDI and Mitsui & Co. that provides BPO s
 
 For example, if you aggregate login-related inquiries by contact reason, you get categories like "I can’t log in" or "password reset." But the customer’s real goal wasn’t logging in itself—they wanted to log in in order to do something. We started asking whether making login easier would actually reduce these inquiries.
 
-So we asked ourselves whether we could capture *why* customers wanted to log in. We ran Public Listening AI once, used the resulting categories to narrow the focus to areas we wanted to explore more deeply—such as login-related issues—and then fed that subset into Public Listening AI a second time.
+So we asked ourselves whether we could capture *why* customers wanted to log in. We ran Kouchou AI once, used the resulting categories to narrow the focus to areas we wanted to explore more deeply—such as login-related issues—and then fed that subset into Kouchou AI a second time.
 
-![Cluster names and descriptions generated by Public Listening AI. Along with the number of comments in each cluster, the tendencies in customer feedback are summarized.](images/09_広聴AI_クラスタ名-説明.png)
+![Cluster names and descriptions generated by Kouchou AI. Along with the number of comments in each cluster, the tendencies in customer feedback are summarized.](images/09_広聴AI_クラスタ名-説明.png)
 
 By adding specific intent and few-shot examples to the prompt so that it would capture *why* customers wanted to do something, we became able to see things like "what percentage are concerned about making a payment" and "what they really wanted was to check their statement." That opens the door to proposals such as sending statements by email so customers don’t need to log in at all.
 
 ## Tips for Effective Use: Narrowing the Scope and Combining with BI Tools
 
-We asked Mr. Sawaguchi what advice he would give to someone new to using Public Listening AI.
+We asked Mr. Sawaguchi what advice he would give to someone new to using Kouchou AI.
 
 **Sawaguchi:** Even two weeks’ worth of data is a substantial volume, so the things that first appear tend to be generalized and abstracted expressions. It’s too early to look at that and conclude, "Oh, so that’s what’s going on." The value lies in the act of feeling your way toward insights, so the key is learning how to explore.
 
-**Sawaguchi:** Specifically, if you use the attribute columns created during preprocessing as extraction conditions in Public Listening AI, they function almost like category selectors. First, use the BI tool to identify categories whose volume has increased, then select and narrow them down in Public Listening AI, view them at a density of 20–30%, and inspect the specific customer comments. That’s the trick to narrowing things down.
+**Sawaguchi:** Specifically, if you use the attribute columns created during preprocessing as extraction conditions in Kouchou AI, they function almost like category selectors. First, use the BI tool to identify categories whose volume has increased, then select and narrow them down in Kouchou AI, view them at a density of 20–30%, and inspect the specific customer comments. That’s the trick to narrowing things down.
 
-**Sawaguchi:** The flow is to use Power BI to check dominant categories of feedback or categories that have changed, and then use those attributes to filter Public Listening AI and examine the content.
+**Sawaguchi:** The flow is to use Power BI to check dominant categories of feedback or categories that have changed, and then use those attributes to filter Kouchou AI and examine the content.
 
 ![A VOC dashboard in Power BI. It enables fixed-point observation of category composition ratios and changes over time.](images/09_BI画像_モザイク無し.png)
 
-**Sawaguchi:** It’s difficult if you try to use Public Listening AI alone to go looking for the answer. The important mindset is to go looking for hints. A lot of people assume the answer must be there, and then get disappointed when they don’t find one.
+**Sawaguchi:** It’s difficult if you try to use Kouchou AI alone to go looking for the answer. The important mindset is to go looking for hints. A lot of people assume the answer must be there, and then get disappointed when they don’t find one.
 
 ## Challenges in Talent Development
 
-**Sawaguchi:** It’s extremely difficult to develop people who can handle both design (data design for preprocessing) and operations (tool usage). If I were to train someone on my team to use Public Listening AI, I think the training would focus on the dynamic manipulation and filtering of reports.
+**Sawaguchi:** It’s extremely difficult to develop people who can handle both design (data design for preprocessing) and operations (tool usage). If I were to train someone on my team to use Kouchou AI, I think the training would focus on the dynamic manipulation and filtering of reports.
 
 **Sawaguchi:** What we may need first are people who can communicate requirements to engineers to some extent, and who can give feedback on the gap between expected and actual output so that cycle can keep turning. Without the will to dig out value from customer voices ourselves, it just ends with receiving a report.
 
@@ -138,13 +138,13 @@ Why was Mr. Sawaguchi able to collaborate in this way? We asked about his backgr
 
 ## Effects of Adoption and Future Outlook
 
-We asked about the quantitative effects of introducing Public Listening AI.
+We asked about the quantitative effects of introducing Kouchou AI.
 
 **Sawaguchi:** We haven’t yet reached the point of seeing improvements in the numbers. As for measurable effects... well, my overtime has increased. You can do this endlessly, and it’s so interesting that I just keep going.
 
 **Sawaguchi:** The original goal is to increase customer loyalty and reduce cancellations. That’s the effect we’re aiming for now, but we’re not there yet.
 
-Asked what functions he hopes Public Listening AI will have in the future, Mr. Tanaka said this:
+Asked what functions he hopes Kouchou AI will have in the future, Mr. Tanaka said this:
 
 **Tanaka:** It would be great if broad listening could be done directly from audio files as they are. When you convert speech to text, some information is lost. Emotional aspects appear in vocal intonation and similar features, but in text they become just characters. If you could input audio files directly and output VOC using Fourier-transform spectra as data, that would be incredible.
 
@@ -162,7 +162,7 @@ Contact centers are places where enormous volumes of "voices" gather every day. 
 
 This is strikingly similar to what we have seen in municipalities and citizen participation settings. Opinions are collected. But then people say, "We don’t really know what is being said," or "We don’t know how to use this in the end." As a result, the voices themselves become formalized and hollowed out.
 
-What drew us to this case was that it was not simply a story of "they introduced Public Listening AI and it worked." Rather, what emerged through the interview were things like:
+What drew us to this case was that it was not simply a story of "they introduced Kouchou AI and it worked." Rather, what emerged through the interview were things like:
 
 - the difficulty of defining what VOC actually is
 - the trial and error involved in discovering that leaving too much to AI does not work

@@ -83,7 +83,7 @@ TTTC has a feature that displays comments representing each cluster. Previously,
 
 To address this problem, the system was improved to use an LLM to extract comments with a high degree of relevance to the cluster title. This made it possible to convey the content of each cluster more accurately.
 
-That said, this is fundamentally also a problem that should be addressed by improving the clustering itself. Preventing loosely related opinions from being grouped into the same cluster in the first place would be a more fundamental solution. In the Public Listening AI developed later, improvements to the algorithm were attempted in order to address this issue. Details are explained in Chapter 13.
+That said, this is fundamentally also a problem that should be addressed by improving the clustering itself. Preventing loosely related opinions from being grouped into the same cluster in the first place would be a more fundamental solution. In the 広聴AI (Kouchou AI - meaning Public Relations AI) developed later, improvements to the algorithm were attempted in order to address this issue. Details are explained in Chapter 13.
 
 ### 4.3.5 Challenges and Limitations
 

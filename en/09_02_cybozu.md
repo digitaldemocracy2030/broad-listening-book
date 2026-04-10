@@ -116,7 +116,7 @@ The theme of the first video was: “Does remote work increase productivity, or 
 
 What is distinctive about this format is that it does not reduce the discussion to a binary choice of “for” or “against.” If someone’s view changes during the discussion, the position of the lever changes as well, allowing viewers to watch in real time how opinions shift and are updated.
 
-As of March 13, 2026, this first video had been viewed more than 180,000 times and had received over 950 comments. Those comments are collected through an API and then analyzed and visualized using “Public Listening AI,” which is being developed by the Digital Democracy 2030 community. As in the Bowling Green example introduced in Chapter 10, Section 3, the visualization uses JSON analysis data to represent the volume of opinions by the size of circles.
+As of March 13, 2026, this first video had been viewed more than 180,000 times and had received over 950 comments. Those comments are collected through an API and then analyzed and visualized using “広聴AI (Kouchou AI - meaning Public Relations AI),” which is being developed by the Digital Democracy 2030 community. As in the Bowling Green example introduced in Chapter 10, Section 3, the visualization uses JSON analysis data to represent the volume of opinions by the size of circles.
 
 ![alt text](images/09_03_shirokuro_kaigi_youtube_comments.png)
 

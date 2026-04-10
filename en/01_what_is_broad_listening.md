@@ -92,13 +92,13 @@ Tools that fall into this category include the following:
 | Tool name | Overview |
 |----------|------|
 | Talk to the City (TTTC) | An open-source tool developed by the AI Objectives Institute. It clusters large volumes of natural-language text using LLMs and visualizes them as a scatterplot |
-| Public Listening AI | A Japanese-language broad listening tool developed by Digital Democracy 2030. Built on TTTC, it was turned into a web system so that people can use it without programming skills |
+| Kouchou AI | A Japanese-language broad listening tool developed by Digital Democracy 2030. Built on TTTC, it was turned into a web system so that people can use it without programming skills |
 | Sensemaker | An open-source tool developed by Google Jigsaw. Using Gemini, it classifies and summarizes large-scale opinion data by topic and extracts points of agreement and disagreement |
 | AffinityBubble | A tool developed by Korea’s pxdAX. It uses AI to analyze large volumes of qualitative data and visualizes them with a hierarchical Voronoi treemap |
 | Embedding Atlas | An open-source visualization tool developed by Apple. It projects large-scale embedding data into two dimensions and enables interactive exploration through automatic clustering and labeling |
 | Nomic Atlas | A cloud-based visualization platform developed by Nomic AI. It projects large-scale text data into two dimensions using embeddings and enables interactive exploration |
 
-In this book, we mainly use TTTC and Public Listening AI as examples to explain the technical mechanisms and use cases of broad listening as a tool, while also referring to other tools where relevant. Chapter 2 explains in detail the characteristics of broad listening as a tool (such as the analysis of open-ended questions and its nature as qualitative analysis). Chapter 12 covers the underlying technologies in detail, including embeddings (techniques for converting text into numerical vectors), and Chapter 13 explains implementation methods.
+In this book, we mainly use TTTC and Kouchou AI as examples to explain the technical mechanisms and use cases of broad listening as a tool, while also referring to other tools where relevant. Chapter 2 explains in detail the characteristics of broad listening as a tool (such as the analysis of open-ended questions and its nature as qualitative analysis). Chapter 12 covers the underlying technologies in detail, including embeddings (techniques for converting text into numerical vectors), and Chapter 13 explains implementation methods.
 
 ### ② Broad Listening as Support for Augmented Deliberation
 
@@ -172,7 +172,7 @@ The idea of gathering many people’s voices and using them in decision-making i
 - **UMAP** (2018): a technology for compressing high-dimensional data into lower dimensions (usually two or three) for visualization
 - **LLMs** (2020–): technologies for understanding, summarizing, and generating large volumes of text
 
-In particular, OpenAI’s release of ChatGPT in November 2022 marked a turning point in the history of natural language processing. Tasks that computers had previously struggled with—reading, understanding, and structuring large volumes of natural language—became possible at realistic cost and speed. Talk to the City and Public Listening AI, which are central to this book, were developed using the ChatGPT API. It became possible to collect thousands or tens of thousands of opinions, cluster them, summarize them, and visualize them without mobilizing expert teams for months on end.
+In particular, OpenAI’s release of ChatGPT in November 2022 marked a turning point in the history of natural language processing. Tasks that computers had previously struggled with—reading, understanding, and structuring large volumes of natural language—became possible at realistic cost and speed. Talk to the City and Kouchou AI, which are central to this book, were developed using the ChatGPT API. It became possible to collect thousands or tens of thousands of opinions, cluster them, summarize them, and visualize them without mobilizing expert teams for months on end.
 
 In other words, broad listening is a new method that has only just become technically feasible. Chapter 2 explains in detail how LLMs made large-scale analysis of open-ended questions possible. Chapter 12 covers the underlying technologies, and Chapter 13 covers implementation methods.
 
@@ -199,22 +199,22 @@ This book explains broad listening in the following structure.
 
 **Part III: Technology (Chapters 12–13)**
 
-- Chapter 12: Core Technologies Behind Public Listening AI
-- Chapter 13: Implementing Public Listening AI
+- Chapter 12: Core Technologies Behind Kouchou AI
+- Chapter 13: Implementing Kouchou AI
 
 Depending on the reader’s interests, we recommend the following reading paths:
 
 - **If you want to understand the concepts**: read Chapters 1–3, then move to the case studies as needed
 - **If you want to know the use cases**: read Chapters 4–11, then move to the technology section if technical questions arise
-- **If you want to know what kind of tool Public Listening AI is and why it was created**: start with Chapter 11, then move to the technology section as your interest dictates
+- **If you want to know what kind of tool Kouchou AI is and why it was created**: start with Chapter 11, then move to the technology section as your interest dictates
 - **If you want to understand the AI and data science behind it**: focus on Chapter 12
-- **If you only want to grasp the flow of Public Listening AI’s processing pipeline**: start with Chapter 13 and refer to Chapter 12 as needed
+- **If you only want to grasp the flow of Kouchou AI’s processing pipeline**: start with Chapter 13 and refer to Chapter 12 as needed
 
 ### Scope of This Book
 
-There are many approaches to broad listening. This book focuses primarily on Talk to the City (TTTC) and “Public Listening AI,” which developed from it.
+There are many approaches to broad listening. This book focuses primarily on Talk to the City (TTTC) and “Kouchou AI,” which developed from it.
 
-We also refer as needed to other tools such as Polis, Idobata, and Jigsaw Sensemaker, but the main focus of this book is TTTC and Public Listening AI. By understanding these tools deeply, readers will be able to acquire ways of thinking that apply to broad listening more generally.
+We also refer as needed to other tools such as Polis, Idobata, and Jigsaw Sensemaker, but the main focus of this book is TTTC and Kouchou AI. By understanding these tools deeply, readers will be able to acquire ways of thinking that apply to broad listening more generally.
 
 ## Looking Ahead to the Next Chapters
 
