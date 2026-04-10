@@ -319,13 +319,13 @@ def get_css(for_pdf: bool = False) -> str:
 
 
 def build_html_content_from_files(
-    base_dir: Path, file_list: list[str], for_pdf: bool = False
+    base_dir: Path, order_dir: Path, file_list: list[str], for_pdf: bool = False
 ) -> str:
     """ファイルリストからHTMLコンテンツを生成"""
     # 各ファイルを個別にHTMLに変換してから結合（脚注を各章内に保持するため）
     html_parts = []
     for filename in file_list:
-        filepath = base_dir / filename
+        filepath = order_dir / filename
         if not filepath.exists():
             print(f"警告: ファイルが見つかりません: {filepath}")
             continue
@@ -373,7 +373,7 @@ def build_html_content(base_dir: Path, order_file: Path, for_pdf: bool = False) 
     """HTMLコンテンツを生成"""
     file_list = load_order_file(order_file)
     print(f"対象ファイル数: {len(file_list)}")
-    return build_html_content_from_files(base_dir, file_list, for_pdf)
+    return build_html_content_from_files(base_dir, order_file.parent, file_list, for_pdf)
 
 
 def build_html(
@@ -463,6 +463,7 @@ def build_chapter_pdfs(
     from playwright.sync_api import sync_playwright
 
     chapters = load_chapter_groups(order_file)
+    order_dir = order_file.parent
     output_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"章数: {len(chapters)}")
@@ -475,7 +476,7 @@ def build_chapter_pdfs(
             output_file = output_dir / f"{section_name}.pdf"
             print(f"章PDF生成中: {section_name}.pdf（{len(files)}ファイル）")
 
-            html_content = build_html_content_from_files(base_dir, files, for_pdf=True)
+            html_content = build_html_content_from_files(base_dir, order_dir, files, for_pdf=True)
 
             temp_html = output_file.with_suffix(".html")
             with open(temp_html, "w", encoding="utf-8") as f:
@@ -522,7 +523,7 @@ def print_char_count_table(base_dir: Path, order_file: Path) -> None:
     counts: list[tuple[str, int]] = []
     grand_total = 0
     for filename in file_list:
-        filepath = base_dir / filename
+        filepath = order_file.parent / filename
         if filepath.exists():
             text = filepath.read_text(encoding="utf-8")
             char_count = len(text)
