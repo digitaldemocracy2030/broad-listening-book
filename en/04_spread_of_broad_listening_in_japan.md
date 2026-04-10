@@ -2,7 +2,6 @@
 
 Author: Yasukazu Nishio
 
-English translation by Luke Closs
 
 When considering what sparked the spread of broad listening in Japan, Takahiro Anno’s efforts in the July 2024 Tokyo governor election are impossible to overlook. (TODO: Since authors other than Mr. Nakayama begin appearing from this point onward, it may be better to include an explanation that this chapter has multiple authors.)
 

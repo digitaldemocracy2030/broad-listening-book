@@ -2,7 +2,6 @@
 
 Written by: @tokoroten
 
-English translation by Luke Closs
 
 This section is based on the Hiroshima AI Lab annual report, records of responses in the Hiroshima Prefectural Assembly, materials published on the prefecture’s official website, and interviews with Hiroshima AI Lab staff.
 

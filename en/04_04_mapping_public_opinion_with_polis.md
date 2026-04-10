@@ -2,7 +2,6 @@
 
 By Yasuo Nishio
 
-English translation by Luke Closs
 
 “Public opinion” is often forced onto a single axis: right/left, conservative/liberal, for/against. But reality is not that simple.
 

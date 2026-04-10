@@ -2,7 +2,6 @@
 
 Written by tokoroten, nishio, and sumino
 
-English translation by Luke Closs
 
 ## About Digital Democracy 2030
 

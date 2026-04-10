@@ -2,7 +2,6 @@
 
 By @tokoroten
 
-English translation by Luke Closs
 
 In this chapter, we have examined a range of broad listening tools and practices, including Polis and Taiwan’s vTaiwan. What common problem are they all trying to solve? As a framework for thinking about that question, the two movement types proposed by political scientists W. Lance Bennett and Alexandra Segerberg in their 2012 paper “The Logic of Connective Action” are highly useful.[^1]
 

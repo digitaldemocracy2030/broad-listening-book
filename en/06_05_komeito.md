@@ -2,7 +2,6 @@
 
 Author: tokoroten
 
-English translation by Luke Closs
 
 ## Komeito: Broad Listening Undertaken by a Governing Party
 

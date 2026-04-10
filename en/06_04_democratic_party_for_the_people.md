@@ -2,7 +2,6 @@
 
 Written by: tokoroten
 
-English translation by Luke Closs
 
 ## The Democratic Party for the People’s Elections and Broad Listening: An Interview with Takae Ito
 

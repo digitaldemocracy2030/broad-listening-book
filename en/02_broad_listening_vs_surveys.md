@@ -2,7 +2,6 @@
 
 Author: @tokoroten
 
-English translation by Luke Closs
 
 ## The Difference Between Closed Questions and Open Questions
 

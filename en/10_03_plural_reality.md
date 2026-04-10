@@ -2,7 +2,6 @@
 
 Author: Shunsuke Takagi (Representative, Plural Reality LLC)
 
-English translation by Luke Closs
 
 
 ## Introduction

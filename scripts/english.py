@@ -78,10 +78,8 @@ Hard requirements:
 - Do not add first-use gloss expansions inside headings. Keep headings concise and natural;
   apply glosses only in body text.
 - Preserve original author/byline credit in each chapter.
-- If a chapter has an explicit author/byline line near the top, add a separate line
-  immediately below it: "English translation by Luke Closs".
-- Do not add repeated fault-disclaimer text in every chapter; keep such a note only where
-  already present in the manuscript front matter.
+- Do not add translator credits or fault-disclaimer text to individual chapters.
+  The English edition carries a single translation note in the appendix.
 - Return only translated markdown with no preface or code fences.
 
 Terminology localization preferences (for a Western audience):

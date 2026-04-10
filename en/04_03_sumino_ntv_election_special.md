@@ -2,7 +2,6 @@
 
 Written by: @nasuka
 
-English translation by Luke Closs
 
 ### 4.3.1 Use in Election Coverage
 

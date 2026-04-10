@@ -2,7 +2,6 @@
 
 By Keisuke Ariga (Representative Director, Boots Inc.)
 
-English translation by Luke Closs
 
 ## Introduction
 

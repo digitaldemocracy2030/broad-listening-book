@@ -45,3 +45,7 @@
 |---|---|---:|---|---:|---|---|
 | Altius Link (Interview Article) | Company | (as of page publication) | Use of Public Hearing AI in contact center VOC analysis | — | Book chapter / DD2030 note article | https://github.com/digitaldemocracy2030/broad-listening-book/blob/main/09_01_%E3%82%A2%E3%83%AB%E3%83%86%E3%82%A3%E3%82%A6%E3%82%B9%E3%83%AA%E3%83%B3%E3%82%AF_%E5%8F%96%E6%9D%90%E8%A8%98%E4%BA%8B.md<br>https://note.com/dd2030/n/n6db28a76ca95 |
 | Cybozu | Company | (based on the book chapter) | Use of AI facilitation for internal consensus-building and consideration of editorial policy (based on the book chapter) | — | Book chapter | https://github.com/digitaldemocracy2030/broad-listening-book/blob/main/09_02_%E3%82%B5%E3%82%A4%E3%83%9C%E3%82%A6%E3%82%BA.md |
+
+### Translation Note (English Edition)
+
+Luke Closs reviewed and lightly localized the English translation. Original Japanese authorship is preserved throughout; any remaining translation errors are his responsibility.

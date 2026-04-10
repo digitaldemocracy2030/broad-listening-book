@@ -2,7 +2,6 @@
 
 Written by: tokoroten
 
-English translation by Luke Closs
 
 As we have seen in the previous chapters, broad listening has begun to be used in a wide range of settings, including elections, local governments, companies, and nonprofits. So who is actually bringing this technology into the field?
 

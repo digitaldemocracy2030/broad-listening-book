@@ -2,7 +2,6 @@
 
 Author: @tokoroten
 
-English translation by Luke Closs
 
 ## Purpose of This Book
 
