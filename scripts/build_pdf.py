@@ -66,12 +66,34 @@ def read_markdown_file(filepath: Path) -> str:
         return f.read()
 
 
-def convert_image_paths(html: str, base_dir: Path) -> str:
-    """画像パスを絶対パスに変換"""
+def convert_image_paths(html: str, source_file: Path, base_dir: Path) -> str:
+    """画像パスを絶対パスに変換
+
+    優先順位:
+    1) Markdownファイルからの相対パス
+    2) リポジトリルートからの相対パス（既存原稿との互換用）
+    """
+
+    def resolve_local_path(src: str) -> Path:
+        local_candidate = (source_file.parent / src).resolve()
+        if local_candidate.exists():
+            return local_candidate
+
+        fallback_candidate = (base_dir / src).resolve()
+        if fallback_candidate.exists():
+            return fallback_candidate
+
+        # どちらにも存在しない場合は、従来に近い挙動として
+        # Markdownファイル基準のパスをそのまま使う。
+        return local_candidate
+
     def replace_src(match):
         src = match.group(1)
+        if src.startswith(("http://", "https://", "file://", "data:", "/")):
+            return match.group(0)
+
         if not src.startswith(("http://", "https://", "file://")):
-            abs_path = (base_dir / src).resolve()
+            abs_path = resolve_local_path(src)
             # Windowsパスをfile:// URLに変換
             file_url = abs_path.as_uri()
             return f'src="{file_url}"'
@@ -313,7 +335,7 @@ def build_html_content_from_files(
         html_part = markdown_to_html(md_content)
 
         # 画像パスを絶対パスに変換
-        html_part = convert_image_paths(html_part, base_dir)
+        html_part = convert_image_paths(html_part, filepath, base_dir)
 
         html_parts.append(html_part)
         html_parts.append('<hr class="chapter-break">')  # 章の区切り

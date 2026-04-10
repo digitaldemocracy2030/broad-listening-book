@@ -22,3 +22,4 @@ dependencies = [
 
 [project.scripts]
 build-pdf = "scripts.build_pdf:main"
+english = "scripts.english:main"
