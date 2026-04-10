@@ -61,7 +61,7 @@ In Tawaramoto, Nara Prefecture, a residents’ council was convened as the town 
 
 A visualization device was placed on each group’s table, and facilitators circulated with tablets in hand. By checking the status of all groups on the tablet, they could decide which group to visit next, and upon arriving, review the recent flow of comments before joining the discussion. During whole-group sharing, they could also use the tablet to bridge perspectives across groups, saying things like, “Group 1 was also discussing this issue.”
 
-![How the system was used in Tawaramoto. Devices were placed on each group’s table, and facilitators circulated with tablets, grasping the context before asking deeper follow-up questions.](images/10_05_tawaramoto_flow.png)
+![How the system was used in Tawaramoto. Devices were placed on each group’s table, and facilitators circulated with tablets, grasping the context before asking deeper follow-up questions.](images/10_05_tawaramoto_flow_en.png)
 
 Compared with recordings from earlier sessions, interruptions such as “What are you talking about right now?” had decreased. Facilitators offered feedback such as the following:
 

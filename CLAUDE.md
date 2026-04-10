@@ -19,7 +19,7 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
     - 06: 国政選挙でのブロードリスニングの利用（チームみらい、日本維新の会、国民民主党、公明党）
     - 07: 地方選挙での活用
     - 08: 地方自治体での活用
-    - 09: 企業・NPOでの活用
+    - 09: 企業での活用
     - 10: ビジネスになったブロードリスニング（DD2030、ブーツ、多元現実、Democracy X、litela）
     - 11: 海外におけるブロードリスニング（台湾、Polis、ボーリンググリーン、イスラエル・パレスチナ、Connective Action）
   - 12-13: Part 3 - Technical explanations
