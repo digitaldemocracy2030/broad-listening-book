@@ -135,7 +135,7 @@ If we simply present the results, it is hard for readers to understand what stan
 
 **Yamazaki** In the Digital Investigative Reporting Department, I and several others who can write code have been publishing things on GitHub on our own initiative. Our boss has said, "Sounds good," so we have just kept publishing more and more.
 
-**Nakayama** Incidentally, when developing Civic Listening AI, we also referred to code published by The Asahi Shimbun. Thank you very much.
+**Nakayama** Incidentally, when developing 広聴AI (Kouchou AI - meaning Public Relations AI), we also referred to code published by The Asahi Shimbun. Thank you very much.
 
 ### Looking Ahead
 
@@ -165,4 +165,4 @@ Not just with Talk to the City, but by making good use of new technologies and A
 [^github_consumption]: GitHub consumption tax analysis https://github.com/asahi-research/TTTC_consumption_tax_20250525
 [^github_expo]: GitHub Osaka Expo analysis https://github.com/asahi-research/Asahi_TTTC_osaka_expo
 [^flourish]: Flourish https://flourish.studio/
-[^tttc_archived]: The Talk to the City GitHub repository was archived on July 31, 2025, and official development by AI Objectives ended. https://github.com/AIObjectives/talk-to-the-city-reports
+[^tttc_archived]: The initial Talk to the City repository, `talk-to-the-city-reports`, was archived on July 31, 2025, but development continues in the successor lightweight repository, `tttc-light-js`. https://github.com/AIObjectives/talk-to-the-city-reports / https://github.com/AIObjectives/tttc-light-js/
