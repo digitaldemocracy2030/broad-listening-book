@@ -12,7 +12,9 @@ Since the 2024 Tokyo gubernatorial election, diagrams like this one have become 
 
 AI reads thousands of citizens' voices, groups together similar opinions, color-codes them, and visualizes them into a single issue space. This technology, known as "broad listening," is rapidly spreading across elections, local government, companies, and NPOs. This book explains the technology behind this kind of figure and how it is beginning to change society.
 
-This book explains “broad listening,” as it has been practiced in Japanese elections and public administration from 2024 to early 2026. As Takahiro Anno noted in the preface, broad listening is still a very new technology and a practical activity in its infancy. This book aims to help readers understand broad listening and put it into practice themselves by systematically covering its core concepts, technical mechanisms, and real-world use cases.
+Broad listening became widely known in Japan when Takahiro Anno used it in the 2024 Tokyo gubernatorial election. But this was not some special magic unique to Anno or Team Mirai. The tools used are available as open-source software, and the underlying technologies are also combinations of published papers and methods. You do not need special genius or a huge budget to practice broad listening if you understand the principles. One purpose of this book is to demystify broad listening.
+
+This book brings together the concepts, technical mechanisms, and real-world use cases from 2024 to early 2026, so that readers can understand broad listening and put it into practice themselves.
 
 This book is intended for readers such as the following:
 
@@ -75,7 +77,13 @@ The figure below was presented in a 2023 article by Yasukazu Nishio, one of this
 
 [^1]: Yasumasa Nishio, “Not Subjective or Objective, but From One Subjectivity to Many Subjectivities—Knowledge Co-Creation Using AI = Integrating Individual Perspectives—,” *IPSJ Magazine* Vol.64 No.9, pp.e23 (Sep. 2023) https://ipsj.ixsq.nii.ac.jp/records/227307
 
-This figure became a standard way of explaining broad listening and was widely cited. But as a result, it also created the misunderstanding that “broad listening = this diagram.” For example, people sometimes ask, “Where does Polis fit into this diagram?” Polis is a tool that collects and visualizes opinions at the same time, but this figure only represents one aspect—“AI-based information summarization”—so it does not fit neatly. What this figure shows is only “broad listening as a tool.”
+The left side of the diagram shows a single voice being copied by technology and delivered to many people. As technologies such as printing, radio, television, the internet, and social media developed, it became easier and easier for one person to speak to many. This is "broadcast."
+
+The center of the diagram shows the opposite: one person trying, and failing, to listen to many voices. When an individual tries to listen to a large number of voices, the volume of information becomes too large to process, and listening breaks down. This was the situation before broad listening. A person can listen to one voice, but cannot listen to ten voices at the same time, let alone thousands or tens of thousands.
+
+The right side of the diagram shows AI entering the middle, digesting and structuring many voices, and delivering them in a form an individual can understand. As natural-language processing and AI technologies developed, AI became able to read large volumes of opinions, group similar views, extract important points, cluster them, and visualize them. This made it possible for one person to "listen" to many voices. This was the version of broad listening Nishio presented in his 2023 article.
+
+This figure became a standard way of explaining broad listening and was widely cited. But as a result, it also created the misunderstanding that "broad listening = this diagram." For example, people sometimes ask, "Where does Polis fit into this diagram?" Polis is a tool that collects and visualizes opinions and also structures points of agreement, but this figure only represents one aspect, "AI-based information summarization," so it does not fit neatly. What this figure shows is only "broad listening as a tool."
 
 Broad listening as a tool is a technology that uses AI to aggregate, structure, and visualize large volumes of opinions—a “component” that can be used in many different settings.
 
