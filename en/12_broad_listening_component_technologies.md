@@ -2,7 +2,7 @@
 
 ## 12.1 Learning Objectives for This Chapter
 
-In this chapter, we explain the foundational technologies that support Broad Listening AI in a way that can be understood even without specialized knowledge of data science.
+In this chapter, we explain the foundational technologies that support 広聴AI (Kouchou AI - meaning Public Relations AI) in a way that can be understood even without specialized knowledge of data science.
 
 By the end of this chapter, you will understand the following:
 
@@ -10,7 +10,7 @@ By the end of this chapter, you will understand the following:
 - The history of the development of technologies that convert text into numbers (vectors)
 - Why large language models (LLMs) can behave in ways that resemble “intelligence”
 - Technologies for organizing and visualizing large amounts of data
-- How these technologies are combined in Broad Listening AI
+- How these technologies are combined in Kouchou AI
 
 For each technology, we explain its inputs, outputs, and uses.
 
@@ -18,7 +18,7 @@ For each technology, we explain its inputs, outputs, and uses.
 
 ## 12.2 The Big Picture of the Technology
 
-The technologies used in Broad Listening AI are rooted in philosophical questions such as: What does it mean for things to be “the same”? What does it mean for things to be “similar”?
+The technologies used in Kouchou AI are rooted in philosophical questions such as: What does it mean for things to be “the same”? What does it mean for things to be “similar”?
 
 Humans can intuitively understand that “cat” and “kitty” refer to the same thing. We also understand that while “dog” and “cat” are different, they are similar in that both are “pets.” But for a computer, these are nothing more than completely different strings of characters. How can we make a computer understand this “identity of meaning” and “similarity”? Many techniques in computer science were born from attempts to answer this question.
 
@@ -33,9 +33,9 @@ The right side of the figure represents the approach that **“things that are c
 
 Slightly off to the side is the approach that **“values that vary together are related.”** PCA (principal component analysis) compresses dimensions by finding the directions in which the data varies the most.
 
-Broad Listening AI is realized by combining these approaches. First, the input text is cleaned and formatted using an LLM from the left-side family of technologies, and Sentence-BERT converts the words into vectors. Next, right-side technologies (cosine similarity, clustering, and UMAP) measure distances, group similar items together, and visualize them. Then the process returns to the left side again, where an LLM assigns labels. This is the basic mechanism of Broad Listening AI.
+Kouchou AI is realized by combining these approaches. First, the input text is cleaned and formatted using an LLM from the left-side family of technologies, and Sentence-BERT converts the words into vectors. Next, right-side technologies (cosine similarity, clustering, and UMAP) measure distances, group similar items together, and visualize them. Then the process returns to the left side again, where an LLM assigns labels. This is the basic mechanism of Kouchou AI.
 
-UMAP appeared in 2018, Sentence-BERT in 2019, and the practical deployment of LLMs began in 2023 and after. It was only a few years ago that all of the technologies needed to build Broad Listening AI finally came together. In other words, Broad Listening AI is a new method that has only just become technically possible.
+UMAP appeared in 2018, Sentence-BERT in 2019, and the practical deployment of LLMs began in 2023 and after. It was only a few years ago that all of the technologies needed to build Kouchou AI finally came together. In other words, Kouchou AI is a new method that has only just become technically possible.
 
 ---
 
@@ -133,7 +133,7 @@ This transformation makes language computable. Addition, subtraction, distance m
 
 There is some variation in terminology for this concept. Depending on the literature or the engineer, you may see expressions such as “embedding,” “embedding vector,” “context vector,” “context embedding vector,” and so on. These all refer, in essence, to the same thing. In this book, we use these terms according to context, but please do not let that cause confusion.
 
-Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors. In Broad Listening AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
+Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors. In Kouchou AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
 
 ---
 
@@ -232,7 +232,7 @@ But with few-shot learning, tasks could be solved simply by writing prompts. Tra
 
 This new approach—solving tasks by carefully designing prompts—came to be known as **prompt engineering**. What examples should be shown? In what order? What wording should be used in the instructions? Such choices can dramatically change the quality of the output, even with the same model.
 
-Broad Listening AI also uses few-shot learning when extracting opinions. By including input-output examples in the prompt, it communicates the expected output format and level of granularity to the LLM (see Chapter 13 for details).
+Kouchou AI also uses few-shot learning when extracting opinions. By including input-output examples in the prompt, it communicates the expected output format and level of granularity to the LLM (see Chapter 13 for details).
 
 ### 12.4.4 From GPT to ChatGPT: The Birth of Conversational AI
 
@@ -302,13 +302,13 @@ One major factor behind this bias is thought to be RLHF (reinforcement learning 
 
 In addition, much of the training data for LLMs consists of English-language text, which reflects Western values. Even when opinions are written in Japanese, there is a risk that during summarization or classification they may be rephrased in a more liberal direction, or that conservative opinions may be undervalued.
 
-A practical way to address this issue in broad listening is to avoid dependence on any single LLM. It is important for neutrality to build in the flexibility to compare results across multiple LLMs or use different models for different purposes. This is why Broad Listening AI adopts an architecture that allows the LLM in use to be switched easily.
+A practical way to address this issue in broad listening is to avoid dependence on any single LLM. It is important for neutrality to build in the flexibility to compare results across multiple LLMs or use different models for different purposes. This is why Kouchou AI adopts an architecture that allows the LLM in use to be switched easily.
 
 ### 12.4.7 RAG: Strengthening LLMs with External Knowledge
 
 One response to the hallucination problem is RAG (Retrieval-Augmented Generation).
 
-Broad Listening AI does not use RAG, but it is an important technology for understanding LLM-based systems, so we introduce it here.
+Kouchou AI does not use RAG, but it is an important technology for understanding LLM-based systems, so we introduce it here.
 
 The mechanism of RAG is simple. It searches a database or the web for information relevant to the user’s question, then passes that information to the LLM to generate an answer. This allows the LLM to answer based on retrieved information, even if it does not already “know” it itself.
 
@@ -334,7 +334,7 @@ Previously, even by combining complex processing such as regular expressions and
 
 As of 2026, Structured Output is supported by all major LLM providers, including OpenAI, Anthropic (Claude), and Google (Gemini).
 
-Broad Listening AI also uses Structured Output when extracting opinions and assigning labels. Converting thousands of free-text responses into structured data such as category, sentiment, and summary would not have been possible without Structured Output.
+Kouchou AI also uses Structured Output when extracting opinions and assigning labels. Converting thousands of free-text responses into structured data such as category, sentiment, and summary would not have been possible without Structured Output.
 
 ### 12.4.9 Reasoning Models: Improving Accuracy Through Multi-Step Inference
 
@@ -351,7 +351,7 @@ As shown in the figure, a Reasoning Model first generates reasoning from the pro
 
 ## 12.5 Organizing and Visualizing Data: Clustering and Dimensionality Reduction
 
-As we saw in Section 12.3, embeddings convert text into vectors with hundreds of dimensions. Once text becomes numerical data, we can apply clustering to “group nearby points together” and dimensionality reduction to “compress hundreds of dimensions into two and display them as a scatter plot.” In this section, we explain these technologies, which Broad Listening AI uses to organize and visualize opinions.
+As we saw in Section 12.3, embeddings convert text into vectors with hundreds of dimensions. Once text becomes numerical data, we can apply clustering to “group nearby points together” and dimensionality reduction to “compress hundreds of dimensions into two and display them as a scatter plot.” In this section, we explain these technologies, which Kouchou AI uses to organize and visualize opinions.
 
 ### 12.5.1 What Is Clustering?
 
@@ -373,7 +373,7 @@ Clustering is the technology that enables a computer to perform this kind of gro
 
 ### 12.5.2 Data Shape and Algorithm Selection
 
-Broad Listening AI uses two clustering algorithms: K-means and Ward’s method. Why these two? TTTC Scatter, the project from which Broad Listening AI was forked, used a different algorithm (spectral clustering), but it produced an “island” problem in which opinions far apart on the scatter plot were classified into the same cluster (see Chapter 13 for details). With K-means, the result matches the intuition that “opinions that are close together belong to the same group.”
+Kouchou AI uses two clustering algorithms: K-means and Ward’s method. Why these two? TTTC Scatter, the project from which Kouchou AI was forked, used a different algorithm (spectral clustering), but it produced an “island” problem in which opinions far apart on the scatter plot were classified into the same cluster (see Chapter 13 for details). With K-means, the result matches the intuition that “opinions that are close together belong to the same group.”
 
 There are many clustering algorithms, and each is suited to different data shapes. Figure 12-7 shows the results of applying three algorithms (K-means, Ward’s method, and DBSCAN) to four types of data structure.
 
@@ -391,7 +391,7 @@ Several important points become clear from this figure.
 
 The most important rows are “one cluster” and “three clusters.” If instructed to “split into two,” K-means and Ward’s method will forcibly divide even a single cluster, and if there are three clusters, they may merge them into two. DBSCAN, by contrast, defines clusters as “high-density regions,” so it can recognize the natural structure of the data. However, depending on its parameter settings (the density threshold), points at the edges may be classified as outliers (noise).
 
-In other words, **there is no universally best algorithm**. You need to choose an algorithm that matches the shape of the data. Because the opinion data handled by Broad Listening AI tends to form “blob-like” distributions in vector space, K-means and Ward’s method are well suited.
+In other words, **there is no universally best algorithm**. You need to choose an algorithm that matches the shape of the data. Because the opinion data handled by Kouchou AI tends to form “blob-like” distributions in vector space, K-means and Ward’s method are well suited.
 
 ### 12.5.3 The K-means Algorithm
 
@@ -408,7 +408,7 @@ Let us look at how the algorithm works in Figure 12-8.
 4. **Step 3**: The center points are moved to the centroid of each group
 5. **Step 4-7**: Repeat “assignment → center movement.” Stop when the center points no longer move
 
-The key features of K-means are that it is simple and fast. However, you must decide in advance how many groups to divide the data into. Another important feature is that it can **forcibly split a single cluster into multiple parts**. In the “one cluster” example mentioned earlier, when K-means was asked to divide the data with “K=2,” the cluster was forcibly cut in two. At first glance this may seem like a disadvantage, but as we will see later, Broad Listening AI takes advantage of this property by first dividing the data finely and then integrating it hierarchically.
+The key features of K-means are that it is simple and fast. However, you must decide in advance how many groups to divide the data into. Another important feature is that it can **forcibly split a single cluster into multiple parts**. In the “one cluster” example mentioned earlier, when K-means was asked to divide the data with “K=2,” the cluster was forcibly cut in two. At first glance this may seem like a disadvantage, but as we will see later, Kouchou AI takes advantage of this property by first dividing the data finely and then integrating it hierarchically.
 
 ### 12.5.4 Hierarchical Clustering (Ward’s Method)
 
@@ -438,7 +438,7 @@ In other words, once clustering has been performed, you can later adjust it by s
 
 ### 12.5.5 What Is Dimensionality Reduction?
 
-In Broad Listening AI, 1,536-dimensional vectors are compressed into two dimensions for visualization. Humans can intuitively understand up to three dimensions, so it is impossible to directly view high-dimensional data as it is. By reducing it to two dimensions, it can finally be visualized as a scatter plot.
+In Kouchou AI, 1,536-dimensional vectors are compressed into two dimensions for visualization. Humans can intuitively understand up to three dimensions, so it is impossible to directly view high-dimensional data as it is. By reducing it to two dimensions, it can finally be visualized as a scatter plot.
 
 Let us think about this “mapping from high dimensions to low dimensions” using familiar examples (Figure 12-10).
 
@@ -462,7 +462,7 @@ In the context of broad listening, Polis uses PCA to compress participants’ vo
 
 PCA is well suited to capturing linear correlations, but it has limits when dealing with data that has complex structure. PCA finds “the direction in which the overall variance of the data is greatest,” but that is not necessarily ideal for the goal of “placing similar things close together.”
 
-UMAP (Uniform Manifold Approximation and Projection), introduced in 2018, prioritizes preserving relationships between nearby points. Points that are close in high-dimensional space are placed close together even after being compressed into two dimensions. This makes it possible to create intuitive visualizations in which “similar opinions are placed near one another.” In Broad Listening AI scatter plots, opinions on the same topic appear grouped together thanks to UMAP.
+UMAP (Uniform Manifold Approximation and Projection), introduced in 2018, prioritizes preserving relationships between nearby points. Points that are close in high-dimensional space are placed close together even after being compressed into two dimensions. This makes it possible to create intuitive visualizations in which “similar opinions are placed near one another.” In Kouchou AI scatter plots, opinions on the same topic appear grouped together thanks to UMAP.
 
 Let us explain the UMAP algorithm metaphorically. From each data point, attach **rubber bands** to several nearby points in high-dimensional space. Nearby points are connected by an attractive force. At the same time, **repelling magnets** create a repulsive force between randomly chosen distant points. The balance between attraction and repulsion naturally arranges similar things close together and dissimilar things farther apart. Strictly speaking, this is not a physical simulation, but it is a useful intuitive image.
 
@@ -499,7 +499,7 @@ Figure 12-15 zooms in on the boundary region where 4s and 9s are mixed. The actu
 
 The lower part contains many 4s (red boxes), while the upper part contains many 9s (blue boxes). In the middle region, the two are mixed together. Looking at the images, we can see that a 4 with a closed top resembles a 9, while a 9 with an open lower part resembles a 4. UMAP places such “could-be-either” samples appropriately near the boundary.
 
-The important point is that **for ambiguous data like this, the correct answer is itself ambiguous**. The same is true in Broad Listening AI: opinions that span multiple topics or are open to multiple interpretations are placed near cluster boundaries.
+The important point is that **for ambiguous data like this, the correct answer is itself ambiguous**. The same is true in Kouchou AI: opinions that span multiple topics or are open to multiple interpretations are placed near cluster boundaries.
 
 However, care is needed when interpreting UMAP results. Because UMAP prioritizes “placing nearby things close together,” **points that are close can be interpreted as similar, but the distance between far-apart points has no particular meaning**. For example, in Figure 12-13, the cluster for “1” is far from the cluster for “0,” but that does not mean that “1 and 0 are more different than 4 and 9.”
 
@@ -516,8 +516,8 @@ Figure 12-16 shows 80 words—animal names, place names, food names, and sports 
 
 Animals (red circles), place names (blue squares), foods (green triangles), and sports (purple diamonds) each form clear clusters. One particularly interesting detail is that within the animal cluster, livestock such as cows, pigs, sheep, and horses gather on the side closer to the food cluster, while wild animals such as elephants, tigers, and owls are placed farther away. Because livestock frequently appears in food-related contexts such as “eat beef” or “grill pork,” their vectors become closer under the distributional hypothesis.
 
-Broad Listening AI uses the same basic approach. Each opinion is converted into a high-dimensional embedding vector, then compressed into two dimensions with UMAP, producing a scatter plot in which semantically similar opinions are placed near one another.
+Kouchou AI uses the same basic approach. Each opinion is converted into a high-dimensional embedding vector, then compressed into two dimensions with UMAP, producing a scatter plot in which semantically similar opinions are placed near one another.
 
 ---
 
-In this chapter, we have explained the core technologies that support Broad Listening AI. In the next chapter, we will look in detail at how these technologies are combined within Broad Listening AI and function together as a single pipeline, down to the implementation level.
+In this chapter, we have explained the core technologies that support Kouchou AI. In the next chapter, we will look in detail at how these technologies are combined within Kouchou AI and function together as a single pipeline, down to the implementation level.

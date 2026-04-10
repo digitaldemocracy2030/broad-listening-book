@@ -1,15 +1,15 @@
-# Chapter 13 Reading the Implementation of Broad Listening AI
+# Chapter 13 Reading the Implementation of 広聴AI (Kouchou AI - meaning Public Relations AI)
 
 ## 13.1 Learning Objectives for This Chapter
 
-In the previous chapter, we explained the foundational technologies behind Broad Listening AI at a conceptual level. In this chapter, we will examine how those technologies are actually combined and made to function as a single system.
+In the previous chapter, we explained the foundational technologies behind Kouchou AI at a conceptual level. In this chapter, we will examine how those technologies are actually combined and made to function as a single system.
 
 By the end of this chapter, you will be able to:
 
-- Understand the overall processing pipeline of Broad Listening AI
+- Understand the overall processing pipeline of Kouchou AI
 - Grasp the purpose and role of each processing step
 - Understand the design trade-offs (accuracy vs. ease of explanation)
-- Gain the basic knowledge needed to implement a mini Broad Listening AI system yourself
+- Gain the basic knowledge needed to implement a mini Kouchou AI system yourself
 
 This chapter is aimed at programmers, but it is structured so that even readers who cannot read code can still understand the flow of processing.
 
@@ -17,9 +17,9 @@ This chapter is aimed at programmers, but it is structured so that even readers 
 
 ## 13.2 A Detailed Look at the Processing Pipeline
 
-Broad Listening AI consists, broadly speaking, of the following steps.
+Kouchou AI consists, broadly speaking, of the following steps.
 
-![Broad Listening AI processing pipeline](images/13_pipeline_overview.png)
+![Kouchou AI processing pipeline](images/13_pipeline_overview.png)
 
 1. **Extraction**: Use an LLM to split and structure raw opinions into individual issues
 2. **Embedding**: Convert each opinion into a contextual vector (see Chapter 12)
@@ -53,7 +53,7 @@ When an LLM is used to split the opinions, the emotional expressions are removed
 
 An important effect of opinion splitting is that it becomes easier to discover “opinions shared by multiple people.” For example, suppose one person submits a text containing “opinions A, B, and C,” while another submits a text containing “opinions C, B, and D.” If you compare the original texts directly, the commonalities are hard to see. But if you split them into {A, B, C} and {C, B, D}, it becomes clear that “B and C are being asserted by multiple people.”
 
-So what kind of input should be given to the LLM in order to split and structure opinions? Below is an example of a prompt used in Broad Listening AI.
+So what kind of input should be given to the LLM in order to split and structure opinions? Below is an example of a prompt used in Kouchou AI.
 
 ```text
 You are a professional research assistant. From the given text,
@@ -81,7 +81,7 @@ It is also necessary to train people who can provide that education.
 
 The instruction “In most cases, it is preferable to keep things as a single argument” is important. Without it, the LLM tends to split opinions too finely.
 
-Also note that the output format is JSON. To process LLM output programmatically, structured data is needed rather than natural-language prose. Broad Listening AI uses the Structured Output approach explained in Chapter 12 to ensure JSON output, while also showing an output example in the prompt so that the intended data structure is more reliably produced.
+Also note that the output format is JSON. To process LLM output programmatically, structured data is needed rather than natural-language prose. Kouchou AI uses the Structured Output approach explained in Chapter 12 to ensure JSON output, while also showing an output example in the prompt so that the intended data structure is more reliably produced.
 
 The word “opinion” in the prompt can also be changed depending on the purpose—for example, to “complaint,” “request,” or “proposal.” This makes it possible to extract only text with a particular character.
 
@@ -89,7 +89,7 @@ The word “opinion” in the prompt can also be changed depending on the purpos
 
 ### 13.2.2 ② Embedding
 
-In this step, the split opinions are converted into vectors (arrays of numbers). The technical details of embeddings were explained in Chapter 12. Broad Listening AI uses OpenAI’s Embeddings API and the Sentence Transformers library, which grew out of open-source research on Sentence-BERT.
+In this step, the split opinions are converted into vectors (arrays of numbers). The technical details of embeddings were explained in Chapter 12. Kouchou AI uses OpenAI’s Embeddings API and the Sentence Transformers library, which grew out of open-source research on Sentence-BERT.
 
 By splitting and structuring opinions in the previous step, embedding quality improves significantly. There are two reasons for this.
 
@@ -105,11 +105,11 @@ That said, there are also concerns. Because of LLM hallucinations, content not p
 
 ### 13.2.3 ③ Dimensionality Reduction
 
-In this step, high-dimensional embedding vectors are compressed into two dimensions. Broad Listening AI uses UMAP, as explained in Chapter 12.
+In this step, high-dimensional embedding vectors are compressed into two dimensions. Kouchou AI uses UMAP, as explained in Chapter 12.
 
-The embeddings generated in the previous step are high-dimensional vectors: 1,536 dimensions with OpenAI’s Embeddings API and 768 dimensions with Sentence Transformer. The main reason for dimensionality reduction is visualization. Humans can intuitively understand only up to about two or three dimensions, so to display the data as a scatter plot, the dimensionality must be reduced. In Broad Listening AI, clustering is also performed on the two-dimensional data after UMAP, so dimensionality reduction also serves as preprocessing for clustering.
+The embeddings generated in the previous step are high-dimensional vectors: 1,536 dimensions with OpenAI’s Embeddings API and 768 dimensions with Sentence Transformer. The main reason for dimensionality reduction is visualization. Humans can intuitively understand only up to about two or three dimensions, so to display the data as a scatter plot, the dimensionality must be reduced. In Kouchou AI, clustering is also performed on the two-dimensional data after UMAP, so dimensionality reduction also serves as preprocessing for clustering.
 
-Broad Listening AI specifies cosine distance as the distance function for UMAP. As explained in Chapter 12, cosine similarity is the standard way to measure similarity between embedding vectors. UMAP uses Euclidean distance by default, but by specifying `metric='cosine'`, dimensionality reduction is performed based on the closeness of vector “direction.” This makes semantically similar opinions more likely to be placed near each other in the two-dimensional space.
+Kouchou AI specifies cosine distance as the distance function for UMAP. As explained in Chapter 12, cosine similarity is the standard way to measure similarity between embedding vectors. UMAP uses Euclidean distance by default, but by specifying `metric='cosine'`, dimensionality reduction is performed based on the closeness of vector “direction.” This makes semantically similar opinions more likely to be placed near each other in the two-dimensional space.
 
 #### The Challenge of Separating Support and Opposition Within the Same Topic
 
@@ -123,19 +123,19 @@ For politicians and government officials who use broad listening, one of the mos
 
 ### 13.2.4 ④ Clustering
 
-In this step, K-means is used to automatically group similar opinions. In Broad Listening AI, the user can specify the **number of lower-level clusters**, which corresponds to the number of clusters (k) in K-means.
+In this step, K-means is used to automatically group similar opinions. In Kouchou AI, the user can specify the **number of lower-level clusters**, which corresponds to the number of clusters (k) in K-means.
 
 There are two reasons K-means was chosen. First, it tends to produce clusters of roughly similar size. If cluster sizes are extremely uneven, they become harder to handle in downstream labeling and visualization. Second, because it groups nearby points together on the scatter plot, it is less likely to produce disconnected “islands.”
 
-Here, “islands” refers to the phenomenon where points that are visually far apart end up belonging to the same cluster. TTTC Scatter, the upstream project from which Broad Listening AI was forked, uses Spectral Clustering, and in actual projects this did produce such islands. The figure below shows an example from Nippon TV’s 2024 House of Representatives election special, where TTTC Scatter was used.
+Here, “islands” refers to the phenomenon where points that are visually far apart end up belonging to the same cluster. TTTC Scatter, the upstream project from which Kouchou AI was forked, uses Spectral Clustering, and in actual projects this did produce such islands. The figure below shows an example from Nippon TV’s 2024 House of Representatives election special, where TTTC Scatter was used.
 
 ![Example of Talk to the City used in Nippon TV’s 2024 House of Representatives election special](images/13_ntv_spectral.png)
 
 Source: [Nippon TV 2024 House of Representatives election special](https://news.ntv.co.jp/static/shugiinsenkyo2024/whole-1022/index.html)
 
-Broad Listening AI switched from Spectral Clustering to K-means as a design decision based on the assumption that its users would be ordinary citizens and politicians. When people unfamiliar with the characteristics of clustering algorithms look at a scatter plot, they will be confused if opinions in distant locations are shown in the same color. With K-means, the result matches the intuition that “opinions close together belong to the same group.”
+Kouchou AI switched from Spectral Clustering to K-means as a design decision based on the assumption that its users would be ordinary citizens and politicians. When people unfamiliar with the characteristics of clustering algorithms look at a scatter plot, they will be confused if opinions in distant locations are shown in the same color. With K-means, the result matches the intuition that “opinions close together belong to the same group.”
 
-That said, K-means assumes spherical clusters, so it may miss complex cluster shapes that Spectral Clustering could have detected. Broad Listening AI accepts this trade-off and prioritizes visual clarity. This is a decision made on the assumption that the system will be used as infrastructure for democracy, not as an analysis tool for specialists.
+That said, K-means assumes spherical clusters, so it may miss complex cluster shapes that Spectral Clustering could have detected. Kouchou AI accepts this trade-off and prioritizes visual clarity. This is a decision made on the assumption that the system will be used as infrastructure for democracy, not as an analysis tool for specialists.
 
 Clustering is performed on the data after UMAP has reduced it to two dimensions. As noted in Chapter 12, UMAP has the limitation that “distances between far-apart points are not meaningful,” but K-means relies on the distance between each point and its centroid, so practical clustering is still possible as long as neighborhood relationships are preserved. Also, by the time dimensionality reduction has been performed, much of the information from the original high-dimensional space has already been lost, so even more sophisticated algorithms would likely yield only limited gains in accuracy. It was therefore judged that simple K-means was sufficient.
 
@@ -143,7 +143,7 @@ Clustering is performed on the data after UMAP has reduced it to two dimensions.
 
 ### 13.2.5 ⑤ Cluster Integration
 
-In this step, the lower-level clusters generated by K-means are hierarchically merged using Ward’s method to produce higher-level clusters. In Broad Listening AI, the user can also specify the **number of higher-level clusters**, which corresponds to where the dendrogram (tree structure) produced by Ward’s method is cut.
+In this step, the lower-level clusters generated by K-means are hierarchically merged using Ward’s method to produce higher-level clusters. In Kouchou AI, the user can also specify the **number of higher-level clusters**, which corresponds to where the dendrogram (tree structure) produced by Ward’s method is cut.
 
 For example, if the number of lower-level clusters is set to 20 and the number of higher-level clusters is set to 5, opinions are first divided into 20 fine-grained groups by K-means, and then those are merged into 5 larger groups by Ward’s method. This combination makes it possible to create a hierarchical grouping structure of “large categories (5) → small categories (20).”
 
@@ -211,13 +211,13 @@ and avoid meaningless wording.
 
 The reason for imposing a “maximum of four sentences” constraint is that if the summary becomes too long, it takes too much time for someone opening the report to grasp the overall picture.
 
-In Broad Listening AI, the processing results are consolidated into a JSON file and generated as a web page.
+In Kouchou AI, the processing results are consolidated into a JSON file and generated as a web page.
 
 ---
 
-## 13.3 Hands-On: Building a Mini Broad Listening AI
+## 13.3 Hands-On: Building a Mini Kouchou AI
 
-From here, let us try implementing the core algorithm of Broad Listening AI ourselves. By combining the techniques learned in Chapter 12, the essential processing can be implemented in about 100 lines of code.
+From here, let us try implementing the core algorithm of Kouchou AI ourselves. By combining the techniques learned in Chapter 12, the essential processing can be implemented in about 100 lines of code.
 
 ### 13.3.1 Environment Setup
 
@@ -229,13 +229,13 @@ pip install openai pandas numpy scikit-learn umap-learn matplotlib scipy
 
 Please obtain an OpenAI API key in advance (https://platform.openai.com/api-keys). In the code below, the API key is specified directly, but in actual operation you should set it as an environment variable (`OPENAI_API_KEY`) and avoid including it in source code. If code containing an API key is published on GitHub or elsewhere, it may be abused by third parties.
 
-### 13.3.2 Implementing a Mini Broad Listening AI
+### 13.3.2 Implementing a Mini Kouchou AI
 
 Below is the minimum code needed to cluster and visualize opinions. Of the pipeline explained in Section 13.2, this mini implementation covers **② Embedding → ③ Dimensionality Reduction → ④ Clustering (K-means only) → ⑥ Initial Labeling**. It omits **① Extraction (LLM-based opinion splitting and normalization)**, **⑤ Cluster Integration (hierarchical merging with Ward’s method)**, **⑦ Integrated Labeling**, and **⑧ Summary Generation**.
 
 ```python
 """
-Mini Broad Listening AI - Opinion clustering and visualization
+Mini Kouchou AI - Opinion clustering and visualization
 """
 import pandas as pd
 import numpy as np
@@ -324,7 +324,7 @@ for cluster_id in range(4):
         ax.annotate(row["opinion"], (row["x"], row["y"]), fontsize=10)
 
 ax.legend(fontsize=12)
-ax.set_title("Opinion Visualization (Mini Broad Listening AI)", fontsize=14)
+ax.set_title("Opinion Visualization (Mini Kouchou AI)", fontsize=14)
 plt.tight_layout()
 plt.savefig("mini_kouchou_ai.png", dpi=150)
 plt.show()
@@ -347,13 +347,13 @@ Cluster 2: Stronger Community Support
 Cluster 3: Childcare Support
 ```
 
-![Result of running the mini Broad Listening AI](images/13_mini_kouchou_ai.png)
+![Result of running the mini Kouchou AI](images/13_mini_kouchou_ai.png)
 
-By extending this basic process, you can build a full-scale system like Broad Listening AI.
+By extending this basic process, you can build a full-scale system like Kouchou AI.
 
 ### 13.3.3 Execution Cost
 
-Let us also touch on the execution cost of Broad Listening AI. Costs arise in the steps that call the LLM API; local processing such as UMAP and K-means does not incur API charges.
+Let us also touch on the execution cost of Kouchou AI. Costs arise in the steps that call the LLM API; local processing such as UMAP and K-means does not incur API charges.
 
 Suppose we use gpt-4o-mini (input $0.15 per 1 million tokens, output $0.60 per 1 million tokens) to process 10,000 opinions. We assume $1 = 150 yen and that one Japanese character is approximately 1.5 tokens. In Tokyo’s “New Tokyo 2050” initiative, about 27,000 opinions were collected, so a scale of 10,000 opinions is realistic for actual use.
 
@@ -366,7 +366,7 @@ The most expensive step is ① Extraction. For each opinion, assume an input of 
 | ⑥⑦⑧ Labeling and summary | About 60 calls total (proportional to number of clusters) | Only a few yen |
 | **Total** | | **About 480 yen** |
 
-More than 90% of the cost comes from ① Extraction. Extraction scales with the number of opinions, but embeddings are orders of magnitude cheaper per token, and labeling and summary generation scale only with the number of clusters, so cost increases only gradually as the number of opinions grows. This estimate is also somewhat conservative; in actual operation, it is not unusual for the total to stay within a few hundred yen. LLM API prices also tend to decline over time, and Broad Listening AI supports local LLMs (such as LM Studio and Ollama), making it possible to reduce API costs to zero.
+More than 90% of the cost comes from ① Extraction. Extraction scales with the number of opinions, but embeddings are orders of magnitude cheaper per token, and labeling and summary generation scale only with the number of clusters, so cost increases only gradually as the number of opinions grows. This estimate is also somewhat conservative; in actual operation, it is not unusual for the total to stay within a few hundred yen. LLM API prices also tend to decline over time, and Kouchou AI supports local LLMs (such as LM Studio and Ollama), making it possible to reduce API costs to zero.
 
 ---
 
@@ -380,13 +380,13 @@ The quality of labeling depends heavily on the prompt. Key tuning points include
 
 The number of clusters has a major impact on the results.
 
-In Broad Listening AI’s default settings, for a number of opinions n, the number of lower-level clusters (fine-grained division by K-means) is calculated as n^(2/3), and the number of higher-level clusters (merged by Ward’s method) is calculated as ∛n (the cube root). Users can use these default values as-is or change them depending on the purpose. For example, for 1,000 opinions, the number of lower-level clusters becomes 1000^(2/3) ≈ 100, and the number of higher-level clusters becomes ∛1000 ≈ 10.
+In Kouchou AI’s default settings, for a number of opinions n, the number of lower-level clusters (fine-grained division by K-means) is calculated as n^(2/3), and the number of higher-level clusters (merged by Ward’s method) is calculated as ∛n (the cube root). Users can use these default values as-is or change them depending on the purpose. For example, for 1,000 opinions, the number of lower-level clusters becomes 1000^(2/3) ≈ 100, and the number of higher-level clusters becomes ∛1000 ≈ 10.
 
 These default values were tuned to generate visually appealing scatter plots that are easy to read and make the overall picture easy to grasp. On the other hand, when policy planners use the system in practice, it may be more effective to increase the number of clusters. If there are only around 10 higher-level clusters, a single cluster may contain too many diverse opinions, making it difficult to translate them into concrete measures. It may therefore be worth using different cluster counts for visualization and for analysis.
 
 ### 13.4.3 Experiments in Separating Support and Opposition
 
-As discussed in 13.2.3, support and opposition within the same topic are difficult to separate. In developing the next generation of Broad Listening AI, the author experimented with several prototypes to address this issue. Two of them are introduced here. One extends embeddings; the other avoids embeddings entirely and relies directly on the LLM.
+As discussed in 13.2.3, support and opposition within the same topic are difficult to separate. In developing the next generation of Kouchou AI, the author experimented with several prototypes to address this issue. Two of them are introduced here. One extends embeddings; the other avoids embeddings entirely and relies directly on the LLM.
 
 #### Approach 1: Adding a Sentiment Dimension
 
@@ -430,7 +430,7 @@ Both approaches have strengths and weaknesses, and further research and developm
 
 ## 13.5 Scatter-Plot Classification vs. Long Context: Two Architectures
 
-The Broad Listening AI pipeline explained in this chapter (Extraction → Embedding → UMAP → Clustering → Labeling) is an architecture that vectorizes opinions and classifies them on a scatter plot. It is designed to prioritize intuitive visualization—“opinions that are close together are similar”—and ease of explanation, so that results can be understood even without specialist knowledge.
+The Kouchou AI pipeline explained in this chapter (Extraction → Embedding → UMAP → Clustering → Labeling) is an architecture that vectorizes opinions and classifies them on a scatter plot. It is designed to prioritize intuitive visualization—“opinions that are close together are similar”—and ease of explanation, so that results can be understood even without specialist knowledge.
 
 One reason this architecture emerged is that early LLMs had context windows limited to 4,096 tokens (about 2,700 Japanese characters). At the time, it was impossible to pass 1,000 opinions to an LLM at once, so similarity judgments between opinions were handled using Sentence-BERT embeddings and cosine similarity.
 
@@ -446,6 +446,6 @@ Both types are developing rapidly, and their respective strengths and weaknesses
 
 ## Chapter Summary
 
-In this chapter, we explained the processing pipeline and design philosophy of Broad Listening AI. Its design philosophy prioritizes ease of explanation over accuracy, emphasizing that “opinions that are close together are similar” should be intuitively understandable. It is designed as infrastructure for democracy, with the goal of being usable even by people without specialist knowledge.
+In this chapter, we explained the processing pipeline and design philosophy of Kouchou AI. Its design philosophy prioritizes ease of explanation over accuracy, emphasizing that “opinions that are close together are similar” should be intuitively understandable. It is designed as infrastructure for democracy, with the goal of being usable even by people without specialist knowledge.
 
-By combining the technologies learned in Chapter 12, the essential processing can be implemented in about 100 lines of code. The source code for Broad Listening AI is all published as open source, so once you understand the processing flow explained in this chapter, you can customize and extend it in your own way.
+By combining the technologies learned in Chapter 12, the essential processing can be implemented in about 100 lines of code. The source code for Kouchou AI is all published as open source, so once you understand the processing flow explained in this chapter, you can customize and extend it in your own way.
