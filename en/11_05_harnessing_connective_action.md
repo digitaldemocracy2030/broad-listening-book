@@ -48,7 +48,7 @@ As a result, Connective Action falls into a double dead end. As long as it remai
 
 The diagram below organizes the relationship between Collective Action and Connective Action. The vertical axis runs from “negotiable” (high institutional linkage) to “confrontational” (low institutional linkage), while the horizontal axis runs from Collective Action to Connective Action.
 
-![Diagram of the relationship between Collective Action and Connective Action](images/11_05_collective_connective_action.png)
+![Diagram of the relationship between Collective Action and Connective Action](images/11_05_collective_connective_action_en.png)
 
 - **Upper left** (Collective Action + negotiable): This is where political parties, labor unions, and industry associations are located. They pursue their goals through formal political procedures such as parliamentary activity, collective bargaining, and petitions.
 
