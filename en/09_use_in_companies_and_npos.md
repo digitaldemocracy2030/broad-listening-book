@@ -1,6 +1,6 @@
-# Chapter 9: Applications in Companies and Nonprofits
+# Chapter 9: Applications in Companies
 
-Broad listening is not a technique only for politics or government. The need to "hear the voices of many people and grasp the bigger picture" is very much present in companies and nonprofits as well.
+Broad listening is not a technique only for politics or government. The need to "hear the voices of many people and grasp the bigger picture" is very much present in companies as well.
 
 In this chapter, we introduce case studies from Altius Link, which operates contact center services, and Cybozu, which provides groupware. Both companies adopted broad listening methods to better understand the voices of customers and employees and to apply those insights to operational improvement and organizational management.
 
