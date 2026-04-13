@@ -4,7 +4,7 @@ Local elections come with challenges that differ from those in national election
 
 This chapter introduces the experiences of three candidates who used broad listening.
 
-Taisuke Ono, who won the Yatsushiro mayoral election in Kumamoto Prefecture, used 広聴AI (Kouchou AI - meaning Public Relations AI) to ask broad questions about city government as a whole. In doing so, he overturned the assumption behind his campaign strategy that distrust of government was the only issue that mattered, and discovered strong public interest in the economy and culture as well.
+Taisuke Ono, who won the Yatsushiro mayoral election in Kumamoto Prefecture, used 広聴AI (Kouchou AI, Broad Listening AI) to ask broad questions about city government as a whole. In doing so, he overturned the assumption behind his campaign strategy that distrust of government was the only issue that mattered, and discovered strong public interest in the economy and culture as well.
 
 Ryousuke Ide, who ran in the Tokyo Metropolitan Assembly election, also used Kouchou AI. By focusing his questions on a single issue—the Nakano Sunplaza—he drew out residents’ deeply held views and made a major shift in the redevelopment policy he had supported for many years.
 

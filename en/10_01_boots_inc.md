@@ -21,7 +21,7 @@ Third, support services for the development and implementation of AI application
 
 Broad listening support falls under the third category, data analysis support. In practice, however, broad listening is not something that produces fixed results in every situation simply by following a predetermined analytical procedure. Rather, it provides useful insights for operations by consistently working backward from the user’s operational challenges and the desired form of dialogue with residents, and then designing and carrying out data preparation, collection, and analytical methods accordingly. For that reason, while there are some cases in which we are commissioned only to analyze data prepared by the client, in many cases we provide end-to-end consulting support, from issue clarification and requirements definition to discussions on data collection methods and the execution of analysis itself.
 
-In addition, we also support the development of internal capabilities for analysis using various tools, including *広聴AI (Kouchou AI - meaning Public Relations AI)*, developed under *Digital Democracy 2030* and released as open-source software (OSS), by helping clients build the necessary environment and develop personnel.
+In addition, we also support the development of internal capabilities for analysis using various tools, including *広聴AI (Kouchou AI, Broad Listening AI)*, developed under *Digital Democracy 2030* and released as open-source software (OSS), by helping clients build the necessary environment and develop personnel.
 
 ## Broad Listening Support Cases (Publicly Available Examples)
 

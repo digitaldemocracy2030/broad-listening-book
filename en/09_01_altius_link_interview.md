@@ -1,4 +1,4 @@
-# Using 広聴AI (Kouchou AI - meaning Public Relations AI) for VOC Analysis in Contact Centers
+# Using 広聴AI (Kouchou AI, Broad Listening AI) for VOC Analysis in Contact Centers
 
 Broad listening is about strengthening our ability to listen. So where do people listen to large numbers of voices as part of their job? One example is the contact center (call center), which handles customer inquiries every day. How did contact centers change after adopting Kouchou AI, a broad listening tool? This time, we conducted an online interview about that effort.
 

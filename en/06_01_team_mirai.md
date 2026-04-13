@@ -53,7 +53,7 @@ In the Tokyo governor election, 104 change proposals had been collected. In just
 
 In the end, 8,559 proposals related to policy alone were submitted. There were more than 9,600 change proposals in total, and the figure of 8,559 counts only those related to policy after excluding proposals about changes to the system itself.
 
-## Visualization and Observation with 広聴AI (Kouchou AI - meaning Public Relations AI)
+## Visualization and Observation with 広聴AI (Kouchou AI, Broad Listening AI)
 
 Although it was not publicly announced, by May 22 the team had internally reached a point where they could visualize and observe submissions using “Kouchou AI,” a broad listening tool developed by the Digital Democracy 2030 Project[^dd2030].
 

@@ -10,17 +10,17 @@ This section is based on the Hiroshima AI Lab annual report, records of response
 
 Government receives a wide range of public input: public comments, free-response survey answers, and social media posts. But the work of reading, classifying, and summarizing those voices into material that can inform policy is enormous. According to comments from staff recorded in Hiroshima Prefecture’s annual report, “in the past, we spent several days classifying responses by hand and preparing briefing materials”[^hiroshima_report].
 
-In September 2024, Hiroshima Prefecture announced the “Hiroshima Declaration: Opening the Future with AI” and established the Hiroshima AI Lab as an in-house hub for AI exploration. Its slogan was “HIROSHIMA AI TRIAL — Learn from Failure.” As one of the lab’s exploratory activities, the prefecture piloted broad listening using DD2030’s Public Voice AI, driven by the goal of understanding diverse resident needs and reflecting them in policy development.
+In September 2024, Hiroshima Prefecture announced the “Hiroshima Declaration: Opening the Future with AI” and established the Hiroshima AI Lab as an in-house hub for AI exploration. Its slogan was “HIROSHIMA AI TRIAL — Learn from Failure.” As one of the lab’s exploratory activities, the prefecture piloted broad listening using DD2030’s Kouchou AI, driven by the goal of understanding diverse resident needs and reflecting them in policy development.
 
-Before launching a public call for opinions, the Hiroshima AI Lab had already conducted around 20 internal analyses. It fed in inquiry logs from the “Migration AI Navi” chatbot for people interested in relocating to identify patterns. It also tried running participant comments from youth-oriented local events through Public Voice AI without even knowing “how they should be categorized,” and discovered “this is another way to group them.” The lab also analyzed 4,924 posts on X related to the Hiroshima governor election (voting and counting in November 2025), gaining practical knowledge about prompt design to filter out social-media-specific noise such as promotional posts and reposted news. Through this process of trial and error, the Hiroshima AI Lab moved on to broad listening aimed at prefectural residents.
+Before launching a public call for opinions, the Hiroshima AI Lab had already conducted around 20 internal analyses. It fed in inquiry logs from the “Migration AI Navi” chatbot for people interested in relocating to identify patterns. It also tried running participant comments from youth-oriented local events through Kouchou AI without even knowing “how they should be categorized,” and discovered “this is another way to group them.” The lab also analyzed 4,924 posts on X related to the Hiroshima governor election (voting and counting in November 2025), gaining practical knowledge about prompt design to filter out social-media-specific noise such as promotional posts and reposted news. Through this process of trial and error, the Hiroshima AI Lab moved on to broad listening aimed at prefectural residents.
 
 ### “What Kind of Future Hiroshima Can We Create Through Digitalization?”
 
 In August 2025, Hiroshima Prefecture launched a public call for opinions titled “What Kind of Future Hiroshima Can We Create Through Digitalization?”[^hiroshima_mirai] The question posed was: “How would you like work and daily life to change through digital technology?” The idea was to set aside feasibility for the moment and invite exciting, free-form ideas about the future. Five channels were provided—web form, X (using the hashtag `#広島デジタル` (`#HiroshimaDigital`)), email, postal mail, and telephone—and free-response submissions were accepted over roughly one month.
 
-In the end, 2,953 submissions were collected. Public Voice AI analyzed them and extracted 3,179 opinions in about 15 minutes[^hiroshima_bl_site]. On September 3, during the collection period, the prefecture published interim results on its website—something that would have been impossible under the old manual process.
+In the end, 2,953 submissions were collected. Kouchou AI analyzed them and extracted 3,179 opinions in about 15 minutes[^hiroshima_bl_site]. On September 3, during the collection period, the prefecture published interim results on its website—something that would have been impossible under the old manual process.
 
-![Public Voice AI analysis results for “What Kind of Future Hiroshima Can We Create Through Digitalization?” A total of 2,953 opinions are classified and visualized into 15 clusters](images/08_02_hiroshima_broadlistening_result.png)
+![Kouchou AI analysis results for “What Kind of Future Hiroshima Can We Create Through Digitalization?” A total of 2,953 opinions are classified and visualized into 15 clusters](images/08_02_hiroshima_broadlistening_result.png)
 *Source: Broad Listening Hiroshima visualization site*
 *Note: Visible cluster labels include categories such as future-oriented transportation and mobility support in Hiroshima, Hiroshima’s appeal and regional revitalization, digitalization of education and child-rearing, digital coexistence for seniors and local communities, online access to everyday procedures, administrative service integration and convenience, and promoting online voting.*
 
@@ -36,7 +36,7 @@ Although there were challenges in collection, the 2,953 opinions gathered were s
 
 So how much efficiency was gained? The following is based on assembly responses[^hiroshima_gikai_cost] [^hiroshima_gikai_voice] and the annual report[^hiroshima_report].
 
-According to staff, “we were able to classify 3,000 free-response entries in under 30 minutes, and we clearly felt the efficiency gains.” In this Public Voice AI workflow, staff spent about 10 hours total reviewing all opinions and adjusting prompts. Had the same work been done manually, it is estimated that it would have taken about 500 hours in total (around 62 person-days) and several months to half a year before publication.
+According to staff, “we were able to classify 3,000 free-response entries in under 30 minutes, and we clearly felt the efficiency gains.” In this Kouchou AI workflow, staff spent about 10 hours total reviewing all opinions and adjusting prompts. Had the same work been done manually, it is estimated that it would have taken about 500 hours in total (around 62 person-days) and several months to half a year before publication.
 
 What changed was not just speed. One staff member also noted that “there is much less mental burden in looking at mapped opinions after classification than in reading scattered opinions one line at a time in CSV or Excel format.” The experience of analysis itself had changed.
 
@@ -44,7 +44,7 @@ Among the submitted opinions was one from a university student: “If I could ge
 
 ### The Biggest Gain Was Learning How to “Train” Prompts
 
-The most important thing Hiroshima Prefecture gained was practical knowledge about how to “train” Public Voice AI outputs so they fit the realities of municipal work. Prefectural staff identified two key points for adjustment.
+The most important thing Hiroshima Prefecture gained was practical knowledge about how to “train” Kouchou AI outputs so they fit the realities of municipal work. Prefectural staff identified two key points for adjustment.
 
 **First, the question of how far to go in “extracting” opinions.** When AI fills in context for short posts, it can generate plausible-sounding opinions. But those are not necessarily what the original poster meant. With the standard prompt, even vague posts were turned into “something that sounds like an opinion,” but the staff-created prompt was able to incorporate the judgment that “items that do not constitute an opinion should be excluded.” Below is an excerpt from comparison examples recorded in the annual report[^hiroshima_report].
 
@@ -70,7 +70,7 @@ The standard prompt forced meaning onto even a post like “I don’t know,” w
 
 With the standard prompt, 16 of the 20 top-level cluster labels included the word “digital,” and the average label length was 25 characters. With the staff-created prompt, only 6 of 20 included “digital,” and the average length was shortened to 14 characters. By bringing everyday policy domains to the forefront, the results became easier to connect to internal policy discussions.
 
-Most of the roughly 10 hours reportedly spent on prompt adjustment in the assembly response mentioned earlier went into this trial and error around “extraction” and “translation.” It may seem modest, but this kind of practical know-how is exactly what will be most useful to other local governments introducing Public Voice AI.
+Most of the roughly 10 hours reportedly spent on prompt adjustment in the assembly response mentioned earlier went into this trial and error around “extraction” and “translation.” It may seem modest, but this kind of practical know-how is exactly what will be most useful to other local governments introducing Kouchou AI.
 
 That said, analysis results can change depending on prompt design, and the user’s intentions can be reflected in the outcome. The annual report itself warns that “residents’ voices must not be arbitrarily selected or altered,” and recommends publishing the prompts and LLMs used in analysis so that third-party verification is possible[^hiroshima_report]. Hiroshima Prefecture’s decision this time to publish the visualization site and include prompts in the annual report can be seen as a step in that direction.
 
@@ -78,7 +78,7 @@ That said, analysis results can change depending on prompt design, and the user�
 
 Adjusting prompts, checking outputs, and repeatedly asking, “Will this way of grouping make sense internally?” and “Does this extraction distort the original opinion?”—only staff themselves, who understand both the policy field and the internal context of government, can run that cycle. If analysis is outsourced and all that comes back is a report, this kind of accumulated adjustment does not remain within the organization.
 
-By lowering the cost of reading through Public Voice AI, staff can spend more time on more essential questions: “How should we reinterpret this?” and “What should we explore further?” The important point is not simply that costs went down, but that **things that were previously impossible because the cost was too high have now become possible**.
+By lowering the cost of reading through Kouchou AI, staff can spend more time on more essential questions: “How should we reinterpret this?” and “What should we explore further?” The important point is not simply that costs went down, but that **things that were previously impossible because the cost was too high have now become possible**.
 
 ### The Hiroshima AI Lab’s Next Move
 

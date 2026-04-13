@@ -1,4 +1,4 @@
-# Trying 広聴AI (Kouchou AI - meaning Public Relations AI) with Steam and Google Maps Reviews
+# Trying 広聴AI (Kouchou AI, Broad Listening AI) with Steam and Google Maps Reviews
 
 A small test for the “no data yet” problem
 

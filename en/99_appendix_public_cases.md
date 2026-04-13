@@ -1,4 +1,4 @@
-## Appendix: List of Publicly Available Case Studies (Broad Listening / 広聴AI (Kouchou AI - meaning Public Relations AI) / Idobata)
+## Appendix: List of Publicly Available Case Studies (Broad Listening / 広聴AI (Kouchou AI, Broad Listening AI) / Idobata)
 
 ### Government and Local Authorities
 

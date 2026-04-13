@@ -162,7 +162,7 @@ In actually using Talk to the City in an election, we encountered several techni
 
 This was not something I noticed when experimenting alone, but when using Talk to the City within a team, review before publication becomes necessary. To make “Person A creates a report” and “Person B reviews it” possible, Person A needs a way to share the results with Person B without publishing them to the entire world.
 
-At first, we shared screenshots or printed the browser view to PDF, but because “being able to interact with it in the browser” accounted for most of its value, we ultimately built a hosting environment for internal team sharing. This experience later became one of the triggers for developing “広聴AI (Kouchou AI - meaning Public Relations AI).”
+At first, we shared screenshots or printed the browser view to PDF, but because “being able to interact with it in the browser” accounted for most of its value, we ultimately built a hosting environment for internal team sharing. This experience later became one of the triggers for developing “広聴AI (Kouchou AI, Broad Listening AI).”
 
 **Japanese localization**:
 

@@ -2,7 +2,7 @@
 
 ## 12.1 Learning Objectives for This Chapter
 
-In this chapter, we explain the foundational technologies that support 広聴AI (Kouchou AI - meaning Public Relations AI) in a way that can be understood even without specialized knowledge of data science.
+In this chapter, we explain the foundational technologies that support 広聴AI (Kouchou AI, Broad Listening AI) in a way that can be understood even without specialized knowledge of data science.
 
 By the end of this chapter, you will understand the following:
 

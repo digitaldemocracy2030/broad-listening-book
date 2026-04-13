@@ -1,4 +1,4 @@
-# Chapter 13 Reading the Implementation of 広聴AI (Kouchou AI - meaning Public Relations AI)
+# Chapter 13 Reading the Implementation of 広聴AI (Kouchou AI, Broad Listening AI)
 
 ## 13.1 Learning Objectives for This Chapter
 

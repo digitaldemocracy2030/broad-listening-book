@@ -47,7 +47,7 @@ The experiment in the governor election later led to implementation within gover
 
 Channels for gathering input expanded beyond online forms, X, and YouTube comments to include postal mail, email, and in-person interviews at places such as Ueno Zoo and science museums. In the end, more than 10,000 voices were collected and integrated and analyzed through a TTTC-based system.
 
-GovTech Tokyo built the infrastructure for data collection, integration, and visualization in-house, while we advised on AI analysis prompt design, parameter tuning, and how to interpret the results. As the project progressed, new feature requests emerged—such as deeper drill-downs and reclustering—which later led to the development of “広聴AI (Kouchou AI - meaning Public Relations AI).”
+GovTech Tokyo built the infrastructure for data collection, integration, and visualization in-house, while we advised on AI analysis prompt design, parameter tuning, and how to interpret the results. As the project progressed, new feature requests emerged—such as deeper drill-downs and reclustering—which later led to the development of “広聴AI (Kouchou AI, Broad Listening AI).”
 
 ### 3. The House of Councillors Election and the “Chat-enabled Policy”
 

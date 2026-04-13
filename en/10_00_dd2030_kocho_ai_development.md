@@ -1,4 +1,4 @@
-# Development Work on 広聴AI (Kouchou AI - meaning Public Relations AI) by DD2030
+# Development Work on 広聴AI (Kouchou AI, Broad Listening AI) by DD2030
 
 Written by tokoroten, nishio, and sumino
 

@@ -135,7 +135,7 @@ If we simply present the results, it is hard for readers to understand what stan
 
 **Yamazaki** In the Digital Investigative Reporting Department, I and several others who can write code have been publishing things on GitHub on our own initiative. Our boss has said, "Sounds good," so we have just kept publishing more and more.
 
-**Nakayama** Incidentally, when developing 広聴AI (Kouchou AI - meaning Public Relations AI), we also referred to code published by The Asahi Shimbun. Thank you very much.
+**Nakayama** Incidentally, when developing 広聴AI (Kouchou AI, Broad Listening AI), we also referred to code published by The Asahi Shimbun. Thank you very much.
 
 ### Looking Ahead
 
