@@ -27,7 +27,7 @@ The data analyzed was collected from X, and a separate query was prepared for ea
 The analysis was conducted using a modified version of TTTC.  
 Analyses 1 through 3 were carried out in three phases: before the official campaign announcement, the first half of the campaign, and the second half of the campaign. Analysis 4 focused on collecting and analyzing data intensively during the short period immediately after the polls closed.
 
-![Scatter plot of analysis results produced by TTTC. Opinions are displayed in different colors by cluster](images/ntv_scatter.png)
+![Scatter plot of analysis results produced by TTTC. Opinions are displayed in different colors by cluster](images/04_03_ntv_scatter.png)
 
 In the scatter plot, each point represents one opinion. Opinions that are semantically similar are placed closer together, and opinions belonging to the same cluster are shown in the same color. The vertical and horizontal axes themselves do not have any specific meaning; rather, they show high-dimensional data compressed into two dimensions.
 
