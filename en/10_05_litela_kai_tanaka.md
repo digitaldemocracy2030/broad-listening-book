@@ -2,7 +2,6 @@
 
 Kai Tanaka (Representative, Litela Inc.)
 
-English translation by Luke Closs
 
 ## Introduction
 

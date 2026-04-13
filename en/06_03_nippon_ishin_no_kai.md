@@ -2,7 +2,6 @@
 
 Author: tokoroten
 
-English translation by Luke Closs
 
 ## Nippon Ishin no Kai Uses Broad Listening for Policy Development
 

@@ -2,7 +2,6 @@
 
 Author: tokoroten
 
-English translation by Luke Closs
 
 ## A Challenge from a Nakano City Council Member: The Case of Ryosuke Idei
 

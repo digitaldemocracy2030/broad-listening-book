@@ -2,7 +2,6 @@
 
 Shutaro Aoyama ([Plural Reality LLC](https://www.plural-reality.com/) founder / Columbia University, Computer Science & Political Science)
 
-English translation by Luke Closs
 
 In July 2024, I was helping Takahiro Anno with his Tokyo governor election campaign. As part of the engineering team, I worked on developing “AI Anno,” creating an AI avatar that responded around the clock to voters’ questions via YouTube Live chat and phone calls.
 

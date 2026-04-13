@@ -2,9 +2,6 @@
 
 Commentary by Takahiro Anno
 
-English translation by Luke Closs
-
-*Translation note (English edition): Original Japanese authorship is preserved throughout this book. Any errors in the English translation are the translator’s own.*
 
 TODO: Incorporate the latest version as appropriate: https://docs.google.com/document/d/13P7PDVu1IlM4EEr43dnW8KUGDi5HiZuamTut3XbOBP4/edit?tab=t.h9b0y89f3vv3
 
