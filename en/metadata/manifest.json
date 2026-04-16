@@ -242,7 +242,7 @@
     },
     "09_01_アルティウスリンク_取材記事.md": {
       "model": "gpt-5.4",
-      "section": "ch09_enterprise_and_npo",
+      "section": "ch09_enterprise",
       "source_hash": "141c4d4ae524404cc87805a41882f947d34471e20f10b2753341ce26ea312e97",
       "source_path": "09_01_アルティウスリンク_取材記事.md",
       "status": "translated",
@@ -252,7 +252,7 @@
     },
     "09_02_サイボウズ.md": {
       "model": "gpt-5.4",
-      "section": "ch09_enterprise_and_npo",
+      "section": "ch09_enterprise",
       "source_hash": "02bbd405f122caeda335bb04445640500bb2276161fe21a75475b8a17cc78a32",
       "source_path": "09_02_サイボウズ.md",
       "status": "translated",
@@ -260,11 +260,11 @@
       "target_path": "09_02_cybozu.md",
       "updated_at": "2026-04-01T18:38:43.312784+00:00"
     },
-    "09_企業・NPOでの活用.md": {
+    "09_企業での活用.md": {
       "model": "gpt-5.4",
-      "section": "ch09_enterprise_and_npo",
+      "section": "ch09_enterprise",
       "source_hash": "1a6d630d1e583b7abac6830c7c596d85607617873d535c6a81257f4afcc0d3fb",
-      "source_path": "09_企業・NPOでの活用.md",
+      "source_path": "09_企業での活用.md",
       "status": "translated",
       "target_hash": "e5171cadd2da977f5f3d868aad26bd1015d2cbce7a8930fbdf36024704c2691d",
       "target_path": "09_use_in_companies_and_npos.md",
@@ -452,7 +452,7 @@
     },
     "column/レビューで試す広聴AI.md": {
       "model": "gpt-5.4",
-      "section": "ch09_enterprise_and_npo",
+      "section": "ch09_enterprise",
       "source_hash": "de926aeac63e4e49beaeaa720f3fce542e7e952221755d3b63b68cc13e295ba0",
       "source_path": "column/レビューで試す広聴AI.md",
       "status": "translated",

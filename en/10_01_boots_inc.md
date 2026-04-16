@@ -20,13 +20,13 @@ Third, support services for the development and implementation of AI application
 
 Broad listening support falls under the third category, data analysis support. In practice, however, broad listening is not something that produces fixed results in every situation simply by following a predetermined analytical procedure. Rather, it provides useful insights for operations by consistently working backward from the user’s operational challenges and the desired form of dialogue with residents, and then designing and carrying out data preparation, collection, and analytical methods accordingly. For that reason, while there are some cases in which we are commissioned only to analyze data prepared by the client, in many cases we provide end-to-end consulting support, from issue clarification and requirements definition to discussions on data collection methods and the execution of analysis itself.
 
-In addition, we also support the development of internal capabilities for analysis using various tools, including *Kocho AI*, developed under *Digital Democracy 2030* and released as open-source software (OSS), by helping clients build the necessary environment and develop personnel.
+In addition, we also support the development of internal capabilities for analysis using various tools, including *広聴AI (Kouchou AI, Broad Listening AI)*, developed under *Digital Democracy 2030* and released as open-source software (OSS), by helping clients build the necessary environment and develop personnel.
 
 ## Broad Listening Support Cases (Publicly Available Examples)
 
 We have advised and supported many organizations, especially local governments, on adopting broad listening. Publicly available examples can be found on the websites of the respective local governments listed below.
 
-All of the following cases were carried out in 2025, and all used *Kocho AI*, developed under *Digital Democracy 2030*, as the broad listening tool. These were pilot initiatives intended to efficiently analyze free-response comments collected by local governments from residents and put them to meaningful use.
+All of the following cases were carried out in 2025, and all used *Kouchou AI*, developed under *Digital Democracy 2030*, as the broad listening tool. These were pilot initiatives intended to efficiently analyze free-response comments collected by local governments from residents and put them to meaningful use.
 
 ### Shibuya City (Tokyo)
 
@@ -96,7 +96,7 @@ At the same time, several challenges have also become clear with respect to impl
 One is the need to develop internal human resources in order to internalize broad listening operations.  
 A certain level of digital literacy is required on the user side among staff, including the ability to set analysis conditions and configure prompts for AI processing. That said, some local governments have already reached the point where staff themselves have become proficient and are using these tools effectively. We believe that securing personnel with basic IT engineering skills within local governments—even if they are not specialized AI engineers—is important not only for broad listening but also for tackling the many kinds of workflow updates required in the AI era.
 
-It has also been pointed out that, depending on the content of the analysis and the characteristics of the target data, the current analytical process used by *Kocho AI* may not always be the optimal one. This has led to expectations for the expansion of technical methods related to broad listening (see below).
+It has also been pointed out that, depending on the content of the analysis and the characteristics of the target data, the current analytical process used by *Kouchou AI* may not always be the optimal one. This has led to expectations for the expansion of technical methods related to broad listening (see below).
 
 In this way, while some challenges remain, practical pilots and implementations have given frontline users a tangible sense of what broad listening can do, and have also opened up ideas for broader applications (for example, various planning processes, large-scale surveys, routine inquiry analysis, and more). Further expansion of broad listening use cases and deeper adoption in public administration are therefore widely anticipated.
 
@@ -118,7 +118,7 @@ There is also room for progress in methods for collecting higher-quality individ
 
 At the same time, analytical methods also need to be strengthened.
 
-In *Kocho AI*, the approach used is to convert input text into numerical data through vectorization and then analyze it quantitatively in order to group opinions through clustering. This is highly effective for efficiently identifying broad trends from large volumes of opinions. On the other hand, it is not necessarily a universal solution when it comes to issues such as whether the grouping criteria feel convincing (for example, whether they align with the local government’s operational context), how to interpret relationships among opinion groups, or how to extract minority opinions that nonetheless contain important insights. For that reason, we believe that analytical methods need to be expanded in ways that reflect the purpose of the analysis and the characteristics of the target data.
+In *Kouchou AI*, the approach used is to convert input text into numerical data through vectorization and then analyze it quantitatively in order to group opinions through clustering. This is highly effective for efficiently identifying broad trends from large volumes of opinions. On the other hand, it is not necessarily a universal solution when it comes to issues such as whether the grouping criteria feel convincing (for example, whether they align with the local government’s operational context), how to interpret relationships among opinion groups, or how to extract minority opinions that nonetheless contain important insights. For that reason, we believe that analytical methods need to be expanded in ways that reflect the purpose of the analysis and the characteristics of the target data.
 
 For example, analysis design tailored to the objective is essential for understanding the structure of policy issues, organizing opinions by stakeholder group, or extracting expert views. Rather than relying on a single tool, what is needed is an environment in which multiple analytical methods can be combined and selected according to the need.
 

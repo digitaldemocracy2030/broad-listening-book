@@ -7,17 +7,17 @@ Kai Tanaka (Representative, Litela Inc.)
 
 “Normally, you have to listen at the table for about five minutes before you can catch up, but with this, you can understand right away.”
 
-These were the words of a facilitator at a residents’ meeting in Ota, Gunma Prefecture, after trying the new system.
+These were the words of a facilitator at a residents' meeting in Ota, Gunma Prefecture, after trying the new system. The Ota residents' meeting case is introduced in detail in Chapter 8.
 
 ![Facilitator feedback from the Ota residents’ meeting.](images/08_01_ota_facilitator_feedback.png)
 
-This article introduces the features and field testing of Recogra (https://recogra.app), a system that uses AI to support in-person group discussions in real time. While broad listening excels at analyzing large volumes of text-based opinions gathered online, Recora focuses on something different: in-person discussions that are unfolding right now. What changes when the content of a discussion is visualized in real time in settings like residents’ meetings, where people gather around tables to talk face-to-face? Recora is the result of repeatedly testing that question in real-world settings.
+This article introduces the features and field testing of Recogra (https://recogra.app), a system that uses AI to support in-person group discussions in real time. While broad listening excels at analyzing large volumes of text-based opinions gathered online, Recogra focuses on something different: in-person discussions that are unfolding right now. What changes when the content of a discussion is visualized in real time in settings like residents’ meetings, where people gather around tables to talk face-to-face? Recogra is the result of repeatedly testing that question in real-world settings.
 
 ## About Litela Inc.
 
 Litela Inc. is a company that values spaces where people gather face-to-face, while aiming to strengthen the connections formed in those spaces through technology. Its core mission is to create systems for settings like residents’ meetings so that no one’s views are lost and participants can connect with one another.
 
-The development of Recora began with an awareness of the challenges inherent in face-to-face settings. Broad listening tools that analyze large volumes of text opinions after the fact are useful once a meeting is over. But they do not solve the problem that, in discussions happening right now, someone’s comment may be overlooked, or a facilitator may fail to grasp the context and end up asking only superficial questions. How can we make better use of the discussions that emerge in face-to-face settings, while they are still happening? That was the question from which Recora began.
+The development of Recogra began with an awareness of the challenges inherent in face-to-face settings. Broad listening tools that analyze large volumes of text opinions after the fact are useful once a meeting is over. But they do not solve the problem that, in discussions happening right now, someone’s comment may be overlooked, or a facilitator may fail to grasp the context and end up asking only superficial questions. How can we make better use of the discussions that emerge in face-to-face settings, while they are still happening? That was the question from which Recogra began.
 
 ## Structural Challenges in In-Person Group Discussions
 
@@ -29,9 +29,9 @@ However, when multiple groups are running at the same time, facilitators face st
 
 Another challenge is the loss of information during whole-group sharing. When a representative from each group presents back, time constraints mean that the points covered are selected at that person’s discretion. Topics that were actively discussed within the group, as well as minority views, are often omitted at this stage. And because facilitators themselves cannot fully track every group’s discussion, they may not even notice when the presentations are skewed.
 
-## Recora’s Design Philosophy
+## Recogra’s Design Philosophy
 
-In response to these challenges, Recora narrowed its goals to two points:
+In response to these challenges, Recogra narrowed its goals to two points:
 
 1. Enable facilitators, upon arriving at a group, to instantly grasp the recent flow of discussion and key issues so they can intervene more effectively
 2. Ensure that, during whole-group sharing, everyone can understand the content of each group’s discussion without omissions
@@ -40,23 +40,23 @@ One design principle remained consistent throughout development: **AI should not
 
 ## System Overview
 
-Recora consists of two main functions.
+Recogra consists of two main functions.
 
 The first is **real-time discussion visualization**. A device is placed on each group’s table, and a microphone records the conversation and transcribes it in real time. The content is then structured by AI, and the facilitator can view the status of all groups at a glance on a tablet. The interface is designed around two switchable views: one showing the recent flow of comments in chronological order, and another providing a bird’s-eye view of the discussion’s overall topic structure. This allows facilitators to understand what a group is currently talking about before they even arrive at the table.
 
 ![Screen for real-time discussion visualization. The overall topic structure appears on the left, while the recent flow of comments is shown chronologically on the right.](images/10_05_outward_visualization.png)
 
-The second is **illustrated summaries**. After the group discussions end, the content from multiple groups is integrated and automatically generated as a single illustration. Traditionally, graphic recording required a skilled practitioner drawing by hand, but by using image-generation AI, this can now be produced in real time. Minority views and discussion points that are often omitted from representative presentations can instead be shared with the whole room visually.
+The second is **illustrated summaries**. Broad listening analysis is usually output as text reports, but the format of expression does not have to be limited to text. Rapid advances in image-generation AI have made it possible to automatically create the kind of graphic recording that previously required a skilled practitioner drawing by hand. Recogra uses this technology to integrate the content of multiple group discussions after they end and automatically generate it as a single illustration. Minority views and discussion points that are often omitted from representative presentations can instead be shared with the whole room visually and intuitively.
 
 ![Example of an illustrated summary. Discussion content from multiple groups is integrated into a single illustration by AI.](images/10_05_recogra2.png)
 
 ## Field Demonstrations: Tawaramoto and Tomioka
 
-Alongside development, Recora has been brought into multiple residents’ meetings and refined through feedback from the field. Here, I will introduce two especially substantial field trials: one in Tawaramoto, Nara Prefecture, and one in Tomioka, Gunma Prefecture.
+Alongside development, Recogra has been brought into multiple residents’ meetings and refined through feedback from the field. Here, I will introduce two especially substantial field trials: one in Tawaramoto, Nara Prefecture, and one in Tomioka, Gunma Prefecture.
 
 ### Tawaramoto Residents’ Council: Building Through Three Sessions
 
-In Tawaramoto, Nara Prefecture, a residents’ council was convened as the town approached the end of its Fourth Comprehensive Plan and began formulating the next one together with residents. About 20 residents selected through random sampling were divided among four tables to discuss the theme of “community building through connection.” Recora was introduced over three sessions (December 2025, January 2026, and February 2026) in this council, which was organized in collaboration with the Japan Initiative Foundation.
+In Tawaramoto, Nara Prefecture, a residents’ council was convened as the town approached the end of its Fourth Comprehensive Plan and began formulating the next one together with residents. About 20 residents selected through random sampling were divided among four tables to discuss the theme of “community building through connection.” Recogra was introduced over three sessions (December 2025, January 2026, and February 2026) in this council, which was organized in collaboration with the Japan Initiative Foundation.
 
 A visualization device was placed on each group’s table, and facilitators circulated with tablets in hand. By checking the status of all groups on the tablet, they could decide which group to visit next, and upon arriving, review the recent flow of comments before joining the discussion. During whole-group sharing, they could also use the tablet to bridge perspectives across groups, saying things like, “Group 1 was also discussing this issue.”
 
@@ -94,4 +94,4 @@ As the demonstrations have continued, our thinking about what makes a good discu
 
 Technically, we also see potential in analyzing the audio itself to mark moments when laughter occurred or when conversation stalled, allowing facilitators to perceive nonverbal aspects of the room that transcription alone cannot capture. We are also considering formats such as poster-session or gallery-walk models, in which each group’s discussion is displayed in the room as a single image and participants move around, leaving sticky notes as they go. The goal is not simply to collect opinions and stop there, but to create more points of contact where human connections emerge and future collaboration can begin.
 
-If broad listening provides the “breadth” to collect and survey large volumes of opinions, then what Recora aims to provide is the “depth” and “connection” of discussion in face-to-face settings. Participants put their views into words, those words remain in the space, and by intersecting with the words of others, they give rise to the next action. We will continue building systems that serve as the foundation for that kind of space, together with the people working in the field.
+If broad listening provides the “breadth” to collect and survey large volumes of opinions, then what Recogra aims to provide is the “depth” and “connection” of discussion in face-to-face settings. Participants put their views into words, those words remain in the space, and by intersecting with the words of others, they determine the next action. We will continue building systems that serve as the foundation for that kind of space, together with the people working in the field.
