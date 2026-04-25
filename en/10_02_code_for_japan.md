@@ -165,7 +165,7 @@ What is especially important is to review participation systems and rules from t
 
 If the local government cases introduced at the beginning are organized using this framework, it becomes clear that whether the participation process has been designed affects how submitted opinions are positioned within internal deliberation and whether the results can be fed back.
 
-|  | Use of existing mechanisms | Workflow as an information-handling and processing process | Facilitation of the participation process using digital tools |
+| Use Case | Existing Mechanisms | Workflow Design | Digital Facilitation |
 | :---- | :---- | :---- | :---- |
 | Use with existing surveys | Analysis using an existing mechanism | Because survey design determines later preprocessing, workload must be taken into account | Insights for internal use; future sharing of results with citizens is needed |
 | Deepening opinions submitted through Decidim | Same as above | Insights are gained by combining in-person dialogue and reflecting what was learned there in the analysis | Same as above |
