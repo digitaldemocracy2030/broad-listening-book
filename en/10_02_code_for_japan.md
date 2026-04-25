@@ -66,7 +66,7 @@ Reference: Kakogawa City Decidim
 
 #### Evolving the Participation Process Through Decidim: Considering New Policies
 
-Shinagawa City in Tokyo positions the reflection of citizen opinions as part of evidence-based policymaking in its city policy direction, and in fiscal 2025 it began using Decidim as a form of policy design carried out together with residents.
+In its policy direction, Shinagawa City in Tokyo treats citizen input as part of evidence-based policymaking. In fiscal 2025, it began using Decidim to design policy together with residents.
 
 As part of this work, the city decided to solicit a wide range of opinions through Decidim in order to create what would be the fourth disaster-prevention charter in Japan. It also designed a participation process that combined online and in-person methods, including surveys of local residents who took part in comprehensive disaster drills and other events, and in-person workshops with foreign residents and junior and senior high school students. The themes for input were also standardized, and ultimately all opinions were posted on Decidim.
 
@@ -74,7 +74,7 @@ This made it possible to integrate and analyze opinions submitted online and in 
 
 In this way, the city organized not only the comments themselves but also the underlying feelings and contexts that are difficult to convey on the surface, and ultimately extracted keywords that should be incorporated into the draft disaster-prevention residents' charter.
 
-![Figure: Loop diagram showing the process for creating the Shinagawa Disaster-Prevention Residents' Charter, from input collection through analysis and drafting.](images/10_02_05_shinagawa-process.png)
+![Figure: Process list for creating the Shinagawa Disaster-Prevention Residents' Charter, including expert meetings, Decidim opinion collection, workshops, public comment, proofreading, and charter establishment.](images/10_02_05_shinagawa-process_en_v2.png)
 
 (Figure 3) Process for creating the Shinagawa Disaster-Prevention Residents' Charter
 
