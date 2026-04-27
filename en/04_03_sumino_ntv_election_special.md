@@ -130,7 +130,7 @@ Broad listening results are an analysis of a limited subset. Communicating that 
 
 The YouTube program received comments such as "This kind of data provision will be important for journalism from now on" and "I hope each political party will use AI to analyze opinion in online spaces." Some broadcasts reached 500,000 views on YouTube.
 
-A Nippon TV staff member reflected on the significance of the effort as follows: "Until now, if we wanted to incorporate online voices into election coverage, we had no choice but to arbitrarily select and introduce individual posts. Broad listening made it possible to visualize what kinds of opinions were gathering in online spaces as a whole, which was a breakthrough." The ability to view overall tendencies, including minority opinions, from 10,091 data points was something difficult to achieve with conventional methods.
+A Nippon TV staff member reflected on the significance of the effort as follows: "Until now, if we wanted to incorporate online voices into election coverage, all we could do was select and introduce a certain number of posts, which inevitably introduced arbitrariness. Broad listening made it possible to visualize what kinds of opinions were gathering in online spaces as a whole, which was a breakthrough." The ability to view overall tendencies, including minority opinions, from 10,091 data points was something difficult to achieve with conventional methods.
 
 Broad listening also became an effective means in pre-election coverage for visualizing the gap between the issues politicians were emphasizing and the issues the public was thinking about, and for putting that gap to politicians. Some politicians who appeared on the program were overwhelmed by the volume of information, which could not be fully digested in a one-hour broadcast, but later looked back at the analysis results after the program and reportedly remarked, "So this is what it looks like."
 
@@ -144,7 +144,7 @@ In this initiative, the data source was again limited to X. In the 2024 Tokyo gu
 
 As concerns grow that discourse on X tends to become more extreme, there is also a risk that extracting only voices from that space will present a biased image. On the other hand, if analysis is expanded to include other social media platforms, technical constraints and human costs increase significantly. There is also the structural problem that only some social media platforms are well suited to text-based analysis.
 
-Ultimately, this leads to the question of how "online voices" can be handled as one valid aspect of public opinion. This is not a problem unique to broad listening; it is also shared by conventional methods such as opinion polls and street interviews.
+Ultimately, this leads to the question of how "online voices" can be handled as one valid aspect of public opinion. For precisely that reason, people using broad listening need to keep asking what the analysis reflects and what it does not. Since no method is universal, it is important to understand its nature and use it accordingly.
 
 ### Summary of This Section
 
