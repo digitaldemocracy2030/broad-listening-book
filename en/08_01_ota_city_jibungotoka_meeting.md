@@ -2,7 +2,6 @@
 
 By Shunsuke Takagi (Plural Reality)
 
-English translation by Luke Closs
 
 So far, we have introduced cases in which local election candidates used broad listening to hear voters’ voices. However, broad listening is not only effective in election settings. It is also beginning to be used in citizen deliberation meetings, where local governments engage in dialogue with residents, as a tool for structuring participants’ diverse views and improving the quality of discussion. Here, we introduce a case from Ota City, Gunma Prefecture, where AI facilitation support was introduced into a citizen deliberation process that has continued for nine years.
 

@@ -2,7 +2,6 @@
 
 By @tokoroten
 
-English translation by Luke Closs
 
 In this chapter, we have examined a range of broad listening tools and practices, including Polis and Taiwan’s vTaiwan. What common problem are they all trying to solve? As a framework for thinking about that question, the two movement types proposed by political scientists W. Lance Bennett and Alexandra Segerberg in their 2012 paper “The Logic of Connective Action” are highly useful.[^1]
 
@@ -48,7 +47,7 @@ As a result, Connective Action falls into a double dead end. As long as it remai
 
 The diagram below organizes the relationship between Collective Action and Connective Action. The vertical axis runs from “negotiable” (high institutional linkage) to “confrontational” (low institutional linkage), while the horizontal axis runs from Collective Action to Connective Action.
 
-![Diagram of the relationship between Collective Action and Connective Action](images/11_05_collective_connective_action.png)
+![Diagram of the relationship between Collective Action and Connective Action](images/11_05_collective_connective_action_en.png)
 
 - **Upper left** (Collective Action + negotiable): This is where political parties, labor unions, and industry associations are located. They pursue their goals through formal political procedures such as parliamentary activity, collective bargaining, and petitions.
 

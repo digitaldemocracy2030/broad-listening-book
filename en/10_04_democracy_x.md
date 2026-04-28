@@ -2,7 +2,6 @@
 
 Tomoki Takate (Democracy X)
 
-English translation by Luke Closs
 
 ## Introduction
 

@@ -59,8 +59,8 @@ column/safe_empathy.md
 08_01_ota_city_jibungotoka_meeting.md
 08_02_hiroshima_case.md
 
-[ch09_enterprise_and_npo]
-# 第9章 企業・NPOでの活用
+[ch09_enterprise]
+# 第9章 企業での活用
 09_use_in_companies_and_npos.md
 09_01_altius_link_interview.md
 09_02_cybozu.md

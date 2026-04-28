@@ -2,7 +2,6 @@
 
 Written by: tokoroten
 
-English translation by Luke Closs
 
 ## 5.1 The Challenge of a City of 14 Million: The Shin Tokyo 2050 Project
 
