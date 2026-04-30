@@ -72,13 +72,13 @@ Of course, most users do not think of a voting advice site as a place to post th
 
 This suggests that Polis contains elements that fit well with voting advice applications and elements that do not. Its aspect as a deliberative platform with free posting was not a good fit for voting advice. Rather than aiming for an all-in-one ideal from the start, it is important to take a first step where implementation is feasible. Someday, when Japanese users are more accustomed to deliberation, I would like to build a deliberative platform that opens agenda-setting power to the public and observe what happens.
 
-## Statement Extraction Was Done by Humans
+## Claims Were Extracted by Humans
 
 The foundation of Public Opinion Map is the constraint that its statements are “derived from party electoral platforms.” So how were those statements extracted? Could AI do it easily?
 
-In an election context, hallucinations are fatal. We ran experiments at the time of the 2024 House of Representatives election and the 2025 House of Councillors election, but judged the quality insufficient and did not adopt the approach. This is also an area where JAPAN CHOICE’s long-term experience and know-how—built through continuously operating voting advice applications since the 2012 House of Representatives election—becomes a real strength.
+In an election context, hallucinations are fatal. At the time of the 2024 House of Representatives election and the 2025 House of Councillors election, we experimented with using an LLM to extract statements from each party’s manifesto, but judged the quality insufficient and did not adopt the approach. One reason was that, as of 2025, parties varied greatly in the level of detail and format of the manifestos they provided.
 
-Of course, by 2030, we may well have a division of labor in which AI instantly produces a draft and humans carefully review whether it is correct.
+The process of extracting each party’s positions is also an area where JAPAN CHOICE’s long-term experience and know-how, built through continuously operating voting advice applications since the 2012 House of Representatives election, becomes a real strength. At this stage, it is preferable for humans to create high-quality data rather than making it AI-generated. In the future, we may well have a division of labor in which AI instantly produces a draft and humans carefully review whether it is correct.
 
 ### Computing Coordinates on the Client
 
