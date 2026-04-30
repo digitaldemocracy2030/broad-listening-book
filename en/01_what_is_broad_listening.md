@@ -38,6 +38,10 @@ Have in-depth one-hour conversations with 10 residents. You can gain a deep unde
 **Option B: Listen broadly**  
 Send a survey to all one million residents asking, “Do we need a park? Yes/No.” This gives you statistical representativeness. But you do not learn the context: “Why do they want a park?” “What kind of park do they want?” “Should something else take priority over a park in the first place?”
 
+![Figure: Diagram of the trade-off between depth and scale in listening methods.](images/01_breadth_depth_tradeoff.png)
+
+These two options can be drawn as opposite points on an inverse curve, with “scale (the number of people listened to)” on the horizontal axis and “depth (dialogue time per person)” on the vertical axis. Because depth multiplied by scale has generally been constrained by a fixed budget, increasing one side sacrifices the other. The upper-right region beyond this curve, where broad and deep listening are both achieved, is the target broad listening aims for.
+
 This is the “depth-versus-scale trade-off.” Broad listening is an attempt to overcome that trade-off, but there is no single approach. Some methods gather input broadly from large, unspecified populations, while others involve listening deeply to experts or directly affected stakeholders. This book focuses mainly on the former.
 
 In *Plurality*, a book written by Audrey Tang and others, this problem is expressed by quoting Nobel Prize–winning economist Herbert Simon:
@@ -94,18 +98,18 @@ Broad listening as a tool is a technology that uses AI to aggregate, structure, 
 
 In this way, broad listening as a tool is a general-purpose technology not tied to any one context.
 
-Tools that fall into this category include the following:
+Tools that fall into this category include the following. Because this book has limited space, the tools covered in detail are marked with ★. This book is not claiming that these tools are better than the others; tools without a ★ also have their own strengths and suitable use cases.
 
 | Tool name | Overview |
 |----------|------|
-| Talk to the City (TTTC) | An open-source tool developed by the AI Objectives Institute. It clusters large volumes of natural-language text using LLMs and visualizes them as a scatterplot |
-| Kouchou AI | A Japanese-language broad listening tool developed by Digital Democracy 2030. Built on TTTC, it was turned into a web system so that people can use it without programming skills |
+| ★ Talk to the City (TTTC) | An open-source tool developed by the AI Objectives Institute. It clusters large volumes of natural-language text using LLMs and visualizes them as a scatterplot |
+| ★ Kouchou AI | A Japanese-language broad listening tool developed by Digital Democracy 2030. Built on TTTC, it was turned into a web system so that people can use it without programming skills |
 | Sensemaker | An open-source tool developed by Google Jigsaw. Using Gemini, it classifies and summarizes large-scale opinion data by topic and extracts points of agreement and disagreement |
 | AffinityBubble | A tool developed by Korea’s pxdAX. It uses AI to analyze large volumes of qualitative data and visualizes them with a hierarchical Voronoi treemap |
 | Embedding Atlas | An open-source visualization tool developed by Apple. It projects large-scale embedding data into two dimensions and enables interactive exploration through automatic clustering and labeling |
 | Nomic Atlas | A cloud-based visualization platform developed by Nomic AI. It projects large-scale text data into two dimensions using embeddings and enables interactive exploration |
 
-In this book, we mainly use TTTC and Kouchou AI as examples to explain the technical mechanisms and use cases of broad listening as a tool, while also referring to other tools where relevant. Chapter 2 explains in detail the characteristics of broad listening as a tool (such as the analysis of open-ended questions and its nature as qualitative analysis). Chapter 12 covers the underlying technologies in detail, including embeddings (techniques for converting text into numerical vectors), and Chapter 13 explains implementation methods.
+In this book, we mainly use the starred tools, TTTC and Kouchou AI, as examples to explain the technical mechanisms and use cases of broad listening as a tool, while also referring to other tools where relevant. Chapter 2 explains in detail the characteristics of broad listening as a tool (such as the analysis of open-ended questions and its nature as qualitative analysis). Chapter 12 covers the underlying technologies in detail, including embeddings (techniques for converting text into numerical vectors), and Chapter 13 explains implementation methods.
 
 ### ② Broad Listening as Support for Augmented Deliberation
 
@@ -119,22 +123,22 @@ Taiwan’s vTaiwan process and other citizen-participation processes using Polis
 
 Look again at the center panel of the “three forms of broad listening” diagram. It shows a cycle of three elements: “opinion collection,” “deliberation,” and “policy decision.” In the deliberation stage, issues are organized through AI facilitation and broad listening. This is the augmented deliberation cycle. As the cycle turns, it creates an ongoing loop of dialogue: rather than simply collecting opinions and stopping there, the process moves through deliberation and policy decision, which then lead to new rounds of opinion collection.
 
-Tools that support augmented deliberation include the following:
+Tools that support augmented deliberation include the following. The tools covered in detail in this book are marked with ★. As noted above, tools without a ★ also have their own strengths and suitable use cases.
 
 | Tool name | Overview |
 |----------|------|
-| Polis | An opinion-aggregation tool used in Taiwan’s vTaiwan. Participants post opinions and vote on others’ opinions with agree, disagree, or pass. It visualizes opinion groups based on voting patterns and helps identify points of agreement across groups |
-| Agora Citizen Network | An open-source consensus-building platform from France. It inherits the spirit of Polis while improving the bridging-based algorithm and rebuilding the experience with a modern UI |
-| JOIN | An administrative platform operated by the Taiwanese government. Citizens can post policy proposals, and if a proposal gains 5,000 supporters within 60 days, the relevant ministry is required to respond within two months. As of December 2023, it had about 1.29 million registered users and more than 10 million cumulative visitors |
+| ★ Idobata | A Japanese-language deliberation platform developed by Digital Democracy 2030. Inspired by Taiwan’s vTaiwan, it includes AI-based opinion organization and visualization functions to support large-scale citizen-participatory policy discussions |
+| ★ Polis | An opinion-aggregation tool used in Taiwan’s vTaiwan. Participants post opinions and vote on others’ opinions with agree, disagree, or pass. It visualizes opinion groups based on voting patterns and helps identify points of agreement across groups |
+| ★ Baisoku Kaigi | An AI facilitation support tool from Multiverse Reality, founded by Aoyama, the developer of Idobata. AI generates real-time follow-up questions and automatically structures responses into “points of agreement,” “points of disagreement,” and “unclear points.” It is used in corporate management meetings and local government resident meetings (discussed in detail in Chapter 10) |
+| ★ JOIN | An administrative platform operated by the Taiwanese government. Citizens can post policy proposals, and if a proposal gains 5,000 supporters within 60 days, the relevant ministry is required to respond within two months. As of December 2023, it had about 1.29 million registered users and more than 10 million cumulative visitors |
+| Liqlid | A citizen-participation platform developed by Liquitous. It includes AI-based comment filtering and clustering functions and has been introduced in local governments in Japan |
+| D-Agree | An online AI discussion system developed by AGREEBIT. It uses AI and multi-agent technology to support discussion facilitation and consensus-building |
 | Decidim | An open-source citizen-participation platform developed by the City of Barcelona. It integrates multiple functions, including citizen proposals, participatory budgeting, public debate, and citizen initiatives. It has been adopted by cities and organizations around the world |
 | Loomio | An open-source deliberation tool from New Zealand. It allows groups to discuss, make proposals, and vote on a single platform. It is used for decision-making in cooperatives and local governments |
 | Consider.it | A deliberation tool that visualizes both pros and cons. Participants express their views on a slider and write reasons for both support and opposition. It allows users to see the distribution of support and opposition, along with reasons, for each issue |
 | All Our Ideas | An open-source opinion-collection tool developed by Princeton University. By repeating pairwise comparison voting, it efficiently identifies group priorities across a large number of options |
 | Stanford Online Deliberation Platform | A video deliberation platform developed by Stanford University. AI moderators help ensure fairness in speaking opportunities and support structured deliberation in small groups of 8–15 people. It has been used in more than 120 deliberations across over 50 countries |
-| Baisoku Kaigi | Baisoku Kaigi, an AI-supported “fast-track meeting” tool, developed by Multiverse Reality, founded by Aoyama, the developer of “Idobata.” Based on participants’ responses, AI generates real-time follow-up questions and automatically structures responses into “points of agreement,” “points of disagreement,” and “unclear points.” It delivers the quality of interviews at the speed of surveys, supporting everything from pre-meeting alignment to automatic generation of deliberation analysis reports. It is used in corporate management meetings and local government resident meetings (discussed in detail in Chapter 11) |
-| Idobata | A Japanese-language deliberation platform developed by Digital Democracy 2030. Inspired by Taiwan’s vTaiwan, it includes AI-based opinion organization and visualization functions to support large-scale citizen-participatory policy discussions |
-| D-Agree | An online AI discussion system developed by AGREEBIT. It uses AI and multi-agent technology to support discussion facilitation and consensus-building |
-| Liqlid | A citizen-participation platform developed by Liquitous. It includes AI-based comment filtering and clustering functions and has been introduced in local governments in Japan |
+| Agora Citizen Network | An open-source consensus-building platform from France. It inherits the spirit of Polis while improving the bridging-based algorithm and rebuilding the experience with a modern UI |
 
 From a functional perspective, these tools can be classified along multiple dimensions, such as large-scale text analysis, synchronous discussion support, agreement discovery, and process management. In actual projects, multiple tools are often used together. Chapter 3 explains in detail how to combine them and how to operate augmented deliberation in practice. Chapter 10 introduces examples from overseas.
 
@@ -144,7 +148,6 @@ In Japan, however, a different approach took hold first—one that differs from 
 
 For example, Takahiro Anno presents his own policy process in the following diagram.
 
-TODO: Brush up this diagram https://codezine.jp/article/detail/21308
 ![Politician- and government-led broad listening cycle](images/01_anno_zyukugi_cycle_en.png)
 
 *Note: This image is an English translation of Takahiro Anno's original slide.*
@@ -183,45 +186,13 @@ In particular, OpenAI’s release of ChatGPT in November 2022 marked a turning p
 
 In other words, broad listening is a new method that has only just become technically feasible. Chapter 2 explains in detail how LLMs made large-scale analysis of open-ended questions possible. Chapter 12 covers the underlying technologies, and Chapter 13 covers implementation methods.
 
-## Structure of This Book
-
-This book explains broad listening in the following structure.
-
-**Part I: Concepts (Chapters 1–3)**
-
-- Chapter 1: What Is Broad Listening? (this chapter)
-- Chapter 2: Broad Listening and Surveys: From Quantitative to Qualitative Analysis
-- Chapter 3: Digital Democracy and Broad Listening: New Ways of Delivering the Public Will
-
-**Part II: Case Studies (Chapters 4–11)**
-
-- Chapter 4: The Spread of Broad Listening in Japan
-- Chapter 5: Tokyo, Shin Tokyo 2050, and Policy Change Through Broad Listening
-- Chapter 6: Use Cases in the 2025 House of Councillors Election
-- Chapter 7: Use in Local Elections
-- Chapter 8: Use in Local Governments
-- Chapter 9: Use in Companies and NPOs
-- Chapter 10: Broad Listening Overseas
-- Chapter 11: The Ecosystem Supporting Broad Listening
-
-**Part III: Technology (Chapters 12–13)**
-
-- Chapter 12: Core Technologies Behind Kouchou AI
-- Chapter 13: Implementing Kouchou AI
-
-Depending on the reader’s interests, we recommend the following reading paths:
-
-- **If you want to understand the concepts**: read Chapters 1–3, then move to the case studies as needed
-- **If you want to know the use cases**: read Chapters 4–11, then move to the technology section if technical questions arise
-- **If you want to know what kind of tool Kouchou AI is and why it was created**: start with Chapter 11, then move to the technology section as your interest dictates
-- **If you want to understand the AI and data science behind it**: focus on Chapter 12
-- **If you only want to grasp the flow of Kouchou AI’s processing pipeline**: start with Chapter 13 and refer to Chapter 12 as needed
-
-### Scope of This Book
+## Scope of This Book
 
 There are many approaches to broad listening. This book focuses primarily on Talk to the City (TTTC) and “Kouchou AI,” which developed from it.
 
 We also refer as needed to other tools such as Polis, Idobata, and Jigsaw Sensemaker, but the main focus of this book is TTTC and Kouchou AI. By understanding these tools deeply, readers will be able to acquire ways of thinking that apply to broad listening more generally.
+
+The overall structure of the book and suggested reading paths by reader type are summarized in the front-matter guide, “How to Read This Book.”
 
 ## Looking Ahead to the Next Chapters
 

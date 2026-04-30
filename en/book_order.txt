@@ -8,6 +8,8 @@
 00_preface.md
 # オードリーの推薦文
 00_endorsement_from_audrey_tang.md
+# 本書の読みかた（読者向けガイド・本書の構成・キーワード一覧）
+00_how_to_read_this_book.md
 
 [ch01_broadlistening_overview]
 # 第1部：ブロードリスニングとは何か？
@@ -61,7 +63,7 @@ column/safe_empathy.md
 
 [ch09_enterprise]
 # 第9章 企業での活用
-09_use_in_companies_and_npos.md
+09_use_in_companies.md
 09_01_altius_link_interview.md
 09_02_cybozu.md
 column/testing_kocho_ai_through_review.md
