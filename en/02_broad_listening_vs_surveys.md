@@ -23,17 +23,31 @@ Open and closed questions each have their own strengths and weaknesses. The tabl
 | Agenda setting | Raised freely by respondents | Set in advance by the survey designer |
 | Burden on respondents | High | Low |
 | Burden on analysts | High | Low |
+| Cost | High (traditionally) / Low (after LLMs) | Low |
 | Ability to reproduce public opinion | Low | High |
 | Type of analysis | Qualitative analysis (what views are expressed) | Quantitative analysis (what views are expressed and how prevalent they are) |
+
+### Advantages of Closed Questions
 
 Because closed questions place a low burden on respondents, they make it easier to collect large numbers of responses, and they can also be analyzed efficiently. Since respondents only need to choose from a list of options, they can answer in a matter of seconds, making drop-off less likely. On the analysis side, responses are obtained as numerical data, so tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of public opinion.
 
 For example, this makes it possible to analyze questions such as, "What percentage of women in their 30s support this policy?" or "Are there differences in opinion trends between urban and rural areas?" With appropriate sampling, it is even possible to estimate broader social trends from the responses of survey participants. In other words, quantitative analysis can show how many people in society as a whole hold a given view.
 
-Open questions, on the other hand, pose a major challenge because they place an extremely high burden on respondents. Putting one's thoughts into writing takes time and effort, so many people drop out before completing their response. More fundamentally, people often do not have a clearly formed opinion on a given topic, in which case they can only answer, "I don't know," which lowers the rate of useful responses. In addition, extracting insight from responses written in natural language places a heavy burden on analysts, and with conventional technology it was difficult to analyze large volumes of open-ended responses.
+The greatest advantage of closed questions is that they are cheap to analyze. Because responses are obtained as numerical data, tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of public opinion.
 
-That said, open questions also have major advantages. Because respondents are not constrained by predefined options and can express themselves in their own words, perspectives and issues that the survey designer had not anticipated can emerge. In other words, open questions are not well suited to producing quantitative results such as "how many people think this way," but they are highly effective for producing qualitative results such as "what kinds of opinions exist."
+### Disadvantages of Closed Questions
 
+Closed questions also have inherent limits. Because responses can only be collected from among the options prepared in advance, issues that fall outside the survey designer's imagination cannot be captured in the first place. Voices such as "I support it conditionally," "there is a more urgent problem," or "the framing of the issue itself is wrong" are treated as if they do not exist unless they are available as answer choices. There is also the problem that the wording of the question, the wording of the answer choices, and the order in which they are presented can steer responses. The significance of these limits is discussed further in the next section, "Power to the Public: Free-Text Responses Open up Agenda Setting."
+
+### Advantages of Open Questions
+
+By contrast, open questions have major advantages. Because respondents are not constrained by predefined options and can express themselves in their own words, perspectives and issues that the survey designer had not anticipated can emerge. In other words, open questions are not well suited to producing quantitative results such as "how many people think this way," but they are highly effective for producing qualitative results such as "what kinds of opinions exist."
+
+### Disadvantages of Open Questions
+
+Open questions also impose a heavy burden on both respondents and analysts. Respondents need time and effort to put their thoughts into writing, so many people drop out before completing their response. More fundamentally, many people do not have a clearly formed opinion on a given topic. In those cases, they can only answer "I don't know," which lowers the rate of useful responses.
+
+The decisive problem was the cost on the analysis side. Extracting insight from natural-language responses required human readers to examine each response, understand its content, classify it, and summarize it. Even organizing a few thousand free-text responses required dozens of person-days of labor, and that was the main reason large-scale use of open questions was effectively impossible. There were two walls: the burden on respondents made responses hard to collect, and the burden on analysts made them hard to use.
 
 ## Power to the Public: Free-Text Responses Open up Agenda Setting
 
@@ -138,13 +152,21 @@ The 広聴AI (Kouchou AI, Broad Listening AI) discussed throughout this book, as
 
 In this way, the arrival of LLMs transformed open questions from something that was "easy to collect but hard to analyze" into something that, "once collected, can also be analyzed." This opened a technological path to overcoming the "trade-off between scale and depth" described in Chapter 1.
 
-## The Trade-off Between Scale and Cost
+## The Trade-off Among Depth, Scale, and Cost
 
-In addition to the trade-off between scale and depth, **cost** is another important axis. In Japan, the national census is conducted only once every five years. A full-population survey with complete representativeness requires a budget on the order of 70 billion yen (roughly US$470 million in 2025 terms). Even at that cost, the questionnaire is limited to just 19 items and does not include questions asking for opinions. Ordinary opinion polls reduce costs through sampling, but once open questions are included, someone must read and classify each free-text response one by one, causing costs to rise sharply.
+Let us now place the high analysis cost of open questions within a larger structure.
+
+As shown in Chapter 1, depth and scale have an inverse relationship: when one increases, the other is sacrificed. That curve showed which combinations are possible **if cost is held constant**. If more cost is invested, the curve itself is pushed up and to the right, expanding the area where it is possible to listen both more broadly and more deeply. If costs are reduced, the curve shrinks down and to the left.
+
+In Japan, the national census is conducted only once every five years. A full-population survey with complete representativeness requires a budget on the order of 70 billion yen (roughly US$470 million in 2025 terms). Even at that cost, the questionnaire is limited to just 19 items and does not include questions asking for opinions. Ordinary opinion polls reduce costs through sampling, but once open questions are included, someone must read and classify each free-text response one by one, causing costs to rise sharply.
 
 In other words, traditional research methods have been constrained by a three-way trade-off among **scale, depth, and cost**. If you want scale and representativeness, the cost becomes enormous. If you want to keep costs down, you have to sacrifice either scale or depth. Survey design centered on closed questions has effectively chosen to "sacrifice depth in order to reduce cost."
 
 The arrival of LLMs changed this three-way structure. As Chapter 13 will estimate in detail, the cost of analyzing 10,000 free-text responses with Kouchou AI is about 500 yen (roughly US$3 in 2025 terms). Work that previously would have required dozens of person-days can now be completed for about the price of a coin-operated snack. Compared with the 70 billion yen (roughly US$470 million in 2025 terms) cost of the census or the millions of yen (roughly tens of thousands of US dollars in 2025 terms) required for ordinary opinion polling, the difference is not just a matter of scale—it is on an entirely different order of magnitude. Once the cost of analyzing open questions effectively approaches zero, there is no longer any need to "sacrifice depth in order to reduce cost."
+
+![Figure: The trade-off curve shifting outward after the arrival of LLMs.](images/02_tradeoff_llm_before_after.png)
+
+As the figure shows, before LLMs, the achievable region was constrained by the inner curve shown in light gray. Because LLMs dramatically reduced analysis costs, the same budget can now reach the outer curve shown in black, making the yellow region between them newly reachable. Combinations of broad and deep listening that had previously been closed off by the cost barrier have become realistic options.
 
 ## "Polis": Broad Listening Before LLMs
 

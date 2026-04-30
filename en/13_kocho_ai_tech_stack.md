@@ -79,7 +79,7 @@ It is also necessary to train people who can provide that education.
 }
 ```
 
-The instruction “In most cases, it is preferable to keep things as a single argument” is important. Without it, the LLM tends to split opinions too finely.
+The instruction “In most cases, it is preferable to keep things as a single argument” is important. Without it, the LLM tends to split opinions too finely. For example, if a single voice saying “We want more parks” is split into several sentences such as “new parks are desired,” “green space is needed,” and “children need places to play,” then the same underlying concern may scatter into multiple small groups in the downstream clustering. As a result, a theme that many people actually share may appear as several minority opinion groups, causing the overall priority to be misread.
 
 Also note that the output format is JSON. To process LLM output programmatically, structured data is needed rather than natural-language prose. Kouchou AI uses the Structured Output approach explained in Chapter 12 to ensure JSON output, while also showing an output example in the prompt so that the intended data structure is more reliably produced.
 
@@ -105,11 +105,15 @@ That said, there are also concerns. Because of LLM hallucinations, content not p
 
 ### 13.2.3 ③ Dimensionality Reduction
 
-In this step, high-dimensional embedding vectors are compressed into two dimensions. Kouchou AI uses UMAP, as explained in Chapter 12.
+In this step, the high-dimensional embedding vectors obtained in the previous step, meaning arrays of hundreds of numbers representing each opinion, are compressed into two dimensions. Kouchou AI uses UMAP, as explained in Chapter 12.
 
 The embeddings generated in the previous step are high-dimensional vectors: 1,536 dimensions with OpenAI’s Embeddings API and 768 dimensions with Sentence Transformer. The main reason for dimensionality reduction is visualization. Humans can intuitively understand only up to about two or three dimensions, so to display the data as a scatter plot, the dimensionality must be reduced. In Kouchou AI, clustering is also performed on the two-dimensional data after UMAP, so dimensionality reduction also serves as preprocessing for clustering.
 
-Kouchou AI specifies cosine distance as the distance function for UMAP. As explained in Chapter 12, cosine similarity is the standard way to measure similarity between embedding vectors. UMAP uses Euclidean distance by default, but by specifying `metric='cosine'`, dimensionality reduction is performed based on the closeness of vector “direction.” This makes semantically similar opinions more likely to be placed near each other in the two-dimensional space.
+Kouchou AI specifies cosine distance as the distance function for UMAP.
+
+The reason this is called a “distance,” rather than a “similarity,” is that UMAP is an algorithm that places points closer together when the distance between them is smaller. As explained in Chapter 12, embedding closeness is commonly measured with cosine similarity, where values closer to 1 mean more similar. But UMAP needs a distance measure where values closer to 0 mean closer. So cosine similarity is converted into a distance with the simple formula “cosine distance = 1 - cosine similarity.” That is cosine distance.
+
+UMAP uses Euclidean distance by default, but by specifying `metric='cosine'`, dimensionality reduction is performed based on the closeness of vector “direction.” This makes semantically similar opinions more likely to be placed near each other in the two-dimensional space.
 
 #### The Challenge of Separating Support and Opposition Within the Same Topic
 
@@ -127,7 +131,7 @@ In this step, K-means is used to automatically group similar opinions. In Koucho
 
 There are two reasons K-means was chosen. First, it tends to produce clusters of roughly similar size. If cluster sizes are extremely uneven, they become harder to handle in downstream labeling and visualization. Second, because it groups nearby points together on the scatter plot, it is less likely to produce disconnected “islands.”
 
-Here, “islands” refers to the phenomenon where points that are visually far apart end up belonging to the same cluster. TTTC Scatter, the upstream project from which Kouchou AI was forked, uses Spectral Clustering, and in actual projects this did produce such islands. The figure below shows an example from Nippon TV’s 2024 House of Representatives election special, where TTTC Scatter was used.
+Here, “islands” refers to the phenomenon where points that are visually far apart end up belonging to the same cluster. TTTC Scatter, the upstream project from which Kouchou AI was forked, uses Spectral Clustering, and in actual projects this did produce such islands. Spectral Clustering represents the “connectedness” of points as a graph and divides the whole graph in the most natural way. Because it looks not only at geographical closeness on the scatterplot but also at whether points are connected through intermediate points, two visually separated groups can be merged into the same cluster if they are connected through a chain of points. That is the source of these islands. The figure below shows an example from Nippon TV’s 2024 House of Representatives election special, where TTTC Scatter was used.
 
 ![Example of Talk to the City used in Nippon TV’s 2024 House of Representatives election special](images/13_ntv_spectral.png)
 
@@ -147,7 +151,12 @@ In this step, the lower-level clusters generated by K-means are hierarchically m
 
 For example, if the number of lower-level clusters is set to 20 and the number of higher-level clusters is set to 5, opinions are first divided into 20 fine-grained groups by K-means, and then those are merged into 5 larger groups by Ward’s method. This combination makes it possible to create a hierarchical grouping structure of “large categories (5) → small categories (20).”
 
-Why use this combination? One might wonder, “Why not just use Ward’s method for hierarchical clustering from the start?” However, in standard implementations, Ward’s method has computational complexity of O(n²log n), which becomes impractical when the number of opinions reaches tens of thousands. So the system first uses K-means, whose computational complexity is only O(nk), to divide opinions into lower-level clusters and compute the centroid of each cluster. Then only those centroids are merged using Ward’s method, greatly reducing the computational cost.
+![A Ward-method dendrogram showing that the number of higher-level clusters is determined by where the tree is cut. Cutting at the red dashed line yields five colored higher-level clusters.](images/13_dendrogram_cut.png)
+*Figure 13-X: Ward-method dendrogram and the number of higher-level clusters*
+
+A dendrogram, or tree structure, shows the history of merging similar clusters from the bottom up. The vertical axis represents the cost of merging, or the distance between clusters; the higher you go, the more distant the clusters being forced together. If the tree is cut horizontally at a high position, only a few large groups remain, so the number of higher-level clusters is small. If it is cut at a low position, many smaller groups remain, so the number of higher-level clusters is large.
+
+Why use this combination? One might wonder, “Why not just use Ward’s method for hierarchical clustering from the start?” However, in standard implementations, Ward’s method has the property that computation time grows snowball-like as the number of opinions increases. Technically this is written as O(n²log n), which means that if the data grows 10 times, processing time can jump by more than 100 times. With tens of thousands of opinions, Ward’s method alone cannot finish in a realistic amount of time. So the system first uses K-means, whose processing time is roughly proportional to the number of data points (O(nk)), to divide opinions into lower-level clusters and compute the centroid of each cluster. Then only those centroids, reducing tens of thousands of points to a few dozen or so, are merged using Ward’s method, greatly reducing the computational cost.
 
 ---
 
@@ -216,6 +225,8 @@ In Kouchou AI, the processing results are consolidated into a JSON file and gene
 ---
 
 ## 13.3 Hands-On: Building a Mini Kouchou AI
+
+**How to read this section.** This section shows how to implement the core algorithm of Kouchou AI yourself in Python. If you have a Python environment, read it while running the code locally. If you are not familiar with programming, or do not have an environment at hand, you can skip the code and follow only the explanations of what happens in each step. Even without running the code, you should be able to grasp how the technologies from Chapter 12 are combined in practice.
 
 From here, let us try implementing the core algorithm of Kouchou AI ourselves. By combining the techniques learned in Chapter 12, the essential processing can be implemented in about 100 lines of code.
 
@@ -381,6 +392,8 @@ The quality of labeling depends heavily on the prompt. Key tuning points include
 The number of clusters has a major impact on the results.
 
 In Kouchou AI’s default settings, for a number of opinions n, the number of lower-level clusters (fine-grained division by K-means) is calculated as n^(2/3), and the number of higher-level clusters (merged by Ward’s method) is calculated as ∛n (the cube root). Users can use these default values as-is or change them depending on the purpose. For example, for 1,000 opinions, the number of lower-level clusters becomes 1000^(2/3) ≈ 100, and the number of higher-level clusters becomes ∛1000 ≈ 10.
+
+For readers less familiar with formulas, the cube root ∛n is a gentle function where “even if the number of items grows 10 times, the number of clusters only grows to about twice as many.” It gives 10 clusters for 1,000 opinions, about 22 clusters for 10,000 opinions, and about 46 clusters for 100,000 opinions. By increasing the number of clusters on screen only modestly even as the number of opinions grows, the scatterplot remains readable and the overall picture can still be grasped at a glance.
 
 These default values were tuned to generate visually appealing scatter plots that are easy to read and make the overall picture easy to grasp. On the other hand, when policy planners use the system in practice, it may be more effective to increase the number of clusters. If there are only around 10 higher-level clusters, a single cluster may contain too many diverse opinions, making it difficult to translate them into concrete measures. It may therefore be worth using different cluster counts for visualization and for analysis.
 

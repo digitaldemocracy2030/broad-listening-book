@@ -4,7 +4,9 @@
 
 On October 7, 2023, Hamas’s attack on Israel pushed the Israel–Palestine conflict into a new phase. From that day forward, the channels of communication that had existed between the two sides were cut off one after another. Even among activists who had long worked on peacebuilding, trust collapsed, and physical contact became impossible. The language barrier between Hebrew and Arabic further separated the two sides. It was, in every sense, a situation in which dialogue seemed impossible.
 
-And yet, amid this despair, the **AI Pulse** project sought to connect Israeli and Palestinian peacebuilders—NGO members working for peace on both sides—and produce a shared **statement**. The project was organized by ALLMEP (the Alliance for Middle East Peace), a network of more than 180 peacebuilding organizations active in Israel and Palestine[^1][^3]. Conducted from April to July 2024, it reportedly involved 138 NGO members engaged in peacebuilding and achieved a high agreement rate of over 92%[^1].
+And yet, amid this despair, the **AI Pulse** project sought to connect Israeli and Palestinian peacebuilders—NGO members working for peace on both sides—and produce a shared **statement**. Here, “statement” does not mean a large document like a government statement or joint declaration. It means a short opinion text, usually one sentence to a few sentences, that participants evaluate by voting agree or disagree. This is the basic unit used in many online deliberation systems, including Polis. The “collective statements” discussed below are also sets of short texts that summarize the views of the participants as a whole.
+
+The project was organized by ALLMEP (the Alliance for Middle East Peace), a network of more than 180 peacebuilding organizations active in Israel and Palestine[^1][^3]. Conducted from April to July 2024, it reportedly involved 138 NGO members engaged in peacebuilding and achieved a high agreement rate of over 92%[^1].
 
 The dialogue platform used was an AI-based discussion system provided by the U.S. company Remesh. In 2023, Remesh received a $100,000 grant from OpenAI’s “Democratic Inputs to AI” program and developed a democratic dialogue system using LLMs[^4].
 
@@ -58,9 +60,13 @@ The discovery of these mutually corresponding red lines helped restore some degr
 
 At the core of the project’s technical innovation was an algorithm called **Bridging-based Ranking**[^2]. Adapted from a method used in Twitter/X’s Community Notes, it does not rely on simple majority rule. Instead, it **prioritizes opinions supported by people from different positions**. In this project, two different bridging algorithms were used in combination.
 
+#### 1. Max-min Agreement
+
 The first was a method called **Max-min Agreement** or **Equal Power Metrics**. Its mechanism was as follows: for each statement, the support rate was measured separately for the three groups—Israeli Jews, Palestinians from the West Bank and Gaza, and Palestinian citizens of Israel—and the statement’s score was defined as the **lowest support rate among the three groups**.
 
 For example, if Statement A was supported by 95% of the Israeli side but only 40% of the Palestinian side, its score would be 40%. If Statement B was supported by 70% of the Israeli side and 65% of the Palestinian side, its score would be 65%, and Statement B would rank higher. In other words, by ranking statements according to the minimum agreement rate across all groups, “opinions supported by only one side” automatically receive low scores, which **prevents the majority group (97 Israeli participants) from overwhelming the minority group (41 Palestinian participants)**.
+
+#### 2. Latent Factor Model (from Community Notes)
 
 The second was a latent factor model already put into practical use in Twitter/X’s Community Notes. This method analyzes participants’ voting patterns to mathematically identify “statements that receive broad support regardless of political position.” By separating out individual voting tendencies, a statement’s general level of support, and the political alignment between participants and statements, it can identify “bridging statements” that cut across political divides[^1].
 

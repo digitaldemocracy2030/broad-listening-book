@@ -5,17 +5,17 @@ Author: tokoroten
 
 ## A Challenge from a Nakano City Council Member: The Case of Ryosuke Idei
 
-We interviewed Ryosuke Idei, a former Liberal Democratic Party member of the Nakano City Council, about how he used AI-powered public listening in the June 2025 Tokyo Metropolitan Assembly election and what insights he gained from it. (Interview conducted in January 2026)
+We interviewed Ryosuke Idei, a former Liberal Democratic Party member of the Nakano City Council, about how he used Kouchou AI in the June 2025 Tokyo Metropolitan Assembly election and what insights he gained from it. (Interview conducted in January 2026)
 
 ### Profile of Ryosuke Idei
 
-Ryosuke Idei was born and raised in Nakano City. He was first elected to the Nakano City Council as a Liberal Democratic Party candidate at age 29 and has long been involved in local government. Since 2023, he has been studying at the Graduate School of Governance Studies in Public Policy at Meiji University, and in the 2025 Tokyo Metropolitan Assembly election—his third attempt—he used AI-powered public listening to collect and analyze residents’ views[^idei_broadlistening]. Since 2011, he has also led the Nakano Skateboard Association, continuing efforts to create welcoming spaces for children through free skateboarding classes[^idei_website].
+Ryosuke Idei was born and raised in Nakano City. He was first elected to the Nakano City Council as a Liberal Democratic Party candidate at age 29 and has long been involved in local government. Since 2023, he has been studying at the Graduate School of Governance Studies in Public Policy at Meiji University, and in the 2025 Tokyo Metropolitan Assembly election—his third attempt—he used Kouchou AI to collect and analyze residents’ views[^idei_broadlistening]. Since 2011, he has also led the Nakano Skateboard Association, continuing efforts to create welcoming spaces for children through free skateboarding classes[^idei_website].
 
 ### Encountering Broad Listening
 
 Idei first encountered broad listening through his studies at Meiji University’s graduate school of public policy. The program includes working adults from a wide range of backgrounds—civil servants, local elected officials, people from Dentsu and think tanks, and business executives—who study in the evenings or online. Broad listening came up in discussions among students, and Idei also found his own way to it while searching for “a better method” than the survey tools he had been using extensively in his research.
 
-He was also strongly influenced by a friend with a deep interest in DD2030. Mr. S, a former artist who now runs a marketing company, served as a bridge to AI-powered public listening and the Idobata Vision initiative. Takahiro Anno’s strong public messaging also helped. Looking back, Idei said, “Because Mr. Anno had such strong communication power, it made it much easier for me, from the standpoint of local politics, to start conversations with voters about digital democracy.” As he prepared for the Tokyo Metropolitan Assembly election, Idei wanted not only to communicate outwardly, but also to broadly gather residents’ views and reflect them in policy.
+He was also strongly influenced by a friend with a deep interest in DD2030. Mr. S, a former artist who now runs a marketing company, served as a bridge to Kouchou AI and the Idobata Vision initiative. Takahiro Anno’s strong public messaging also helped. Looking back, Idei said, “Because Mr. Anno had such strong communication power, it made it much easier for me, from the standpoint of local politics, to start conversations with voters about digital democracy.” As he prepared for the Tokyo Metropolitan Assembly election, Idei wanted not only to communicate outwardly, but also to broadly gather residents’ views and reflect them in policy.
 
 ### Doubts About Conventional Surveys
 
@@ -23,7 +23,7 @@ Idei had long held fundamental doubts about conventional surveys. He recalled on
 
 Open-ended surveys also present difficulties. One problem is that they can be overly influenced by “a vocal minority.” As Idei put it: “Even in public comment procedures, if quantity is treated as justice, people copy and paste the same thing and send it in over and over. Some then say, ‘We’ve received 10,000 comments like this—this is the public will,’ and try to steer political decisions in a direction that suits them.” He also noted the problem of governments not disclosing opinions that are inconvenient to them, arguing that the public comment system has issues on both sides.
 
-Expert panels face similar problems. “Experts each have their own positions, and there are many expert panels tied in various ways to government,” Idei pointed out, suggesting how difficult it is to aggregate opinions neutrally. Against this backdrop, he saw AI-powered public listening as a way to overcome the limits of existing methods of gathering public opinion.
+Expert panels face similar problems. “Experts each have their own positions, and there are many expert panels tied in various ways to government,” Idei pointed out, suggesting how difficult it is to aggregate opinions neutrally. Against this backdrop, he saw Kouchou AI as a way to overcome the limits of existing methods of gathering public opinion.
 
 ### Gathering Residents’ Views on the Nakano Sunplaza Redevelopment
 
@@ -37,12 +37,12 @@ But the results were completely unexpected. “I realized that Nakano Sunplaza d
 
 ### A Diversity of Views Beyond Expectations
 
-![Clustering results from AI-powered public listening on the Nakano Station area redevelopment. The 2,417 responses are spread across multiple thematic clusters, making visible the existence of diverse voices rather than a simple split between support and opposition.](images/07_02_いでい_広聴AI意見クラスタ.png)[^idei_clustering]
+![Clustering results from Kouchou AI on the Nakano Station area redevelopment. The 2,417 responses are spread across multiple thematic clusters, making visible the existence of diverse voices rather than a simple split between support and opposition.](images/07_02_いでい_広聴AI意見クラスタ.png)[^idei_clustering]
 
 *Note: The Japanese cluster labels refer to themes such as combining local culture and commerce, creating family-friendly commercial space, balancing greening with disaster preparedness, pursuing lower-rise development suited to Nakano’s character, protecting local distinctiveness in redevelopment, prioritizing residents’ interests, making use of existing assets, carrying forward the spirit of Nakano Sunplaza as a cultural and entertainment hub, and preserving and sustainably reusing Sunplaza for local revitalization.*
 
 
-The results of the AI-powered public listening did not polarize into simple support and opposition; instead, opinions were widely dispersed. Idei had included the question “Do you have a specific vision in mind?” in the survey because he wanted to draw out diverse views, but even so, he had not expected so many different voices to emerge.
+The Kouchou AI results did not polarize into simple support and opposition; instead, opinions were widely dispersed. Idei had included the question “Do you have a specific vision in mind?” in the survey because he wanted to draw out diverse views, but even so, he had not expected so many different voices to emerge.
 
 “Because this was an initiative focused on the election, I had hoped that if a majority view emerged, I could move closer to it myself. But this time, even if they were not majority views, many extremely important voices came out, and to be honest, I’m not sure I was able to arrive at a clear answer as to how to reflect them in policy,” Idei said.
 
@@ -52,7 +52,7 @@ What Idei learned from this experience was that residents were not simply hoping
 
 Idei campaigned on the concept of “an electoral platform updated during the campaign,” signaling a willingness to revise policy while listening to residents’ voices.
 
-As a long-serving Liberal Democratic Party city council member, Idei had supported the redevelopment plan for the Nakano Station area in the city council. His position had been that “a complex combining high-rise condominiums, commercial buildings, office buildings, and a large arena facility was necessary in front of Nakano Station.” But after seeing the results of the AI-powered public listening, his thinking changed. “I realized that not that many people were actually asking for that. Even if we built high-rise towers, would the people of Nakano really be satisfied? I don’t think so. My thinking changed dramatically toward the idea that what is needed is a place where people can gather—something not defined by the building itself, but by people coming together.”
+As a long-serving Liberal Democratic Party city council member, Idei had supported the redevelopment plan for the Nakano Station area in the city council. His position had been that “a complex combining high-rise condominiums, commercial buildings, office buildings, and a large arena facility was necessary in front of Nakano Station.” But after seeing the Kouchou AI results, his thinking changed. “I realized that not that many people were actually asking for that. Even if we built high-rise towers, would the people of Nakano really be satisfied? I don’t think so. My thinking changed dramatically toward the idea that what is needed is a place where people can gather—something not defined by the building itself, but by people coming together.”
 
 He continued: “Instead of starting with the building, my thinking shifted toward first shaping everyone’s opinions and feelings into policy, and only then considering how to make effective use of the space.” Looking back, Idei said, “I think many people around me would say that this was exactly the moment that triggered a change in Ryosuke Idei’s policy judgment. I feel the same way myself.”
 
@@ -66,9 +66,9 @@ At the same time, however, Idei is conscious of the need to draw a line against 
 
 ### The Challenge of the Digital Divide
 
-Idei said he strongly feels that AI-powered public listening is an effective tool. As a local Liberal Democratic Party politician who once campaigned through traditional door-to-door grassroots methods, he said, “Even when people know you’re a local politician active in the community, many still won’t talk to you. My sense is that for reaching those people, old-style street-level campaigning may no longer work.”
+Idei said he strongly feels that Kouchou AI is an effective tool. As a local Liberal Democratic Party politician who once campaigned through traditional door-to-door grassroots methods, he said, “Even when people know you’re a local politician active in the community, many still won’t talk to you. My sense is that for reaching those people, old-style street-level campaigning may no longer work.”
 
-At the same time, he also pointed out that “we need to think about what percentage of society can actually use tools like AI-powered public listening.” In areas with many older residents in particular, there are limits to relying on online input. He said it would be ideal if “a method of capturing voices in real-world settings and analyzing them with AI could become something usable anywhere.”
+At the same time, he also pointed out that “we need to think about what percentage of society can actually use tools like Kouchou AI.” In areas with many older residents in particular, there are limits to relying on online input. He said it would be ideal if “a method of capturing voices in real-world settings and analyzing them with AI could become something usable anywhere.”
 
 He also stressed the importance of creating spaces where residents can think through issues together. Even when politicians’ views differ from residents’ voices, they share the same goal of improving society. “By speaking up and exchanging opinions, what kind of new society can we create? Creating those kinds of spaces is important,” Idei said, concluding, “Politicians exist because there are issues to solve; if there were no issues, there would be no need for politicians. Creating those spaces really matters.”
 
@@ -86,7 +86,7 @@ This survey gathered 2,417 responses. The original goal had been 10,000, and Ide
 
 The Nakano electoral district had three seats. Idei received 17,289 votes, placing fourth and losing. The gap between him and the third-place winner was just 2,418 votes.
 
-In hindsight, the strategy of focusing on a single issue had a structural weakness. As Idei himself acknowledged, “There actually weren’t that many stakeholders deeply invested in Nakano Sunplaza,” meaning that those with strong interest in the issue were a minority relative to the electorate as a whole. He also reflected that “perhaps we could have gathered those voices more broadly.” In other examples of AI-powered public listening, some have taken a broader approach—starting with a question like “What do you expect from me?” and first surfacing the issues voters truly care about before building policy from there. By narrowing the theme, Idei was able to gather deep and meaningful voices. But in doing so, he may also have given up from the outset the chance to discover the issues that mattered to most voters.
+In hindsight, the strategy of focusing on a single agenda item had a structural weakness. As Idei himself acknowledged, “There actually weren’t that many stakeholders deeply invested in Nakano Sunplaza,” meaning that those with strong interest in the issue were a minority relative to the electorate as a whole. He also reflected that “perhaps we could have gathered those voices more broadly.” In other examples using Kouchou AI, some have taken a broader approach—starting with a question like “What do you expect from me?” and first surfacing the issues voters truly care about before building policy from there. By narrowing the theme, Idei was able to gather deep and meaningful voices. But in doing so, he may also have given up from the outset the chance to discover the issues that mattered to most voters.
 
 ### Toward Future Use
 
@@ -102,6 +102,8 @@ Along with the strong statement, “All politicians should aim for DD2030,” he
 
 Asked how best to encourage politicians to embrace broad listening, Idei answered candidly: “The strongest approach is probably to tell them, ‘It will improve your chances of winning your election.’”
 
+Idei also reflected as follows: “What we had been thinking about was not what the times were asking for. I realized in a major way that I myself had to change. If I had understood that sooner, I think I would have won the election.” If a politician is pulled along by the voices of their existing supporters and drifts away from the concerns of the moment, votes will fall away. Broad listening is a device for making that “gap” visible early. This is the lesson Idei drew from his own election loss.
+
 ---
 
 ### Lessons from Idei’s Case
@@ -110,7 +112,7 @@ Idei’s case offers several important insights.
 
 First, it shows that broad listening can change politicians’ own thinking. Idei had long supported the redevelopment plan in the city council, but after listening to residents’ voices, he came to realize that “not that many people are actually looking for high-rise condominiums and commercial facilities,” leading him to make a major shift in policy direction. This is one example of how broad listening can make visible public sentiment that politicians may miss when they hear only from their own supporters.
 
-Second, it highlights the importance of question design and the scope of collection. Idei solicited opinions on the specific theme of redevelopment around Nakano Sunplaza. This produced deep and substantive views, but it may also have caused him to overlook broader issues facing Nakano City or the themes voters truly prioritized. As in the case of Mr. Ono of Yatsushiro City, another possible approach would have been to begin with a broad question such as “What do you want from city government?” and use that to discover the real points of contention.
+Second, it highlights the importance of question design and the scope of collection. Idei solicited opinions on the specific theme of redevelopment around Nakano Sunplaza. This produced deep and substantive views, but it may also have caused him to overlook broader issues facing Nakano City or the themes voters truly prioritized. Another possible approach would have been to begin with a broad question such as “What do you want from city government?” and use that to discover the real points of contention before narrowing the policy theme.
 
 Third, it underscores the challenge of the digital divide. When opinions are collected online, it is harder to capture the voices of some groups, including older people. As Idei pointed out, a key challenge going forward will be to combine multiple channels for gathering views, such as incorporating voice input from in-person settings.
 
@@ -120,6 +122,6 @@ Idei lost the election, but the lessons he drew from the experience will likely 
 
 [^idei_website]: Ryosuke Idei official website https://ideiryosuke-nakano.com/
 [^idei_broadlistening]: Results of broad listening by Ryosuke Idei https://ideiryosuke-nakano.com/activities/3775/
-[^idei_clustering]: AI-powered public listening results by Ryosuke Idei (redevelopment around Nakano Sunplaza) https://ideiryosuke-nakano.com/activities/3707/
+[^idei_clustering]: Kouchou AI results by Ryosuke Idei (redevelopment around Nakano Sunplaza) https://ideiryosuke-nakano.com/activities/3707/
 [^nakano_cost]: Nikkei XTECH, “Unusual Turn in the Redevelopment of the Former ‘Nakano Sunplaza’ Site: Plans to Be Revised Due to Rising Construction Costs” (October 2024) https://xtech.nikkei.com/atcl/nxt/column/18/00154/02236/
 [^nakano_redevelopment]: Nakano City, “Regarding Changes to the Nakano Station New North Exit Station Front Area Redevelopment Project Plan” https://www.city.tokyo-nakano.lg.jp/kusei/kaigi/cyougi/2024/20250304154629676.files/5.pdf

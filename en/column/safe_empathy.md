@@ -14,9 +14,11 @@ Recommendation algorithms keep serving you content you are likely to agree with.
 
 ### When the Need for Empathy Tears a Country Apart
 
-The problems of modern society—economic inequality, pandemics, climate change—are complex, and even experts disagree about them. This sense of not knowing creates intense anxiety. Conspiracy theories are a defense mechanism against that anxiety. A story in which “some bad actor is secretly pulling the strings” simplifies a complex reality and makes it feel understandable. Once the enemy is clearly identified, what must be done also seems clear. Echo chambers function as devices that elevate these simplified stories into “the truth everyone is saying.”
+The problems of modern society—economic inequality, pandemics, climate change—are complex, and even experts disagree about them. This sense of not knowing creates intense anxiety. Conspiracy theories are a defense mechanism against that anxiety. A story in which “some bad actor is secretly pulling the strings” simplifies a complex reality and makes it feel understandable. Once the enemy is clearly identified, what must be done also seems clear.
 
-People trapped in echo chambers in this way become easy targets in cognitive warfare. Groups surrounded by like-minded people and quick to exclude different perspectives as “the enemy” are especially vulnerable to manipulation and propaganda.
+Echo chambers then function as devices that elevate these simplified stories into “the truth everyone is saying.” Humans tend to feel that if many people say the same thing, it must be right; we also tend to judge information as more credible the more often we encounter it. Echo chambers maximize both illusions. What may originally have been a story repeated by only a few people is promoted, through repetition and apparent mass support, into an “obvious truth.”
+
+People trapped in echo chambers while seeking reassurance become easy targets in cognitive warfare. Groups surrounded by like-minded people and quick to exclude different perspectives as “the enemy” are especially vulnerable to manipulation and propaganda.
 
 A fundamental human need—the desire for empathy—can ultimately tear a country in two. The January 6, 2021 attack on the U.S. Capitol is a symbol of this. People who refused to accept the election results found mutual validation for their anger on social media, and within their echo chambers they kept reinforcing the story of a “stolen election,” until it culminated in a violent breach of a central institution of democracy.
 

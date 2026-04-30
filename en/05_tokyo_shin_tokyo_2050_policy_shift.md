@@ -125,7 +125,7 @@ This was not accidental. In an age-skewed democracy, voices such as “make Toky
 
 In other words, the issue areas of child-rearing, education, and youth support were not “new facts discovered by policymakers.” They were things that had long been understood, but whose scale had not reached government through the conventional public comment system. Tokyo’s broad listening can thus be seen as an attempt to correct that structural imbalance through the design of its channels.
 
-### Serving as an Issue Map
+### Visualizing the Issue Space
 
 Another value of broad listening is that it provides a structural basis for policy judgment. Its value does not lie in raw submission counts, but in clustering and structuring opinions. In other words, it lies in making the issue space visible. Intuition alone cannot explain to citizens why tourism should be positioned as an independent strategy. A numerical justification based on submission counts is also fragile, because it is directly shaped by bias in the collection channels. But the structure of opinions, including which subthemes exist and how they are arranged, can function as a basis for policy judgment.
 

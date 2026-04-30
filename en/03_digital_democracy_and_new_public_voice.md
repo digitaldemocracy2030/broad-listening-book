@@ -23,7 +23,7 @@ To clarify this argument, this chapter explains the following three points:
 - **What it can do**: it can process large volumes of free-text responses and visualize issues, lines of conflict, and blind spots (issue discovery)
 - **What it cannot do**: it is not representative. Therefore, it should not be used to “measure public opinion”; if needed, that should be verified through opinion polls and similar methods (division of roles). This was discussed in detail in Chapter 2.
 
-## Why We Need an “Issue Map” Now
+## Why We Need an Issue Space Now
 
 ### The Limits of the Election Cycle
 
@@ -95,19 +95,16 @@ As a result, the public comment system has become, on the government side, a way
 
 The difference between broad listening and public comment becomes clear when viewed through the double diamond model of design thinking.
 
-<!-- TODO: Replace externally hosted image with a local file (for copyright and dead-link protection) -->
-![Double Diamond model](https://www.designcouncil.org.uk/fileadmin/_processed_/4/9/csm_Framework_for_Innovation_transparent_14a10de530.png)
+![Figure: The double diamond model of design thinking.](images/03_double_diamond.png)
 
-In the double diamond model, there is a divergent phase for thinking broadly and an convergent phase for thinking deeply and focusing. By repeating divergence and convergence twice, the model creates two diamonds: one for “discovering and defining the problem,” and one for “developing and delivering the solution.” Through these two stages—finding the right problem and finding the right solution—problems are addressed, sometimes with backtracking and feedback along the way.
+In the double diamond model, the divergent phase of widening one's thinking and the convergent phase of narrowing focus are repeated twice. In the first diamond, "collect voices broadly" (Discover) leads to "narrow down the issues" (Define), identifying **the right problem**. In the second diamond, "expand the possible solutions" (Develop) leads to "narrow down the solution" (Deliver), identifying **the right solution**. That is the basic structure.
 
-Public comment occupies the final convergent stage of the double diamond. It solicits revisions to regulations that officials have already largely finalized and consider ready for release.
+Viewed through this framework, broad listening and public comment occupy entirely different diamonds.
 
-By contrast, current broad listening tools mainly occupy the first half of the double diamond. Systems such as AI interviews and Idobata make it possible to gather large amounts of information from citizens, and to do so in depth. Clustering and labeling through TTTC and public-hearing AI are well suited to narrowing the focus of the problem. In addition, voting platforms for public issues such as Change.org, vTaiwan, and Polis also serve as ways of gathering information about what the problem actually is.
+- **Broad listening** occupies the first diamond: problem discovery and problem definition. Systems such as AI interviews and Idobata gather opinions broadly on the divergent side, while TTTC, Kouchou AI, vTaiwan, Polis, Change.org, and similar tools help issues emerge and narrow down "which issues matter" and "what should be solved" on the convergent side.
+- **Public comment** corresponds to the convergence stage of the second diamond, Deliver. It is a mechanism for soliciting proposed revisions to regulations that officials have already largely finalized and consider ready for release.
 
-TODO: Rewrite to match the text
-![alt text](column/tool_double_diamond.png)
-
-In short, public comment and broad listening serve entirely different phases.
+In short, public comment and broad listening serve entirely different phases. They are not opposed to each other; they are complementary mechanisms that divide responsibility across different stages of the policymaking process.
 
 ### The Problem of Mass-Mobilized Public Comment
 
@@ -144,53 +141,47 @@ That said, the accuracy of this structuring is not perfect, which is why it is r
 
 Broad listening does not stand alone. It only creates value when it is properly positioned within democratic processes and linked to other mechanisms.
 
-Its theoretical foundation is **deliberative democracy**. Developed in the 1980s and 1990s by thinkers such as the German philosopher Jürgen Habermas, deliberative democracy is a form of democracy that aims not merely at majority rule, but at citizens listening to one another, giving reasons, and sometimes changing their minds as they work toward agreement. Deliberation is not just a theory; it has also been incorporated into real politics.
+Its theoretical foundation is **deliberative democracy**.[^deliberative] This is a form of democracy that aims not merely at majority rule, but at citizens listening to one another, giving reasons, and sometimes changing their minds as they work toward agreement. Deliberation is not just a theory; it has also been incorporated into real politics.
+
+[^deliberative]: Deliberative democracy is a political theory developed in the 1980s and 1990s by thinkers such as the German philosopher Jürgen Habermas.
 
 In Japan, the “budget screening” process carried out under the Democratic Party of Japan government from 2009 to 2012 was one form of deliberation, in which experts and politicians debated publicly over the appropriateness of budget allocations. In 2017, Mongolia became the first country in the world to legally require a deliberative poll by randomly selected citizens before constitutional amendment, and the results of deliberation by 669 citizens were in fact reflected in the 2019 constitutional revision.
 
-However, deliberation has an inherent limit: the trade-off between depth and scale. A discussion among ten people may work, but among a thousand, it becomes difficult even to secure speaking opportunities. If there are *n* participants, the average speaking time per person becomes 1/*n*. Attempts to overcome this limit through information and communication technology and scale up deliberation are what we call **augmented deliberation**, and broad listening has become its technological foundation in the age of AI.
+However, deliberation has an inherent limit: the trade-off between depth and scale. A discussion among ten people may work, but among a thousand, it becomes difficult even to secure speaking opportunities. If there are *n* participants, the average speaking time per person becomes 1/*n*. Attempts to overcome this limit through information and communication technology and scale up deliberation are what we call **augmented deliberation**, and broad listening emerged as a technology for using AI to scale augmented deliberation even further.
 
-### The Basic Cycle: Collect Opinions → Structure Them → Formulate Policy → Explain → Collect Again
+Broad listening has two major operational forms: (1) politician- or government-led broad listening, a lightweight cycle, and (2) broad listening as support for augmented deliberation, a full cycle. The figure below summarizes the difference.
 
-The basic cycle for connecting broad listening to democratic processes is as follows:
+![Figure: Two operational flows for broad listening, showing the lightweight politician/government-led cycle and the fuller augmented-deliberation cycle.](images/03_operation_flows.png)
 
-```
-1. Collect opinions (through diverse channels)
-   ↓
-2. Structure and visualize them (AI)
-   ↓
-3. Formulate policy / plans
-   ↓
-4. Explain and provide feedback
-   ↓
-5. Collect again (repeat the cycle)
-```
-
-Decision-makers actively listen to citizens, use AI to structure and analyze what they hear, respond through policy or planning, and then seek further input. It is not “listen once and stop,” but a cycle in which opinion collection and analysis are repeated, gradually refining the picture of the issue space. This corresponds to the form introduced in Chapter 1 as **politician-/government-led broad listening**.
-
-For politicians, representative examples include Takahiro Anno’s Tokyo governor election initiative and the Democratic Party for the People’s Kokumin AI Project (see Chapter 4). For government administration, the Tokyo Metropolitan Government’s “Shin Tokyo 2050” (“New Tokyo 2050”) project collected about 27,000 opinions from residents and used them in formulating a long-term strategy (see Chapter 5). Because this approach can be practiced even by a single politician or a small administrative team, and because implementation costs are relatively low, it has become the main pathway for the spread of broad listening in Japan.
+Both forms share the same six-step structure, but the lightweight cycle omits the citizen deliberation step and moves directly from structuring and visualization to policymaking. The full cycle goes through deliberation, then loops back to the structuring and visualization step to update the issue space based on the results. It costs more, but can supplement the legitimacy of decisions. The sections below first explain the six steps, then discuss the lightweight cycle as the basic form and the full cycle as the advanced form.
 
 ### Key Points at Each Step
 
 **1. Collecting opinions**: It is important to combine multiple channels, such as online forms, social media, chatbots, email, transcribed phone calls, and letters. Different channels bring in different kinds of voices, so combining them can reduce sampling bias. Everyday “impressions” accumulated on platforms like YouTube and Google Maps can also be used as input. However, it is essential to ensure **traceability**—the ability to trace which opinion was classified into which cluster.
 
-**2. Structuring and visualization**: The issue space is mapped through clustering, summarization, and scatterplots. The issue space is both the starting point for policy design and a bridge to **EBPM (Evidence-Based Policy Making)**, making it possible to combine opinion polls and statistical data in policy judgment. However, AI-based structuring is not necessarily neutral. The way the issue space appears changes depending on how questions are designed, how clustering is done, and what perspective is adopted in summarization. That is precisely why it is essential to ensure traceability back to the original data and make the structuring process open to verification.
+**2. Structuring and visualization**: The issue space is structured and visualized through clustering, summarization, and scatterplots. The issue space is both the starting point for policy design and a bridge to **EBPM (Evidence-Based Policy Making)**, making it possible to combine opinion polls and statistical data in policy judgment. However, AI-based structuring is not necessarily neutral. The way the issue space appears changes depending on how questions are designed, how clustering is done, and what perspective is adopted in summarization. That is precisely why it is essential to ensure traceability back to the original data and make the structuring process open to verification.
 
-**3. Policy formulation / planning**: Politicians and government officials interpret the issue space and respond through policy. Decision-making authority remains governed by the rules of representative democracy. In relation to the “legitimacy gap” discussed at the beginning of this chapter, broad listening can supplement legitimacy in a way distinct from elections.
+**3. Deliberation**: This step is skipped in the lightweight cycle (politician- or government-led broad listening) and carried out only in the full cycle (support for augmented deliberation). Based on the issue space, discussion is held in settings such as assemblies, advisory councils, and citizen forums. During deliberation, AI-based opinion aggregation proceeds in parallel, and the results return to the structuring and visualization step to update the issue space. If this is combined with **Deliberative Polling**, which measures opinions before and after deliberation, it becomes possible to show considered public opinion and strengthen the legitimacy of policy decisions.
 
-**4. Explanation and feedback**: Citizens are told “what kinds of opinions were heard, and why this decision was reached.” Reasons should also be given for issues that were not adopted, and reactions to that explanation should feed into the next round of collection.
+**4. Policy formulation / planning**: Politicians and government officials interpret the issue space and respond through policy. Decision-making authority remains governed by the rules of representative democracy. In relation to the “legitimacy gap” discussed at the beginning of this chapter, broad listening can supplement legitimacy in a way distinct from elections.
 
-**5. Collect again**: The issue space is updated regularly to confirm policy effects and detect new issues early. Repeating this cycle makes continuous improvement in EBPM possible.
+**5. Explanation and feedback**: Citizens are told “what kinds of opinions were heard, and why this decision was reached.” Reasons should also be given for issues that were not adopted, and reactions to that explanation should feed into the next round of collection.
 
-### An Advanced Form: Broad Listening as Support for Augmented Deliberation
+**6. Collect again**: The issue space is updated regularly to confirm policy effects and detect new issues early. Repeating this cycle makes continuous improvement in EBPM possible.
+
+### Basic Cycle: Politician- or Government-Led Broad Listening
+
+In the lightweight cycle, decision-makers actively listen to citizens, use AI to structure and analyze what they hear, respond through policy, and then seek further input. It is not "listen once and stop," but a cycle in which opinion collection and analysis are repeated, gradually refining the picture of the issue space. This corresponds to the form introduced in Chapter 1 as **politician- and government-led broad listening**.
+
+For politicians, representative examples include Takahiro Anno's Tokyo governor election initiative and the Democratic Party for the People's Kokumin AI Project (see Chapter 4). For government administration, the Tokyo Metropolitan Government's Shin Tokyo 2050 project collected about 27,000 opinions from residents and used them in formulating a long-term strategy (see Chapter 5). Because this approach can be practiced even by a single politician or a small administrative team, and because implementation costs are relatively low, it has become the main pathway for the spread of broad listening in Japan.
+
+Government administration also has, apart from politicians' election cycles, its own planning cycles of five to ten years for things like comprehensive plans and urban master plans. By incorporating broad listening into this process, it becomes possible to structurally grasp citizens' voices from the early stages of planning.
+
+### Advanced Form: Support for Augmented Deliberation
 
 From the standpoint of deliberative democratic theory, citizen deliberation lies at the heart of democratic decision-making, and in that sense it is the true “basic” form. But from the standpoint of implementation, creating a space for citizen deliberation requires significant costs in recruitment, selection, scheduling, and facilitation. For that reason, this book begins with the more practical basic cycle and introduces the version that adds citizen deliberation as an “advanced form.”
 
-The form introduced in Chapter 1 as **broad listening as support for augmented deliberation** adds two steps between step 2 (structuring and visualization) and step 3 (policy formulation): **recruitment and selection of citizen participants** and **deliberation**.
-
 As discussed in Chapter 2, broad listening itself is not representative, so the question of how to select deliberation participants is crucial. If one uses the method of mini-publics—small deliberative bodies made up of randomly selected citizens—then deliberation can be conducted by a citizen group that represents society as a whole. In Taiwan, for example, there was a case in which invitations were sent by SMS to 200,000 people, and 447 representative citizens were selected through stratified sampling that balanced age, gender, and region, after which online deliberation was conducted (see Chapter 10).
-
-Based on the issue space, discussion is then held in settings such as assemblies, advisory councils, and citizen forums, while AI-based opinion aggregation proceeds in parallel during the deliberation itself, updating the issue space in real time. If this is combined with **Deliberative Polling**, which measures opinions before and after deliberation, it becomes possible to show considered public opinion and strengthen the legitimacy of policy decisions.
 
 Compared with the basic cycle, this approach is more costly to implement. But by incorporating citizen deliberation, it enables evidence-based discussion that combines qualitative data (issue spaces) with quantitative data (opinion polls and statistics)—an **expansion of quality**—and, through explanation and feedback, supplements the legitimacy of policy decisions in a way distinct from elections—an **expansion of legitimacy**.
 
@@ -228,5 +219,7 @@ Broad listening is not a “tool for measuring public opinion,” but infrastruc
 Public comment functions as “a final check on regulations that are already largely complete,” but it does not fulfill its original role of “listening broadly.” In this way, broad listening and public comment are not in opposition. They are complementary, serving different phases of the democratic process.
 
 Its basic operational cycle is “collect opinions → structure them → formulate policy → explain → collect again,” and as seen in the examples of Takahiro Anno and the Democratic Party for the People, it can be practiced even by a single politician or a small team. In the augmented deliberation model, which adds a step of citizen deliberation to this cycle, representativeness can be secured by combining it with randomly selected mini-publics, further strengthening the legitimacy of policy decisions (for the Taiwan case, see Chapter 10).
+
+One point that is easy to overlook is the skill required of the people operating the process. Broad listening is not a device that automatically produces policy proposals if you hand things over to AI. What determines the outcome is the facilitation and editorial skill to decide how to read the issue space produced by AI, where to dig deeper, and how to explain the result to citizens. Machines can structure opinions, but humans must translate that structure into policy questions and use it as a foundation for deliberation. Introducing the tool therefore needs to go hand in hand with developing and securing the people who can operate it.
 
 AI functions not as a “ruler,” but as a “guide for deliberation,” while final decisions remain in human hands. Broad listening does not replace democracy; it is infrastructure that complements and strengthens it.

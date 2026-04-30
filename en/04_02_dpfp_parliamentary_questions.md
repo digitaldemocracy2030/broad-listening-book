@@ -3,7 +3,7 @@
 Author: tokoroten
 
 
-## The Democratic Party for the People Uses an "Issue Map" in Questioning the Government in the Japanese Parliament
+## The Democratic Party for the People Uses an Issue-Space Visualization in Questioning the Government in the Japanese Parliament
 
 ### Making the Voices of the "Employment Ice Age" Generation Visible and Pointing Out Policy Bias
 
@@ -100,7 +100,7 @@ In the 2024 survey, 87.8% had answered that they had "not used" or "never heard 
 
 Following its success in parliamentary questioning, the Democratic Party for the People made full use of broad listening in drafting its electoral platform for the House of Councillors election as well. It used AI to analyze more than 60,000 opinions submitted to the Kokumin AI Project, compared them against policy proposals, and introduced mechanisms such as fact-checking, placing broad listening at the core of its election campaign. The details of that process will be discussed in Chapter 6 based on interviews with Ito.
 
-In the House of Councillors election held on July 20, 2025, the Democratic Party for the People won 17 seats. This was a historic leap forward—more than quadrupling its four seats up for reelection. In the proportional representation vote, it won more than 7.62 million votes, the highest total among opposition parties.[^kokumin4]
+In the House of Councillors election held on July 20, 2025, the Democratic Party for the People jumped from the four seats it was defending to 17 seats, a more than fourfold breakthrough. In the proportional representation vote, it won more than 7.62 million votes, the highest total among opposition parties.[^kokumin4]
 
 At a press conference during the extraordinary session of the Japanese Parliament following the election, on August 1, 2025, Secretary-General Shinba announced: "The Democratic Party for the People had four seats up for reelection, and 17 candidates were elected. Together with those not up for reelection, that gives us 22 members, and including our parliamentary group, we now have a force of 25 in the House of Councillors." He emphasized that the party had grown to the point where it could independently submit budget-accompanied bills.[^kokumin5]
 
@@ -108,7 +108,7 @@ Following this result, on September 16, 2025, Takae Ito was appointed to the new
 
 [^kokumin_kokkai]: House of Councillors Budget Committee Minutes, March 7, 2025, https://kokkai.ndl.go.jp/txt/121715261X00420250307/304
 [^kokumin1]: Japan In-depth, "Interview with House of Councillors Member Takae Ito (Part 1): The Democratic Party for the People and How AI Is Changing Politics," January 2025, https://japan-indepth.jp/?p=86169
-[^kokumin2]: Democratic Party for the People YouTube Channel, "Go! Go! Kokumin Live Special Edition: Asking Takahiro Yasuno About Digital Democracy," January 24, 2025, https://www.youtube.com/watch?v=iR0W7kyaV7c
+[^kokumin2]: Democratic Party for the People YouTube Channel, "Go! Go! Kokumin Live Special Edition: Asking Takahiro Anno About Digital Democracy," January 24, 2025, https://www.youtube.com/watch?v=iR0W7kyaV7c
 [^kokumin7]: Kokumin AI Project, https://kokumin-ai.jp/
 [^kokumin8]: Kokumin AI Project, "Policy for the Employment Ice Age Generation," https://kokumin-ai.jp/policy/cm7x46uoq00004b07tq7kfldf
 [^kokumin10]: Tokai TV NEWS, "Using the Internet and AI to Turn 'Today's Voices' into Policy: The Current State and Challenges of the Expanding 'Digital Democracy'," March 20, 2025, https://www.tokai-tv.com/tokainews/feature/article_20250320_39427
