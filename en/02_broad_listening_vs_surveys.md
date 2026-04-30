@@ -152,7 +152,7 @@ The 広聴AI (Kouchou AI, Broad Listening AI) discussed throughout this book, as
 
 In this way, the arrival of LLMs transformed open questions from something that was "easy to collect but hard to analyze" into something that, "once collected, can also be analyzed." This opened a technological path to overcoming the "trade-off between scale and depth" described in Chapter 1.
 
-## The Trade-off Among Depth, Scale, and Cost
+## The Trade-off Between Depth, Scale, and Cost
 
 Let us now place the high analysis cost of open questions within a larger structure.
 
