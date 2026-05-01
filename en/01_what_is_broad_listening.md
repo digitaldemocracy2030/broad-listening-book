@@ -13,17 +13,6 @@ AI reads thousands of citizens' voices, groups together similar opinions, color-
 
 Broad listening became widely known in Japan when Takahiro Anno used it in the 2024 Tokyo gubernatorial election. But this was not some special magic unique to Anno or Team Mirai. The tools used are available as open-source software, and the underlying technologies are also combinations of published papers and methods. You do not need special genius or a huge budget to practice broad listening if you understand the principles. One purpose of this book is to demystify broad listening.
 
-This book brings together the concepts, technical mechanisms, and real-world use cases from 2024 to early 2026, so that readers can understand broad listening and put it into practice themselves.
-
-This book is intended for readers such as the following:
-
-- **Government officials and policymakers**: people interested in how to gather citizens’ voices and reflect them in policy
-- **Politicians and election practitioners**: people exploring new ways to communicate with voters
-- **Members of political parties promoting broad listening**: people who want to understand what their party is doing
-- **Students and researchers in sociology and political science**: people who want to study new forms of democracy and civic participation
-- **Citizens**: people interested in digital democracy as a new form of social participation
-- **Engineers and data scientists**: people who want to understand and implement the technologies that support broad listening
-
 ## What Is Broad Listening?
 
 ### The Trade-off Between “Depth” and “Scale”
