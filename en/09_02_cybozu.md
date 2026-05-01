@@ -11,7 +11,7 @@ Cybozu’s example shows clearly how this way of thinking can be used inside a c
 In August 2025, Cybozu held an internal workshop in which AI supported participants’ discussions.
 This initiative was later published as a web article and a YouTube video.[^idobata]
 
-[idobata]: Visualizing “What Employees Really Think” in 5 Minutes: A New Form of Workshop Using AI | Cybozu Shiki https://cybozushiki.cybozu.co.jp/articles/m006299.html
+[^idobata]: Visualizing “What Employees Really Think” in 5 Minutes: A New Form of Workshop Using AI | Cybozu Shiki https://cybozushiki.cybozu.co.jp/articles/m006299.html
 
 ![A workshop held at Cybozu’s Tokyo office. In-person participants are seated at tables, while online participants are connected by video call on a monitor to the right. The workshop agenda is projected on the screen at the front, and a facilitator is leading the session with a microphone. About 50 people took part in this hybrid-format event.](images/10_03_cybozu_workshop.jpg)
 
@@ -79,7 +79,7 @@ The Idobata System is well suited to making overly vertical situations more hori
 
 During the Q&A for this event, someone asked, “Doesn’t AI summarization risk overlooking minority opinions?” This is a good opportunity to explain. Summarization compresses most strongly those opinion groups in which many people hold similar views. That means that if you are willing to spend the same amount of effort understanding opinions, AI summarization actually reduces the risk of missing minority views compared with reading comments at random.
 
-Imagine a situation in which 10,000 people have submitted opinions, and 100 of them—1%—hold a minority view. If you randomly select and read 100 submissions, there is about a 37% chance that you will miss that minority view entirely. By contrast, if similar opinions are grouped together and ranked, and you read from the top, a 1% opinion will certainly appear within the top 100 and will not be missed. If we assume the distribution of opinions follows Zipf’s law, then a 1% opinion would likely rank within roughly the top 15. But if you randomly selected just 15 submissions, there would be about an 86% chance of missing it.
+Imagine a situation in which 10,000 people have submitted opinions, and 100 of them—1%—hold a minority view. If you randomly select and read 100 submissions, there is about a 37% chance that you will miss that minority view entirely. By contrast, if similar opinions are grouped together and ranked, and you read from the top, a 1% opinion will certainly appear within the top 100 and will not be missed. If we assume the distribution of opinions follows Zipf’s law[^zipf], then a 1% opinion would likely rank within roughly the top 15. But if you randomly selected just 15 submissions, there would be about an 86% chance of missing it.
 
 In reality, things are not even random—often only the views of the loudest people get through. That is precisely why it matters to give everyone an opportunity to speak through a parallel method and then summarize the results with AI rather than relying on random sampling. Doing so makes it easier to see opinions from more minority perspectives and increases the chance of noticing blind spots.
 
@@ -98,6 +98,7 @@ In a promotional video for the book released in August 2025 on the YouTube chann
 When people perceive others as individuals, they can understand only a few dozen at most. But by perceiving them instead as a distribution of group opinions, attention can shift away from person-to-person disputes and toward caring for the landscape of collective views. The author sees broad listening as a technology for strengthening humanity’s overall capacity to understand groups, and believes that a humanity strengthened by this technology will go on to build organizations and societies unlike those we have known before.
 
 [^youtube]: https://www.youtube.com/watch?v=vz1BZzfK1lk
+[^zipf]: Zipf's law is an empirical rule under which rank and frequency are roughly inversely proportional. Applied to opinion aggregation, it means that the largest opinion groups tend to fall off sharply by rank, so reading the top few groups can cover much of the whole efficiently.
 
 
 ## “Meetings That Don’t Force Black-and-White Answers” Expanded Beyond the Company
@@ -116,7 +117,7 @@ The theme of the first video was: “Does remote work increase productivity, or 
 
 What is distinctive about this format is that it does not reduce the discussion to a binary choice of “for” or “against.” If someone’s view changes during the discussion, the position of the lever changes as well, allowing viewers to watch in real time how opinions shift and are updated.
 
-As of March 13, 2026, this first video had been viewed more than 180,000 times and had received over 950 comments. Those comments are collected through an API and then analyzed and visualized using “広聴AI (Kouchou AI, Broad Listening AI),” which is being developed by the Digital Democracy 2030 community. As in the Bowling Green example introduced in Chapter 10, Section 3, the visualization uses JSON analysis data to represent the volume of opinions by the size of circles.
+As of March 13, 2026, this first video had been viewed more than 180,000 times and had received over 950 comments. Those comments are collected through an API and then analyzed and visualized using “広聴AI (Kouchou AI, Broad Listening AI),” which is being developed by the Digital Democracy 2030 community. As in the Bowling Green example introduced in Chapter 11, Section 3, the visualization uses JSON analysis data to represent the volume of opinions by the size of circles, making it easy for viewers to see at a glance which issues are attracting the most activity.
 
 ![alt text](images/09_03_shirokuro_kaigi_youtube_comments.png)
 
