@@ -40,7 +40,9 @@ The workflow from data collection to report publication was as follows. It was a
 
 The following is an example of the analysis results. TTTC places posts from X on a scatter plot based on semantic similarity and displays them color-coded by cluster. Each point corresponds to one opinion, and similar opinions are placed closer together. The vertical and horizontal axes themselves do not have any specific meaning; they are the result of compressing high-dimensional data into two dimensions.
 
-![Scatter plot of analysis results produced by TTTC. Opinions are displayed in different colors by cluster](images/04_03_ntv_scatter.png)
+![Figure: Scatter plot of analysis results produced by TTTC. Opinions are displayed in different colors by cluster.](images/04_03_ntv_scatter.png)
+
+*Source: Nippon TV "zero Election" broad listening report on the House of Representatives election as a whole during the pre-announcement period.[^img-scatter]*
 
 Analysis with TTTC does not automatically produce useful results just because data has been fed into it. Design decisions such as what queries to use for collecting data and how many clusters to create have a major effect on the quality of the analysis. The following sections introduce the design choices encountered in practice and the lessons drawn from them.
 
@@ -58,7 +60,9 @@ Clusters emerged around topics such as "interest in the consumption tax and the 
 
 In the **policy analysis**[^3], posts were collected using policy-related keywords.
 
-![Scatter plot of policy analysis](images/04_03_ntv_policy_scatter.png)
+![Figure: Scatter plot of the policy analysis from the Nippon TV broad listening project.](images/04_03_ntv_policy_scatter.png)
+
+*Source: Nippon TV "zero Election" broad listening report on policy during the pre-announcement period.[^img-policy]*
 
 Clusters emerged around topics such as "dissatisfaction with and criticism of the ruling parties," "concerns about tax increases and dissatisfaction with economic policy," "concerns about national security and immigration policy," and "debate over reducing or abolishing the consumption tax." Opinions were grouped by specific policy themes such as cutting or abolishing the consumption tax, concerns about immigration policy, raising the minimum wage, allowing married couples to keep separate surnames, and the My Number health insurance card (My Number, Japan's national ID system). This made it much clearer what voters saw as the key issues.
 
@@ -84,7 +88,9 @@ To use TTTC in news reporting, major improvements were required in both function
 
 First, practical features needed for live broadcasting were added. These included a favorites feature that allowed noteworthy comments to be bookmarked and called up quickly during the program, and a redesigned mobile UI for the many viewers expected to access the reports from smartphones.
 
-![Detailed cluster view. You can see the cluster analysis results, representative comments, and the favorites feature](images/04_03_ntv_cluster_example_en.png)
+![Figure: Detailed cluster view showing cluster analysis results, representative comments, and the favorites feature.](images/04_03_ntv_cluster_example_en.png)
+
+*Source: Nippon TV "zero Election" broad listening cluster-detail report.[^img-cluster]*
 
 **Improved Accuracy in Extracting Representative Comments**
 
@@ -92,7 +98,7 @@ TTTC has a feature that displays comments representing each cluster. Previously,
 
 To address this problem, the system was improved to use an LLM to extract comments with a high degree of relevance to the cluster title. This made it possible to convey the content of each cluster more accurately.
 
-That said, this is fundamentally also a problem that should be addressed by improving the clustering itself. Preventing loosely related opinions from being grouped into the same cluster in the first place would be a more fundamental solution. In the 広聴AI (Kouchou AI, Broad Listening AI) developed later, improvements to the algorithm were attempted in order to address this issue. Details are explained in Chapter 13.
+That said, this is fundamentally also a problem that should be addressed by improving the clustering itself. Preventing loosely related opinions from being grouped into the same cluster in the first place would be a more fundamental solution. In Kouchou AI (広聴AI, Broad Listening AI), developed later, improvements to the algorithm were attempted in order to address this issue. The algorithmic details are explained in the supplemental Chapter 13, which is published in this book's GitHub repository.
 
 ### 4.3.6 Challenges and Limitations
 
@@ -130,7 +136,7 @@ Broad listening results are an analysis of a limited subset. Communicating that 
 
 The YouTube program received comments such as "This kind of data provision will be important for journalism from now on" and "I hope each political party will use AI to analyze opinion in online spaces." Some broadcasts reached 500,000 views on YouTube.
 
-A Nippon TV staff member reflected on the significance of the effort as follows: "Until now, if we wanted to incorporate online voices into election coverage, we had no choice but to arbitrarily select and introduce individual posts. Broad listening made it possible to visualize what kinds of opinions were gathering in online spaces as a whole, which was a breakthrough." The ability to view overall tendencies, including minority opinions, from 10,091 data points was something difficult to achieve with conventional methods.
+A Nippon TV staff member reflected on the significance of the effort as follows: "Until now, if we wanted to incorporate online voices into election coverage, all we could do was select and introduce a certain number of posts, which inevitably introduced arbitrariness. Broad listening made it possible to visualize what kinds of opinions were gathering in online spaces as a whole, which was a breakthrough." The ability to view overall tendencies, including minority opinions, from 10,091 data points was something difficult to achieve with conventional methods.
 
 Broad listening also became an effective means in pre-election coverage for visualizing the gap between the issues politicians were emphasizing and the issues the public was thinking about, and for putting that gap to politicians. Some politicians who appeared on the program were overwhelmed by the volume of information, which could not be fully digested in a one-hour broadcast, but later looked back at the analysis results after the program and reportedly remarked, "So this is what it looks like."
 
@@ -144,7 +150,7 @@ In this initiative, the data source was again limited to X. In the 2024 Tokyo gu
 
 As concerns grow that discourse on X tends to become more extreme, there is also a risk that extracting only voices from that space will present a biased image. On the other hand, if analysis is expanded to include other social media platforms, technical constraints and human costs increase significantly. There is also the structural problem that only some social media platforms are well suited to text-based analysis.
 
-Ultimately, this leads to the question of how "online voices" can be handled as one valid aspect of public opinion. This is not a problem unique to broad listening; it is also shared by conventional methods such as opinion polls and street interviews.
+Ultimately, this leads to the question of how "online voices" can be handled as one valid aspect of public opinion. For precisely that reason, people using broad listening need to keep asking what the analysis reflects and what it does not. Since no method is universal, it is important to understand its nature and use it accordingly.
 
 ### Summary of This Section
 
@@ -163,3 +169,9 @@ Second, when communicating the results of social media analysis in a public sett
 [^2]: Analysis results for the House of Representatives election as a whole during the pre-announcement period: https://news.ntv.co.jp/static/shugiinsenkyo2024/whole-1015/index.html
 
 [^3]: Analysis results for policy during the pre-announcement period: https://news.ntv.co.jp/static/shugiinsenkyo2024/policy-1015/index.html
+
+[^img-scatter]: Source report for the scatter plot of the House of Representatives election as a whole during the pre-announcement period in Nippon TV's "zero Election" broad listening project: https://news.ntv.co.jp/static/shugiinsenkyo2024/whole-1015/index.html
+
+[^img-policy]: Source report for the policy scatter plot during the pre-announcement period in Nippon TV's "zero Election" broad listening project: https://news.ntv.co.jp/static/shugiinsenkyo2024/policy-1015/index.html
+
+[^img-cluster]: Source report for the cluster explanation screen example in Nippon TV's "zero Election" broad listening project: https://news.ntv.co.jp/static/shugiinsenkyo2024/closed-1027/index.html

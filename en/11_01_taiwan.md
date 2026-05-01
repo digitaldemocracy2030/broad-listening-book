@@ -20,9 +20,24 @@ After the deliberation, participants showed greater interest in public issues, c
 
 Similar efforts were called gongmin huiyi (“citizen conference”). Between 2004 and 2005, Taiwan held a total of 22 such conferences. This series of experiments became the foundation of Taiwan’s deliberative culture.
 
+At this point, the effort was still small-scale: 20 participants, meeting in person. But the ideas cultivated there—that citizens should deliberate after sharing expert knowledge, and that deliberative forums should be run repeatedly as an institution—became the starting point for later expanding participation to thousands or tens of thousands of people with digital tools such as Polis and Talk to the City. Broad listening, the theme of this book, was incorporated into policymaking early in Taiwan precisely because of this accumulation of deliberative experiments over more than 20 years.
+
 ## The path to the birth of vTaiwan
 
 How did vTaiwan, which became famous as Taiwan’s deliberative system, come into being? Let us go back a few years and trace the history.
+
+vTaiwan was born when two currents, one from government and one from citizens, converged through a series of events. This section follows that chronology. First, here is the overall flow.
+
+| Date | Government-side developments | Citizen-side developments |
+|---|---|---|
+| 2012 | - | g0v (Taiwan's “gov-zero”) is launched |
+| November 2013 | Jaclyn Tsai begins the Updating Regulations for the Digital World initiative and holds consultation meetings | - |
+| March 2014 | - | Sunflower Student Movement and occupation of the Legislative Yuan |
+| July 2014 | - | UberX appears and existing taxi operators protest |
+| December 2014 | Jaclyn Tsai attends the 11th g0v hackathon (**the point where government and citizens converge**) | Same |
+| June 2015 | The Executive Yuan sets out a policy of using vTaiwan in Updating Regulations for the Digital World 2.0 | Discussion of UberX begins on vTaiwan |
+| October 2016 | Regulations for automobile transportation businesses are amended | - |
+| 2015-2018 | vTaiwan deliberates on 26 issues, about 80% of which lead to legal or institutional change | |
 
 ### Taiwan’s g0v civic tech community
 Any discussion of vTaiwan must include Taiwan’s civic tech community, g0v (“gov-zero”).
@@ -95,6 +110,8 @@ On June 24, 2015, the Executive Yuan, Taiwan’s cabinet, announced “Updating 
 
 vTaiwan used Polis, which appears elsewhere in this book as well. But instead of immediately asking whether people supported or opposed a policy proposal, it was designed to elicit views in the order of “facts → values.” The first ten questions were as follows.[^footnote1]
 
+This ordering was a deliberate design choice to make deliberation possible. By asking first about “facts” or experiences, participants could honestly reveal whether they were directly involved as passengers, taxi drivers, or Uber drivers. That made it easier for people in the same position to empathize with one another, and for people in different positions to imagine one another's circumstances. It also helped everyone share a picture of the whole situation before arguing over policy. Asking next about “values” revealed what beliefs divided people before the formal policy dispute began: whether prices should be flexible, who should be responsible for regulation, and so on. Only then did the process move to legal issues, allowing participants to consider support or opposition while keeping other positions' reasons in mind. If the first question had simply been “Should Uber be required to pay taxes?”, the process could easily have become a clash of yes and no. Passing through facts and values first made the same question a more constructive subject of discussion.
+
 #### Facts (experience)
 
 - Q1: I have used Uber to request a ride.
@@ -151,17 +168,13 @@ This can be seen as a case in which the discussion moved beyond either “Uber i
 The vTaiwan process created at that time continued to be used repeatedly afterward.
 Specifically, between 2015 and 2018, 26 issues were discussed, and around 80% led to legal or institutional changes. At present, there have been 34 issues in total. This activity increased public understanding of online deliberation and helped cultivate a community capable of deliberation.
 
-At the same time, activity after 2019 was not especially vigorous. There are various views on why.
+At the same time, activity after 2019 was not especially vigorous. Three factors are often pointed to.
 
-First, there was a change in role due to institutionalization.
-In 2016, Taiwan experienced a change in government, and under the Democratic Progressive Party administration, government structures responsible for digital policy were put in place. In particular, Audrey Tang became a minister without portfolio in May 2016, and in October PDIS (Public Digital Innovation Space) was established under the Executive Yuan, creating a government-led framework for experiments in digital democracy. As a result, the role of vTaiwan, which had been run by citizens through g0v, was partially absorbed by PDIS and later by the Ministry of Digital Affairs (MODA), established in 2022.
-
-Second, there was the burden on the volunteer community.
-vTaiwan had been operated by volunteers from the g0v community. Innovators who join this kind of new initiative tend to value novelty. In the early stages, there was an incentive to participate because the experiment itself was new, and that drew volunteer contributions. But people with this disposition often do not find stable maintenance and administration very rewarding, so trying to sustain such a project on a volunteer basis can create a heavy psychological burden.
-
-Third, there was the COVID-19 pandemic.
-Because the government was forced into emergency response and needed rapid decision-making, there were relatively fewer situations in which the slower consensus-building process of vTaiwan could be used.
-During the pandemic, citizen communities and civic tech contributed in other ways. For example, many digital tools—such as map services visualizing mask inventories—were developed quickly by the g0v community to support the government’s response. In that period, it was less a phase of shaping policy through online deliberation than a phase in which the technology community supported the government’s crisis response.
+| Factor | Explanation |
+|---|---|
+| 1. Role change through institutionalization | In May 2016, Audrey Tang became a minister without portfolio, and in October PDIS (Public Digital Innovation Space) was established under the Executive Yuan. A government-led structure for digital-democracy experiments emerged, and part of the role once played by citizen-run vTaiwan was absorbed by PDIS and later by the Ministry of Digital Affairs (MODA), established in 2022. |
+| 2. Burden on the volunteer community | vTaiwan was operated by g0v volunteers. New experiments create strong incentives for participation, but stable maintenance can exhaust volunteers, leaving fewer people willing to carry the continuing operational load. |
+| 3. The COVID-19 pandemic | The government needed rapid decisions, so the slower consensus-building process of vTaiwan was less often used. Meanwhile, the g0v community supported crisis response in other ways, such as mask-inventory maps. |
 
 As of 2026, vTaiwan has come to occupy a position more like a “laboratory for deliberation” maintained by a citizen community. In fact, as of October 2025, vTaiwan was not receiving direct government support and was operating as a volunteer-run civic project.[^vTaiwan2025]
 

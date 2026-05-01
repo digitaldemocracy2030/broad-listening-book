@@ -3,7 +3,7 @@
 Author: tokoroten
 
 
-## The Democratic Party for the People Uses an "Issue Map" in Questioning the Government in the Japanese Parliament
+## The Democratic Party for the People Uses an Issue-Space Visualization in Questioning the Government in the Japanese Parliament
 
 ### Making the Voices of the "Employment Ice Age" Generation Visible and Pointing Out Policy Bias
 
@@ -55,13 +55,13 @@ In other words, even before adopting broad listening, the Democratic Party for t
 
 ### January 2025: The Introduction of Broad Listening
 
-Broad listening using TTTC had already built up a track record through the July 2024 Tokyo governor election (see the previous section) and collaborative reporting with Nippon TV during the October 2024 House of Representatives election (see the next section). Against this backdrop, on January 16, 2025, Mr. Yasuno and his colleagues announced the "Digital Democracy 2030" project. The idea was ambitious: provide broad listening technologies such as TTTC and public-hearing AI as open source so that political parties and local governments could use them freely, and spread AI-driven political and administrative reform across Japan.
+Broad listening using TTTC had already built up a track record through the July 2024 Tokyo governor election (see the previous section) and collaborative reporting with Nippon TV during the October 2024 House of Representatives election (see the next section). Against this backdrop, on January 16, 2025, Anno and his colleagues announced the "Digital Democracy 2030" project. The idea was ambitious: provide broad listening technologies such as TTTC and Kouchou AI as open source so that political parties and local governments could use them freely, and spread AI-driven political and administrative reform across Japan.
 
-The Democratic Party for the People was the quickest to respond to this call. Just five days later, on January 21, 2025, Secretary-General Kazuya Shinba instructed House of Councillors member Takae Ito to join the initiative. Shinba praised the technology in glowing terms, calling it "exactly the right way to use AI. The fact that it can aggregate voices that are not right in front of us, hidden voices, and voiceless voices—this is a savior for democracy."[^kokumin1]
+The Democratic Party for the People responded quickly to this call. On January 16, the same day DD2030 was announced, Secretary-General Kazuya Shinba instructed House of Councillors member Takae Ito to join the initiative. Shinba praised the technology in glowing terms, calling it "exactly the right way to use AI. The fact that it can aggregate voices that are not right in front of us, hidden voices, and voiceless voices - this is a savior for democracy."[^kokumin1]
 
-But implementation was not easy. One condition set by Yasuno was "to have a highly capable systems engineer available full-time."[^kokumin2] Ito visited her former IT company and secured an engineer who met the requirement. The presence of an engineer with advanced skills in GitHub, Python, TypeScript, and related tools proved to be the key to making broad listening work.
+But implementation was not easy. One condition set by Anno was "to have a highly capable systems engineer available full-time."[^kokumin2] Ito relied on every connection she had, including her former television station and IT companies, and secured an engineer who met the requirement. The presence of an engineer with advanced skills in GitHub, Python, TypeScript, and related tools proved to be the key to making broad listening work.
 
-On January 24, 2025, the party's YouTube channel, "Go! Go! Kokumin Live," aired a special livestream featuring Yasuno.[^kokumin2] During the broadcast, Secretary-General Shinba spoke excitedly, saying things like, "Even someone like me who doesn't fully get it finds this exciting," and "They should make Mr. Yasuno the minister in charge of digital affairs." At one point he even declared, "Mr. Yasuno is a national treasure."
+On January 24, 2025, the party's YouTube channel, "Go! Go! Kokumin Live," aired a special livestream featuring Anno.[^kokumin2] During the broadcast, Secretary-General Shinba spoke excitedly, saying things like, "Even someone like me who doesn't fully get it finds this exciting," and "They should make Mr. Anno the minister in charge of digital affairs." At one point he even declared, "Mr. Anno is a national treasure."
 
 During that YouTube livestream, Ito candidly reported that, based on her actual experience using Talk to the City, there were five major barriers:
 
@@ -90,7 +90,7 @@ At the party convention on February 11, 2025, a pilot demonstration was conducte
 
 ### From Parliamentary Questioning to a Comprehensive Policy Package
 
-Then, about one month after the party convention, on March 7, 2025, Takae Ito entered the House of Councillors Budget Committee carrying a TTTC visualization of the issue space generated from the voices of the employment ice age generation collected through the Kokumin AI Project, the telephone hotline, social media, and other channels, and used it to question Prime Minister Ishiba. Only 45 days had passed since the party, inspired by the ideals of DD2030, decided to adopt broad listening. The speed with which the Democratic Party for the People independently built a broad listening system and put it to use in parliamentary questioning was extraordinary. This led directly to the scene described at the beginning of this section. The questioning also drew media attention, including a March 20, 2025 Tokai TV feature on "digital democracy."[^kokumin10]
+Then, about one month after the party convention, on March 7, 2025, Takae Ito entered the House of Councillors Budget Committee carrying a TTTC visualization of the issue space generated from the voices of the employment ice age generation collected through the Kokumin AI Project, the telephone hotline, social media, and other channels, and used it to question Prime Minister Ishiba. Only 50 days had passed since the party, inspired by the ideals of DD2030, decided to adopt broad listening. The speed with which the Democratic Party for the People independently built a broad listening system and put it to use in parliamentary questioning was extraordinary. This led directly to the scene described at the beginning of this section. The questioning also drew media attention, including a March 20, 2025 Tokai TV feature on "digital democracy."[^kokumin10]
 
 The parliamentary questioning was not the goal but one stage in the policymaking cycle. On May 28, 2025, the Democratic Party for the People announced a comprehensive policy package for the employment ice age generation that also reflected the results of broad listening.[^kokumin_policy] Its contents directly addressed the "issues beyond employment" that had emerged in the parliamentary questioning. To address pension anxiety, the party proposed easing the requirements for catch-up payments into the National Pension and creating a minimum guaranteed pension system. To address caregiving issues, it proposed expanding support for carers. To address housing issues, it proposed abolishing age requirements for public housing. It also included measures that went beyond the conventional framework of "employment support," such as promoting hiring methods that do not begin with resumes and interviews, and introducing a jobseeker basic income.
 
@@ -100,7 +100,7 @@ In the 2024 survey, 87.8% had answered that they had "not used" or "never heard 
 
 Following its success in parliamentary questioning, the Democratic Party for the People made full use of broad listening in drafting its electoral platform for the House of Councillors election as well. It used AI to analyze more than 60,000 opinions submitted to the Kokumin AI Project, compared them against policy proposals, and introduced mechanisms such as fact-checking, placing broad listening at the core of its election campaign. The details of that process will be discussed in Chapter 6 based on interviews with Ito.
 
-In the House of Councillors election held on July 20, 2025, the Democratic Party for the People won 17 seats. This was a historic leap forward—more than quadrupling its four seats up for reelection. In the proportional representation vote, it won more than 7.62 million votes, the highest total among opposition parties.[^kokumin4]
+In the House of Councillors election held on July 20, 2025, the Democratic Party for the People jumped from the four seats it was defending to 17 seats, a more than fourfold breakthrough. In the proportional representation vote, it won more than 7.62 million votes, the highest total among opposition parties.[^kokumin4]
 
 At a press conference during the extraordinary session of the Japanese Parliament following the election, on August 1, 2025, Secretary-General Shinba announced: "The Democratic Party for the People had four seats up for reelection, and 17 candidates were elected. Together with those not up for reelection, that gives us 22 members, and including our parliamentary group, we now have a force of 25 in the House of Councillors." He emphasized that the party had grown to the point where it could independently submit budget-accompanied bills.[^kokumin5]
 
@@ -108,7 +108,7 @@ Following this result, on September 16, 2025, Takae Ito was appointed to the new
 
 [^kokumin_kokkai]: House of Councillors Budget Committee Minutes, March 7, 2025, https://kokkai.ndl.go.jp/txt/121715261X00420250307/304
 [^kokumin1]: Japan In-depth, "Interview with House of Councillors Member Takae Ito (Part 1): The Democratic Party for the People and How AI Is Changing Politics," January 2025, https://japan-indepth.jp/?p=86169
-[^kokumin2]: Democratic Party for the People YouTube Channel, "Go! Go! Kokumin Live Special Edition: Asking Takahiro Yasuno About Digital Democracy," January 24, 2025, https://www.youtube.com/watch?v=iR0W7kyaV7c
+[^kokumin2]: Democratic Party for the People YouTube Channel, "Go! Go! Kokumin Live Special Edition: Asking Takahiro Anno About Digital Democracy," January 24, 2025, https://www.youtube.com/watch?v=iR0W7kyaV7c
 [^kokumin7]: Kokumin AI Project, https://kokumin-ai.jp/
 [^kokumin8]: Kokumin AI Project, "Policy for the Employment Ice Age Generation," https://kokumin-ai.jp/policy/cm7x46uoq00004b07tq7kfldf
 [^kokumin10]: Tokai TV NEWS, "Using the Internet and AI to Turn 'Today's Voices' into Policy: The Current State and Challenges of the Expanding 'Digital Democracy'," March 20, 2025, https://www.tokai-tv.com/tokainews/feature/article_20250320_39427

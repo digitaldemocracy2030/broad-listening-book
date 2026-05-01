@@ -77,7 +77,9 @@ The lead time from collecting residents’ voices to reflecting them in policy b
 
 Because analysis and consolidation require so much effort, local governments may be unable to create many opportunities for collecting opinions in the first place, and resident surveys and questionnaires may tend to rely mainly on multiple-choice questions that are easier to analyze.
 
-In addition, rather than conducting large-scale resident surveys, governments may more often rely on limited events such as dialogue meetings and workshops to hear residents’ voices. But because the number of speakers in such settings is constrained by the design of the event, it is difficult to capture a broad overall picture of residents’ views. This creates a barrier to understanding the so-called “silent majority” in a nuanced way and appropriately reflecting those views in public policy.
+In addition, rather than conducting large-scale resident surveys, governments may more often rely on limited events such as dialogue meetings and workshops to hear residents’ voices. But because the number of speakers in such settings is constrained by the design of the event, it is difficult to capture a broad overall picture of residents’ views. This creates a barrier to understanding the so-called “silent majority”[^silent_majority] in a nuanced way and appropriately reflecting those views in public policy.
+
+[^silent_majority]: The “silent majority” refers to people who do not speak up but make up a large portion of the population. It contrasts with the more active voices heard at meetings or on social media, sometimes called the noisy minority. The term spread as a political phrase after U.S. President Richard Nixon used it in a 1969 speech.
 
 ### Insights from Broad Listening Cases
 

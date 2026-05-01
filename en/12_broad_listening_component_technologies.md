@@ -133,7 +133,7 @@ This transformation makes language computable. Addition, subtraction, distance m
 
 There is some variation in terminology for this concept. Depending on the literature or the engineer, you may see expressions such as “embedding,” “embedding vector,” “context vector,” “context embedding vector,” and so on. These all refer, in essence, to the same thing. In this book, we use these terms according to context, but please do not let that cause confusion.
 
-Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors. In Kouchou AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
+Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors, and in some cases even the vector lengths differ, making calculation itself impossible. In Kouchou AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
 
 ---
 
@@ -188,17 +188,18 @@ As the ability to “predict the next word” was pushed to the extreme, behavio
 
 ### 12.4.2 Few-Shot Learning: Solving Many Tasks as Fill-in-the-Blank Problems
 
-GPT operates through the simple mechanism of “predicting the next word,” but this mechanism can be used to solve many tasks such as translation and classification. The GPT-3 paper, published in 2020, introduced a method called few-shot learning.
+GPT operates through the simple mechanism of “predicting the next word,” but this mechanism can be used to solve many tasks such as translation and classification. The GPT-3 paper, published in 2020, introduced a method called few-shot learning.[^gpt3]
 
 “Few” in few-shot means “a small number.” By showing just a few examples, an LLM can learn a new task. Below is the English-to-French translation example from the GPT-3 paper.
 
 ```
-Translate English to French:
+Translate English to French:                  <- Task description
 
-sea otter => loutre de mer
-peppermint => menthe poivrée
-plush giraffe => girafe peluche
-cheese =>
+sea otter => loutre de mer                    \
+peppermint => menthe poivrée                   > Examples
+plush giraffe => girafe peluche                /
+
+cheese =>                                      <- Prompt, where GPT predicts the continuation
 ```
 
 For GPT, this is not a translation problem. It is a fill-in-the-blank problem in which it predicts the word that comes after “cheese =>”. From the three examples, it learns the pattern “English => French” and predicts that “fromage” should come next.
@@ -214,12 +215,13 @@ If only one example is shown, it is called one-shot; if no examples are shown an
 Let us look at another example.
 
 ```
-Please classify the following opinions:
+Please classify the following opinions:        <- Task description
 
-“We want more parks” => Environment
-“Reduce the daycare waiting list” => Childcare
-“Traffic congestion is terrible” => Transportation
-“Expand facilities for older adults” =>
+“We want more parks” => Environment            \
+“Reduce the daycare waiting list” => Childcare  > Examples
+“Traffic congestion is terrible” => Transportation /
+
+“Expand facilities for older adults” =>        <- Prompt, where GPT predicts the continuation
 ```
 
 Because the example categories are simple one-word labels like “Environment,” “Childcare,” and “Transportation,” GPT will also follow that pattern and output a one-word label such as “Welfare.” If the example categories were written in more detail, such as “Environmental and Greening Policy” or “Childcare Support Programs,” the output would likewise become more detailed—perhaps something like “Welfare and Senior Support Programs.” In few-shot learning, the format of the examples determines the format of the output.
@@ -296,6 +298,8 @@ Another limitation of LLMs is political bias. Because broad listening relies on 
 
 Multiple studies have pointed out that today’s major LLMs (GPT, Claude, Gemini, and others) exhibit a liberal-leaning political bias. A 2025 study by Professor Andrew Hall of Stanford University and colleagues[^llm_bias_1] asked 30 political questions to 24 LLMs from eight companies, then had more than 10,000 U.S. respondents evaluate the political orientation of the answers. The results showed that on 18 of the 30 questions, the responses of nearly all LLMs were perceived as leaning left.
 
+[^gpt3]: Tom B. Brown et al., "Language Models are Few-Shot Learners" (2020) https://arxiv.org/abs/2005.14165
+
 [^llm_bias_1]: Stanford Report, "Study finds perceived political bias in popular AI models" (2025) https://news.stanford.edu/stories/2025/05/ai-models-llms-chatgpt-claude-gemini-partisan-bias-research-study
 
 One major factor behind this bias is thought to be RLHF (reinforcement learning from human feedback). The values and political tendencies of the human annotators who rank LLM outputs as “good answers” or “bad answers” are reflected in the model.
@@ -322,9 +326,9 @@ In August 2024, OpenAI added Structured Output to its API. This made it possible
 
 Why is this important? Because programs cannot directly process natural language.
 
-Even if a program receives the string “We want more parks,” it cannot determine whether that is an opinion about the environment or about welfare. You cannot write a conditional branch like `if opinion == environment`, nor can you count “how many opinions were about the environment.” In raw natural language, it is just a sequence of characters from the program’s point of view.
+The string “We want more parks” does not by itself include labels such as category (environment, welfare, and so on) or support/opposition. If you want to aggregate or route thousands of opinions by category, re-asking an LLM to classify them one by one every time is not realistic. What programs can handle efficiently is structured data that already has category and support/opposition labels attached.
 
-Structured data, by contrast, can be processed. If the output is JSON such as `{"category": "Environment", "sentiment": "Support"}`, then all kinds of processing become possible: aggregation by category, analysis of support and opposition, routing based on conditions, and so on. To integrate LLMs into systems, their outputs must be converted into structured data.
+Structured data can be processed easily. If the output is JSON such as `{"category": "Environment", "sentiment": "Support"}`, then all kinds of processing become possible: aggregation by category, analysis of support and opposition, routing based on conditions, and so on. To integrate LLMs into systems, their outputs must be converted into structured data.
 
 Previously, however, LLM outputs were natural language strings, and even if you instructed the model to output JSON, it only followed the format about 90% of the time. A module that fails 10% of the time cannot be integrated into a production system.
 

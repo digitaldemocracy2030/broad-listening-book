@@ -28,16 +28,16 @@ The origins of Kouchou AI trace back to “Talk to the City (TTTC),” an open-s
 
 Through the Tokyo governor election and Nippon TV’s election special, Team Anno repeatedly put broad listening into practice using TTTC Scatter. In the process, however, several challenges with TTTC Scatter became clear.
 
-One issue was the high barrier to use. Because TTTC Scatter is a command-line tool, it required software engineering skills such as setting up a Python environment.  
+One issue was the high barrier to use. Because TTTC Scatter is a command-line tool[^cli], it required software engineering skills such as setting up a Python environment.
 Since TTTC Scatter uses an LLM (large language model) internally for analysis, users also need to write the instructions given to the LLM during analysis—that is, prompts. In principle, writing prompts should be possible without software development knowledge, but as noted above, because the tool was command-line based, analysts were effectively required to have software engineering skills.
 
 There were also issues with the clustering algorithm. TTTC Scatter performs clustering using a single fixed number of clusters. If the cluster granularity is too coarse, differences between opinions are obscured; if it is too fine, the overall picture becomes hard to see. As a result, it was often necessary to rerun the analysis many times in search of an appropriate level of granularity.
 
 To address these issues and needs—and to enable more users to conduct broad listening and gain more insight—development of Kouchou AI began as a fork of TTTC Scatter.
 
-As an aside, “fork” here is the same word as the utensil “fork.” It carries the meaning of “something branched off,” and in software development it refers to creating a new project by inheriting code from an existing one.
+As an aside, “fork” here is the same word as the utensil “fork.” It carries the meaning of “something branched off,” and in software development it refers to creating a new project by inheriting code from an existing one. Unlike a simple copy, a fork is like an alter ego that can continue evolving independently while still retaining a connection to the parent project. It can incorporate improvements from the original while adding features suited to its own purpose.
 
-At first, Kouchou AI was developed mainly by developers from Anno’s team, but it was released as open-source software (OSS) on March 16, 2025, after which many developers from the DD2030 community joined the effort.
+At first, Kouchou AI was developed mainly by developers from Team Anno, but it was released as open-source software (OSS) on March 16, 2025, after which many developers from the DD2030 community joined the effort.
 
 ### The Design of Kouchou AI: Implemented as a Web Application
 
@@ -70,7 +70,7 @@ TTTC Scatter uses spectral clustering. Spectral clustering is a method that buil
 
 Kouchou AI, by contrast, uses K-means. K-means is a method that clusters points based on Euclidean distance, so spatially close points are grouped into the same cluster. This makes clusters appear more compact on the scatter plot and easier to interpret visually.
 
-That said, K-means also has drawbacks. Because K-means assumes spherical clusters, it may fail to properly capture groups that are semantically related but have complex shapes in embedding space. Clusters that spectral clustering could have detected may end up split apart by K-means. Kouchou AI prioritizes visual clarity and accepts that trade-off by design.
+That said, K-means also has drawbacks. K-means is good at finding round clumps, but it is weak at capturing groups with twisted or spread-out complex shapes. A semantically related group that spectral clustering might have detected can therefore be split apart by K-means. Even so, Kouchou AI adopted K-means because it prioritizes visual cohesion, or intuitive understandability, over precision. On the assumption that ordinary citizens and politicians will look at the scatterplot, it is less confusing when points displayed close together belong to the same cluster.
 
 ### The Significance of Kouchou AI
 
@@ -94,7 +94,7 @@ Some people moved to Team Mirai, some remained with DD2030, and some moved back 
 
 To meet its own requirements for the 2025 House of Councillors election, Team Mirai forked the Kouchou AI repository and proceeded with independent development. By forking it, Team Mirai’s engineers could add and release features based solely on their own judgment, without waiting for approval from the DD2030 side. In the time-constrained environment of an election, this agility was a major advantage.
 
-Team Mirai used “Idobata Policy,” a version of the deliberation platform “Idobata” developed by DD2030 and specialized for policy proposals, to broadly solicit citizens’ suggestions for changes to its party platform. The large volume of proposals collected was managed as GitHub PRs, and when visualizing them in Kouchou AI’s scatter plot, Team Mirai implemented a “source link feature” that allowed users to jump from each data point directly to the original GitHub PR with a single click. This was an important improvement from the standpoint of transparency, because it allowed citizens themselves to verify which opinions had been classified into which clusters.
+Team Mirai used “Idobata Policy,” a version of the deliberation platform “Idobata” developed by DD2030 and specialized for policy proposals, to broadly solicit citizens’ suggestions for changes to its party platform. The large volume of proposals collected was managed as GitHub PRs, and when visualizing them in Kouchou AI’s scatter plot, Team Mirai implemented a “source link feature” that allowed users to jump from each data point directly to the original GitHub PR with a single click. AI summarization and classification are useful, but if there is no way to verify whether an opinion really existed or whether one's own voice was classified as intended, citizens have no choice but to take the AI output on faith. The source link feature made it possible to trace back to the original statement with one click, and was an important improvement that brought traceability to broad listening.
 
 The features first developed in this fork were later merged back into DD2030’s mainline. Freely developing the features they needed, and then contributing them back to the mainline if they proved broadly useful—the relationship between Team Mirai and DD2030 embodied the healthy cycle of branching and integration envisioned by open source.
 
@@ -102,7 +102,7 @@ The features first developed in this fork were later merged back into DD2030’s
 
 In developing Kouchou AI, DD2030 had been using the AI coding agent “Devin” since the organization’s founding. After Anno published an introductory video about Devin on YouTube, he received a large amount of credit (points used to run AI) as a referral fee, and the team used those credits collectively to make use of Devin. Even after Anno stepped down, DD2030 entered into a new contract and has continued using Devin in the development of its various products.
 
-Out of a total of 2,756 commits over the full project period (February 2025 to February 2026), 210 commits (about 7.6%) were made by Devin. This ranked fifth among 24 contributors including humans, giving it a presence on par with core developers such as Sumino (389 commits) and Nishio (354 commits).
+Out of a total of 2,756 commits[^commit] over the full project period (February 2025 to February 2026), 210 commits (about 7.6%) were made by Devin. This ranked fifth among 24 contributors including humans, giving it a presence on par with core developers such as Sumino (389 commits) and Nishio (354 commits).
 
 In addition, GitHub Copilot Agent and Claude Code became generally available in May 2025, and AI-assisted development styles spread further. However, this did not immediately mean that the overall pace of development recovered. In reality, while the difficulties of the slowdown period continued, advances in AI programming tools functioned as support that helped a small number of people keep development from grinding to a halt.
 
@@ -126,9 +126,12 @@ Specifically, they made a point of continuing regular development meetings whene
 
 On the outreach side, DD2030 did not simply “wait” for municipalities it had made contact with, but proactively reached out to them. In addition to gathering feedback during trial runs, it emphasized hearing about issues that do not directly appear in the product itself—such as data preparation, internal coordination within government offices, accountability, and the workflow of public listening—in order to understand the context on the ground.
 
-That said, adoption did not always proceed smoothly. Municipalities did not always have strong incentives to prioritize trying new initiatives, and there were limits to how much DD2030 alone could drive adoption.
+That said, adoption did not always proceed smoothly. There were limits to how much DD2030 alone could drive adoption, and the following issues were repeatedly observed on the ground.
 
-For example, even when a mayor or governor was highly enthusiastic, implementation could still lose momentum because frontline workloads and organizational capacity could not keep up. In some cases, staff transfers changed the person in charge, requiring all the background assumptions to be shared again from scratch. In addition, on the user side considering adoption, it was often difficult to secure an ongoing engineering structure, making the transition from trial to operation prone to interruption.
+- **Insufficient incentives**: Municipalities did not always have strong motivation to prioritize trying new initiatives.
+- **Gap between the mayor or governor and the front line**: Even when top leadership was highly enthusiastic, implementation could lose momentum because frontline workloads and organizational capacity could not keep up.
+- **Discontinuity caused by personnel transfers**: Staff transfers changed the person in charge, requiring all the background assumptions to be shared again from scratch.
+- **Difficulty securing an engineering structure**: On the user side considering adoption, it was often difficult to secure ongoing engineering capacity, making the transition from trial to operation prone to interruption.
 
 For that reason, in the early stages of outreach, the team did not wait for “well-developed case studies” to emerge naturally. Instead, it consciously repeated small-scale trials wherever cooperation could be obtained, recorded what was learned, and preserved those lessons as case studies. At the same time, because of constraints on staffing and time, there were also situations where it was not possible to sustain the full cycle of designing, documenting, and sharing trials, and fragmented lessons sometimes disappeared within one-off exchanges.
 
@@ -141,8 +144,6 @@ Even so, through dialogue with these municipalities, the team accumulated a sens
 
 Also as part of outreach activities, technical presentation slides on Kouchou AI[^techslide] were released in June 2025. These slides helped broaden awareness of Kouchou AI through university lectures and corporate talks, and they became the basis for Chapters 12 and 13 of this book.
 
-[^techslide]: “Technical Explanation of Kouchou AI: The Technology Supporting Broad Listening,” June 2025. https://www.docswell.com/s/tokoroten/ZL1M88-2025-06-14-014546
-
 ## The Future of Kouchou AI
 
 Kouchou AI began as a fork of TTTC Scatter and, despite community dispersion and resource depletion, grew into a product with 807 merged PRs in about one year from its first commit in February 2025. Several of the case studies introduced in this book used Kouchou AI, which is evidence that it functioned as a tool practical enough for real-world use.
@@ -152,3 +153,11 @@ Kouchou AI is published as open source, and anyone can contribute to its codebas
 The challenges ahead are clear. As outreach activities have shown, simply providing the tool is not enough for it to take root in practice. It will be necessary to accumulate operational knowledge in areas such as how to design opinion collection, how to share analysis results within government offices, and how to connect them to decision-making, thereby lowering the barriers to adoption. There is also a need for mechanisms that reduce the burden of hosting and maintenance so that municipalities and political parties can operate it sustainably on their own.
 
 Kouchou AI is not a finished product. But there is meaning in its continuing to exist as a foundation that anyone can use and anyone can improve. Even if DD2030 were to cease operations, the code would remain, and someone who needs it could fork it and carry it forward. That is the strength of open source, and it is also why Kouchou AI has been developed in this form.
+
+----
+
+[^cli]: Command-line interface (CLI). A text-based interface where users type commands into a terminal, in contrast to a graphical user interface (GUI) where users operate windows and icons with a mouse or similar device.
+
+[^commit]: A commit is the unit by which source-code changes are recorded in a version-control system such as Git. Commit counts are often used as a rough indicator of development activity or individual contribution volume.
+
+[^techslide]: “Technical Explanation of Kouchou AI: The Technology Supporting Broad Listening,” June 2025. https://www.docswell.com/s/tokoroten/ZL1M88-2025-06-14-014546

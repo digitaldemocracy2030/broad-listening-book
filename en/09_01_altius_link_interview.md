@@ -52,7 +52,7 @@ Altius Link is a joint venture between KDDI and Mitsui & Co. that provides BPO s
 
 **Tanaka:** Since we use Kouchou AI for the purpose of visualizing VOC, we’ve tailored the preprocessing accordingly.
 
-<!--TODO: Turn the workflow into an illustration -->
+![Altius Link's VOC preprocessing pipeline. Starting from call transcripts, it filters out voicemails, detects negative sentiment, performs structured extraction, and then branches into Kouchou AI and BI tools.](images/09_01_workflow.png)
 
 **Tanaka:** We convert 1,000 to 2,000 calls per day into text using speech-to-text. In the first stage, we use an LLM to filter out data with no analytical value, such as voicemail calls. Anything that looks like voicemail is classified as "Yes," and anything else as "No." About 5% of the total is excluded at this stage.
 
@@ -130,7 +130,10 @@ Why was Mr. Sawaguchi able to collaborate in this way? We asked about his backgr
 
 ## Rollout to the Front Lines and Reactions
 
-**Sawaguchi:** The other day, I showed it to our operations site in Fukuoka, and they were really surprised. In particular, operators currently enter VOC directly into CRM tools like Salesforce, so the reaction was, "Does this mean we won’t need to do that anymore?" That input work takes quite a bit of effort, so they saw it as a relief.
+**Sawaguchi:** The other day, I showed it to our operations site in Fukuoka, and they were really surprised. In particular, operators currently enter VOC directly into CRM tools[^crm] like Salesforce[^salesforce], so the reaction was, "Does this mean we won’t need to do that anymore?" That input work takes quite a bit of effort, so they saw it as a relief.
+
+[^crm]: Customer Relationship Management. A system or tool for storing and using customer interactions and customer attributes.
+[^salesforce]: A cloud business system from Salesforce, Inc., centered on customer relationship management (CRM) and sales-force automation (SFA). In contact centers, it is widely used as a place to enter customer interaction histories.
 
 **Sawaguchi:** Right now, we can already summarize speech recognition data after a call ends and paste it into the CRM. But extracting VOC according to definitions tailored to each client company’s characteristics is difficult with generic call center products. I felt this project gave us enough insight that we might even be able to co-develop something with the company that makes the speech recognition software we currently use. There may be knowledge sleeping here—such as what the definition of VOC really ought to be—that product developers don’t yet know.
 
@@ -146,7 +149,7 @@ We asked about the quantitative effects of introducing Kouchou AI.
 
 Asked what functions he hopes Kouchou AI will have in the future, Mr. Tanaka said this:
 
-**Tanaka:** It would be great if broad listening could be done directly from audio files as they are. When you convert speech to text, some information is lost. Emotional aspects appear in vocal intonation and similar features, but in text they become just characters. If you could input audio files directly and output VOC using Fourier-transform spectra as data, that would be incredible.
+**Tanaka:** It would be great if broad listening could be done directly from audio files as they are. When you convert speech to text, some information is lost. Emotional aspects appear in vocal intonation and similar features, but in text they become just characters. If you could input audio files directly and output VOC from them, that would be incredible.
 
 **Sawaguchi:** One thing I’m really glad we did this time is that it made us realize how underutilized speech recognition logs are. They’ve been called "information assets," but not really used. Now our client companies are also realizing, "This much information can be extracted," and "Maybe this is actually a gold mine."
 
