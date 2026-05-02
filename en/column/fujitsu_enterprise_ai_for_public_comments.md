@@ -47,7 +47,7 @@ In May 2025, the Digital Agency began operating “Gennai,” a generative AI pl
 
 Against this backdrop, this proof-of-concept for public comment processing can be seen as an important step not just in workflow efficiency, but in evaluating the capabilities of domestically developed LLMs. By showing that major efficiency gains are possible through prompt design alone, without custom applications or complex technologies, this experiment is likely to point the way toward how AI will be used in future government services.
 
-If you have a sufficiently powerful LLM, it can handle complex tasks with a single prompt, even without dedicated software. This offers a glimpse of a future in which AI is embedded in government infrastructure. The era in which AI reads laws and regulations, organizes opinions, and proposes policy drafts has already begun.
+If you have a sufficiently powerful LLM, it can handle complex tasks with a single prompt, even without dedicated software. This offers a glimpse of a future in which AI is embedded in government infrastructure. The era in which AI reads laws and regulations, organizes opinions, and presents even early drafts of policy proposals is already beginning. Still, the line between what should ultimately be delegated to AI and what humans must judge will need to be tested through future operation and verification.
 
 ---
 

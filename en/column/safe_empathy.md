@@ -22,7 +22,9 @@ People trapped in echo chambers while seeking reassurance become easy targets in
 
 A fundamental human need—the desire for empathy—can ultimately tear a country in two. The January 6, 2021 attack on the U.S. Capitol is a symbol of this. People who refused to accept the election results found mutual validation for their anger on social media, and within their echo chambers they kept reinforcing the story of a “stolen election,” until it culminated in a violent breach of a central institution of democracy.
 
-Japan, too, has shown similar signs, such as the electoral gains of parties promoting conspiracy theories including anti-vaccine claims. There are also indications that information operations from other countries have played a role behind the scenes, meaning that the echo chamber problem has grown into a threat to national security.
+Japan, too, has shown similar signs, such as the electoral gains of parties promoting conspiracy theories including anti-vaccine claims. There are also indications that information operations from other countries have played a role behind the scenes[^foreign_influence], meaning that the echo chamber problem has grown into a threat to national security.
+
+[^foreign_influence]: At a July 16, 2025 press conference, Deputy Chief Cabinet Secretary Kazuhiko Aoki said of foreign election interference through social media and other channels that "Japan is also a target of influence operations." Nikkei, "偽情報など外国による選挙干渉『日本も対象』 青木一彦官房副長官" (July 16, 2025) https://www.nikkei.com/article/DGXZQOUA162QQ0W5A710C2000000/
 
 So is there any way to satisfy the need for empathy while avoiding this trap?
 
