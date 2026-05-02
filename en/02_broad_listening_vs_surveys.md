@@ -114,7 +114,7 @@ The figure above illustrates this phenomenon schematically. The horizontal axis 
 The noisy-minority bias comes from the strength of people's opinions, but broad listening also has another kind of bias. **The very act of writing an opinion in free text requires cultural and linguistic resources.** Even when they do have opinions, people in the following situations are less likely to appear in broad listening results.
 
 - People who lack confidence in reading and writing, or who struggle to express their thoughts in prose
-- People whose first language is not Japanese, or who struggle with the gap between spoken and written Japanese
+- People who are more comfortable speaking than writing, or who have to express themselves in a language or register that does not come easily
 - People who do not know the technical terms and find it hard to participate in the topic itself
 - People who lack time or cognitive bandwidth because of work, child-rearing, caregiving, or other responsibilities
 - People who are not comfortable using smartphones or PCs
