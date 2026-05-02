@@ -1,9 +1,32 @@
 """
 LLMによるオープンクエッション解析のデモ
 自由記述の意見をLLMで分類・要約する例
+
+【事前準備】
+1. OpenAIのAPIキーを取得 ( https://platform.openai.com/api-keys )
+2. APIキーを環境変数 OPENAI_API_KEY に設定
+   - Linux/macOS:   export OPENAI_API_KEY="sk-..."
+   - Windows (PS):  $env:OPENAI_API_KEY="sk-..."
+   または、プロジェクト直下に .env を作って `OPENAI_API_KEY=sk-...` と書き、
+   `pip install python-dotenv` した上で本ファイルの冒頭で
+       from dotenv import load_dotenv
+       load_dotenv()
+   を呼ぶ方法もある。
+3. 必要パッケージのインストール:  pip install openai
+
+APIキーは絶対にコード内にハードコードしたり、Gitにコミットしたりしないこと。
 """
 
+import os
+import sys
+
 from openai import OpenAI
+
+if not os.environ.get("OPENAI_API_KEY"):
+    sys.exit(
+        "環境変数 OPENAI_API_KEY が設定されていません。"
+        "ファイル冒頭のコメント（事前準備）を参照してください。"
+    )
 
 # 架空の市民意見（自由記述）
 opinions = [
