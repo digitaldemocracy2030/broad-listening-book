@@ -409,7 +409,7 @@ The combination of exponents `n^(2/3)` and `∛n` is not an optimal value derive
 
 ### 13.4.3 Experiments in Separating Support and Opposition
 
-As discussed in 13.2.3, support and opposition within the same topic are difficult to separate. In developing the next generation of Kouchou AI, the author experimented with several prototypes to address this issue. Two of them are introduced here. One extends embeddings; the other avoids embeddings entirely and relies directly on the LLM.
+As discussed in 13.2.3, support and opposition within the same topic are difficult to separate. In developing the next generation of Kouchou AI, the authors experimented with several prototypes to address this issue. Two of them are introduced here. One extends embeddings; the other avoids embeddings entirely and relies directly on the LLM.
 
 #### Approach 1: Adding a Sentiment Dimension
 
@@ -453,11 +453,13 @@ Both approaches have strengths and weaknesses, and further research and developm
 
 ## 13.5 Scatter-Plot Classification vs. Long Context: Two Architectures
 
-The Kouchou AI pipeline explained in this chapter (Extraction → Embedding → UMAP → Clustering → Labeling) is an architecture that vectorizes opinions and classifies them on a scatter plot. It is designed to prioritize intuitive visualization—“opinions that are close together are similar”—and ease of explanation, so that results can be understood even without specialist knowledge.
+The Kouchou AI pipeline explained in this chapter (LLM Extraction → Embedding → UMAP → Clustering → Labeling) is an architecture that vectorizes opinions and classifies them on a scatter plot. It is designed to prioritize intuitive visualization—“opinions that are close together are similar”—and ease of explanation, so that results can be understood even without specialist knowledge.
 
 One reason this architecture emerged is that early LLMs had context windows limited to 4,096 tokens (about 2,700 Japanese characters). At the time, it was impossible to pass 1,000 opinions to an LLM at once, so similarity judgments between opinions were handled using Sentence-BERT embeddings and cosine similarity.
 
-Since then, LLM context windows have expanded rapidly. Today’s major models include the GPT-4 family (128,000 tokens), the Claude family (200,000 tokens), and the Gemini family (up to over 1 million tokens), making it possible to process thousands to tens of thousands of opinions together. Taking advantage of this evolution, a Long Context architecture—one that simply has the LLM read everything directly, without using embeddings or UMAP—has become a practical option. TTTC Turbo performs clustering by passing many opinions directly to the LLM, while Google Jigsaw’s Sensemaker combines LLM-based topic classification with voting-data-based support/opposition judgment.
+Since then, LLM context windows have expanded rapidly. At the time of this book’s writing in 2026, major models such as OpenAI’s GPT-5 family (up to 1 million tokens), Anthropic’s Claude Opus 4.7 (1 million tokens), and Google’s Gemini 2.5 family (1 million to 2 million tokens) all have context windows around the million-token range, making it possible to process thousands to tens of thousands of opinions together.
+
+Taking advantage of this evolution, a Long Context architecture—one that simply has the LLM read everything directly, without using embeddings or UMAP—has become a practical option. TTTC Turbo performs clustering by passing many opinions directly to the LLM. Google Jigsaw’s Sensemaker implements LLM-based topic classification and generates summaries by combining that with Polis voting data. The proof-of-concept by Fujitsu and central government ministries introduced in the column “Big-Business AI Takes On Public Comments: Fujitsu’s Initiative” is also worth consulting, because it uses long context to match opinions against ministerial ordinance text.
 
 Each type has its own characteristics. The scatter-plot type automatically generates an opinion scatterplot using UMAP, allowing intuitive understanding that “close = similar,” but because clustering is performed after reducing the data to two dimensions, clustering accuracy is relatively poor.
 
@@ -471,4 +473,4 @@ Both types are developing rapidly, and their respective strengths and weaknesses
 
 In this chapter, we explained the processing pipeline and design philosophy of Kouchou AI. Its design philosophy prioritizes ease of explanation over accuracy, emphasizing that “opinions that are close together are similar” should be intuitively understandable. It is designed as infrastructure for democracy, with the goal of being usable even by people without specialist knowledge.
 
-By combining the technologies learned in Chapter 12, the essential processing can be implemented in about 100 lines of code. The source code for Kouchou AI is all published as open source, so once you understand the processing flow explained in this chapter, you can customize and extend it in your own way.
+By combining the technologies learned in Chapter 12, the essential processing for broad listening can be implemented in about 100 lines of code. The source code for Kouchou AI is all published as open source, so once you understand the processing flow explained in this chapter, you can customize and extend it in your own way.
