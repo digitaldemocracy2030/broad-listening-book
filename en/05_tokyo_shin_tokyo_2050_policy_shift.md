@@ -7,7 +7,7 @@ Written by: tokoroten
 
 On November 22, 2024, the Tokyo Metropolitan Government launched the [“Shin Tokyo 2050” Project, Created by Everyone](https://www.seisakukikaku.metro.tokyo.lg.jp/basic-plan/choki-plan/ikenbosyu). In this chapter, we refer to this initiative as Shin Tokyo 2050 (“New Tokyo 2050”). The initiative aimed to gather residents’ views broadly as part of formulating a new long-term strategy, the “Tokyo 2050 Strategy,” looking ahead to the 2050s. The strategy’s tagline was “Tokyo, Better Than Ever.” It was developed under a vision of realizing “Tokyo, the world’s greatest city,” where everyone can shine and each individual can feel happiness.
 
-Traditionally, the standard way for government to hear from citizens has been the public comment process. But public comments have clear limits. Only a subset of highly engaged people tends to respond to formal calls for input, and the number of submissions often remains in the hundreds. In Tokyo, with a population of more than 14 million, it is unrealistic to claim that “public opinion” can be understood at that scale.
+Traditionally, the standard way for government to hear from citizens has been the public comment process. But public comments have clear limits. Only a subset of highly engaged people tends to respond to formal calls for input, and the number of submissions often remains in the hundreds. In Tokyo, with a population of more than 14 million, it is unrealistic to capture Tokyo residents' voices broadly at that scale.
 
 The Shin Tokyo 2050 Project took on this challenge using broad listening methods. During a roughly one-month submission period (November 22 to December 20), it collected 27,915 opinions—dozens or even hundreds of times more than a conventional public comment process.
 
@@ -163,7 +163,7 @@ AI did not propose, “Tourism should be made independent.” Rather, humans int
 
 This question, moreover, was not a “dramatic discovery.” As discussed in Section 5.3, the expansion of tourism policy was already underway in the 2024 version up. But that is fine. Even a known issue, once structured as citizens’ voices, can provide grounds for revising the policy framework. For the decision to make tourism independent, broad listening adds the justification that “the structure of citizens’ voices points in that direction.” That view of the issue space functioned as a foundation of legitimacy in precisely that way.
 
-That said, what it can show is only “the structure within the opinions submitted,” not “the distribution of opinion across society as a whole.” Structural grounds are more explanatory than intuition or raw counts, but when they are spoken of as if they prove the public will, the grounds become exaggerated.
+That said, what it can show is only "the structure within the opinions submitted," not "the distribution of opinion across society as a whole," or statistical public opinion. Structural grounds are more explanatory than intuition or raw counts, but when they are spoken of as if they prove statistical public opinion, the grounds become exaggerated.
 
 ## 5.5 What This Case Shows
 

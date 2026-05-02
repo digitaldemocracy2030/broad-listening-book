@@ -35,7 +35,7 @@ This book explains broad listening in the following structure. The case-study se
     - 2.5 The Trade-off Between Depth, Scale, and Cost
     - 2.6 "Polis": Broad Listening Before LLMs
     - 2.7 Misunderstandings Caused by the "Science-Like" Appearance of Broad Listening
-- Chapter 3: Digital Democracy, Broad Listening, and New Ways of Delivering the Public Will (broad listening as augmented deliberation support and as politician- and government-led practice)
+- Chapter 3: Digital Democracy, Broad Listening, and New Ways of Delivering Public Voice (broad listening as augmented deliberation support and as politician- and government-led practice)
     - 3.1 Why We Need an Issue Space Now
     - 3.2 Gaps That Existing Methods Cannot Fill
     - 3.3 The Structural Limits of Public Comment
@@ -136,6 +136,8 @@ The following terms appear throughout the book. They are explained individually 
 | Term | Overview |
 |---|---|
 | Broad listening | A set of practices for using AI to structure and visualize many voices and connect them to policy or dialogue. This is the main theme of the book |
+| Public voice | In this book, used in the broad dictionary sense: the total body of citizens' opinions, concerns, and interests. The subtitle's "visualizing and analyzing public voice" uses the term in this broad sense |
+| Statistical public opinion | The distribution of views measured by representative sampling in opinion polling, such as "XX% support, YY% oppose." Broad listening can capture public voice, but it cannot measure statistical public opinion. This distinction appears throughout the book; see Chapter 2 |
 | Augmented deliberation | Deliberative democracy whose scale, frequency, and format are expanded through AI |
 | Plurality | A democratic worldview proposed by Audrey Tang and others that emphasizes the coexistence of plural positions and the search for agreement, rather than simple majority rule |
 | Clustering | A process that mechanically groups similar opinions together |
@@ -154,6 +156,41 @@ This book tries to add parenthetical explanations or footnotes when technical te
 This book is a jointly written piece of documentation by practitioners who have been experimenting with broad listening in real settings. When the author changes by chapter or section, the author's name is shown at the beginning of that section.
 
 For the authors, broad listening is not a finished technology. It is a technology currently being cultivated. This book records not only successful initiatives, but also cases that did not go as expected, design compromises, and questions that remain unanswered. We hope it gives readers useful hints for taking the next step in their own contexts.
+
+## Disclosure of Conflicts of Interest
+
+Many of this book's authors are involved in the Digital Democracy 2030 (DD2030) community, Team Mirai, or the development and adoption of Kouchou AI and related tools. In some of the initiatives introduced as case studies, the authors themselves were involved as technical supporters, developers, or interviewers.
+
+For that reason, we want to be clear from the outset that this book may contain the following biases.
+
+- **Positive bias toward our own tools**: Tools with which the authors have been deeply involved, such as Kouchou AI, TTTC, Polis, and Idobata Policy, receive central attention
+- **Bias in case selection**: Many cases come from within the authors' networks, while initiatives outside those networks, especially parties, local governments, and companies that have not adopted broad listening, receive more limited coverage
+- **Self-affirming bias in evaluation**: The perspective of practitioners who believe the initiatives they joined are beginning to change society may influence the tone of the evaluation
+
+Where the relationship between the author and the subject is especially close, our policy is to state that relationship at the beginning of the relevant section. We ask readers to keep these biases in mind and read this book not as a neutral industry report, but as **a practitioner's record written from inside the field**.
+
+## Editorial Policy
+
+In compiling this book, we followed the policies below.
+
+- **Identify authorship**: When authorship changes by chapter or section, the author's name is shown at the beginning of that section. In co-authored sections, this is intended to clarify responsibility
+- **Identify the reporting method**: We try to state at the beginning of each section whether it is based on direct interviews, a synthesis of public information, or the author's own experience
+- **Prioritize public sources**: As a rule, we provide footnotes to primary materials that readers can access, such as press releases, official websites, meeting minutes, annual reports, and social media posts
+- **Record failures and limits**: We have tried to describe not only success stories, but also what did not work, design compromises, and unresolved issues
+- **Fix the time period**: This book covers the period from the July 2024 Tokyo governor election through early 2026. Developments after that period are outside its scope
+
+## Limits of This Book
+
+The authors recognize the following limits. We list them here so readers can take them into account.
+
+- **Limits of coverage**: This book is not a catalog of every broad listening case. It is limited to cases the authors could access and had room to cover
+- **Limits of representativeness**: The cases introduced in this book, such as Tokyo's 27,000 submissions and Ishin's 300,000 submissions, are biased in their respondent pools because of the nature of broad listening technology itself (see Chapter 2, "The Problem of the Noisy Minority"). Please do not read the gathered voices as the distribution of views across society as a whole, or statistical public opinion
+- **Not an academic monograph**: This is a practical record, not an academic paper. Its connections to prior research in democratic theory, public sphere theory, and social movement theory are limited; practical understanding is prioritized over intellectual-historical precision
+- **Scope of the technical explanations**: Chapters 12 and 13 are intended to support conceptual understanding and implementation. They do not replace a systematic textbook in machine learning or natural language processing
+- **Technology in motion**: This book records the situation at the time of publication. LLMs and related tools are changing rapidly, so the book should be read as a snapshot from 2024 through early 2026
+- **Scope of overseas cases**: Overseas cases are limited to major examples. This book is not a comparative study that deeply examines each country's political institutions and social context
+
+With these limits in mind, we hope readers will use this book as a starting point, try things in their own fields, and develop their own questions.
 
 ## Looking Ahead to the Next Chapter
 

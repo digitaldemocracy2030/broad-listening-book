@@ -24,16 +24,16 @@ Open and closed questions each have their own strengths and weaknesses. The tabl
 | Burden on respondents | High | Low |
 | Burden on analysts | High | Low |
 | Cost | High (traditionally) / Low (after LLMs) | Low |
-| Ability to reproduce public opinion | Low | High |
+| Ability to reproduce statistical public opinion | Low | High |
 | Type of analysis | Qualitative analysis (what views are expressed) | Quantitative analysis (what views are expressed and how prevalent they are) |
 
 ### Advantages of Closed Questions
 
-Because closed questions place a low burden on respondents, they make it easier to collect large numbers of responses, and they can also be analyzed efficiently. Since respondents only need to choose from a list of options, they can answer in a matter of seconds, making drop-off less likely. On the analysis side, responses are obtained as numerical data, so tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of public opinion.
+Because closed questions place a low burden on respondents, they make it easier to collect large numbers of responses, and they can also be analyzed efficiently. Since respondents only need to choose from a list of options, they can answer in a matter of seconds, making drop-off less likely. On the analysis side, responses are obtained as numerical data, so tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of statistical public opinion. Statistical public opinion is discussed in more detail later in this chapter.
 
 For example, this makes it possible to analyze questions such as, "What percentage of women in their 30s support this policy?" or "Are there differences in opinion trends between urban and rural areas?" With appropriate sampling, it is even possible to estimate broader social trends from the responses of survey participants. In other words, quantitative analysis can show how many people in society as a whole hold a given view.
 
-The greatest advantage of closed questions is that they are cheap to analyze. Because responses are obtained as numerical data, tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of public opinion.
+The greatest advantage of closed questions is that they are cheap to analyze. Because responses are obtained as numerical data, tabulation and statistical processing can be automated. In addition, combining responses with demographic attributes such as age, gender, occupation, place of residence, and educational background improves the reproducibility of statistical public opinion.
 
 ### Disadvantages of Closed Questions
 
@@ -73,35 +73,62 @@ The real appeal of broad listening lies in discoveries such as, "I didn't realiz
 
 ## Broad Listening Is Qualitative Analysis, Not Quantitative Analysis
 
-In the table at the beginning of this chapter, I touched on "the reproducibility of public opinion" and "the type of analysis." These two points are extremely important for understanding broad listening, so I will explain them in more detail here.
+In the table at the beginning of this chapter, I touched on "the reproducibility of statistical public opinion" and "the type of analysis." These two points are extremely important for understanding broad listening, so I will explain them in more detail here.
 
-### What Is Public Opinion?
+### Distinguishing Public Voice from "Statistical Public Opinion"
 
-First, let us define the term "public opinion." The phrase is used in many different ways, but in this book, **public opinion means the distribution of views across society as a whole, as captured through representative data**.
+The phrase "public opinion" or "public voice" is used in many different ways, including in this book. Here, we use "public voice" in the broad dictionary sense: **the total body of thoughts, opinions, and concerns held by members of society**. The book's subtitle, "Visualizing and Analyzing Public Voice," and the Chapter 3 title, "A New Way to Deliver Public Voice," use the term in this sense.
 
-So what does "representative" mean? Representativeness is the property that allows us to correctly estimate broader social trends from the responses of survey participants (the sample). For example, it is not realistic to ask all 120 million people in Japan, "Do you support this policy?" Instead, a survey is conducted using a sample of 1,000 or 2,000 people. If that sample is a miniature version of society as a whole—if its age distribution, gender ratio, regional distribution, and so on match those of the broader population—then the sample's responses can be said to reflect overall social trends. That is what it means for data to be representative.
+Within that broad public voice, the specific object measured by opinion polling has a very different character. It is the kind of thing that can be expressed numerically, such as "XX% support, YY% oppose," and is quantitatively measured as the distribution of views across society through representative sampling such as random sampling. In this book, we call this **"statistical public opinion"** and distinguish it from public voice in general.
+
+The key point in this chapter is that **broad listening is well suited to capturing public voice, in the sense of discovering voices, but it is not suited to measuring statistical public opinion, in the sense of representative distributions**. If the two are confused, broad listening results can be misread as a substitute for opinion polling. In the rest of this section, when we discuss "quantitative analysis," "reproducibility," and "representativeness," we are referring to statistical public opinion.
+
+So what does the "representative" in statistical public opinion mean? Representativeness is the property that allows us to correctly estimate broader social trends from the responses of survey participants (the sample). For example, it is not realistic to ask all 120 million people in Japan, "Do you support this policy?" Instead, a survey is conducted using a sample of 1,000 or 2,000 people. If that sample is a miniature version of society as a whole—if its age distribution, gender ratio, regional distribution, and so on match those of the broader population—then the sample's responses can be said to reflect overall social trends. That is what it means for data to be representative.
 
 The basic method for ensuring representativeness is **random sampling**. People are selected without bias, like drawing lots, from sources such as the resident registry or lists of phone numbers. This prevents the sample from being skewed toward people with particular attributes or opinions and makes it possible to obtain a sample that resembles society as a whole in reduced form.
 
-With data sampled without bias through random sampling, it becomes possible to reproduce the overall distribution in forms such as "X% support, Y% oppose." This is what it means to measure public opinion. The purpose of quantitative analysis using closed questions is precisely to understand this public opinion. That is why traditional opinion polls, market research, and surveys have been designed primarily around closed questions.
+With data sampled without bias through random sampling, it becomes possible to reproduce the overall distribution in forms such as "X% support, Y% oppose." This is what it means to measure statistical public opinion. The purpose of quantitative analysis using closed questions is precisely to understand this statistical public opinion. That is why traditional opinion polls, market research, and surveys have been designed primarily around closed questions.
 
 ### The Problem of the Noisy Minority
 
-The defining feature of broad listening is that it can analyze natural-language responses to open questions at scale. Once natural language became usable as input, it became possible to collect data from a wide variety of existing communication channels and handle them in an integrated way. Input sources for broad listening include posts on X (formerly Twitter), Facebook, and Bluesky, YouTube comments, LINE, email, transcribed phone calls, website submissions, responses to surveys conducted by political parties, and input to AI-based listening systems. Because opinions can be collected from channels people already use in everyday life, it has become possible to capture naturally expressed voices without requiring the special act of "answering a survey."
+The defining feature of broad listening is that it can analyze natural-language responses to open questions at scale. Once natural language became usable as input, it became possible to collect data from a wide variety of existing communication channels and handle them in an integrated way.
+
+Input sources for broad listening include posts on X (formerly Twitter), Facebook, and Bluesky, YouTube comments, LINE, email, transcribed phone calls, website submissions, responses to surveys conducted by political parties, and input to AI-based listening systems. Because opinions can be collected from channels people already use in everyday life, it has become possible to capture naturally expressed voices without requiring the special act of "answering a survey."
 
 However, these information channels have one important characteristic: they tend to attract the voices of people who have something clear they want to say. Writing out an opinion in free text takes time and effort. People who overcome that hurdle and post their views tend to be those with strong interest in the topic or clearly formed opinions. Conversely, people with no particular opinion have little motivation to post, so their views are not captured.
 
-And in reality, most people do not have clearly formed opinions on any given topic. For example, if someone asked me, as a Tokyo resident, "What do you think about the Isahaya Bay land reclamation project (a long-running administrative and legal dispute involving ecosystem conservation and agricultural development)?", I could only answer, "I don't really know." This kind of "silent majority" does not appear in broad listening.
+And in reality, most people do not have clearly formed opinions on any given topic. For example, if someone asked me, as a Tokyo resident, "What do you think about the Isahaya Bay land reclamation project[^isahaya]?", I could only answer, "I don't really know." More to the point, I would never actively declare, "My opinion on the Isahaya Bay land reclamation project is that I don't really know!" This kind of **"silent majority"** does not appear in broad listening.
 
-By contrast, in a closed-question survey, if randomly sampled respondents are asked to choose among "support," "oppose," and "don't know," then the issue can be understood quantitatively in terms such as "X% support, Y% oppose, and Z% don't know." "Don't know" is itself perfectly valid data. And because such data are obtained through random sampling, they have the representativeness needed to reproduce the distribution of views across society as a whole, making them something we can properly call public opinion.
+By contrast, in a closed-question survey, if randomly sampled respondents are asked to choose among "support," "oppose," and "don't know," then the issue can be understood quantitatively in terms such as "X% support, Y% oppose, and Z% don't know." "Don't know" is itself perfectly valid data. And because such data are obtained through random sampling, they have the representativeness needed to reproduce the distribution of views across society as a whole, making them what this book calls statistical public opinion.
 
 In broad listening focused on natural language, only the views of people who have opinions are collected, so the existence of this "majority without an opinion" disappears from view. In other words, the voices gathered through broad listening tend to be skewed toward the **noisy minority**—a small group with loud voices. This is not so much a flaw as an inevitable consequence of broad listening being a form of qualitative analysis.
 
-According to a 2019 Pew Research Center study, 73% of political tweets on Twitter (now X) were produced by just 6% of users[^1]. The "public opinion" we see on social media is shaped by a very small number of highly active posters.
+According to a 2019 Pew Research Center study, 73% of political tweets on Twitter (now X) were produced by just 6% of users[^1]. Take care: the "public opinion" we see on social media is shaped by a very small number of highly active posters.
 
-![The noisy minority and the actual distribution of people](images/02_noisy_minority_en.png)
+![Figure: The structure of the noisy minority, showing the gap between the distribution of people and the volume of opinions.](images/02_noisy_minority_en.png)
 
-The figure above illustrates this phenomenon schematically. The horizontal axis represents the strength of opinion (the degree of positivity or negativity). The vertical axis of the red curve shows the distribution of the **actual number of people**, with the vast majority occupying a neutral position. By contrast, the vertical axis of the light blue curve shows the **volume of opinions**, where people with more extreme views post more frequently. What broad listening captures is the shape of the light blue curve, which differs greatly from the actual distribution of people.
+The figure above illustrates this phenomenon schematically. The horizontal axis represents the strength of opinion (the degree of positivity or negativity). The vertical axis of the red curve shows the **distribution of people**, with the vast majority occupying a neutral position. By contrast, the vertical axis of the light blue curve shows the **volume of opinions**, where people with more extreme views post more frequently. What broad listening captures is the shape of the light blue curve, which differs greatly from the distribution of people.
+
+### Participation Gaps: Who Can "Write in Their Own Words"?
+
+The noisy-minority bias comes from the strength of people's opinions, but broad listening also has another kind of bias. **The very act of writing an opinion in free text requires cultural and linguistic resources.** Even when they do have opinions, people in the following situations are less likely to appear in broad listening results.
+
+- People who lack confidence in reading and writing, or who struggle to express their thoughts in prose
+- People whose first language is not Japanese, or who struggle with the gap between spoken and written Japanese
+- People who do not know the technical terms and find it hard to participate in the topic itself
+- People who lack time or cognitive bandwidth because of work, child-rearing, caregiving, or other responsibilities
+- People who are not comfortable using smartphones or PCs
+- People who feel a strong psychological barrier to putting their own opinions into a "public" space
+
+The sociologist Pierre Bourdieu called this difference in who can or cannot easily write **cultural capital**. Cultural capital accumulates over time through family environment, educational opportunity, and work experience, and it is unevenly distributed. In principle, broad listening tends to collect the voices of people who have enough cultural capital to write in their own words.
+
+In practice, this participation gap cannot be eliminated completely, but it can be supplemented.
+
+- **Diversify input channels**: combine text entry with voice input, AI interviews (such as Takahiro Anno's initiative discussed in Chapter 4), in-person settings (such as Ota City's Jibungotokaigi in Chapter 8), and submissions using pictures or photos
+- **Reach explicitly toward groups that are hard to hear**: if it becomes clear that the voices of specific groups, such as older adults, foreign residents, people with disabilities, or low-income residents, are barely included, supplement them actively through outreach interviews, interviews via community organizations, and similar methods
+- **Stay conscious of bias during interpretation**: when looking at analysis results, always ask, "Where are the people who could not raise this voice?"
+
+Because broad listening can be persuasive in making us feel that we have "listened broadly," it also increases the risk of overlooking the voices that were not reached. When reading gathered voices, it is important to remain constantly aware of the "voices that did not gather" behind them.
 
 ### When to Use Qualitative Analysis and Quantitative Analysis
 
@@ -113,7 +140,7 @@ The correct way to use it is to position broad listening in the **hypothesis-gen
 
 For example, suppose broad listening on a certain policy reveals three issues: "the burden on child-rearing households," "transportation for older adults," and "environmental impact." At that stage, we still do not know which of these issues is shared by the largest number of citizens. So the next step is to conduct a randomly sampled survey using those three as answer choices and ask, "Which issue do you consider most important?" That is how quantitative validation is obtained.
 
-Broad listening is not a method for measuring public opinion. It is a method for discovering the diverse perspectives that exist within public opinion. One sometimes hears the criticism, "Broad listening is useless because its results are not public opinion," but this confuses the purpose. Measuring public opinion and discovering new perspectives are fundamentally different goals.
+Broad listening is **not a method for measuring statistical public opinion, meaning a representative distribution such as XX% support and YY% oppose**. It is **a method for discovering the diverse perspectives within public voice, the total body of citizens' voices**. One sometimes hears the criticism, "Broad listening is useless because its results are not (statistical) public opinion," but this either confuses public voice with statistical public opinion, or misunderstands the purpose of broad listening. Measuring statistical public opinion and discovering new perspectives within public voice are fundamentally different goals.
 
 ### The Misconception That Broad Listening Automatically Produces Lots of Responses
 
@@ -217,5 +244,7 @@ Broad listening is a form of qualitative analysis, not quantitative analysis tha
 What made this kind of analysis possible was the development of LLMs after 2022. Earlier tools such as word clouds could only visualize word frequency, but the arrival of LLMs made it possible to automatically extract issues from thousands of free-text responses.
 
 ---
+
+[^isahaya]: A long-running issue involving ecosystem conservation, agricultural development, and administrative litigation over land reclamation in Isahaya Bay.
 
 [^1]: Pew Research Center, "National Politics on Twitter: Small Share of U.S. Adults Produce Majority of Tweets," October 2019 https://www.pewresearch.org/data-labs/2019/10/23/national-politics-on-twitter-small-share-of-u-s-adults-produce-majority-of-tweets/

@@ -1,4 +1,4 @@
-# Chapter 3: Digital Democracy, Broad Listening, and New Ways of Delivering the Public Will
+# Chapter 3: Digital Democracy, Broad Listening, and New Ways of Delivering Public Voice
 
 Author: @tokoroten
 
@@ -9,9 +9,9 @@ Chapter 1 introduced three forms of broad listening: broad listening as a tool, 
 
 This chapter turns to the remaining two forms—**broad listening as support for augmented deliberation** and **politician-/government-led broad listening**—and explains why they are needed and how they should be used, that is, how they fit into democratic processes and how they can be operated in practice.
 
-**Broad listening is not a tool for “measuring public opinion” (the ratio of support and opposition). It is infrastructure for updating society’s understanding of the issue space and supporting the legitimacy of democratic deliberation and decision-making.**
+**Broad listening is not a tool for "measuring statistical public opinion" (the ratio of support and opposition). It is infrastructure for updating society's understanding of the issue space and supporting the legitimacy of democratic deliberation and decision-making.**
 
-By “issue space,” we mean a structured, visualized picture of what issues, lines of conflict, minority views, and blind spots exist around a given policy question. It is not a quantitative measurement of public opinion in the sense of “what percentage of people think what,” but rather a qualitative overview of “the different ways people are thinking about the issue.”
+By "issue space," we mean a structured, visualized picture of what issues, lines of conflict, minority views, and blind spots exist around a given policy question. It is not a quantitative measurement of statistical public opinion in the sense of "what percentage of people think what," but rather a qualitative overview of "the different ways people are thinking about the issue." An issue space is a way to structure and show public voice as the total body of citizens' voices.
 
 In fact, in March 2025, there was a case in which House of Councillors member Takae Ito of the Democratic Party for the People used a TTTC visualization of the issue space as the basis for questioning in the Japanese Parliament, pointing out blind spots in government policy (see Chapter 4).
 
@@ -21,7 +21,7 @@ To clarify this argument, this chapter explains the following three points:
 
 - **Why it is needed**: election cycles alone frequently produce a “legitimacy gap” (because issues emerge during a representative’s term)
 - **What it can do**: it can process large volumes of free-text responses and visualize issues, lines of conflict, and blind spots (issue discovery)
-- **What it cannot do**: it is not representative. Therefore, it should not be used to “measure public opinion”; if needed, that should be verified through opinion polls and similar methods (division of roles). This was discussed in detail in Chapter 2.
+- **What it cannot do**: it is not representative. Therefore, it should not be used to measure "statistical public opinion," or the distribution of views; if needed, that should be verified through opinion polls and similar methods (division of roles). This was discussed in detail in Chapter 2.
 
 ## Why We Need an Issue Space Now
 
@@ -135,7 +135,7 @@ Organizing the above, we get the following characteristics:
 
 As the table shows, methods that can gather large amounts of free text (organizational channels and social media) lack the ability to structure it, while opinion polls (multiple choice), which can produce structured results, do not capture free text. Broad listening is the technology that fills this gap. It is not simply another “data collection method” alongside conventional tools, but rather an **analytical method** that uses AI to structure and visualize collected data, automatically classifying and summarizing thousands to tens of thousands of free-text responses in order to map the issue space.
 
-That said, the accuracy of this structuring is not perfect, which is why it is rated only Medium in the table. AI-based clustering and summarization still require human interpretation, and they do not produce definitive numerical outputs like multiple-choice opinion polls. Their real value lies in the exploratory stage, when the key question is “what are the issues in the first place?”—surfacing unexpected issues and overlooked minority views. If the goal is simply to measure support or opposition on already known issues, then multiple-choice opinion polls are sufficient. Broad listening comes into its own when the task is to discover the issues themselves—in other words, to identify what should even be presented as options. Because broad listening is not representative (see Chapter 2), it should be used for **issue discovery**, while **measuring public opinion** should, where necessary, be done through opinion polls. This division of roles is essential.
+That said, the accuracy of this structuring is not perfect, which is why it is rated only Medium in the table. AI-based clustering and summarization still require human interpretation, and they do not produce definitive numerical outputs like multiple-choice opinion polls. Their real value lies in the exploratory stage, when the key question is “what are the issues in the first place?”—surfacing unexpected issues and overlooked minority views. If the goal is simply to measure support or opposition on already known issues, then multiple-choice opinion polls are sufficient. Broad listening comes into its own when the task is to discover the issues themselves—in other words, to identify what should even be presented as options. Because broad listening is not representative (see Chapter 2), it should be used for **issue discovery**, while **measuring statistical public opinion** should, where necessary, be done through opinion polls. This division of roles is essential.
 
 ## How to Connect It to Democratic Processes (Operational Flow)
 
@@ -214,7 +214,7 @@ The value of democracy lies not only in efficiency, but in the process by which 
 
 This chapter has explained the place of broad listening within the context of digital democracy.
 
-Broad listening is not a “tool for measuring public opinion,” but infrastructure for updating society’s understanding of the issue space and supporting the legitimacy of deliberation and decision-making. In a world where accelerating social change frequently creates legitimacy gaps that election cycles alone cannot address, broad listening has the potential to fill a gap that conventional tools cannot.
+Broad listening is not a "tool for measuring statistical public opinion" (the ratio of support and opposition), but infrastructure for updating society's understanding of the issue space and supporting the legitimacy of deliberation and decision-making. In a world where accelerating social change frequently creates legitimacy gaps that election cycles alone cannot address, broad listening has the potential to fill a gap that conventional tools cannot.
 
 Public comment functions as “a final check on regulations that are already largely complete,” but it does not fulfill its original role of “listening broadly.” In this way, broad listening and public comment are not in opposition. They are complementary, serving different phases of the democratic process.
 
