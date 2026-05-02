@@ -238,11 +238,13 @@ First, install the required libraries.
 pip install openai pandas numpy scikit-learn umap-learn matplotlib scipy
 ```
 
-Please obtain an OpenAI API key in advance (https://platform.openai.com/api-keys). In the code below, the API key is specified directly, but in actual operation you should set it as an environment variable (`OPENAI_API_KEY`) and avoid including it in source code. If code containing an API key is published on GitHub or elsewhere, it may be abused by third parties.
+Please obtain an OpenAI API key in advance (https://platform.openai.com/api-keys). In the code below, the API key is specified directly, but in actual operation you should set it as an environment variable (`OPENAI_API_KEY`) or write it in a `.env` file and load it with `python-dotenv`, rather than including it in source code. If code containing an API key is published on GitHub or elsewhere, it may be abused by third parties.
 
 ### 13.3.2 Implementing a Mini Kouchou AI
 
 Below is the minimum code needed to cluster and visualize opinions. Of the pipeline explained in Section 13.2, this mini implementation covers **② Embedding → ③ Dimensionality Reduction → ④ Clustering (K-means only) → ⑥ Initial Labeling**. It omits **① Extraction (LLM-based opinion splitting and normalization)**, **⑤ Cluster Integration (hierarchical merging with Ward’s method)**, **⑦ Integrated Labeling**, and **⑧ Summary Generation**.
+
+The code below writes the API key directly in order to keep the explanation simple, but **in real operation, set it in the `OPENAI_API_KEY` environment variable or write it in a `.env` file and load it with `python-dotenv`**. If an API key is published in Git or elsewhere, it may be abused by third parties.
 
 ```python
 """
