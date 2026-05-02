@@ -22,78 +22,78 @@ This book explains broad listening in the following structure. The case-study se
 **Part I: Concepts (Chapters 1-3)**
 
 - Chapter 1: What Is Broad Listening? (introducing the three forms of broad listening)
-    - 1.1 What is broad listening? (the trade-off between depth and scale)
-    - 1.2 The three forms of broad listening (tool / augmented deliberation support / politician- and government-led)
-    - 1.3 This book's hidden concept: a watered-down *Plurality*
-    - 1.4 Why broad listening, and why now?
-    - 1.5 What this book covers
-- Chapter 2: Broad Listening and Surveys: From Quantitative to Qualitative Analysis (broad listening as a tool)
-    - 2.1 The difference between closed and open questions
-    - 2.2 Free-text responses open agenda-setting power to the public
-    - 2.3 Broad listening is qualitative analysis, not quantitative analysis
-    - 2.4 LLMs made large-scale analysis of open questions possible
-    - 2.5 The trade-off between depth, scale, and cost
-    - 2.6 Polis: broad listening before LLMs
-    - 2.7 Misunderstandings caused by broad listening's "science-like" appearance
-- Chapter 3: Digital Democracy and Broad Listening: New Ways of Delivering the Public Will (broad listening as augmented deliberation support and as politician- and government-led practice)
-    - 3.1 Why do we need an "issue space" now? (the limits of election cycles and the legitimacy gap)
-    - 3.2 Gaps existing methods cannot fill
-    - 3.3 Structural limits of public comment systems
-    - 3.4 Comparing existing methods
-    - 3.5 How to connect broad listening to democratic processes (operational flow)
+    - 1.1 What Is Broad Listening? (The Trade-off Between “Depth” and “Scale”)
+    - 1.2 Three Forms of Broad Listening (tool / augmented deliberation support / politician- and government-led)
+    - 1.3 This Book’s Hidden Concept: A Watered-Down *Plurality*
+    - 1.4 Why Broad Listening, and Why Now?
+    - 1.5 Scope of This Book
+- Chapter 2: The Difference Between Broad Listening and Surveys, and the Shift from Quantitative to Qualitative Analysis (broad listening as a tool)
+    - 2.1 The Difference Between Closed Questions and Open Questions
+    - 2.2 Power to the Public: Free-Text Responses Open up Agenda Setting
+    - 2.3 Broad Listening Is Qualitative Analysis, Not Quantitative Analysis
+    - 2.4 LLMs Made Large-Scale Analysis of Open Questions Possible
+    - 2.5 The Trade-off Between Depth, Scale, and Cost
+    - 2.6 "Polis": Broad Listening Before LLMs
+    - 2.7 Misunderstandings Caused by the "Science-Like" Appearance of Broad Listening
+- Chapter 3: Digital Democracy, Broad Listening, and New Ways of Delivering the Public Will (broad listening as augmented deliberation support and as politician- and government-led practice)
+    - 3.1 Why We Need an Issue Space Now
+    - 3.2 Gaps That Existing Methods Cannot Fill
+    - 3.3 The Structural Limits of Public Comment
+    - 3.4 Comparison of Existing Methods
+    - 3.5 How to Connect It to Democratic Processes (Operational Flow)
 
 **Part II: Case Studies (Chapters 4-11)**
 
 - Chapter 4: The Spread of Broad Listening in Japan
-    - 4.1 Takahiro Anno's use of broad listening in the Tokyo governor election (July 2024)
-    - 4.2 Parliamentary questions by the Democratic Party for the People (March 2025)
-    - 4.3 Nippon TV election special (October 2024 House of Representatives election)
-    - 4.4 Mapping public opinion with Polis (November 2024)
-    - 4.5 Asahi Shimbun special feature (from May 2025)
-- Chapter 5: Tokyo, Shin Tokyo 2050, and Policy Change Through Broad Listening (2024-2025)
+    - 4.1 Takahiro Anno’s Initiatives in the 2024 Tokyo Governor Election
+    - 4.2 The Democratic Party for the People Uses an Issue-Space Visualization in Questioning the Government in the Japanese Parliament
+    - 4.3 Nippon TV Election Special: Using Broad Listening in Television News Coverage
+    - 4.4 Mapping Public Opinion—Making Public Opinion Visible in Election Campaigns with Polis at the Core
+    - 4.5 The Cutting Edge of Data Journalism at The Asahi Shimbun
+- Chapter 5: Shin Tokyo 2050—Did Broad Listening Change a City of 14 Million? (2024-2025)
 - Chapter 6: The Use of Broad Listening in National Elections
-    - 6.1 Team Mirai (2025 House of Councillors election)
-    - 6.2 Team Mirai (2026 House of Representatives election)
-    - 6.3 Nippon Ishin no Kai (from 2025)
-    - 6.4 Democratic Party for the People (July 2025 House of Councillors election, February 2026 House of Representatives election)
-    - 6.5 Komeito (March-June 2025, We Connect)
-- Chapter 7: Use in Local Elections
-    - 7.2 Liberal Democratic Party candidate Ryosuke Idei (June 2025 Tokyo Metropolitan Assembly election)
-    - 7.3 Saisei no Michi candidate Kazuya Obanayama (June 2025 Tokyo Metropolitan Assembly election)
+    - 6.1 Team Mirai’s Efforts in the 2025 House of Councillors Election
+    - 6.2 Team Mirai Initiatives in the 2026 House of Representatives Election
+    - 6.3 Nippon Ishin no Kai Uses Broad Listening for Policy Development
+    - 6.4 The Democratic Party for the People's Elections and Broad Listening: An Interview with Takae Ito
+    - 6.5 Komeito: Broad Listening Undertaken by a Governing Party
+- Chapter 7: Using Broad Listening in Local Elections
+    - 7.2 A Challenge from a Nakano City Council Member: The Case of Ryosuke Idei
+    - 7.3 A Corporate Data Scientist Runs for Office: Broad Listening on a Shoestring Budget
 - Chapter 8: Use in Local Governments
-    - 8.1 Ota City, Gunma Prefecture: Jibungotoka Meeting (from November 2025)
-    - 8.2 Hiroshima Prefecture case (August-September 2025)
-- Chapter 9: Use in Companies
-    - 9.1 Altius Link (2025)
-    - 9.2 Cybozu (August 2025)
+    - 8.1 Ota City, Gunma Prefecture: Introducing AI into “Jibungotokaigi” Citizen Deliberation Meetings
+    - 8.2 Hiroshima Prefecture: A Prefecture of “Learning from Failure” Takes On the Challenge of Building Systems to Hear People’s Voices
+- Chapter 9: Applications in Companies
+    - 9.1 Using 広聴AI (Kouchou AI, Broad Listening AI) for VOC Analysis in Contact Centers
+    - 9.2 Cybozu’s Approach — Connecting Hard-to-Hear Voices to the Next Discussion
 - Chapter 10: Broad Listening as a Business
-    - 10.0 DD2030's Kouchou AI development activities (from 2025)
-    - 10.1 BOOTS Inc. (from 2025)
-    - 10.2 Code for Japan (Kakogawa City, Hyogo Prefecture, FY2023 survey)
-    - 10.3 Plural Reality (Yosano Town, Kyoto Prefecture, September-December 2025)
-    - 10.4 Democracy X (Yatsushiro mayoral election in Kumamoto Prefecture, August 2025; Nagasaki gubernatorial election, February 2026)
-    - 10.5 litela (Tawaramoto Town, Nara Prefecture, December 2025-February 2026)
-- Chapter 11: Global Trends in Broad Listening
-    - 11.1 Taiwan (from 2002)
-    - 11.2 The birth of Polis (from 2012)
-    - 11.3 Bowling Green, United States (February-March 2025)
-    - 11.4 Israel-Palestine Remesh case (April-July 2024)
-    - 11.5 Harnessing connective action
+    - 10.0 Development Work on 広聴AI (Kouchou AI, Broad Listening AI) by DD2030
+    - 10.1 Boots Inc.
+    - 10.2 Code for Japan
+    - 10.3 Plural Reality
+    - 10.4 Democracy X
+    - 10.5 Litela Inc.
+- Chapter 11: The Global Evolution of Broad Listening
+    - 11.1 The Evolution of Deliberative Democracy in Taiwan
+    - 11.2 The Birth of Polis
+    - 11.3 Bowling Green: “America’s Largest Town Hall”
+    - 11.4 The Remesh Case in Israel and Palestine
+    - 11.5 Turning Connective Action into Power
 
 **Part III: Technology (Chapters 12-13)**
 
-- Chapter 12: Broad Listening Component Technologies
-    - 12.1 Learning goals for this chapter
-    - 12.2 Overview of the technologies
-    - 12.3 Vectorizing the meaning of words: from Word2Vec to Sentence-BERT
-    - 12.4 Understanding and generating text: large language models (LLMs)
-    - 12.5 Organizing and visualizing data: clustering and dimensionality reduction
-- Chapter 13: Kouchou AI Tech Stack
-    - 13.1 Learning goals for this chapter
-    - 13.2 Detailed processing pipeline
-    - 13.3 Hands-on: building a mini Kouchou AI
-    - 13.4 Advanced topics: customization hints
-    - 13.5 Scatterplot-classification and long-context architectures: two approaches
+- Chapter 12: Core Technologies Behind Broad Listening
+    - 12.1 Learning Objectives for This Chapter
+    - 12.2 The Big Picture of the Technology
+    - 12.3 Vectorizing the Meaning of Words: From Word2Vec to Sentence-BERT
+    - 12.4 Understanding and Generating Text: Large Language Models (LLMs)
+    - 12.5 Organizing and Visualizing Data: Clustering and Dimensionality Reduction
+- Chapter 13: Reading the Implementation of 広聴AI (Kouchou AI, Broad Listening AI)
+    - 13.1 Learning Objectives for This Chapter
+    - 13.2 A Detailed Look at the Processing Pipeline
+    - 13.3 Hands-On: Building a Mini Kouchou AI
+    - 13.4 Advanced Topics: Customization Tips
+    - 13.5 Scatter-Plot Classification vs. Long Context: Two Architectures
 
 ## Suggested Reading Paths
 
