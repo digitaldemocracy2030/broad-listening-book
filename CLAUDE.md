@@ -37,7 +37,7 @@ The book covers "Broad Listening" technology - AI-powered systems for collecting
 - **Language**: Japanese
 - **Image format**: PNG preferred
 - **Image naming**: `{chapter_number}_{description}.png`
-- **License**: CC BY 4.0
+- **License**: CC BY-NC 4.0 (commits up to tag `license-cc-by-4.0-final` were CC BY 4.0)
 
 ## Style Guidelines
 
