@@ -6,7 +6,7 @@ We are writing a book that documents broad listening practices in Japan.
 
 The preface is written by AI engineer and politician Takahiro Anno, who frames broad listening as "the operating system for future democracy."
 
-This book is written as part of Digital Democracy 2030. Drafts are published under CC BY 4.0 (the Japanese edition is scheduled for publication by Impress in summer 2026). It is a practical book for policymakers, civic technologists, researchers, media, and engineers, with an emphasis on the back-and-forth between theory and field practice.
+This book is written as part of Digital Democracy 2030. Drafts are published under CC BY-NC 4.0 (commercial use requires separate permission; the Japanese edition is scheduled for publication by Impress in summer 2026). Commits up to the tag `license-cc-by-4.0-final` were released under CC BY 4.0. It is a practical book for policymakers, civic technologists, researchers, media, and engineers, with an emphasis on the back-and-forth between theory and field practice.
 
 # Table of Contents Overview
 
