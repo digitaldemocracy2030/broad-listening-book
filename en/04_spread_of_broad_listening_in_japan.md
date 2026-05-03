@@ -1,4 +1,4 @@
-# Chapter 4 The Spread of Broad Listening in Japan
+# Chapter 4: The Spread of Broad Listening in Japan
 
 Author: Yasukazu Nishio
 

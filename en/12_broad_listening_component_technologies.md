@@ -1,4 +1,4 @@
-# Chapter 12 Core Technologies Behind Broad Listening
+# Chapter 12: Core Technologies Behind Broad Listening
 
 ## 12.1 Learning Objectives for This Chapter
 

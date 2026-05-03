@@ -1,4 +1,4 @@
-# Chapter 7: Use in Local Elections
+# Chapter 7: Using Broad Listening in Local Elections
 
 Author: tokoroten
 
