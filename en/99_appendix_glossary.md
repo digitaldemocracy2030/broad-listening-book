@@ -150,7 +150,7 @@ Categories:
 
 **Digital Democracy 2030 (DD2030)**: A nonprofit open-source project launched in January 2025 by AI engineer Takahiro Anno and Ken Suzuki, chair of SmartNews and project professor at the University of Tokyo, and author of *The Smooth Society and Its Enemies*. Its main development projects include Kouchou AI, the deliberation platform Idobata, and the political-funding transparency tool Polimoney. This book is also being written by volunteers as part of DD2030's activities (Chapter 10.00).
 
-**Code for Japan (CfJ)**: A nonprofit general incorporated association whose vision is "a society we think through and create together." Its main activity areas include local-government DX support, adoption of open-source civic participation tools such as Decidim, and civic-tech community building. It supports local-government use of Kouchou AI (Chapter 10.02).
+**Code for Japan (CfJ)**: A nonprofit general incorporated association whose vision is "a society we think through and create together." Its main activity areas include support for local-government digital transformation (DX), adoption of open-source civic participation tools such as Decidim, and civic-tech community building. It supports local-government use of Kouchou AI (Chapter 10.02).
 
 **g0v**: A citizen-led open-source community in Taiwan that began in 2012 with volunteer engineers, designers, journalists, and others. Its idea is to replace the "o" in the government's official `gov.tw` domain with a zero, creating citizen-built alternatives to government sites on `g0v.tw`. Audrey Tang was once one participant in the community (Chapter 11.01).
 
