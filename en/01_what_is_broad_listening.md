@@ -189,8 +189,8 @@ In this chapter, we introduced the three forms of broad listening: broad listeni
 
 **Chapter 2: Broad Listening and Surveys: From Quantitative to Qualitative Analysis**
 
-This chapter answers the question: “Can opinions gathered through broad listening be used like opinion polls?” It clarifies the characteristics and limits of AI-based opinion structuring and visualization from the perspectives of open-ended versus closed-ended questions, qualitative versus quantitative analysis, and the presence or absence of representativeness. It also explains how to combine qualitative and quantitative analysis appropriately in order to hear diverse voices while maintaining representativeness.
+This chapter answers the question: “Can opinions gathered through broad listening be used like opinion polls?” It first distinguishes between “public voice” and “statistical public opinion,” then clarifies the characteristics and limits of AI-based opinion structuring and visualization from the perspectives of open-ended versus closed-ended questions, qualitative versus quantitative analysis, and the presence or absence of representativeness. It also discusses the risks of using broad listening alone for policy or electoral judgment, given biases such as the noisy minority and participation gaps. Finally, it explains how to combine qualitative and quantitative analysis appropriately in order to hear diverse voices while maintaining representativeness.
 
-**Chapter 3: Digital Democracy and Broad Listening: New Ways of Delivering the Public Will**
+**Chapter 3: Digital Democracy and Broad Listening: New Ways of Delivering Public Voice**
 
 This chapter answers the questions: “Why is this technology needed now?” and “How should it be operated?” It explains how to think about augmented deliberation that incorporates broad listening tools, including the limits of the election cycle, gaps in existing methods, and the design of operational workflows for real-world use.
