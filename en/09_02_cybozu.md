@@ -15,7 +15,7 @@ This initiative was later published as a web article and a YouTube video.[^idoba
 
 ![A workshop held at Cybozu’s Tokyo office. In-person participants are seated at tables, while online participants are connected by video call on a monitor to the right. The workshop agenda is projected on the screen at the front, and a facilitator is leading the session with a microphone. About 50 people took part in this hybrid-format event.](images/10_03_cybozu_workshop.jpg)
 
-The tool used here was the “Idobata System,” which was also explained in the TODO chapter.
+The tool used here was the “Idobata System,” which was also explained in Section 6.1, “Team Mirai.”
 This is a deliberation support tool developed within the Digital Democracy 2030 community. At the time, Team Mirai (meaning “Team Future”) had set up the online environment and was using it for things like online talks with supporters. For this workshop, a dedicated environment was built for Cybozu. This entire effort was carried out by commissioning Shutaro Aoyama, who had been involved in developing the Idobata System, to organize the workshop, working in coordination with Cybozu’s engineers.
 
 The theme of the workshop was “Promoting AI Use Within the Company.” About 50 employees gathered in a hybrid format, both in person and online, and discussed how to think about this topic across differences in department, job type, and position. Participants came from a wide range of roles, including information systems, customer-facing teams, sales, development, and HR.
