@@ -102,7 +102,7 @@ Categories:
 
 **Government Program Review (Jigyo Shiwake)**: A method used under the Democratic Party of Japan government from 2009 to 2012, in which experts and politicians publicly debated budget validity and decided reductions or program abolition. Formally, it is a kind of deliberation, but citizens did not participate, and it ended with the change in government (Chapters 3 and 11).
 
-**Manifesto**: A policy pledge document that a political party presents to voters during an election. It differs from abstract campaign promises by including concrete numerical targets and implementation deadlines. This book discusses manifesto development as an application area for broad listening (Chapter 6 and elsewhere).
+**Electoral Platform (Manifesto)**: A policy pledge document that a political party presents to voters during an election. In Japanese election contexts, the borrowed word "manifesto" is often used for this kind of concrete platform, especially when it includes numerical targets or implementation deadlines. This book generally uses "electoral platform," "party platform," or "policy platform" in English, and discusses platform development as an application area for broad listening (Chapter 6 and elsewhere).
 
 **Administrative Procedure Act, Article 38 (Public Comment Procedure)**: The legal basis for Japan's public comment system. When an administrative agency establishes orders, ordinances, examination standards, disposition standards, or administrative guidance guidelines, it must publish the draft, solicit opinions broadly from the public, consider them, and publish the results (Chapter 3).
 
@@ -132,7 +132,7 @@ Categories:
 
 **Remesh**: A real-time deliberation platform from the United States. Participants immediately vote for or against other participants' opinions, and AI extracts opinion groups. It was used in Israeli-Palestinian peace dialogue (Chapter 11.04).
 
-**Idobata Policy**: An AI deliberation system jointly developed by DD2030 and Team Mirai. Behind the scenes, AI converts citizen dialogue into pull requests for improving a manifesto on GitHub (Chapter 6).
+**Idobata Policy**: An AI deliberation system jointly developed by DD2030 and Team Mirai. Behind the scenes, AI converts citizen dialogue into pull requests for improving an electoral platform on GitHub (Chapter 6).
 
 **vTaiwan**: An online deliberation platform launched by the Taiwanese government and the g0v community in 2014-2015. Audrey Tang's participation in a g0v hackathon in December 2014 was a convergence point, and full operation began in 2015. It is a representative case using Polis for policy discussions such as Uber regulation (Chapter 11.01).
 
@@ -158,7 +158,7 @@ Categories:
 
 **Japan Initiative (Koso Nippon)**: An independent policy think tank established in 1997 as a general incorporated association. It is known for devising and implementing government program review, and since 2014 has developed random-selection resident participation meetings called Jibungotokaigi in municipalities nationwide (Chapters 8.01 and 10.03).
 
-**Team Mirai**: A national political party founded by Takahiro Anno in May 2025. It won its first seat in the July 2025 House of Councillors election and incorporates broad listening into party operations and manifesto development (Chapter 6).
+**Team Mirai**: A national political party founded by Takahiro Anno in May 2025. It won its first seat in the July 2025 House of Councillors election and incorporates broad listening into party operations and platform development (Chapter 6).
 
 **Saisei no Michi**: A political organization that fielded candidates in the 2025 Tokyo Metropolitan Assembly election. This book introduces the case of Kazuya Obanayama, endorsed in the Musashino City district, who attempted low-budget broad listening in his campaign by combining Google Forms and generative AI (Chapter 7.03).
 
