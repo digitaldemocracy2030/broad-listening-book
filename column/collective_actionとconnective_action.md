@@ -136,12 +136,14 @@ vTaiwanと並行して、台湾政府は2015年に行政プラットフォーム
 
 ### vTaiwanの4ステップ
 
-vTaiwanは、以下の4つのステップで運営されています。
+vTaiwanは、以下の4つのステップで運営されています[^vtaiwan-4stages]。
 
 1. **提案（Proposal）**：政府機関や市民が政策課題を提起する
 2. **意見収集（Opinion）**：Polisを使って大規模な意見収集と構造化を行う
 3. **熟議（Reflection）**：可視化された意見分布をもとにオンラインまたは対面での熟議を行う
 4. **実現（Legislation）**：熟議の結果を踏まえ、政府が具体的な政策や法案を策定・実施する
+
+[^vtaiwan-4stages]: vTaiwan公式情報サイト「How it works」が示す canonical な4段階モデル。https://info.vtaiwan.tw/ なお Reflection 段階は対面の利害関係者会議とYouTubeライブ中継を併用するハイブリッド形式を取る（参考: Crowdlaw for Congress https://congress.crowd.law/case-vtaiwan.html、Participedia https://participedia.net/method/vtaiwan ）。
 
 ### Polisの仕組み　合意点を発見するシステム
 
