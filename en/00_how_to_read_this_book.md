@@ -28,12 +28,12 @@ This book explains broad listening in the following structure. The case-study se
     - 1.4 Why Broad Listening, and Why Now?
     - 1.5 Scope of This Book
 - Chapter 2: The Difference Between Broad Listening and Surveys, and the Shift from Quantitative to Qualitative Analysis (broad listening as a tool)
-    - 2.1 The Difference Between Closed Questions and Open Questions
-    - 2.2 Power to the Public: Free-Text Responses Open up Agenda Setting
-    - 2.3 Broad Listening Is Qualitative Analysis, Not Quantitative Analysis
-    - 2.4 LLMs Made Large-Scale Analysis of Open Questions Possible
-    - 2.5 The Trade-off Between Depth, Scale, and Cost
-    - 2.6 "Polis": Broad Listening Before LLMs
+    - 2.1 Distinguishing Public Voice from "Statistical Public Opinion"
+    - 2.2 The Difference Between Closed Questions and Open Questions
+    - 2.3 Power to the Public: Free-Text Responses Open up Agenda Setting
+    - 2.4 Broad Listening Is Qualitative Analysis, Not Quantitative Analysis
+    - 2.5 LLMs Made Large-Scale Analysis of Open Questions Possible
+    - 2.6 Using LLMs to Overcome the Trade-off Between Depth, Scale, and Cost
     - 2.7 Misunderstandings Caused by the "Science-Like" Appearance of Broad Listening
 - Chapter 3: Digital Democracy, Broad Listening, and New Ways of Delivering Public Voice (broad listening as augmented deliberation support and as politician- and government-led practice)
     - 3.1 Why We Need an Issue Space Now
