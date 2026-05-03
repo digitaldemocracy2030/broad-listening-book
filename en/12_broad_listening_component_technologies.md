@@ -1,4 +1,4 @@
-# Chapter 12 Core Technologies Behind Broad Listening
+# Chapter 12: Core Technologies Behind Broad Listening
 
 ## 12.1 Learning Objectives for This Chapter
 
@@ -47,7 +47,9 @@ For humans, “cat” and “kitty” refer to the same thing. But for computers
 
 The conventional approach was to manually maintain a correspondence table of synonyms. This meant painstakingly registering relationships one by one, such as “PC” = “personal computer” and “automobile” = “car” = “vehicle.” However, manual dictionary maintenance had fundamental limits: the coverage problem caused by new words appearing every day, the context problem of not being able to tell whether “Apple” refers to the fruit or the IT company, and the scalability problem of needing separate dictionaries for each language.
 
-The breakthrough came with **Word2Vec**, announced by Google in 2013. It implemented the linguistic distributional hypothesis—“words used in similar surrounding contexts probably have similar meanings”—through large-scale data and machine learning. For example, if we analyze a large amount of text, we find that words like “cat,” “kitty,” and “feline” appear in contexts such as “I have a ___ as a pet” or “The ___ curled up on my lap.” From such patterns, Word2Vec automatically learns relationships between words without being explicitly taught by humans.
+The breakthrough came with **Word2Vec**, announced by Google in 2013[^word2vec]. It implemented the linguistic distributional hypothesis—“words used in similar surrounding contexts probably have similar meanings”—through large-scale data and machine learning. For example, if we analyze a large amount of text, we find that words like “cat,” “kitty,” and “feline” appear in contexts such as “I have a ___ as a pet” or “The ___ curled up on my lap.” From such patterns, Word2Vec automatically learns relationships between words without being explicitly taught by humans.
+
+[^word2vec]: Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean, “Efficient Estimation of Word Representations in Vector Space” (2013), https://arxiv.org/abs/1301.3781; Tomas Mikolov et al., “Distributed Representations of Words and Phrases and their Compositionality” (NeurIPS 2013), https://arxiv.org/abs/1310.4546
 
 Word2Vec represents words as points (vectors) in a high-dimensional space. For example, “cat” might be represented as a combination of 300 numbers—a 300-dimensional vector—and words used in similar contexts are placed near one another. In practice, if we calculate the words closest to “cat,” we find “kitty,” “feline,” and “kitten” near the top, with “rabbit” and “dog” also placed nearby.
 
@@ -58,7 +60,11 @@ Once words can be represented as vectors, we can numerically measure “how simi
 ![How distance between vectors is measured](images/12_vector_distance.png)
 *Figure 12-2: How distance between vectors is measured*
 
-There are several ways to measure closeness between vectors, but for word vectors, **cosine similarity** is commonly used. This is a metric that measures how similar the “directions” of two vectors are, and mathematically it takes values in the range from -1 to 1. The closer the value is to 1, the more similar the usage; the closer it is to 0, the less related the words are. In high-dimensional embedding vectors, unrelated vectors tend to be nearly orthogonal, so in practice values are distributed mostly between around 0 and 1. For example, the cosine similarity between “cat” and “feline” might be high at 0.74, while the similarity between “cat” and “Tokyo” would be low.
+There are several ways to measure closeness between vectors, but for word vectors, **cosine similarity** is commonly used. This is a metric that measures how similar the “directions” of two vectors are, and mathematically it takes values in the range from -1 to 1. The closer the value is to 1, the more similar the usage; the closer it is to 0, the less related the words are. For example, the cosine similarity between “cat” and “feline” might be high at 0.74, while the similarity between “cat” and “Tokyo” would be low.
+
+That said, vectors produced by actual embedding models such as BERT, OpenAI Embeddings, and Sentence-BERT do not distribute evenly across the whole space. As a result of training, they tend to concentrate in a narrow region[^anisotropy]. Because of this, values are often biased higher than the theoretical expectation that “unrelated means near 0”; in real implementations, two unrelated documents may commonly have cosine similarity around 0.2 to 0.6 rather than 0. When deciding whether something is “similar” or “not similar” with a threshold, it is safer to look at **relative rankings and differences** rather than absolute values.
+
+[^anisotropy]: This phenomenon is known technically as “anisotropy.” See Kawin Ethayarajh, “How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings” (EMNLP 2019), https://arxiv.org/abs/1909.00512.
 
 What matters here is that vectorization transforms a language problem into a mathematical problem. Once “similarity” can be calculated numerically, large amounts of text can be compared and classified automatically.
 
@@ -77,18 +83,26 @@ Japanese also has many such words. For example, *amai* can mean sweetness in “
 
 But with Word2Vec, all of these different meanings of “bank,” *amai*, *atama*, and *kin* collapse into a single vector as long as the word form is the same. If even such simple words are treated without regard to context, there are clear limits to practical natural language processing.
 
-BERT solved this problem. BERT (Bidirectional Encoder Representations from Transformers), announced by Google in 2018, generates different vector representations depending on context by looking at both the preceding and following context of a word at the same time, as suggested by the word “Bidirectional.”
+BERT solved this problem. BERT (Bidirectional Encoder Representations from Transformers), announced by Google in 2018[^bert], generates different vector representations depending on context by looking at both the preceding and following context of a word at the same time, as suggested by the word “Bidirectional.”
 
 - If the word “river” is nearby → “bank” is represented as a vector meaning “riverbank”
 - If “money” or “deposited” is nearby → “bank” is represented as a vector meaning “financial institution”
 
-With the arrival of BERT, Google is said to have significantly improved the accuracy of natural-language search around 2019.
+BERT’s core technical idea is training through **fill-in-the-blank problems**. Random words in a sentence are hidden, and the model is trained on massive text corpora to infer the missing word from the surrounding context[^bert]. For example, in the sentence “She deposited money in the ___,” the model learns to infer “bank” from the surrounding context of “money” and “deposited.” By solving this kind of fill-in-the-blank task at enormous scale, BERT acquired the ability to read the whole sentence and understand what each word means in context. The same idea of fill-in-the-blank learning reappears in a different form in GPT’s few-shot learning, introduced in Section 12.4.2.
+
+[^bert]: This training method is technically called MLM (Masked Language Modeling). See Jacob Devlin et al., “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding” (2018), https://arxiv.org/abs/1810.04805.
+
+BERT was also put into practice for improving search-engine accuracy. On October 25, 2019, Google announced that it was introducing BERT into English-language search and described it as the biggest leap forward in five years. It affected about 10% of all search queries and was said to improve interpretation especially for conversational, natural-language queries involving prepositions and conjunctions. On December 9 of the same year, it was rolled out to more than 70 languages, including Japanese[^google_bert].
+
+[^google_bert]: Pandu Nayak (Google), “Understanding searches better than ever before” (October 25, 2019), https://blog.google/products/search/search-language-understanding-bert/; Barry Schwartz, “Google: BERT now used on almost every English query” (Search Engine Land, October 15, 2020).
 
 ### 12.3.4 From Words to Sentences: The Arrival of Sentence-BERT (2019)
 
 BERT can generate context-aware word vectors, but it was not well suited to efficiently representing an entire sentence as a single vector. To calculate the similarity between two sentences, both sentences had to be input into BERT at the same time, making the computational cost enormous when comparing large numbers of sentences.
 
-This problem was solved by Sentence-BERT (S-BERT). Introduced in 2019, this method modified BERT so that an entire sentence could be efficiently represented as a single vector. As a result, once the vector for each sentence has been computed in advance, similarity can be calculated simply by comparing vectors.
+This problem was solved by Sentence-BERT (S-BERT). Introduced in 2019, this method improved BERT so that an entire sentence could be efficiently represented as a single vector[^sbert]. As a result, once the vector for each sentence has been computed in advance, similarity can be calculated simply by comparing vectors.
+
+[^sbert]: Nils Reimers and Iryna Gurevych, “Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks” (EMNLP 2019), https://arxiv.org/abs/1908.10084.
 
 Let us vectorize the following nine sentences and calculate cosine similarity between all pairs (Figure 12-3).
 
@@ -133,7 +147,7 @@ This transformation makes language computable. Addition, subtraction, distance m
 
 There is some variation in terminology for this concept. Depending on the literature or the engineer, you may see expressions such as “embedding,” “embedding vector,” “context vector,” “context embedding vector,” and so on. These all refer, in essence, to the same thing. In this book, we use these terms according to context, but please do not let that cause confusion.
 
-Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (1,536 dimensions) and the open-source Sentence Transformers library (768 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors, and in some cases even the vector lengths differ, making calculation itself impossible. In Kouchou AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
+Today, embeddings are easy to use through a variety of services, such as OpenAI’s Embeddings API (`text-embedding-3-small` has 1,536 dimensions, while `text-embedding-3-large` has 3,072 dimensions) and the open-source Sentence Transformers library (roughly 384 to 1,024 dimensions depending on the model; for example, `all-MiniLM-L6-v2` has 384 dimensions, `all-mpnet-base-v2` has 768 dimensions, and `BGE-M3` has 1,024 dimensions). You simply pass in a sentence, and a vector with hundreds or thousands of dimensions is returned. One important point is that **embeddings are model-specific and are not compatible across different models**. Even for the same sentence, different models produce completely different vectors, and in some cases even the vector lengths differ, making calculation itself impossible. In Kouchou AI, both the OpenAI API and Sentence Transformers can be used interchangeably, but once a model is chosen, it must be used consistently through the end of the analysis.
 
 ---
 
@@ -412,6 +426,10 @@ Let us look at how the algorithm works in Figure 12-8.
 4. **Step 3**: The center points are moved to the centroid of each group
 5. **Step 4-7**: Repeat “assignment → center movement.” Stop when the center points no longer move
 
+The initialization method in Step 1 has a major impact on the result. If centers are placed completely at random, the algorithm can fall into a poor local solution. For that reason, major modern implementations such as scikit-learn use a smarter initialization method by default[^kmeanspp]. It selects the first point at random, then selects later center points with higher probability the farther they are from existing centers, greatly reducing the risk of bad initialization. In the hands-on code in this book and in Kouchou AI’s implementation, this method is used automatically even when `KMeans()` is called without explicitly specifying it.
+
+[^kmeanspp]: This method is called k-means++. See David Arthur and Sergei Vassilvitskii, “k-means++: The Advantages of Careful Seeding,” SODA 2007.
+
 The key features of K-means are that it is simple and fast. However, you must decide in advance how many groups to divide the data into. Another important feature is that it can **forcibly split a single cluster into multiple parts**. In the “one cluster” example mentioned earlier, when K-means was asked to divide the data with “K=2,” the cluster was forcibly cut in two. At first glance this may seem like a disadvantage, but as we will see later, Kouchou AI takes advantage of this property by first dividing the data finely and then integrating it hierarchically.
 
 ### 12.5.4 Hierarchical Clustering (Ward’s Method)
@@ -442,7 +460,7 @@ In other words, once clustering has been performed, you can later adjust it by s
 
 ### 12.5.5 What Is Dimensionality Reduction?
 
-In Kouchou AI, 1,536-dimensional vectors are compressed into two dimensions for visualization. Humans can intuitively understand up to three dimensions, so it is impossible to directly view high-dimensional data as it is. By reducing it to two dimensions, it can finally be visualized as a scatter plot.
+In Kouchou AI’s default configuration, OpenAI’s `text-embedding-3-small` generates 1,536-dimensional vectors, which are then compressed into two dimensions for visualization. Humans can intuitively understand up to three dimensions, so it is impossible to directly view high-dimensional data as it is. By reducing it to two dimensions, it can finally be visualized as a scatter plot.
 
 Let us think about this “mapping from high dimensions to low dimensions” using familiar examples (Figure 12-10).
 
@@ -466,7 +484,9 @@ In the context of broad listening, Polis uses PCA to compress participants’ vo
 
 PCA is well suited to capturing linear correlations, but it has limits when dealing with data that has complex structure. PCA finds “the direction in which the overall variance of the data is greatest,” but that is not necessarily ideal for the goal of “placing similar things close together.”
 
-UMAP (Uniform Manifold Approximation and Projection), introduced in 2018, prioritizes preserving relationships between nearby points. Points that are close in high-dimensional space are placed close together even after being compressed into two dimensions. This makes it possible to create intuitive visualizations in which “similar opinions are placed near one another.” In Kouchou AI scatter plots, opinions on the same topic appear grouped together thanks to UMAP.
+UMAP (Uniform Manifold Approximation and Projection), introduced in 2018[^umap], prioritizes preserving relationships between nearby points. Points that are close in high-dimensional space are placed close together even after being compressed into two dimensions. This makes it possible to create intuitive visualizations in which “similar opinions are placed near one another.” In Kouchou AI scatter plots, opinions on the same topic appear grouped together thanks to UMAP.
+
+[^umap]: Leland McInnes, John Healy, and James Melville, “UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction” (2018), https://arxiv.org/abs/1802.03426.
 
 Let us explain the UMAP algorithm metaphorically. From each data point, attach **rubber bands** to several nearby points in high-dimensional space. Nearby points are connected by an attractive force. At the same time, **repelling magnets** create a repulsive force between randomly chosen distant points. The balance between attraction and repulsion naturally arranges similar things close together and dissimilar things farther apart. Strictly speaking, this is not a physical simulation, but it is a useful intuitive image.
 

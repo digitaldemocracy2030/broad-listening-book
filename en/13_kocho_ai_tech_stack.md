@@ -1,4 +1,4 @@
-# Chapter 13 Reading the Implementation of 広聴AI (Kouchou AI, Broad Listening AI)
+# Chapter 13: Reading the Implementation of 広聴AI (Kouchou AI, Broad Listening AI)
 
 ## 13.1 Learning Objectives for This Chapter
 
@@ -107,7 +107,7 @@ That said, there are also concerns. Because of LLM hallucinations, content not p
 
 In this step, the high-dimensional embedding vectors obtained in the previous step, meaning arrays of hundreds of numbers representing each opinion, are compressed into two dimensions. Kouchou AI uses UMAP, as explained in Chapter 12.
 
-The embeddings generated in the previous step are high-dimensional vectors: 1,536 dimensions with OpenAI’s Embeddings API and 768 dimensions with Sentence Transformer. The main reason for dimensionality reduction is visualization. Humans can intuitively understand only up to about two or three dimensions, so to display the data as a scatter plot, the dimensionality must be reduced. In Kouchou AI, clustering is also performed on the two-dimensional data after UMAP, so dimensionality reduction also serves as preprocessing for clustering.
+The embeddings generated in the previous step are high-dimensional vectors. With OpenAI’s Embeddings API, they are 1,536 dimensions for `text-embedding-3-small` or 3,072 dimensions for `text-embedding-3-large`, depending on the model used. With Sentence Transformers, they are generally around 384 to 1,024 dimensions, depending on the model. The main reason for dimensionality reduction is visualization. Humans can intuitively understand only up to about two or three dimensions, so to display the data as a scatter plot, the dimensionality must be reduced. In Kouchou AI, clustering is also performed on the two-dimensional data after UMAP, so dimensionality reduction also serves as preprocessing for clustering.
 
 Kouchou AI specifies cosine distance as the distance function for UMAP.
 
@@ -131,17 +131,19 @@ In this step, K-means is used to automatically group similar opinions. In Koucho
 
 There are two reasons K-means was chosen. First, it tends to produce clusters of roughly similar size. If cluster sizes are extremely uneven, they become harder to handle in downstream labeling and visualization. Second, because it groups nearby points together on the scatter plot, it is less likely to produce disconnected “islands.”
 
-Here, “islands” refers to the phenomenon where points that are visually far apart end up belonging to the same cluster. TTTC Scatter, the upstream project from which Kouchou AI was forked, uses Spectral Clustering, and in actual projects this did produce such islands. Spectral Clustering represents the “connectedness” of points as a graph and divides the whole graph in the most natural way. Because it looks not only at geographical closeness on the scatterplot but also at whether points are connected through intermediate points, two visually separated groups can be merged into the same cluster if they are connected through a chain of points. That is the source of these islands. The figure below shows an example from Nippon TV’s 2024 House of Representatives election special, where TTTC Scatter was used.
+Here, “islands” refers to the phenomenon where points that are visually far apart end up belonging to the same cluster. TTTC Scatter, the upstream project from which Kouchou AI was forked, uses Spectral Clustering, and in actual projects this did produce such islands. The figure below shows an example from Nippon TV’s 2024 House of Representatives election special, where TTTC Scatter was used. You can see small pink points scattered away from the large pink mass in the center.
 
 ![Example of Talk to the City used in Nippon TV’s 2024 House of Representatives election special](images/13_ntv_spectral.png)
 
 Source: [Nippon TV 2024 House of Representatives election special](https://news.ntv.co.jp/static/shugiinsenkyo2024/whole-1022/index.html)
 
+Because Spectral Clustering must assign every point to one of the preset k clusters, isolated outliers tend to be absorbed into the existing cluster with the lowest cost, often the largest cluster. The scattered pink points in the figure above can be understood as a typical example of this outlier absorption.
+
 Kouchou AI switched from Spectral Clustering to K-means as a design decision based on the assumption that its users would be ordinary citizens and politicians. When people unfamiliar with the characteristics of clustering algorithms look at a scatter plot, they will be confused if opinions in distant locations are shown in the same color. With K-means, the result matches the intuition that “opinions close together belong to the same group.”
 
 That said, K-means assumes spherical clusters, so it may miss complex cluster shapes that Spectral Clustering could have detected. Kouchou AI accepts this trade-off and prioritizes visual clarity. This is a decision made on the assumption that the system will be used as infrastructure for democracy, not as an analysis tool for specialists.
 
-Clustering is performed on the data after UMAP has reduced it to two dimensions. As noted in Chapter 12, UMAP has the limitation that “distances between far-apart points are not meaningful,” but K-means relies on the distance between each point and its centroid, so practical clustering is still possible as long as neighborhood relationships are preserved. Also, by the time dimensionality reduction has been performed, much of the information from the original high-dimensional space has already been lost, so even more sophisticated algorithms would likely yield only limited gains in accuracy. It was therefore judged that simple K-means was sufficient.
+Clustering is performed on the data after UMAP has reduced it to two dimensions. **We should be frank that this is not standard machine-learning practice, and that it involves a design compromise.** Normally, clustering is done in the original high-dimensional vector space where less information has been lost, while UMAP is used only for visualization. UMAP specializes in keeping nearby points near each other, and it does not strictly match the assumptions K-means makes about spherical clusters and uniform distances. Even so, Kouchou AI uses this configuration for the same reason it moved from Spectral Clustering to K-means: the design prioritizes making the scatterplot and the cluster colors visually agree. This is also supported by the empirical observation that the free-text extraction data handled by Kouchou AI is already compressed, so more sophisticated algorithms tend to produce only limited accuracy gains.
 
 ---
 
@@ -156,7 +158,9 @@ For example, if the number of lower-level clusters is set to 20 and the number o
 
 A dendrogram, or tree structure, shows the history of merging similar clusters from the bottom up. The vertical axis represents the cost of merging, or the distance between clusters; the higher you go, the more distant the clusters being forced together. If the tree is cut horizontally at a high position, only a few large groups remain, so the number of higher-level clusters is small. If it is cut at a low position, many smaller groups remain, so the number of higher-level clusters is large.
 
-Why use this combination? One might wonder, “Why not just use Ward’s method for hierarchical clustering from the start?” However, in standard implementations, Ward’s method has the property that computation time grows snowball-like as the number of opinions increases. Technically this is written as O(n²log n), which means that if the data grows 10 times, processing time can jump by more than 100 times. With tens of thousands of opinions, Ward’s method alone cannot finish in a realistic amount of time. So the system first uses K-means, whose processing time is roughly proportional to the number of data points (O(nk)), to divide opinions into lower-level clusters and compute the centroid of each cluster. Then only those centroids, reducing tens of thousands of points to a few dozen or so, are merged using Ward’s method, greatly reducing the computational cost.
+Why use this combination? One might wonder, “Why not just use Ward’s method for hierarchical clustering from the start?” However, Ward’s method has the property that computation time grows snowball-like as the number of opinions increases: if the data grows 10 times, processing time can jump by more than 100 times[^ward_complexity]. With tens of thousands of opinions, Ward’s method alone cannot finish in a realistic amount of time. So the system first uses K-means, whose processing time is roughly proportional to the number of data points, to divide opinions into lower-level clusters and compute the centroid of each cluster. Then only those centroids, reducing tens of thousands of points to a few dozen or so, are merged using Ward’s method, greatly reducing the computational cost.
+
+[^ward_complexity]: In computational-complexity notation, Ward’s method is O(n^2 log n) in implementations based on the Lance-Williams update formula, as commonly used in scipy, and still has an O(n^2) lower bound even with the nearest-neighbor-chain method optimized for Ward’s method. K-means is O(nk) for n opinions and k clusters.
 
 ---
 
@@ -238,11 +242,13 @@ First, install the required libraries.
 pip install openai pandas numpy scikit-learn umap-learn matplotlib scipy
 ```
 
-Please obtain an OpenAI API key in advance (https://platform.openai.com/api-keys). In the code below, the API key is specified directly, but in actual operation you should set it as an environment variable (`OPENAI_API_KEY`) and avoid including it in source code. If code containing an API key is published on GitHub or elsewhere, it may be abused by third parties.
+Please obtain an OpenAI API key in advance (https://platform.openai.com/api-keys). In the code below, the API key is specified directly, but in actual operation you should set it as an environment variable (`OPENAI_API_KEY`) or write it in a `.env` file and load it with `python-dotenv`, rather than including it in source code. If code containing an API key is published on GitHub or elsewhere, it may be abused by third parties.
 
 ### 13.3.2 Implementing a Mini Kouchou AI
 
 Below is the minimum code needed to cluster and visualize opinions. Of the pipeline explained in Section 13.2, this mini implementation covers **② Embedding → ③ Dimensionality Reduction → ④ Clustering (K-means only) → ⑥ Initial Labeling**. It omits **① Extraction (LLM-based opinion splitting and normalization)**, **⑤ Cluster Integration (hierarchical merging with Ward’s method)**, **⑦ Integrated Labeling**, and **⑧ Summary Generation**.
+
+The code below writes the API key directly in order to keep the explanation simple, but **in real operation, set it in the `OPENAI_API_KEY` environment variable or write it in a `.env` file and load it with `python-dotenv`**. If an API key is published in Git or elsewhere, it may be abused by third parties.
 
 ```python
 """
@@ -397,9 +403,13 @@ For readers less familiar with formulas, the cube root ∛n is a gentle function
 
 These default values were tuned to generate visually appealing scatter plots that are easy to read and make the overall picture easy to grasp. On the other hand, when policy planners use the system in practice, it may be more effective to increase the number of clusters. If there are only around 10 higher-level clusters, a single cluster may contain too many diverse opinions, making it difficult to translate them into concrete measures. It may therefore be worth using different cluster counts for visualization and for analysis.
 
+The combination of exponents `n^(2/3)` and `∛n` is not an optimal value derived from clustering theory. It is an empirical value that Kouchou AI settled on through trial and error during development, using scatterplot readability as the criterion. In academic contexts, several evaluation metrics have been proposed for statistically choosing an optimal cluster count based on the structure of the data[^cluster_eval]. Kouchou AI does not adopt those metrics because of two design judgments: (a) in practice, it is more useful for users to manually choose the level of granularity they want to see, and (b) the choice of evaluation metric is itself use-case-dependent, so automatic optimization does not necessarily return the cluster count that is actually desirable.
+
+[^cluster_eval]: Representative examples include the elbow method, the silhouette coefficient (Peter J. Rousseeuw, “Silhouettes: A graphical aid to the interpretation and validation of cluster analysis,” Journal of Computational and Applied Mathematics, 1987), the gap statistic (Robert Tibshirani, Guenther Walther, and Trevor Hastie, “Estimating the number of clusters in a data set via the gap statistic,” Journal of the Royal Statistical Society, 2001, https://hastie.su.domains/Papers/gap.pdf), and BIC/AIC.
+
 ### 13.4.3 Experiments in Separating Support and Opposition
 
-As discussed in 13.2.3, support and opposition within the same topic are difficult to separate. In developing the next generation of Kouchou AI, the author experimented with several prototypes to address this issue. Two of them are introduced here. One extends embeddings; the other avoids embeddings entirely and relies directly on the LLM.
+As discussed in 13.2.3, support and opposition within the same topic are difficult to separate. In developing the next generation of Kouchou AI, the authors experimented with several prototypes to address this issue. Two of them are introduced here. One extends embeddings; the other avoids embeddings entirely and relies directly on the LLM.
 
 #### Approach 1: Adding a Sentiment Dimension
 
@@ -443,11 +453,13 @@ Both approaches have strengths and weaknesses, and further research and developm
 
 ## 13.5 Scatter-Plot Classification vs. Long Context: Two Architectures
 
-The Kouchou AI pipeline explained in this chapter (Extraction → Embedding → UMAP → Clustering → Labeling) is an architecture that vectorizes opinions and classifies them on a scatter plot. It is designed to prioritize intuitive visualization—“opinions that are close together are similar”—and ease of explanation, so that results can be understood even without specialist knowledge.
+The Kouchou AI pipeline explained in this chapter (LLM Extraction → Embedding → UMAP → Clustering → Labeling) is an architecture that vectorizes opinions and classifies them on a scatter plot. It is designed to prioritize intuitive visualization—“opinions that are close together are similar”—and ease of explanation, so that results can be understood even without specialist knowledge.
 
 One reason this architecture emerged is that early LLMs had context windows limited to 4,096 tokens (about 2,700 Japanese characters). At the time, it was impossible to pass 1,000 opinions to an LLM at once, so similarity judgments between opinions were handled using Sentence-BERT embeddings and cosine similarity.
 
-Since then, LLM context windows have expanded rapidly. Today’s major models include the GPT-4 family (128,000 tokens), the Claude family (200,000 tokens), and the Gemini family (up to over 1 million tokens), making it possible to process thousands to tens of thousands of opinions together. Taking advantage of this evolution, a Long Context architecture—one that simply has the LLM read everything directly, without using embeddings or UMAP—has become a practical option. TTTC Turbo performs clustering by passing many opinions directly to the LLM, while Google Jigsaw’s Sensemaker combines LLM-based topic classification with voting-data-based support/opposition judgment.
+Since then, LLM context windows have expanded rapidly. At the time of this book’s writing in 2026, major models such as OpenAI’s GPT-5 family (up to 1 million tokens), Anthropic’s Claude Opus 4.7 (1 million tokens), and Google’s Gemini 2.5 family (1 million to 2 million tokens) all have context windows around the million-token range, making it possible to process thousands to tens of thousands of opinions together.
+
+Taking advantage of this evolution, a Long Context architecture—one that simply has the LLM read everything directly, without using embeddings or UMAP—has become a practical option. TTTC Turbo performs clustering by passing many opinions directly to the LLM. Google Jigsaw’s Sensemaker implements LLM-based topic classification and generates summaries by combining that with Polis voting data. The proof-of-concept by Fujitsu and central government ministries introduced in the column “Big-Business AI Takes On Public Comments: Fujitsu’s Initiative” is also worth consulting, because it uses long context to match opinions against ministerial ordinance text.
 
 Each type has its own characteristics. The scatter-plot type automatically generates an opinion scatterplot using UMAP, allowing intuitive understanding that “close = similar,” but because clustering is performed after reducing the data to two dimensions, clustering accuracy is relatively poor.
 
@@ -461,4 +473,4 @@ Both types are developing rapidly, and their respective strengths and weaknesses
 
 In this chapter, we explained the processing pipeline and design philosophy of Kouchou AI. Its design philosophy prioritizes ease of explanation over accuracy, emphasizing that “opinions that are close together are similar” should be intuitively understandable. It is designed as infrastructure for democracy, with the goal of being usable even by people without specialist knowledge.
 
-By combining the technologies learned in Chapter 12, the essential processing can be implemented in about 100 lines of code. The source code for Kouchou AI is all published as open source, so once you understand the processing flow explained in this chapter, you can customize and extend it in your own way.
+By combining the technologies learned in Chapter 12, the essential processing for broad listening can be implemented in about 100 lines of code. The source code for Kouchou AI is all published as open source, so once you understand the processing flow explained in this chapter, you can customize and extend it in your own way.

@@ -13,8 +13,6 @@ On January 16, 2025, Takahiro Anno announced the launch of the Digital Democracy
 
 > “Anno’s ‘AI Project Digital Democracy 2030’ is excellent. We will actually put it to use in Nippon Ishin no Kai. By using broad listening and AI, we can create better policy. To start, we will narrow the focus to ‘reforms to lower social insurance premiums and social security reform,’ and use an AI system to reflect a wide range of ideas and voices in policy. We’re doing it.”
 
-![X post by party leader Hirofumi Yoshimura (January 16, 2025, 6:32 p.m.)](images/06_03_吉村代表X投稿.png)
-
 On the very day DD2030 was announced, the party leader himself declared that broad listening and AI would be used. It was a response that came only a few hours after the announcement. In this way, Nippon Ishin no Kai’s “Policy AI Utilization Project” got underway[^ishin1].
 
 ### Building a Proprietary System and the “Center Pin” Strategy
@@ -31,9 +29,16 @@ On July 3, 2025, with the House of Councillors election just ahead on July 20, Y
 
 In the video, an attempt was made to visualize shifts in public opinion by comparing the analysis results from May and June. In the May analysis, the largest cluster was “economic self-defense strategies,” dominated by a mood of resignation and distrust toward the state. But in the June analysis, the largest cluster had shifted to “dissatisfaction with social insurance burdens and demands for reform.” In the span of just one month, the center of gravity of public opinion on social security policy appeared to have changed significantly.
 
-![Scatterplot of opinions on social insurance premiums from May 6 to May 19, 2025. “The importance of economic self-defense strategies” was the largest cluster at the center, and a mood of resignation was dominant.](images/06_03_ishin_scatter_may.png)
+The main clusters shown in the video for May and June were as follows.
 
-![Scatterplot of opinions on social insurance premiums from June 3 to June 16, 2025. The largest cluster shifted to “dissatisfaction with social insurance burdens and demands for reform,” accounting for about 47% of the total.](images/06_03_ishin_scatter_june.png)
+| Rank | May 6-19, 2025 | Share | June 3-16, 2025 | Share |
+|---|---|---:|---|---:|
+| 1 | Importance of economic defense strategies | 23% | Dissatisfaction with social insurance burdens and demands for reform | 47% |
+| 2 | Need to reduce social insurance premiums | 17% | Dissatisfaction and proposals regarding social insurance premiums and tax reform | 24% |
+| 3 | Sense of unfairness in social insurance premium burdens | 16% | Declining birthrate, aging population, and social insurance premium burden issues | 9% |
+| 4 | Reducing burdens on working generations and reviewing elderly welfare | 15% | Prioritizing social insurance premium reductions | 7% |
+| 5 | Debate over priorities between social insurance premiums and consumption tax | 11% | Political criticism and expectations for social insurance premium reform | 6% |
+| 6 | Review of consumption tax policy | 8% | Criticism of Prime Minister Ishiba's economic policy | 2% |
 
 Deputy Policy Research Council Chair Fujita focused on this result. The “economic self-defense strategies” cluster reflected resigned voices saying that it would be better to manage one’s own assets rather than rely on social security. But Fujita saw a policy option in this. Even if social insurance premium reform could not be achieved, another policy path would still be available: shifting to a tax system that makes asset management easier. **Broad listening had pointed to a policy direction they had not originally anticipated.**
 
@@ -74,8 +79,6 @@ On October 8, 2025, as the theme for Phase 2, the party began collecting opinion
 Then, on January 26, 2026, as Phase 3, Ishin began soliciting opinions on its entire House of Representatives election platform—a collection of 498 individual policy items[^ishin9a]. “This is not the end of Ishin’s platform,” Fujita said. There was no longer even any need for people to attach a hashtag. He explained that “AI will pick up the discussions people are naturally having on social media,” signaling an intention to draw policy hints from voters’ everyday conversations as well.
 
 On February 6, 2026, the party released an interim report video for Phase 3[^ishin9b]. Here, the analysis covered not only opinions submitted about Ishin’s platform, but also posts collected using keywords such as “election interference” and “pediatrics.”
-
-![From the interim report video for Phase 3 broad listening, showing opinions from supporters of other parties regarding election interference as well](images/06_03_ishin_brolis_cluster_detail.png)
 
 What is interesting about this video is that, because the collection method relied on keyword searches, it appears that posts by supporters of other parties were also included in the analysis. In the video, the details of a cluster labeled “strengthening countermeasures against election interference and legal responses” were shown on screen, visualizing criticism of specific political parties and broader discussion about election interference.
 

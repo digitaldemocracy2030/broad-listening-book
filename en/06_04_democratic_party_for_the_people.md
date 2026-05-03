@@ -1,4 +1,4 @@
-# Chapter 6: Using Broad Listening in National Elections
+# Chapter 6: The Use of Broad Listening in National Elections
 
 Written by: tokoroten
 

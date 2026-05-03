@@ -52,7 +52,7 @@ What we wanted to achieve with Public Opinion Map was not simply to “visualize
 
 ![party icons](images/04_04_polis_party_icons.png)
 
-The opinions users voted on were extracted from each party’s electoral platform. We then encoded whether each party’s position on each statement was in favor, opposed, or neutral, and displayed those positions as party icons on the scatterplot. This allowed users to see which party their own views were closest to, what kinds of opinion groups existed in society and which parties represented them, and which groups were not represented by any party at all.
+The opinions users voted on were extracted from each party’s electoral platform. For each extracted statement, we determined from the platform text whether each party was in favor, opposed, or neutral, turned that into data, and displayed the result as party icons on the scatterplot. **This party-position data was prepared once before the site was released; it was not updated after users began voting.** Users, meanwhile, voted agree or disagree on the statements prepared by the operators, and their own positions were plotted on the scatterplot. This allowed users to see which party their own views were closest to, what kinds of opinion groups existed in society and which parties represented them, and which groups were not represented by any party at all.
 
 ![economic policy map](images/04_04_polis_economic_map.png)
 
@@ -85,6 +85,8 @@ The process of extracting each party’s positions is also an area where JAPAN C
 In Public Opinion Map, your position on the scatterplot moves immediately in response to your votes. This is an experience Polis itself does not offer. Immediate feedback on the results of one’s actions improves the quality of the experience.
 
 We achieved this by also providing the client with the projection matrix used in principal component analysis (PCA). The user’s voting vector is projected into two dimensions using that matrix, allowing the position to be updated without querying the server.
+
+Put more simply, the system calculates the overall "axes" of Public Opinion Map in advance and keeps that axis information in the user's browser. Each time the user votes, that voting pattern is fitted onto those axes to determine a two-dimensional position.
 
 This design has an additional benefit: even if the Polis computation server is shut down, positions can still be updated in response to voting. We have in fact shut down the Polis computation server now that the election period is over. Even so, users can still vote their views and experience their position on the map updating. The fact that it can remain available after the election as a kind of “dynamic exhibit” was also an advantage from the standpoint of public value.
 

@@ -1,4 +1,4 @@
-# Chapter 4 The Spread of Broad Listening Within Japan
+# Chapter 4: The Spread of Broad Listening in Japan
 
 Author: tokoroten
 
@@ -41,7 +41,7 @@ Traditionally, questions in the Japanese Parliament were based on issues that la
 
 Broad listening solves this problem. By allowing citizens to speak freely and then framing questions around the issues that emerge from those voices, it becomes possible to clearly show the gap between "what people are actually struggling with" and "what the government is addressing."
 
-Ito's questioning was not an attempt to measure public opinion in the sense of "what percentage of people think this." It was the presentation of issues: "there are people struggling from these perspectives." And it raised the question of whether those issues had been left out of government policy.
+Ito's questioning was not an attempt to measure statistical public opinion in the sense of "what percentage of people think this." It was the presentation of issues: "there are people struggling from these perspectives." And it raised the question of whether those issues had been left out of government policy.
 
 ### What Was Happening Behind the Scenes of This Groundbreaking Parliamentary Question in 2024?
 

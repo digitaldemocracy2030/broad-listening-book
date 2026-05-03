@@ -1,4 +1,4 @@
-# Chapter 10 Broad Listening as a Business
+# Chapter 10: Broad Listening as a Business
 
 Written by: tokoroten
 

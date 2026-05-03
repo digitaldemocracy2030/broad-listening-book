@@ -19,7 +19,7 @@ This section is based not on direct interviews with Komeito, but on publicly ava
 
 The policy development process for We Connect was explicitly published on the project website. Its distinguishing feature was that it was designed not as a one-time survey collection, but as a two-round cycle.
 
-![Flow of policy development in We Connect](images/06_05_WeConnect_workflow.jpg)[^komei_flow]
+![Figure: Flow of policy development in We Connect, showing two survey rounds, internal aggregation, policy deliberation, and final priority-policy decisions.](images/06_05_WeConnect_workflow.png)[^komei_flow]
 
 First, the first survey was launched on March 17. The responses received from late April through the Golden Week holiday period were then aggregated and discussed within the party. After Golden Week in May, a second survey was conducted, and policy proposals were further debated based on the feedback gathered in the first round. The first survey remained open even after the second began, and individual investigations by lawmakers were also conducted in parallel with the surveys. Based on these layered discussions, the party’s Policy Research Council finalized policies in June, which were then announced as priority policies before the official start of the House of Councillors election campaign.
 
@@ -57,21 +57,39 @@ March 2025, when We Connect began, was a time when Japan’s consumer price inde
 
 Reflecting this context, the word cloud of collected responses prominently featured terms such as “stockpiled rice,” “rising prices,” “taxes,” “tax cuts,” “policy,” “lawmakers,” “households,” “cash benefits,” and “support.”
 
-![Word cloud of responses submitted to We Connect](images/06_05_WeConnect_wordcloud.png)[^komei3]
+In the results for selected policy issues (multiple answers allowed), “measures against rising prices and economic stimulus” was overwhelmingly the top choice at about 67,000 responses, followed by “social security such as pensions, healthcare, and nursing care” (about 50,000) and “education, child-rearing support, and measures against the declining birthrate” (about 22,000).
 
-*Note: The Japanese character 米, meaning “rice,” appears prominently in this word cloud.*
+| Rank | Policy issue | Approx. count |
+|---|---|---:|
+| 1 | Measures against rising prices and economic stimulus | 67,000 |
+| 2 | Social security such as pensions, healthcare, and nursing care | 50,000 |
+| 3 | Education, child-rearing support, and measures against the declining birthrate | 22,000 |
+| 4 | Employment and labor issues | 15,000 |
+| 5 | Tax system | 14,000 |
+| 6 | Economy and finance | 12,000 |
+| 7 | Disaster prevention, recovery, and infrastructure development | 11,000 |
+| 8 | Political reform, including the issue of money in politics | 9,000 |
+| 9 | Loneliness, isolation, and support for single-person households | 8,000 |
+| 10 | Environment and energy | 6,000 |
 
-In the results for selected policy issues (multiple answers allowed), “measures against rising prices and economic stimulus” was overwhelmingly the top choice at about 65,000 responses, followed by “social security such as pensions, healthcare, and nursing care” (about 50,000) and “education, child-rearing support, and measures against the declining birthrate” (about 25,000).
+*Source: We Connect special website[^komei3]*
 
 What is notable, however, is that “political reform, including the issue of money in politics,” ranked relatively low. Since its founding, Komeito has promoted “clean politics” as a core part of its identity, and in the 2024 revision of the Political Funds Control Act it led efforts to strengthen so-called joint liability provisions and lower the disclosure threshold for party ticket purchasers[^komei_reform].
 
 Even so, the voices of more than 100,000 voters concentrated on issues directly tied to daily life, such as rising prices and social security, while interest in the banner Komeito had carried for 60 years was relatively limited. Broad listening thus also served to make visible the gap between the party’s preferred message and voters’ actual needs.
 
-![Number of selections by policy issue](images/06_05_WeConnect_policy_issues.png)[^komei3]
+Cross-tabulation by age group showed that each generation reacted strongly to issues directly connected to its own daily life.
 
-Cross-tabulation by age group showed that “measures against rising prices and economic stimulus” was the top concern across every generation, from teenagers (47.5%) to those aged 70 and over (71.3%). By contrast, differences emerged in “pensions, healthcare, and nursing care”: interest was higher among older groups—people in their 50s (53.0%), 60s (69.2%), and 70 and over (71.0%)—but relatively low among teenagers (23.0%). “Education and child-rearing support” peaked among people in their 30s (48.5%) and 40s (43.5%), matching the realities of the child-rearing generation.
+| Policy issue | Teens | 20s | 30s | 40s | 50s | 60s | 70+ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Measures against rising prices and economic stimulus | 47.5% | 65.4% | 68.4% | 71.6% | 72.9% | 71.7% | 71.3% |
+| Social security such as pensions, healthcare, and nursing care | 20.0% | 24% | 27.1% | 36.0% | 53.0% | 69.2% | 71.0% |
+| Education, child-rearing support, and measures against the declining birthrate | 36.7% | 35.1% | 48.5% | 43.5% | 24.6% | 17% | 14% |
+| Tax system | 23.0% | 25.9% | 20.0% | 18% | 17% | 12% | 9% |
 
-![Cross-tabulation of age group × policy issue](images/06_05_WeConnect_age_policy.png)[^komei3]
+*Source: We Connect special website[^komei3]. Values without a decimal point, such as 24%, 17%, and 9%, are approximate values read visually from the source bar chart.*
+
+“Measures against rising prices and economic stimulus” was the top concern across every generation, from teenagers (47.5%) to those aged 70 and over (71.3%), and exceeded 70% among people in their 40s through 60s. It was a shared pain point across generations because it directly affected household finances. “Social security such as pensions, healthcare, and nursing care” was relatively low among younger people, at 20.0% among teenagers and 24% among people in their 20s, but rose sharply from the 50s onward, reaching 71.0% among those aged 70 and over. That reflects people approaching or entering the beneficiary generation themselves. “Education and child-rearing support” peaked among people in their 30s (48.5%) and 40s (43.5%), matching the realities of people currently raising children. “Tax system,” by contrast, was relatively high among teenagers (23.0%) and people in their 20s (25.9%), then gradually declined with age to 9% among those aged 70 and over.
 
 By crossing generation with areas of interest, the survey design appears to have aimed to visualize “what policies younger people truly want” and thereby gain clues for winning their support.
 
@@ -87,8 +105,6 @@ The core of the survey also changed. Whereas the first survey was a divergent qu
 - **[Child-rearing]** Free medical care for children, improving the quality of public education, improving the environment surrounding children, etc.
 - **[Employment and labor]** Expanding work-style options suited to different life stages, a four-day workweek, etc.
 - **[Employment and labor]** Major wage increases for childcare workers and care workers, improvements in workplace conditions, etc.
-
-![Policy selection screen for the second We Connect survey](images/06_05_WeConnect_survey2.png)[^komei3]
 
 Each policy proposal was presented visually as a card with a catchphrase, in sharp contrast to the plain checkbox list of 22 fields used in the first survey. The second survey received 23,147 responses, and among them, “Support household finances—act now” won support from about 80% of respondents.
 
@@ -106,8 +122,6 @@ After the survey period ended, Komeito published on the We Connect website an ex
 | Childcare workers and care workers | Raising pay to the average level across all industries (¥386,000 per month) |
 
 AI was also used to communicate these priority policies. An overview of the policies was created and published using the AI presentation tool “Gamma”[^komei_gamma]. Policy proposals do not speak for themselves once drafted; they must be communicated through a variety of information channels. For that reason, it is important to convert policy proposals into forms suited to each channel. Gamma appears to have been useful in turning policy proposals into clear visual materials.
-
-![Overview page of Komeito’s “2025 Priority Policies” created with Gamma](images/06_05_WeConnect_gamma.png)[^komei_gamma]
 
 In addition, the digital edition of the *Komei Shimbun* included an AI policy search feature titled “Find the Komeito platform for you with AI!”[^komei_search]. Users could enter questions in free text, and the AI would identify and explain the pledge among the 60 priority policies that was closest to their interests. Internally, this likely used vector search, a method based on semantic similarity between texts. For individual policies, there was also a button labeled “Ask AI why this policy is necessary,” allowing users to hear the policy background from the AI.
 

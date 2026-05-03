@@ -8,7 +8,7 @@ In the July 2024 Tokyo governor election, candidate Takahiro Anno’s campaign a
 
 This initiative began about two months before the governor election.
 
-The author and Mr. Anno had known each other for some time through their roles as mentors for Mitou Junior, a Japanese program for mentoring young tech talent run by the Mitou Foundation[^mitou-jr]. In the Mitou Junior community, the concept of Plurality—advanced by Audrey Tang, Taiwan’s Digital Minister, and others—had been a topic of discussion since 2023, partly because Rikuto Niimi, one of the organizers of “Plurality Tokyo” held in April 2023, was also a Mitou Junior alumnus. The author was leading the Japanese translation project for a book on Plurality by Audrey Tang and others, and on May 13, 2024, Mr. Anno contacted him saying he wanted to hear more about Plurality in detail.
+The author and Mr. Anno had known each other for some time through their roles as mentors[^mentor] for Mitou Junior[^mitou-jr], a Japanese program for mentoring young tech talent run by the Mitou Foundation. In the Mitou Junior community, the concept of Plurality—advanced by Audrey Tang, Taiwan’s Digital Minister, and others—had been a topic of discussion since 2023, partly because Rikuto Niimi, one of the organizers of “Plurality Tokyo” held in April 2023, was also a Mitou Junior alumnus. The author was leading the Japanese translation project for a book on Plurality by Audrey Tang and others, and on May 13, 2024, Mr. Anno contacted him saying he wanted to hear more about Plurality in detail.
 
 The author introduced Mr. Anno to Haruyuki Seki of Code for Japan, one of the organizers of Plurality Tokyo. On May 23, a meeting was held between Mr. Seki, Mr. Anno, and Nishio, and during that meeting Mr. Seki introduced a tool called “Talk to the City” (TTTC). TTTC is an open-source tool developed by the AI Objectives Institute that uses AI to cluster large-scale text data and visualize the distribution of opinions[^aoi-tttc].
 
@@ -51,7 +51,7 @@ The Anno campaign collected voters’ voices through multiple channels.
 
 [^mainatohyo]: https://prtimes.jp/main/html/rd/p/000000036.000110743.html
 
-**GitHub**: People were also able to submit proposals regarding the candidate's policy platform on GitHub[^github-manifesto]. The process of improving the candidate's policy platform itself became observable on GitHub, and anyone could obtain the latest version of it. This was true not only for humans, but also for AI Anno.
+**GitHub**: People were also able to submit proposals regarding the candidate's policy platform on GitHub[^github-service][^github-manifesto]. The process of improving the candidate's policy platform itself became observable on GitHub, and anyone could obtain the latest version of it. This was true not only for humans, but also for AI Anno.
 
 The visualizations created with Talk to the City from data collected through `#TOKYOAI` and the anonymous suggestion box became widely recognized because of the strong visual impact of the scatterplots, which in turn helped raise awareness of broad listening. At the same time, however, this also led some people to think that broad listening was nothing more than this scatterplot-style representation.
 
@@ -67,10 +67,10 @@ Opinions gathered from posts using the `#TOKYOAI` hashtag and from the anonymous
 TTTC’s processing can be broadly divided into three stages:
 
 1. **Preprocessing (extraction)**: a generative AI extracts opinions from posts
-2. **Clustering**: the text is converted into vectors with thousands of dimensions, and similar opinions are grouped together
+2. **Clustering**: the text is converted into vectors, or sequences of numbers, and similar opinions are grouped together
 3. **Postprocessing (labeling and summarization)**: a generative AI assigns labels to each cluster and summarizes representative opinions
 
-In the end, the distribution of opinions is visualized as a two-dimensional scatterplot, producing a report that allows users to survey what kinds of opinion groups exist.
+In the end, the distribution of opinions is visualized as a two-dimensional scatterplot, producing a report that allows users to survey what kinds of opinion groups exist. See Chapters 12 and 13 for the technical details.
 
 More than 30 reports were produced during the election period. These included a visualization of 951 opinions from the anonymous suggestion box.
 
@@ -190,7 +190,9 @@ This result—more than 2% of the vote—also helped encourage Mr. Anno to launc
 Broad listening, moreover, is not a technology limited to elections. It can be applied in many settings, including analyzing customer feedback in private companies, gathering residents’ opinions in local governments, and facilitating dialogue with supporters in NPOs. This point will be discussed in more detail in the latter half of this book.
 
 [^mitou-jr]: Mitou Junior, Mentor Introduction. https://jr.mitou.org/mentors/
+[^mentor]: Mitou Junior is a technology-development program for elementary, junior-high, high-school, and technical-college students age 17 or younger, operated since 2016 by the Mitou Foundation. Accepted participants are paired with mentors who have completed Japan's national Mitou Program run by IPA, receive weekly online advice on programming and project management for about six months, and can receive up to 500,000 yen in development funding per group.
 [^aoi-tttc]: AI Objectives Institute, “Talk to the City.” https://ai.objectives.institute/talk-to-the-city-1
+[^github-service]: GitHub is an online software-development platform operated by GitHub, Inc., a Microsoft subsidiary. It records who changed what and when, and allows outside contributors to submit improvement proposals known as pull requests. It is widely used as the de facto standard platform for open-source development, with more than 100 million registered developers. By creating and improving the platform on GitHub, the Anno campaign made the editing process transparent.
 [^github-manifesto]: Takahiro Anno Tokyo Governor Election 2024 Platform Repository. https://github.com/takahiroanno2024/election2024
 [^polis-analysis]: Hirokazu Nishio, “The Future Digital Technology Brings to Democracy,” note, July 2024. https://note.com/nishiohirokazu/n/n799c9818b33d
 [^tochiji-result]: Tokyo Metropolitan Election Administration Commission, “Tokyo Governor Election (held July 7, 2024) Vote Count Results.” https://www.senkyo.metro.tokyo.lg.jp/election/tochiji-all/tochiji-sokuhou2024/result

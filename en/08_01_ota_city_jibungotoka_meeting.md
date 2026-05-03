@@ -19,9 +19,9 @@ This initiative was organized by Ota City with cooperation from Japan Initiative
 
 Citizen deliberation meetings based on random selection can create highly representative forums, but they also face a dilemma: the more diverse the participants are, the greater the variation in prior knowledge and level of interest among them. Ota City encountered the following challenges as well:
 
-- **Asymmetry in prior knowledge:** Discussions begin before participants share a common understanding of what the key issues are, causing the conversation to scatter.
-- **Lack of psychological safety:** Participants hesitate to speak because they worry, “What if I say something off the mark?”
-- **Bias in discussion:** Speaking time tends to be dominated by a few knowledgeable participants or those with louder voices.
+- **Asymmetry in prior knowledge:** Some participants have read the briefing materials in advance, while others are encountering the topic for the first time that day. Discussion begins before participants share a common sense of what the day’s key issues are, causing the conversation to scatter.
+- **Lack of psychological safety:** Participants hesitate to speak because they worry, “Am I the only one who does not know enough?” or “What if I say something off the mark?” As a result, people who do have concerns or questions may stay silent.
+- **Bias in discussion:** Speaking time concentrates among participants with specialized knowledge or louder voices, while other people’s lived experience and different angles on the issue never surface. This weakens the whole point of bringing together a diverse group of residents.
 
 As a result, discussions often remained at the level of safe, superficial exchanges and failed to deepen. This is not unique to Ota City; it reflects a broader tradeoff common to resident participation methods in general. Balancing the collection of views from many residents with deep exploration of a single issue, making use of diversity while overcoming stagnation caused by knowledge gaps, and respecting residents’ free expression while translating it into information that can be used in administrative practice—all of these have been difficult to achieve simultaneously with conventional methods.
 

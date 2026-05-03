@@ -110,4 +110,5 @@ column/fujitsu_enterprise_ai_for_public_comments.md
 
 [ch99_appendix]
 # 付録
+99_appendix_glossary.md
 99_appendix_public_cases.md

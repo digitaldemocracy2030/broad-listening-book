@@ -13,17 +13,6 @@ AI reads thousands of citizens' voices, groups together similar opinions, color-
 
 Broad listening became widely known in Japan when Takahiro Anno used it in the 2024 Tokyo gubernatorial election. But this was not some special magic unique to Anno or Team Mirai. The tools used are available as open-source software, and the underlying technologies are also combinations of published papers and methods. You do not need special genius or a huge budget to practice broad listening if you understand the principles. One purpose of this book is to demystify broad listening.
 
-This book brings together the concepts, technical mechanisms, and real-world use cases from 2024 to early 2026, so that readers can understand broad listening and put it into practice themselves.
-
-This book is intended for readers such as the following:
-
-- **Government officials and policymakers**: people interested in how to gather citizens’ voices and reflect them in policy
-- **Politicians and election practitioners**: people exploring new ways to communicate with voters
-- **Members of political parties promoting broad listening**: people who want to understand what their party is doing
-- **Students and researchers in sociology and political science**: people who want to study new forms of democracy and civic participation
-- **Citizens**: people interested in digital democracy as a new form of social participation
-- **Engineers and data scientists**: people who want to understand and implement the technologies that support broad listening
-
 ## What Is Broad Listening?
 
 ### The Trade-off Between “Depth” and “Scale”
@@ -200,8 +189,8 @@ In this chapter, we introduced the three forms of broad listening: broad listeni
 
 **Chapter 2: Broad Listening and Surveys: From Quantitative to Qualitative Analysis**
 
-This chapter answers the question: “Can opinions gathered through broad listening be used like opinion polls?” It clarifies the characteristics and limits of AI-based opinion structuring and visualization from the perspectives of open-ended versus closed-ended questions, qualitative versus quantitative analysis, and the presence or absence of representativeness. It also explains how to combine qualitative and quantitative analysis appropriately in order to hear diverse voices while maintaining representativeness.
+This chapter answers the question: “Can opinions gathered through broad listening be used like opinion polls?” It first distinguishes between “public voice” and “statistical public opinion,” then clarifies the characteristics and limits of AI-based opinion structuring and visualization from the perspectives of open-ended versus closed-ended questions, qualitative versus quantitative analysis, and the presence or absence of representativeness. It also discusses the risks of using broad listening alone for policy or electoral judgment, given biases such as the noisy minority and participation gaps. Finally, it explains how to combine qualitative and quantitative analysis appropriately in order to hear diverse voices while maintaining representativeness.
 
-**Chapter 3: Digital Democracy and Broad Listening: New Ways of Delivering the Public Will**
+**Chapter 3: Digital Democracy and Broad Listening: New Ways of Delivering Public Voice**
 
 This chapter answers the questions: “Why is this technology needed now?” and “How should it be operated?” It explains how to think about augmented deliberation that incorporates broad listening tools, including the limits of the election cycle, gaps in existing methods, and the design of operational workflows for real-world use.
