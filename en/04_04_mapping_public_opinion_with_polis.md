@@ -13,10 +13,7 @@ That question led to *Public Opinion Map*, released during the 2024 House of Rep
 [^note]: Explanatory article (Mielka note): [https://note.com/mielka/n/n54313c84a5e5](https://note.com/mielka/n/n54313c84a5e5)
 [^press]: Press releases (JAPAN CHOICE update / full feature release): [https://prtimes.jp/main/html/rd/p/000000013.000029162.html](https://prtimes.jp/main/html/rd/p/000000013.000029162.html) / [https://prtimes.jp/main/html/rd/p/000000014.000029162.html](https://prtimes.jp/main/html/rd/p/000000014.000029162.html)
 
-I was involved in this development as an engineer.  
-What I want to write about in this chapter is not simply, “We used Polis.”
-
-In this chapter, I record what had to be changed in order to use Polis in the real-world context of Japanese elections, and what became visible as a result.
+I was involved in this development as an engineer. What I want to record here is not simply, “We used Polis,” but what had to be changed in order to use Polis in the real-world context of Japanese elections, and what became visible as a result.
 
 ## How It Started
 
