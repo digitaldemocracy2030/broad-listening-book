@@ -2,7 +2,7 @@
 
 We are writing a book that documents broad listening practices in Japan.
 
-"Broad Listening That Changed Elections -- Visualizing and Analyzing Public Voice with Generative AI"(working title) records how Broad Listening, as the opposite of Broadcast, was implemented in political and administrative settings, what worked, and where unintended side effects appeared. It traces a new democratic protocol that only became feasible with LLMs: structuring large volumes of voices by context and returning them to decision making. The book is grounded in Japan's social experiments in 2024-2025.
+"Broad Listening: Across Politics, Local Government, and Business" records how Broad Listening, as the opposite of Broadcast, was implemented in political and administrative settings, what worked, and where unintended side effects appeared. It traces a new democratic protocol that only became feasible with LLMs: structuring large volumes of voices by context and returning them to decision making. The book is grounded in Japan's social experiments in 2024-2025.
 
 The preface is written by AI engineer and politician Takahiro Anno, who frames broad listening as "the operating system for future democracy."
 
