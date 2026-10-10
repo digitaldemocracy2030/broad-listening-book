@@ -355,7 +355,7 @@ def build_html_content_from_files(
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>選挙を変えたブロードリスニング</title>
+    <title>政治・自治体・企業に広がるブロードリスニング</title>
     <style>
 {get_css(for_pdf=for_pdf)}
     </style>
