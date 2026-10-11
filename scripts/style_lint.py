@@ -89,8 +89,10 @@ RE_SENT_SPLIT = re.compile(r"(?<=[。！？!?])")
 RE_SPEAKER = re.compile(
     r"^\s*(?:[-*+]\s*)?\*\*[^*\s（）()]{1,10}(?:[：:]\s*\*\*|\*\*\s*[：:]?\s)"
 )
-# 箇条書き先頭のラベル（- **用語**）と、行頭の定義ラベル（**用語**：）
-RE_LIST_LABEL = re.compile(r"^\s*(?:(?:[-*+]|\d+[.)])\s*\*\*[^*]+\*\*|\*\*[^*]+\*\*\s*(?:〔[^〕]*〕)?\s*[：:])")
+# 箇条書き先頭のラベル（- **用語**）、行頭の定義ラベル（**用語**：）、段落先頭の名称（**世論調査**は）
+RE_LIST_LABEL = re.compile(
+    r"^\s*(?:(?:[-*+]|\d+[.)])\s*\*\*[^*]+\*\*|\*\*[^*]+\*\*\s*(?:〔[^〕]*〕)?\s*[：:]|\*\*[^*]{1,30}\*\*(?=[はがもと（(]))"
+)
 
 
 @dataclass
@@ -229,7 +231,7 @@ def lint_file(path: Path) -> FileReport:
     if len(hits) > LIMIT_ANOTB_PER_FILE:
         for ln, m in hits:
             add(ln, "a-not-b", "warn",
-                f"否定→言い直し構文 {len(hits)}回/章（上限{LIMIT_ANOTB_PER_FILE}、§5）",
+                f"否定→言い直し構文 {len(hits)}回/章（上限{LIMIT_ANOTB_PER_FILE}、§5。否定側に情報がある対比は対象外）",
                 snippet(ln.prose, m))
         rep.counts["a-not-b"] = len(hits)
 
@@ -280,7 +282,8 @@ def lint_file(path: Path) -> FileReport:
     rep.counts["bold-label-list"] = len(groups)
     if len(groups) > LIMIT_BOLD_LABEL_LISTS_PER_FILE:
         for g in groups:
-            add(g[0], "bold-label-list", "warn",
+            # 案内・一覧のラベルは許容するので参考扱い（docs/writing_rules.md §8）
+            add(g[0], "bold-label-list", "info",
                 f"太字ラベル付き箇条書き {len(groups)}組/章（上限{LIMIT_BOLD_LABEL_LISTS_PER_FILE}、§5）",
                 snippet(g[0].raw))
 
