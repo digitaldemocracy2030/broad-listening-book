@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a book manuscript repository for "政治・自治体・企業に広がるブロードリスニング" (Broad Listening Spreading Across Politics, Local Governments, and Business), to be published by Impress.
+This is a book manuscript repository for "政治・自治体・企業に広がるブロードリスニング" (Broad Listening: Across Politics, Local Government, and Business), to be published by Impress.
 
 The book covers "Broad Listening" technology - AI-powered systems for collecting, clustering, and analyzing large-scale public opinions, developed as part of Digital Democracy 2030 (DD2030).
 
