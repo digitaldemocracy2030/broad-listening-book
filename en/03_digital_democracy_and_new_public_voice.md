@@ -85,7 +85,7 @@ The legal basis for public comment in Japan is Article 38 of the Administrative 
 
 In other words, public comment is used as a final check on regulations that are already largely complete. And most of the people submitting comments are either companies directly affected by the regulation or a very small number of unusually civic-minded individuals. As a result, most public comment processes receive fewer than ten submissions.
 
-![Number of public comments](column/opinion_histogram_filtered_en.png)
+![Figure: Histogram showing the number of opinions submitted to public-comment procedures, with most cases receiving fewer than ten comments.](images/03_opinion_histogram_filtered_en.png)
 
 Most public comment processes receive fewer than ten submissions, making it hard to say that they are truly “collecting views broadly.” One reason so few comments are submitted is that the process asks for opinions on documents written in bureaucratic language. As a result, only corporate legal departments accustomed to reading administrative documents, or a small number of people capable of deciphering them, are able to respond. In addition, because these drafts are issued just before implementation, they are written in highly practical, technical terms that only specialists can really understand.
 

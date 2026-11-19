@@ -43,8 +43,10 @@
   "13_広聴AIの技術スタック解説.md": "13_kocho_ai_tech_stack.md",
   "99_付録_用語集.md": "99_appendix_glossary.md",
   "99_付録_公開事例一覧.md": "99_appendix_public_cases.md",
+  "column/collective_actionとconnective_action.md": "column/collective_action_and_connective_action.md",
   "column/1万件の声を集めて気づいたこと.md": "column/lessons_from_collecting_10000_voices.md",
   "column/パブリックコメントと向き合う大企業AI_富士通の取り組み.md": "column/fujitsu_enterprise_ai_for_public_comments.md",
+  "column/ブロードリスニングとしてみたときのパブリックコメントの問題点.md": "column/public_comment_as_broad_listening.md",
   "column/レビューで試す広聴AI.md": "column/testing_kocho_ai_through_review.md",
   "column/ワードクラウドは分析ではない.md": "column/word_cloud_is_not_analysis.md",
   "column/安全な共感.md": "column/safe_empathy.md"

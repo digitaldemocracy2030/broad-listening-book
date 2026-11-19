@@ -20,9 +20,12 @@ Megill has described the motivation for its development as “addressing the com
 
 Figure: Example Polis screen.[^polis-screenshot]
 
-Polis is built on a design philosophy fundamentally different from that of conventional online petitions such as Change.org. The goal of Change.org is to “gather supporters by the numbers.” Success is measured by maximizing signatures, and the structure tends to reward messages that intensify conflict.
+Polis is built on a design philosophy fundamentally different from that of conventional online petitions such as Change.org. The difference becomes clear if we place their design goals side by side.
 
-The goal of Polis is to “make the distribution of opinions and points of agreement visible.” Suppose, for example, that Polis is used on the topic of regulating online abuse on social media. When participants open the Polis interface, they first see a single opinion posted by another participant. For example, suppose the statement shown is, “To protect freedom of expression, regulation should be kept to a minimum.” Participants respond by choosing one of three options: “agree,” “disagree,” or “pass.” Once they answer, the next opinion appears, and they respond again with the same three choices. This process repeats.
+- **Change.org’s design**: The goal is to maximize signature counts. The more supporters are gathered, the more successful the campaign appears. The structure tends to reward messages that intensify conflict.
+- **Polis’s design**: The goal is to visualize the distribution of opinions and the points of agreement. Success means finding common ground hidden behind axes of conflict.
+
+Let us look concretely at how Polis works. Suppose, for example, that Polis is used on the topic of regulating online abuse on social media. When participants open the Polis interface, they first see a single opinion posted by another participant. For example, suppose the statement shown is, “To protect freedom of expression, regulation should be kept to a minimum.” Participants respond by choosing one of three options: “agree,” “disagree,” or “pass.” Once they answer, the next opinion appears, and they respond again with the same three choices. This process repeats.
 
 At the same time, participants can also post their own opinions freely. They can raise new points in short, one-sentence comments such as “To protect victims, platforms should be required to remove harmful content” or “This should be addressed through education rather than regulation.” These submitted opinions are then shown on other participants’ screens, where they receive the same agree/disagree/pass votes.
 
@@ -33,6 +36,14 @@ This hybrid design reflects the technological constraints of the period in which
 Participants with similar voting patterns are placed near one another on a scatterplot and automatically color-coded into groups. In this example, clusters such as a “freedom of expression” group and a “victim protection” group would emerge. Polis also identifies opinions supported by both sides of a conflict and highlights them. In the example of regulating online abuse, a statement such as “There should be some way to address malicious anonymous posts” might be supported by both groups. The ability to discover these “points of agreement hidden beneath conflict” is Polis’s essential strength. Audrey Tang calls this “uncommon ground”[^7]—that is, a shared foundation that people assumed they did not have with those on the other side, but in fact did.
 
 Participants can see their own position on the scatterplot and the groups formed by other participants with similar voting tendencies. Both the group close to their own views and groups with different views are visualized as color-coded regions. On ordinary social media, it is easy not to notice that one is inside a “filter bubble,” where algorithms mostly show similar opinions. Through Polis visualization, by contrast, participants can recognize at a glance that people with views different from their own really do exist.
+
+To summarize, Polis’s basic operation can be reduced to three steps.
+
+1. **Posting opinions**: Participants submit short statements.
+2. **Voting**: Participants vote “agree,” “disagree,” or “pass” on all opinions submitted by others.
+3. **Grouping**: People with similar voting patterns are automatically grouped, and points of agreement behind the axis of conflict, or uncommon ground, become visible.
+
+The important point is that **all participants vote on all opinions**. Polis does not gather “supporters”; it gathers “diverse people’s reactions to diverse opinions.”
 
 ## How Polis Spread
 
@@ -58,7 +69,7 @@ The newest notable case is Bowling Green, shown in the last row of the table. Ov
 
 From a technical perspective, the 2012 version of Polis was a statistical processing system centered on PCA (principal component analysis) and K-means clustering. It represented participants’ voting data as a matrix and generated a scatterplot of voting tendencies by compressing the data into two dimensions with PCA. K-means automatically detected groups on the scatterplot and statistically identified bridging opinions supported across multiple groups. In other words, it implemented the “numerical analysis of voting patterns” described in the previous section using the open-source data-science methods that were becoming widely available at the time. PCA and K-means are explained in detail in Chapter 12.
 
-Polis has evolved both as a standalone tool and as part of an increasingly integrated ecosystem of other tools. In Taiwan’s vTaiwan, the process of combining Polis voting data with Talk to the City’s (TTTC’s) analysis of free-text responses has been attempted multiple times (see the previous section for details), and an ecosystem is beginning to take shape in which opinions can be understood from both voting data and open-ended responses.
+Polis has evolved both as a standalone tool and as part of an increasingly integrated ecosystem of other tools. A representative example is its combination with Talk to the City (TTTC). **Polis and TTTC work in complementary ways**. Polis collects preferences through voting and quantitatively shows the distribution of opinion groups and bridging opinions. TTTC, by contrast, uses LLMs to cluster free text and workshop transcripts, structuring the qualitative information of what people actually said. In Taiwan’s vTaiwan and Alignment Assembly, Polis voting data and TTTC free-text analysis have been combined multiple times (see the previous section for details), and an ecosystem is beginning to take shape in which opinions can be understood from both voting data and open-ended responses.
 
 Another important example is **Sensemaker**, the open-source tool developed by Jigsaw, a unit under Alphabet (Google), so that Polis agree/disagree data can be analyzed directly with LLMs. Sensemaker was used in the Bowling Green case discussed in Section 11.3. When a CSV exported from Polis is fed into Sensemaker, the LLM automatically classifies opinions by topic and generates a structured report including points of agreement and disagreement. In other words, an open-source pipeline is emerging that connects Polis’s strength in “opinion collection and voting-pattern visualization” with Sensemaker’s LLM-based “large-scale analysis and summarization of opinion content.”
 

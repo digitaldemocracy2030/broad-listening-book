@@ -31,7 +31,7 @@ Send a survey to all one million residents asking, “Do we need a park? Yes/No.
 
 These two options can be drawn as opposite points on an inverse curve, with “scale (the number of people listened to)” on the horizontal axis and “depth (dialogue time per person)” on the vertical axis. Because depth multiplied by scale has generally been constrained by a fixed budget, increasing one side sacrifices the other. The upper-right region beyond this curve, where broad and deep listening are both achieved, is the target broad listening aims for.
 
-This is the “depth-versus-scale trade-off.” Broad listening is an attempt to overcome that trade-off, but there is no single approach. Some methods gather input broadly from large, unspecified populations, while others involve listening deeply to experts or directly affected stakeholders. This book focuses mainly on the former.
+There is no single approach to overcoming this trade-off. Some methods gather input broadly from large, unspecified populations, while others involve listening deeply to experts or directly affected stakeholders. This book focuses mainly on the former.
 
 In *Plurality*, a book written by Audrey Tang and others, this problem is expressed by quoting Nobel Prize–winning economist Herbert Simon:
 

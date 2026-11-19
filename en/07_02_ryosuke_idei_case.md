@@ -102,7 +102,7 @@ Along with the strong statement, “All politicians should aim for DD2030,” he
 
 Asked how best to encourage politicians to embrace broad listening, Idei answered candidly: “The strongest approach is probably to tell them, ‘It will improve your chances of winning your election.’”
 
-Idei also reflected as follows: “What we had been thinking about was not what the times were asking for. I realized in a major way that I myself had to change. If I had understood that sooner, I think I would have won the election.” If a politician is pulled along by the voices of their existing supporters and drifts away from the concerns of the moment, votes will fall away. Broad listening is a device for making that “gap” visible early. This is the lesson Idei drew from his own election loss.
+If a politician is pulled along by the voices of their existing supporters and drifts away from the concerns of the moment, votes will fall away. Broad listening is a device for making that “gap” visible early. This is the lesson Idei drew from his own election loss.
 
 ---
 
