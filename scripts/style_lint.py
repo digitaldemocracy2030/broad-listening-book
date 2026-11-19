@@ -70,6 +70,10 @@ RE_BOLD_LABEL_ITEM = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s*\*\*[^*]+\*\*\s*[:：]
 RE_DESUMASU = re.compile(r"(です|ます|ました|でした|ません|でしょう)。")
 RE_DEARU = re.compile(r"(である|だ|ではない|[^せ]ない|[^し]た)。")
 
+RE_DEARU_END = re.compile(r"(である|であります|でありました|であった|だ|だった)。")
+# 本人提供の文章（序文・推薦文）と用語集は文体チェックの対象外
+STYLE_EXEMPT_FILES = {"00_序文.md", "00_endorsement_from_Audrey.md", "99_付録_用語集.md"}
+
 LIMIT_ANOTB_PER_FILE = 2
 LIMIT_NODESU_PER_SECTION = 2
 LIMIT_RHETORIC_PER_FILE = 1
@@ -299,6 +303,17 @@ def lint_file(path: Path) -> FileReport:
                 add(ln, "same-opening", "info",
                     f"書き出し「{a}」が3文連続（§5）", snippet(ln.prose))
                 break
+
+    # 本文の「である／だ」止め（§1。脚注・箇条書き・表・用語集の定義・推薦文は対象外）
+    if path.name not in STYLE_EXEMPT_FILES:
+        for ln in body:
+            raw = ln.raw.strip()
+            is_caption = raw.startswith("*") and raw.endswith("*") and not raw.startswith("**")
+            if ln.is_table or ln.is_list or raw.startswith("[^") or is_caption or RE_LIST_LABEL.match(ln.raw):
+                continue
+            for m in RE_DEARU_END.finditer(ln.prose):
+                add(ln, "dearu", "warn", "本文の「である／だ」止め（§1）。「です・ます」に直す",
+                    snippet(ln.prose, m))
 
     # 文体の混在
     ds = [(ln, m) for ln in body if not ln.is_table for m in RE_DESUMASU.finditer(ln.prose)]
