@@ -5,7 +5,7 @@ description = "ブロードリスニング書籍の原稿管理"
 requires-python = ">=3.10"
 dependencies = [
     "markdown>=3.5",
-    "playwright>=1.40",
+    "playwright>=1.61",
     "numpy>=1.24",
     "matplotlib>=3.7",
     "scikit-learn>=1.3",
